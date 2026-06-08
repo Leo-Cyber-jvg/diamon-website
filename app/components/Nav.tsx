@@ -49,8 +49,8 @@ export default function Nav() {
               href={href}
               className="text-sm tracking-wide transition-colors duration-200 cursor-pointer"
               style={{
-                fontFamily: 'var(--font-inter)',
-                color: pathname === href ? 'var(--color-gold)' : 'var(--color-muted)',
+                fontFamily: 'var(--font-body)',
+                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
                 fontWeight: pathname === href ? 500 : 400,
               }}
             >
@@ -104,8 +104,8 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="text-sm tracking-wide cursor-pointer"
               style={{
-                fontFamily: 'var(--font-inter)',
-                color: pathname === href ? 'var(--color-gold)' : 'var(--color-muted)',
+                fontFamily: 'var(--font-body)',
+                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
               }}
             >
               {label}

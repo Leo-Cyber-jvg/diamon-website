@@ -35,7 +35,7 @@ export default function AboutPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
         >
           About
         </p>
@@ -54,7 +54,7 @@ export default function AboutPage() {
           className="text-lg font-light"
           style={{
             color: 'var(--color-muted)',
-            fontFamily: 'var(--font-inter)',
+            fontFamily: 'var(--font-body)',
             lineHeight: 1.8,
             maxWidth: '620px',
           }}
@@ -78,7 +78,7 @@ export default function AboutPage() {
         <div>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-6"
-            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
           >
             The work
           </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
           </h2>
           <div
             className="flex flex-col gap-5 text-sm leading-relaxed"
-            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
           >
             <p>
               The same mechanisms that determine whether an actor holds a
@@ -131,13 +131,13 @@ export default function AboutPage() {
             >
               <span
                 className="text-xs tracking-widest uppercase"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
                 {label}
               </span>
               <span
                 className="text-sm"
-                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}
               >
                 {value}
               </span>
@@ -158,7 +158,7 @@ export default function AboutPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-12"
-          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
         >
           The differentiator
         </p>
@@ -177,7 +177,7 @@ export default function AboutPage() {
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
               >
                 {description}
               </p>
@@ -202,7 +202,7 @@ export default function AboutPage() {
         >
           Ready to explore what communication architecture can do for your leadership?
         </h2>
-        <Link href="/contact" className="btn-gold shrink-0">
+        <Link href="/contact" className="btn-primary shrink-0">
           Get in touch
         </Link>
       </section>

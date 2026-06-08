@@ -65,7 +65,7 @@ export default function ServicesPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
         >
           Services
         </p>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
           className="text-lg font-light"
           style={{
             color: 'var(--color-muted)',
-            fontFamily: 'var(--font-inter)',
+            fontFamily: 'var(--font-body)',
             lineHeight: 1.8,
             maxWidth: '620px',
           }}
@@ -117,13 +117,13 @@ export default function ServicesPage() {
                 <div className="flex items-baseline gap-4 mb-6">
                   <span
                     className="text-xs tracking-widest"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     {service.id}
                   </span>
                   <span
                     className="text-xs"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     {service.audience}
                   </span>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                 </h2>
                 <p
                   className="text-sm leading-relaxed mb-6"
-                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
                 >
                   {service.description}
                 </p>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                 >
                   <span
                     className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     What this covers
                   </span>
@@ -168,12 +168,12 @@ export default function ServicesPage() {
                   >
                     <span
                       className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
-                      style={{ backgroundColor: 'var(--color-gold)' }}
+                      style={{ backgroundColor: 'var(--color-blue)' }}
                       aria-hidden="true"
                     />
                     <span
                       className="text-sm"
-                      style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                      style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
                     >
                       {item}
                     </span>
@@ -202,7 +202,7 @@ export default function ServicesPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
         >
           How we work
         </p>
@@ -231,7 +231,7 @@ export default function ServicesPage() {
             >
               <span
                 className="text-xs tracking-widest"
-                style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
                 {step}
               </span>
@@ -243,7 +243,7 @@ export default function ServicesPage() {
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
               >
                 {body}
               </p>
@@ -273,7 +273,7 @@ export default function ServicesPage() {
         >
           The right engagement starts with the right conversation.
         </h2>
-        <Link href="/contact" className="btn-gold shrink-0">
+        <Link href="/contact" className="btn-primary shrink-0">
           Start a conversation
         </Link>
       </section>

@@ -1,31 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #FAFAF8;
-  --color-surface: #F2F0EC;
-  --color-surface-2: #E8E4DE;
-  --color-border: #DDD8D0;
-  --color-text: #111009;
-  --color-muted: #5C554E;
-  --color-subtle: #A09890;
-  --color-gold: #B8890A;
-  --color-gold-light: #C9980F;
-  --color-gold-dim: #8A6D15;
+  --color-background: #F4F3F1;
+  --color-surface: #ECEAE6;
+  --color-surface-2: #E2DFD9;
+  --color-border: #D8D4CC;
+  --color-text: #111010;
+  --color-muted: #5A5450;
+  --color-subtle: #9E9890;
+  --color-blue: #3838D8;
+  --color-blue-light: #4848E8;
+  --color-blue-dark: #2828B8;
+  --color-white: #FFFFFF;
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
-
-  --radius-sm: 2px;
-  --radius-md: 4px;
 }
 
 @layer components {
-  .link-gold {
-    color: var(--color-gold);
+  .link-blue {
+    color: var(--color-blue);
     transition: color 200ms;
   }
-  .link-gold:hover {
-    color: var(--color-gold-light);
+  .link-blue:hover {
+    color: var(--color-blue-light);
   }
 
   .link-muted {
@@ -36,11 +34,11 @@
     color: var(--color-text);
   }
 
-  .btn-gold {
-    background-color: var(--color-text);
-    color: var(--color-background);
+  .btn-primary {
+    background-color: var(--color-blue);
+    color: #fff;
     transition: background-color 200ms;
-    font-family: var(--font-inter);
+    font-family: var(--font-body);
     font-weight: 500;
     display: inline-flex;
     align-items: center;
@@ -51,16 +49,15 @@
     padding: 1rem 2rem;
     cursor: pointer;
   }
-  .btn-gold:hover {
-    background-color: var(--color-gold);
-    color: #fff;
+  .btn-primary:hover {
+    background-color: var(--color-blue-light);
   }
 
   .btn-outline {
     border: 1px solid var(--color-border);
     color: var(--color-muted);
     transition: border-color 200ms, color 200ms;
-    font-family: var(--font-inter);
+    font-family: var(--font-body);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -71,8 +68,28 @@
     cursor: pointer;
   }
   .btn-outline:hover {
-    border-color: var(--color-text);
-    color: var(--color-text);
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+  }
+
+  .btn-outline-white {
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    transition: border-color 200ms, background-color 200ms;
+    font-family: var(--font-body);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 999px;
+  }
+  .btn-outline-white:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-color: #fff;
   }
 }
 

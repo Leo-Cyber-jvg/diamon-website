@@ -36,7 +36,7 @@ export default function ContactPage() {
     backgroundColor: 'var(--color-surface)',
     border: '1px solid var(--color-border)',
     color: 'var(--color-text)',
-    fontFamily: 'var(--font-inter)',
+    fontFamily: 'var(--font-body)',
     fontSize: '0.875rem',
     padding: '14px 16px',
     outline: 'none',
@@ -52,7 +52,7 @@ export default function ContactPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
         >
           Contact
         </p>
@@ -71,7 +71,7 @@ export default function ContactPage() {
           className="text-lg font-light"
           style={{
             color: 'var(--color-muted)',
-            fontFamily: 'var(--font-inter)',
+            fontFamily: 'var(--font-body)',
             lineHeight: 1.8,
             maxWidth: '520px',
           }}
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 >
                   Message received.
                 </h2>
-                <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+                <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
                   We will be in touch shortly.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                     <label
                       htmlFor="name"
                       className="text-xs tracking-widest uppercase"
-                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                     >
                       Name
                     </label>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                       value={form.name}
                       onChange={handleChange}
                       style={inputStyle}
-                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-gold)')}
+                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
                       onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
                       aria-required="true"
                     />
@@ -146,7 +146,7 @@ export default function ContactPage() {
                     <label
                       htmlFor="company"
                       className="text-xs tracking-widest uppercase"
-                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                     >
                       Company
                     </label>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                       value={form.company}
                       onChange={handleChange}
                       style={inputStyle}
-                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-gold)')}
+                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
                       onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
                     />
                   </div>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                   <label
                     htmlFor="email"
                     className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     Email
                   </label>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                     value={form.email}
                     onChange={handleChange}
                     style={inputStyle}
-                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-gold)')}
+                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
                     onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
                     aria-required="true"
                   />
@@ -191,7 +191,7 @@ export default function ContactPage() {
                   <label
                     htmlFor="message"
                     className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     What are you working on?
                   </label>
@@ -203,7 +203,7 @@ export default function ContactPage() {
                     value={form.message}
                     onChange={handleChange}
                     style={{ ...inputStyle, resize: 'vertical', minHeight: '140px' }}
-                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-gold)')}
+                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
                     onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
                     aria-required="true"
                   />
@@ -212,7 +212,7 @@ export default function ContactPage() {
                 {status === 'error' && (
                   <p
                     className="text-sm"
-                    style={{ color: '#EF4444', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: '#EF4444', fontFamily: 'var(--font-body)' }}
                     role="alert"
                   >
                     Something went wrong. Please try again or email directly.
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="btn-gold self-start disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-primary self-start disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === 'sending' ? 'Sending...' : 'Send message'}
                 </button>
@@ -235,13 +235,13 @@ export default function ContactPage() {
             <div>
               <p
                 className="text-xs tracking-[0.3em] uppercase mb-4"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
                 What to expect
               </p>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
               >
                 We respond to all enquiries personally. There is no sales process.
                 The first conversation is a diagnostic — we want to understand the
@@ -254,7 +254,7 @@ export default function ContactPage() {
             <div>
               <p
                 className="text-xs tracking-[0.3em] uppercase mb-4"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
                 Typical enquiries
               </p>
@@ -269,11 +269,11 @@ export default function ContactPage() {
                   <li
                     key={item}
                     className="flex items-start gap-3 text-sm"
-                    style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
                   >
                     <span
                       className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
-                      style={{ backgroundColor: 'var(--color-gold)' }}
+                      style={{ backgroundColor: 'var(--color-blue)' }}
                       aria-hidden="true"
                     />
                     {item}
@@ -287,14 +287,14 @@ export default function ContactPage() {
             <div>
               <p
                 className="text-xs tracking-[0.3em] uppercase mb-3"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
                 Direct
               </p>
               <a
                 href="mailto:leo@diamonfinland.com"
-                className="link-gold text-sm"
-                style={{ fontFamily: 'var(--font-inter)' }}
+                className="link-blue text-sm"
+                style={{ fontFamily: 'var(--font-body)' }}
               >
                 leo@diamonfinland.com
               </a>

@@ -68,7 +68,7 @@ export default function FrameworkPage() {
       >
         <p
           className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
         >
           The DIAMON ICA Framework&#x2122;
         </p>
@@ -93,7 +93,7 @@ export default function FrameworkPage() {
           className="text-lg font-light"
           style={{
             color: 'var(--color-muted)',
-            fontFamily: 'var(--font-inter)',
+            fontFamily: 'var(--font-body)',
             lineHeight: 1.8,
             maxWidth: '620px',
           }}
@@ -123,13 +123,13 @@ export default function FrameworkPage() {
             <div key={phase} className="flex flex-col gap-2">
               <span
                 className="text-xs tracking-widest uppercase"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
                 {phase}
               </span>
               <span
                 className="text-sm"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
               >
                 {action}
               </span>
@@ -138,7 +138,7 @@ export default function FrameworkPage() {
         </div>
         <p
           className="text-xs mt-8"
-          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
         >
           Rooted in Aristotelian dramaturgical structure — applied to leadership communication.
         </p>
@@ -161,13 +161,13 @@ export default function FrameworkPage() {
                 <div className="flex items-baseline gap-3 mb-6">
                   <span
                     className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
                   >
                     {level.id}
                   </span>
                   <span
                     className="text-xs"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
                   >
                     {level.model} &mdash; {level.modelFull}
                   </span>
@@ -186,7 +186,7 @@ export default function FrameworkPage() {
                 </p>
                 <p
                   className="text-sm leading-relaxed"
-                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
                 >
                   {level.body}
                 </p>
@@ -201,12 +201,12 @@ export default function FrameworkPage() {
                   >
                     <span
                       className="mt-1 shrink-0 block w-1 h-1 rounded-full"
-                      style={{ backgroundColor: 'var(--color-gold)' }}
+                      style={{ backgroundColor: 'var(--color-blue)' }}
                       aria-hidden="true"
                     />
                     <span
                       className="text-sm"
-                      style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+                      style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
                     >
                       {point}
                     </span>
@@ -246,7 +246,7 @@ export default function FrameworkPage() {
         </h2>
         <div className="flex flex-col sm:flex-row gap-4 shrink-0">
           <Link href="/services" className="btn-outline">Services</Link>
-          <Link href="/contact" className="btn-gold">Get in touch</Link>
+          <Link href="/contact" className="btn-primary">Get in touch</Link>
         </div>
       </section>
     </>
