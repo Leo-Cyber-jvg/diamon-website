@@ -1,65 +1,215 @@
-import Image from "next/image";
+import Link from 'next/link'
+
+const pillars = [
+  {
+    id: 'I',
+    name: 'Identity',
+    model: 'DCI™',
+    description:
+      'The Dual Communicational Identity™ model. Who you are as a communicator, how you build credibility, and how you hold presence in high-stakes situations.',
+  },
+  {
+    id: 'II',
+    name: 'Composition',
+    model: 'TNT™',
+    description:
+      'State, Narrative, Structure. How impactful leadership communication is intentionally constructed — before you open your mouth.',
+  },
+  {
+    id: 'III',
+    name: 'Action',
+    model: 'K3™',
+    description:
+      'Body, Focus, Language. How communication is executed under pressure, in real situations, with real stakes.',
+  },
+]
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* Hero */}
+      <section
+        className="flex flex-col justify-center min-h-screen px-6 pt-24 pb-20"
+        style={{ maxWidth: '1200px', margin: '0 auto' }}
+      >
+        <div style={{ maxWidth: '760px' }}>
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-10"
+            style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+          >
+            Diamon Finland
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          <h1
+            className="text-5xl md:text-7xl lg:text-8xl mb-8 font-light"
+            style={{ fontFamily: 'var(--font-cormorant)', color: 'var(--color-text)', lineHeight: 1.05 }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Communication architecture
+            <span style={{ color: 'var(--color-gold)', fontStyle: 'italic' }}> for leaders</span>
+            {' '}who cannot afford to be misunderstood.
+          </h1>
+
+          <p
+            className="text-lg md:text-xl mb-12 font-light"
+            style={{
+              color: 'var(--color-muted)',
+              fontFamily: 'var(--font-inter)',
+              lineHeight: 1.7,
+              maxWidth: '580px',
+            }}
           >
-            Documentation
-          </a>
+            Human-Centered Communication Architecture for the AI Era. We build the
+            communication capability that determines whether your expertise,
+            presence, and strategy actually land.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/contact" className="btn-gold">
+              Start a conversation
+            </Link>
+            <Link href="/framework" className="btn-outline">
+              The Framework
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* Positioning statement */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+            >
+              The premise
+            </p>
+            <h2
+              className="text-3xl md:text-4xl font-light"
+              style={{ fontFamily: 'var(--font-cormorant)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              As automation accelerates, the human ability to create trust,
+              clarity, and strategic alignment becomes exponentially more valuable.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-6 pt-2 md:pt-12">
+            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)', lineHeight: 1.8, fontSize: '0.875rem' }}>
+              Diamon Finland is a leadership communication architecture company.
+              We work with executives, senior leaders, and organizations who need
+              their communication to operate at the level of their actual capability.
+            </p>
+            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)', lineHeight: 1.8, fontSize: '0.875rem' }}>
+              The work is grounded in performance psychology, structural narrative
+              theory, and two decades of professional performance practice. It is
+              not presentation training. It is not coaching in the conventional sense.
+              It is communication architecture.
+            </p>
+            <Link href="/about" className="link-gold text-sm self-start" style={{ fontFamily: 'var(--font-inter)' }}>
+              About Leo Sjoman and Diamon &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ICA Framework pillars */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-16">
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-4"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+          >
+            The DIAMON ICA Framework&#x2122;
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-light"
+            style={{ fontFamily: 'var(--font-cormorant)', color: 'var(--color-text)' }}
+          >
+            Three integrated levels. One coherent system.
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {pillars.map((pillar) => (
+            <div
+              key={pillar.id}
+              className="p-8 flex flex-col gap-4"
+              style={{ backgroundColor: 'var(--color-background)' }}
+            >
+              <div className="flex items-baseline gap-3">
+                <span
+                  className="text-xs tracking-widest"
+                  style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-inter)' }}
+                >
+                  ICA {pillar.id}
+                </span>
+                <span
+                  className="text-xs"
+                  style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+                >
+                  {pillar.model}
+                </span>
+              </div>
+              <h3
+                className="text-2xl font-light"
+                style={{ fontFamily: 'var(--font-cormorant)', color: 'var(--color-text)' }}
+              >
+                {pillar.name}
+              </h3>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-inter)' }}
+              >
+                {pillar.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10">
+          <Link href="/framework" className="link-gold text-sm" style={{ fontFamily: 'var(--font-inter)' }}>
+            Explore the full framework &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* CTA band */}
+      <section className="px-6 py-24 text-center" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p
+          className="text-xs tracking-[0.3em] uppercase mb-6"
+          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-inter)' }}
+        >
+          Next step
+        </p>
+        <h2
+          className="text-3xl md:text-5xl font-light mb-8 mx-auto"
+          style={{
+            fontFamily: 'var(--font-cormorant)',
+            color: 'var(--color-text)',
+            maxWidth: '600px',
+            lineHeight: 1.15,
+          }}
+        >
+          The right conversation starts with a precise question.
+        </h2>
+        <Link href="/contact" className="btn-gold">
+          Get in touch
+        </Link>
+      </section>
+    </>
+  )
 }

@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #0D0C0B;
+  --color-surface: #161412;
+  --color-surface-2: #1E1B18;
+  --color-border: #2A2622;
+  --color-text: #F5F0EB;
+  --color-muted: #9E978F;
+  --color-subtle: #5C554E;
+  --color-gold: #C49A1E;
+  --color-gold-light: #D4AC2A;
+  --color-gold-dim: #8A6D15;
+
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer components {
+  .link-gold {
+    color: var(--color-gold);
+    transition: color 200ms;
+  }
+  .link-gold:hover {
+    color: var(--color-gold-light);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .link-muted {
+    color: var(--color-muted);
+    transition: color 200ms;
+  }
+  .link-muted:hover {
+    color: var(--color-text);
+  }
+
+  .btn-gold {
+    background-color: var(--color-gold);
+    color: #0D0C0B;
+    transition: background-color 200ms;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  .btn-gold:hover {
+    background-color: var(--color-gold-light);
+  }
+
+  .btn-outline {
+    border: 1px solid var(--color-border);
+    color: var(--color-muted);
+    transition: border-color 200ms, color 200ms;
+    font-family: var(--font-inter);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  .btn-outline:hover {
+    border-color: var(--color-subtle);
+    color: var(--color-text);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
