@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -19,7 +20,7 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        backgroundColor: 'rgba(13,12,11,0.92)',
+        backgroundColor: 'rgba(250,250,248,0.94)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid var(--color-border)',
       }}
@@ -28,14 +29,16 @@ export default function Nav() {
         className="mx-auto flex items-center justify-between px-6 py-4"
         style={{ maxWidth: '1200px' }}
       >
-        {/* Wordmark */}
-        <Link
-          href="/"
-          className="text-sm tracking-[0.25em] uppercase font-medium transition-opacity duration-200 hover:opacity-70"
-          style={{ fontFamily: 'var(--font-inter)', color: 'var(--color-text)' }}
-          aria-label="Diamon Finland — Home"
-        >
-          DIAMON
+        {/* Logo */}
+        <Link href="/" aria-label="Diamon Finland — Home">
+          <Image
+            src="/diamon-logo.webp"
+            alt="Diamon Finland"
+            width={120}
+            height={36}
+            priority
+            style={{ objectFit: 'contain', height: '32px', width: 'auto' }}
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -48,12 +51,7 @@ export default function Nav() {
               style={{
                 fontFamily: 'var(--font-inter)',
                 color: pathname === href ? 'var(--color-gold)' : 'var(--color-muted)',
-              }}
-              onMouseEnter={e => {
-                if (pathname !== href) (e.currentTarget as HTMLElement).style.color = 'var(--color-text)'
-              }}
-              onMouseLeave={e => {
-                if (pathname !== href) (e.currentTarget as HTMLElement).style.color = 'var(--color-muted)'
+                fontWeight: pathname === href ? 500 : 400,
               }}
             >
               {label}
@@ -96,6 +94,7 @@ export default function Nav() {
       {open && (
         <nav
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
+          style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1rem' }}
           aria-label="Mobile navigation"
         >
           {links.map(({ href, label }) => (
@@ -103,7 +102,7 @@ export default function Nav() {
               key={href}
               href={href}
               onClick={() => setOpen(false)}
-              className="text-sm tracking-wide transition-colors duration-200 cursor-pointer"
+              className="text-sm tracking-wide cursor-pointer"
               style={{
                 fontFamily: 'var(--font-inter)',
                 color: pathname === href ? 'var(--color-gold)' : 'var(--color-muted)',

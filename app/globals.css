@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0D0C0B;
-  --color-surface: #161412;
-  --color-surface-2: #1E1B18;
-  --color-border: #2A2622;
-  --color-text: #F5F0EB;
-  --color-muted: #9E978F;
-  --color-subtle: #5C554E;
-  --color-gold: #C49A1E;
-  --color-gold-light: #D4AC2A;
+  --color-background: #FAFAF8;
+  --color-surface: #F2F0EC;
+  --color-surface-2: #E8E4DE;
+  --color-border: #DDD8D0;
+  --color-text: #111009;
+  --color-muted: #5C554E;
+  --color-subtle: #A09890;
+  --color-gold: #B8890A;
+  --color-gold-light: #C9980F;
   --color-gold-dim: #8A6D15;
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
@@ -37,8 +37,8 @@
   }
 
   .btn-gold {
-    background-color: var(--color-gold);
-    color: #0D0C0B;
+    background-color: var(--color-text);
+    color: var(--color-background);
     transition: background-color 200ms;
     font-family: var(--font-inter);
     font-weight: 500;
@@ -47,12 +47,13 @@
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     padding: 1rem 2rem;
     cursor: pointer;
   }
   .btn-gold:hover {
-    background-color: var(--color-gold-light);
+    background-color: var(--color-gold);
+    color: #fff;
   }
 
   .btn-outline {
@@ -65,12 +66,12 @@
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     padding: 1rem 2rem;
     cursor: pointer;
   }
   .btn-outline:hover {
-    border-color: var(--color-subtle);
+    border-color: var(--color-text);
     color: var(--color-text);
   }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -11,12 +12,13 @@ export default function Footer() {
         style={{ maxWidth: '1200px' }}
       >
         <div>
-          <p
-            className="text-sm tracking-[0.25em] uppercase font-medium mb-2"
-            style={{ fontFamily: 'var(--font-inter)', color: 'var(--color-text)' }}
-          >
-            DIAMON
-          </p>
+          <Image
+            src="/diamon-logo.webp"
+            alt="Diamon Finland"
+            width={100}
+            height={30}
+            style={{ objectFit: 'contain', height: '28px', width: 'auto', marginBottom: '8px' }}
+          />
           <p className="text-sm" style={{ color: 'var(--color-muted)' }}>
             Leadership Communication Architecture
           </p>
