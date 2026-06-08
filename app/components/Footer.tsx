@@ -13,7 +13,7 @@ export default function Footer() {
       >
         <div>
           <Image
-            src="/diamon-logo.webp"
+            src="/diamon-logo.png"
             alt="Diamon Finland"
             width={100}
             height={30}

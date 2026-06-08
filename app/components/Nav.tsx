@@ -32,7 +32,7 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" aria-label="Diamon Finland — Home">
           <Image
-            src="/diamon-logo.webp"
+            src="/diamon-logo.png"
             alt="Diamon Finland"
             width={120}
             height={36}
