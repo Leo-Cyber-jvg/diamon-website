@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -12,12 +11,11 @@ export default function Footer() {
         style={{ maxWidth: '1200px' }}
       >
         <div>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/diamon-logo.png"
             alt="Diamon Finland"
-            width={100}
-            height={30}
-            style={{ objectFit: 'contain', height: '28px', width: 'auto', marginBottom: '8px' }}
+            style={{ height: '28px', width: 'auto', display: 'block', marginBottom: '8px' }}
           />
           <p className="text-sm" style={{ color: 'var(--color-muted)' }}>
             Leadership Communication Architecture

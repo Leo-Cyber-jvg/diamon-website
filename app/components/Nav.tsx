@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -20,24 +19,22 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        backgroundColor: 'rgba(250,250,248,0.94)',
+        backgroundColor: 'rgba(250,250,248,0.96)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid var(--color-border)',
       }}
     >
       <div
-        className="mx-auto flex items-center justify-between px-6 py-4"
+        className="mx-auto flex items-center justify-between px-6 py-3"
         style={{ maxWidth: '1200px' }}
       >
-        {/* Logo */}
-        <Link href="/" aria-label="Diamon Finland — Home">
-          <Image
+        {/* Logo — top left */}
+        <Link href="/" aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/diamon-logo.png"
             alt="Diamon Finland"
-            width={120}
-            height={36}
-            priority
-            style={{ objectFit: 'contain', height: '32px', width: 'auto' }}
+            style={{ height: '36px', width: 'auto', display: 'block' }}
           />
         </Link>
 
@@ -66,27 +63,9 @@ export default function Nav() {
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
         >
-          <span
-            className="block w-5 h-px transition-all duration-200"
-            style={{
-              backgroundColor: 'var(--color-text)',
-              transform: open ? 'rotate(45deg) translate(4px, 4px)' : 'none',
-            }}
-          />
-          <span
-            className="block w-5 h-px transition-all duration-200"
-            style={{
-              backgroundColor: 'var(--color-text)',
-              opacity: open ? 0 : 1,
-            }}
-          />
-          <span
-            className="block w-5 h-px transition-all duration-200"
-            style={{
-              backgroundColor: 'var(--color-text)',
-              transform: open ? 'rotate(-45deg) translate(4px, -4px)' : 'none',
-            }}
-          />
+          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
+          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', opacity: open ? 0 : 1 }} />
+          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(-45deg) translate(4px, -4px)' : 'none' }} />
         </button>
       </div>
 
