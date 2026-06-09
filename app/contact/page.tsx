@@ -1,73 +1,28 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 
 const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL
 
-function getCalLink(url: string): string {
-  try {
-    const u = new URL(url)
-    return u.pathname.replace(/^\//, '')
-  } catch {
-    return url
-  }
-}
-
-// ── Cal.com inline widget ─────────────────────────────────────────────────────
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  interface Window { Cal?: any }
-}
-
-function CalWidget({ calLink }: { calLink: string }) {
-  const ready = useRef(false)
-
-  useEffect(() => {
-    if (ready.current) return
-    ready.current = true
-
-    const init = () => {
-      const w = window
-      if (!w.Cal) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        w.Cal = function (...args: any[]) {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          ;(w.Cal as any).q = (w.Cal as any).q || []
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          ;(w.Cal as any).q.push(args)
-        }
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ;(w.Cal as any).q = (w.Cal as any).q || []
-      }
-      w.Cal('init', { origin: 'https://cal.com' })
-      w.Cal('inline', {
-        elementOrSelector: '#cal-diamon',
-        calLink,
-        config: { layout: 'month_view' },
-      })
-      w.Cal('ui', {
-        styles: { branding: { brandColor: '#5656D6' } },
-        hideEventTypeDetails: false,
-        layout: 'month_view',
-      })
-    }
-
-    if (document.querySelector('script[src*="cal.com/embed"]')) {
-      // Script already loaded
-      init()
-    } else {
-      const s = document.createElement('script')
-      s.src = 'https://app.cal.com/embed/embed.js'
-      s.async = true
-      s.onload = init
-      document.head.appendChild(s)
-    }
-  }, [calLink])
+// ── Cal.com iframe embed ──────────────────────────────────────────────────────
+function CalWidget({ bookingUrl }: { bookingUrl: string }) {
+  // Build the embed URL — append ?embed=true for clean iframe presentation
+  const embedUrl = bookingUrl.includes('?')
+    ? `${bookingUrl}&embed=true`
+    : `${bookingUrl}?embed=true`
 
   return (
-    <div
-      id="cal-diamon"
-      style={{ width: '100%', height: '700px', overflow: 'auto' }}
+    <iframe
+      src={embedUrl}
+      title="Book a meeting with Leo Sjöman — DIAMON Finland"
+      loading="lazy"
+      style={{
+        width: '100%',
+        height: '700px',
+        border: 'none',
+        display: 'block',
+      }}
+      allow="payment"
     />
   )
 }
@@ -337,7 +292,7 @@ export default function ContactPage() {
         </h2>
 
         {BOOKING_URL ? (
-          <CalWidget calLink={getCalLink(BOOKING_URL)} />
+          <CalWidget bookingUrl={BOOKING_URL} />
         ) : (
           /* Placeholder when no URL is set */
           <div
