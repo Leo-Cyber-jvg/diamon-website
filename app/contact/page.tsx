@@ -260,7 +260,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <a
-              href="mailto:leo@diamonfinland.com"
+              href="mailto:info@diamon.fi"
               className="flex items-center gap-2 text-sm transition-opacity hover:opacity-70"
               style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', textDecoration: 'none' }}
             >
@@ -268,7 +268,7 @@ export default function ContactPage() {
                 <rect x="2" y="5" width="20" height="14" rx="2" stroke="#5656D6" strokeWidth="1.5" />
                 <path d="M2 8l10 6 10-6" stroke="#5656D6" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
-              leo@diamonfinland.com
+              info@diamon.fi
             </a>
           </div>
         </div>
@@ -313,8 +313,8 @@ export default function ContactPage() {
               Online booking will be available shortly. In the meantime,
               send a message below or reach out directly.
             </p>
-            <a href="mailto:leo@diamonfinland.com" className="link-blue text-sm self-start" style={{ fontFamily: 'var(--font-body)' }}>
-              leo@diamonfinland.com
+            <a href="mailto:info@diamon.fi" className="link-blue text-sm self-start" style={{ fontFamily: 'var(--font-body)' }}>
+              info@diamon.fi
             </a>
           </div>
         )}
