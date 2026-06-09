@@ -3,6 +3,211 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
+const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL
+
+function BookingSection() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <div className="grid md:grid-cols-2 gap-16 items-start">
+
+        {/* Left: copy */}
+        <div>
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-6"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+          >
+            Book a meeting
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-light mb-6"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              color: 'var(--color-text)',
+              lineHeight: 1.15,
+              maxWidth: '440px',
+            }}
+          >
+            Schedule a conversation directly.
+          </h2>
+          <p
+            className="text-sm leading-relaxed mb-8"
+            style={{
+              color: 'var(--color-muted)',
+              fontFamily: 'var(--font-body)',
+              maxWidth: '400px',
+            }}
+          >
+            Choose a time that suits you. The first conversation is a
+            diagnostic — no sales, no pitch. We want to understand the
+            specific challenge before proposing anything.
+          </p>
+          <ul className="flex flex-col gap-3 mb-10">
+            {[
+              '30-minute introductory call',
+              'No preparation required',
+              'Available in Finnish and English',
+            ].map(item => (
+              <li
+                key={item}
+                className="flex items-center gap-3 text-sm"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                <span
+                  style={{
+                    width: '18px',
+                    height: '18px',
+                    borderRadius: '50%',
+                    border: '1px solid var(--color-blue)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                  }}
+                >
+                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                    <path d="M1 3L3 5L7 1" stroke="#5656D6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          {BOOKING_URL ? (
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block"
+            >
+              Book a meeting with DIAMON
+            </a>
+          ) : (
+            <button
+              onClick={() => setOpen(o => !o)}
+              className="btn-primary"
+            >
+              {open ? 'Close calendar' : 'Book a meeting with DIAMON'}
+            </button>
+          )}
+        </div>
+
+        {/* Right: calendar embed or placeholder */}
+        <div>
+          {BOOKING_URL ? (
+            /* Live embed — shown inline once URL is set */
+            <iframe
+              src={BOOKING_URL}
+              title="Book a meeting with DIAMON"
+              style={{
+                width: '100%',
+                height: '620px',
+                border: 'none',
+                display: 'block',
+              }}
+              loading="lazy"
+            />
+          ) : open ? (
+            /* Placeholder shown when no URL is configured */
+            <div
+              style={{
+                border: '1px solid var(--color-border)',
+                backgroundColor: 'var(--color-background)',
+                padding: '48px 40px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '24px',
+              }}
+            >
+              <p
+                className="text-xs tracking-[0.3em] uppercase"
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+              >
+                Calendar
+              </p>
+              <p
+                className="text-2xl font-light"
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  color: 'var(--color-text)',
+                  lineHeight: 1.25,
+                }}
+              >
+                Online booking coming soon.
+              </p>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                The calendar will be live shortly. In the meantime,
+                send a message using the form below or reach out
+                directly by email to arrange a time.
+              </p>
+              <a
+                href="mailto:leo@diamonfinland.com"
+                className="link-blue text-sm self-start"
+                style={{ fontFamily: 'var(--font-body)' }}
+              >
+                leo@diamonfinland.com
+              </a>
+            </div>
+          ) : (
+            /* Quiet default state — no URL, calendar not yet opened */
+            <div
+              style={{
+                border: '1px solid var(--color-border)',
+                backgroundColor: 'var(--color-background)',
+                padding: '48px 40px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '20px',
+              }}
+            >
+              <div
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  border: '1px solid var(--color-border)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                {/* Calendar icon */}
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <rect x="2" y="4" width="18" height="16" rx="1.5" stroke="#9E9890" strokeWidth="1.2" />
+                  <line x1="2" y1="9" x2="20" y2="9" stroke="#9E9890" strokeWidth="1.2" />
+                  <line x1="7" y1="2" x2="7" y2="6" stroke="#9E9890" strokeWidth="1.2" strokeLinecap="round" />
+                  <line x1="15" y1="2" x2="15" y2="6" stroke="#9E9890" strokeWidth="1.2" strokeLinecap="round" />
+                  <rect x="6" y="12" width="3" height="3" rx="0.5" fill="#5656D6" />
+                  <rect x="11" y="12" width="3" height="3" rx="0.5" fill="#9E9890" />
+                  <rect x="6" y="16.5" width="3" height="3" rx="0.5" fill="#9E9890" />
+                </svg>
+              </div>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                Select a time that works for you. The first call is
+                30 minutes — a focused diagnostic conversation about
+                your specific leadership communication challenge.
+              </p>
+              <p
+                className="text-xs"
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+              >
+                Press the button to open the booking calendar.
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [form, setForm] = useState({ name: '', company: '', email: '', message: '' })
@@ -81,6 +286,14 @@ export default function ContactPage() {
           the better the first conversation.
         </p>
       </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── Booking ── */}
+      <BookingSection />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
