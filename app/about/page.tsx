@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkDiagram from '../components/ICAFrameworkDiagram'
 
 export const metadata: Metadata = {
   title: 'About DIAMON — Leadership Communication Architecture',
@@ -173,170 +174,14 @@ export default function AboutPage() {
       </div>
 
       {/* ── 4. ICA FRAMEWORK — centrepiece ───────────────────────── */}
-      <section
-        className="px-6 py-24"
-        style={{ backgroundColor: '#F4F3F1' }}
-      >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <p
-                className="text-xs tracking-[0.3em] uppercase mb-6"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                The methodology
-              </p>
-              <h2
-                className="text-3xl md:text-4xl font-light"
-                style={{
-                  fontFamily: 'var(--font-heading)',
-                  color: 'var(--color-blue)',
-                  lineHeight: 1.2,
-                }}
-              >
-                The DIAMON ICA Framework™
-              </h2>
-              <p
-                className="text-sm leading-relaxed mt-6"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                Identity → Composition → Action. Three integrated levels that form
-                a single, coherent architecture for leadership communication development.
-                From who you are as a communicator, to how you construct your message,
-                to how you perform under pressure — the ICA Framework builds capability
-                at every level.
-              </p>
-              <Link
-                href="/framework"
-                className="link-blue text-sm mt-6 inline-block"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                Explore the full framework &rarr;
-              </Link>
-            </div>
-            <div>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                The framework was developed by Leo Sjöman over more than twenty years
-                of professional performance, human behaviour research and leadership
-                communication practice. It draws on performance psychology, structural
-                narrative theory, and the direct experience of communicating under
-                the highest pressure — in front of live audiences, cameras and
-                executive rooms.
-              </p>
-              <p
-                className="text-sm leading-relaxed mt-4"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                The ICA Framework has been applied across executive development,
-                leadership team programmes and organisation-wide communication
-                capability initiatives.
-              </p>
-            </div>
-          </div>
+      <ICAFrameworkDiagram />
 
-          {/* ICA three-level visual */}
-          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              {
-                level: 'ICA I',
-                model: 'DCI™',
-                name: 'Identity',
-                description:
-                  'The Dual Communicational Identity™ model. Who you are as a communicator, how you build credibility, and how you hold presence in high-stakes situations. Communication identity is the foundation everything else is built on.',
-                pillars: ['Communicational self-awareness', 'Credibility architecture', 'Presence under pressure'],
-              },
-              {
-                level: 'ICA II',
-                model: 'TNT™',
-                name: 'Composition',
-                description:
-                  'State, Narrative, Structure. How impactful leadership communication is intentionally designed — before you open your mouth. Strategic composition is the difference between content that is heard and content that creates change.',
-                pillars: ['State architecture', 'Narrative construction', 'Structural sequencing'],
-              },
-              {
-                level: 'ICA III',
-                model: 'K3™',
-                name: 'Action',
-                description:
-                  'Body, Focus, Language. How communication is executed in real situations, under real pressure, with real stakeholders. Performance capability is where identity and composition meet reality.',
-                pillars: ['Physical presence', 'Attentional focus', 'Language precision'],
-              },
-            ].map(({ level, model, name, description, pillars }) => (
-              <div
-                key={level}
-                className="p-8 flex flex-col gap-5"
-                style={{ backgroundColor: 'var(--color-background)' }}
-              >
-                <div className="flex items-baseline gap-3">
-                  <span
-                    className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
-                  >
-                    {level}
-                  </span>
-                  <span
-                    className="text-xs"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                  >
-                    {model}
-                  </span>
-                </div>
-                <h3
-                  className="text-2xl font-light"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}
-                >
-                  {name}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-                >
-                  {description}
-                </p>
-                <ul className="flex flex-col gap-2 mt-auto pt-4" style={{ borderTop: '1px solid var(--color-border)' }}>
-                  {pillars.map((p) => (
-                    <li
-                      key={p}
-                      className="text-xs flex items-start gap-2"
-                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                    >
-                      <span style={{ color: 'var(--color-blue)', marginTop: '2px' }}>—</span>
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          {/* ICA arrow pathway */}
-          <div
-            className="mt-px grid grid-cols-3 gap-px"
-            style={{ backgroundColor: 'var(--color-border)' }}
-          >
-            {['Identity', 'Composition', 'Action'].map((stage, i) => (
-              <div
-                key={stage}
-                className="py-4 px-8 flex items-center gap-3"
-                style={{ backgroundColor: 'var(--color-blue)' }}
-              >
-                <span
-                  className="text-white text-sm font-light"
-                  style={{ fontFamily: 'var(--font-heading)', opacity: 0.9 }}
-                >
-                  {stage}
-                </span>
-                {i < 2 && (
-                  <span style={{ color: 'rgba(255,255,255,0.4)', marginLeft: 'auto' }}>→</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Framework link */}
+      <div className="px-6 py-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+          Explore the full ICA Framework &rarr;
+        </Link>
+      </div>
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
