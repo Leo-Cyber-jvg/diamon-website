@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { BlueprintHomepageSection } from './components/ArchitectureBlueprint'
+import InfluenceCompass from './components/InfluenceCompass'
 
 const pillars = [
   {
@@ -183,7 +184,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Architecture of Influence — homepage section */}
+      {/* Architecture of Influence — compass diagram */}
+      <InfluenceCompass />
+
+      {/* Architecture of Influence — pathway section */}
       <BlueprintHomepageSection />
 
       {/* Divider */}

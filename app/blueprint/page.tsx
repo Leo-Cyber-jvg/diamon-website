@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { BlueprintFull } from '../components/ArchitectureBlueprint'
+import InfluenceCompass from '../components/InfluenceCompass'
 
 export const metadata: Metadata = {
   title: 'The Architecture of Influence™ — Diamon Finland',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function BlueprintPage() {
-  return <BlueprintFull />
+  return (
+    <>
+      <BlueprintFull />
+      <InfluenceCompass />
+    </>
+  )
 }
