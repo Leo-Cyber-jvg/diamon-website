@@ -1,13 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
-import CalInline from '../components/CalInline'
+import { useState, useEffect, useRef } from 'react'
 
 const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL
 
-// Extract the cal.com path from the full URL
-// e.g. "https://cal.com/leo-sjoman/intro" → "leo-sjoman/intro"
 function getCalLink(url: string): string {
   try {
     const u = new URL(url)
@@ -17,191 +13,67 @@ function getCalLink(url: string): string {
   }
 }
 
-function BookingSection() {
-  const [open, setOpen] = useState(false)
+// ── Cal.com inline widget ─────────────────────────────────────────────────────
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  interface Window { Cal?: any }
+}
+
+function CalWidget({ calLink }: { calLink: string }) {
+  const ready = useRef(false)
+
+  useEffect(() => {
+    if (ready.current) return
+    ready.current = true
+
+    const init = () => {
+      const w = window
+      if (!w.Cal) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        w.Cal = function (...args: any[]) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ;(w.Cal as any).q = (w.Cal as any).q || []
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ;(w.Cal as any).q.push(args)
+        }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(w.Cal as any).q = (w.Cal as any).q || []
+      }
+      w.Cal('init', { origin: 'https://cal.com' })
+      w.Cal('inline', {
+        elementOrSelector: '#cal-diamon',
+        calLink,
+        config: { layout: 'month_view' },
+      })
+      w.Cal('ui', {
+        styles: { branding: { brandColor: '#5656D6' } },
+        hideEventTypeDetails: false,
+        layout: 'month_view',
+      })
+    }
+
+    if (document.querySelector('script[src*="cal.com/embed"]')) {
+      // Script already loaded
+      init()
+    } else {
+      const s = document.createElement('script')
+      s.src = 'https://app.cal.com/embed/embed.js'
+      s.async = true
+      s.onload = init
+      document.head.appendChild(s)
+    }
+  }, [calLink])
 
   return (
-    <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-      <div className="grid md:grid-cols-2 gap-16 items-start">
-
-        {/* Left: copy */}
-        <div>
-          <p
-            className="text-xs tracking-[0.3em] uppercase mb-6"
-            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-          >
-            Book a meeting
-          </p>
-          <h2
-            className="text-3xl md:text-4xl font-light mb-6"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              color: 'var(--color-text)',
-              lineHeight: 1.15,
-              maxWidth: '440px',
-            }}
-          >
-            Schedule a conversation directly.
-          </h2>
-          <p
-            className="text-sm leading-relaxed mb-8"
-            style={{
-              color: 'var(--color-muted)',
-              fontFamily: 'var(--font-body)',
-              maxWidth: '400px',
-            }}
-          >
-            Choose a time that suits you. The first conversation is a
-            diagnostic — no sales, no pitch. We want to understand the
-            specific challenge before proposing anything.
-          </p>
-          <ul className="flex flex-col gap-3 mb-10">
-            {[
-              '30-minute introductory call',
-              'No preparation required',
-              'Available in Finnish and English',
-            ].map(item => (
-              <li
-                key={item}
-                className="flex items-center gap-3 text-sm"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                <span
-                  style={{
-                    width: '18px',
-                    height: '18px',
-                    borderRadius: '50%',
-                    border: '1px solid var(--color-blue)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexShrink: 0,
-                  }}
-                >
-                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
-                    <path d="M1 3L3 5L7 1" stroke="#5656D6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          {!BOOKING_URL && (
-            <button
-              onClick={() => setOpen(o => !o)}
-              className="btn-primary"
-            >
-              {open ? 'Close calendar' : 'Book a meeting with DIAMON'}
-            </button>
-          )}
-        </div>
-
-        {/* Right: calendar embed or placeholder */}
-        <div>
-          {BOOKING_URL ? (
-            /* Cal.com inline embed — full calendar widget */
-            <CalInline calLink={getCalLink(BOOKING_URL)} />
-          ) : open ? (
-            /* Placeholder shown when no URL is configured */
-            <div
-              style={{
-                border: '1px solid var(--color-border)',
-                backgroundColor: 'var(--color-background)',
-                padding: '48px 40px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '24px',
-              }}
-            >
-              <p
-                className="text-xs tracking-[0.3em] uppercase"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                Calendar
-              </p>
-              <p
-                className="text-2xl font-light"
-                style={{
-                  fontFamily: 'var(--font-heading)',
-                  color: 'var(--color-text)',
-                  lineHeight: 1.25,
-                }}
-              >
-                Online booking coming soon.
-              </p>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                The calendar will be live shortly. In the meantime,
-                send a message using the form below or reach out
-                directly by email to arrange a time.
-              </p>
-              <a
-                href="mailto:leo@diamonfinland.com"
-                className="link-blue text-sm self-start"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                leo@diamonfinland.com
-              </a>
-            </div>
-          ) : (
-            /* Quiet default state — no URL, calendar not yet opened */
-            <div
-              style={{
-                border: '1px solid var(--color-border)',
-                backgroundColor: 'var(--color-background)',
-                padding: '48px 40px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '20px',
-              }}
-            >
-              <div
-                style={{
-                  width: '48px',
-                  height: '48px',
-                  border: '1px solid var(--color-border)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                {/* Calendar icon */}
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <rect x="2" y="4" width="18" height="16" rx="1.5" stroke="#9E9890" strokeWidth="1.2" />
-                  <line x1="2" y1="9" x2="20" y2="9" stroke="#9E9890" strokeWidth="1.2" />
-                  <line x1="7" y1="2" x2="7" y2="6" stroke="#9E9890" strokeWidth="1.2" strokeLinecap="round" />
-                  <line x1="15" y1="2" x2="15" y2="6" stroke="#9E9890" strokeWidth="1.2" strokeLinecap="round" />
-                  <rect x="6" y="12" width="3" height="3" rx="0.5" fill="#5656D6" />
-                  <rect x="11" y="12" width="3" height="3" rx="0.5" fill="#9E9890" />
-                  <rect x="6" y="16.5" width="3" height="3" rx="0.5" fill="#9E9890" />
-                </svg>
-              </div>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                Select a time that works for you. The first call is
-                30 minutes — a focused diagnostic conversation about
-                your specific leadership communication challenge.
-              </p>
-              <p
-                className="text-xs"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                Press the button to open the booking calendar.
-              </p>
-            </div>
-          )}
-        </div>
-      </div>
-    </section>
+    <div
+      id="cal-diamon"
+      style={{ width: '100%', height: '700px', overflow: 'auto' }}
+    />
   )
 }
 
-export default function ContactPage() {
+// ── Contact form ──────────────────────────────────────────────────────────────
+function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [form, setForm] = useState({ name: '', company: '', email: '', message: '' })
 
@@ -242,271 +114,268 @@ export default function ContactPage() {
   }
 
   return (
+    <div className="grid md:grid-cols-2 gap-20">
+      {/* Left: form */}
+      <div>
+        {status === 'sent' ? (
+          <div className="flex flex-col gap-4 py-8">
+            <h2
+              className="text-3xl font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}
+            >
+              Message received.
+            </h2>
+            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+              We will be in touch shortly.
+            </p>
+          </div>
+        ) : (
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-5"
+            aria-label="Contact form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div className="grid sm:grid-cols-2 gap-5">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="name" className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Name</label>
+                <input id="name" name="name" type="text" required autoComplete="name" value={form.name} onChange={handleChange} style={inputStyle}
+                  onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
+                  onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} aria-required="true" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="company" className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Company</label>
+                <input id="company" name="company" type="text" autoComplete="organization" value={form.company} onChange={handleChange} style={inputStyle}
+                  onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
+                  onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="email" className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Email</label>
+              <input id="email" name="email" type="email" required autoComplete="email" value={form.email} onChange={handleChange} style={inputStyle}
+                onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} aria-required="true" />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="message" className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>What are you working on?</label>
+              <textarea id="message" name="message" required rows={6} value={form.message} onChange={handleChange}
+                style={{ ...inputStyle, resize: 'vertical', minHeight: '140px' }}
+                onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} aria-required="true" />
+            </div>
+
+            {status === 'error' && (
+              <p className="text-sm" style={{ color: '#EF4444', fontFamily: 'var(--font-body)' }} role="alert">
+                Something went wrong. Please try again or email directly.
+              </p>
+            )}
+
+            <button type="submit" disabled={status === 'sending'} className="btn-primary self-start disabled:opacity-50 disabled:cursor-not-allowed">
+              {status === 'sending' ? 'Sending...' : 'Send message'}
+            </button>
+          </form>
+        )}
+      </div>
+
+      {/* Right: context */}
+      <div className="flex flex-col gap-10">
+        <div>
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>What to expect</p>
+          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+            We respond to all enquiries personally. There is no sales process.
+            The first conversation is a diagnostic — we want to understand the
+            specific challenge before we propose anything.
+          </p>
+        </div>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+        <div>
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Typical enquiries</p>
+          <ul className="flex flex-col gap-3">
+            {[
+              'Executive communication architecture for a senior leader',
+              'Organisational communication capability development',
+              'Preparation for a specific high-stakes moment',
+              'Speaking, media, or investor communication',
+              'Strategic communication advisory',
+            ].map(item => (
+              <li key={item} className="flex items-start gap-3 text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+export default function ContactPage() {
+  return (
     <>
-      {/* Hero */}
-      <section
-        className="px-6 pt-40 pb-20"
-        style={{ maxWidth: '1200px', margin: '0 auto' }}
-      >
-        <p
-          className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
-        >
+      {/* ── Hero ── */}
+      <section className="px-6 pt-40 pb-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>
           Contact
         </p>
         <h1
           className="text-4xl md:text-6xl font-light mb-8"
-          style={{
-            fontFamily: 'var(--font-cormorant)',
-            color: 'var(--color-text)',
-            lineHeight: 1.1,
-            maxWidth: '700px',
-          }}
+          style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.1, maxWidth: '700px' }}
         >
           Start with a precise question.
         </h1>
         <p
           className="text-lg font-light"
-          style={{
-            color: 'var(--color-muted)',
-            fontFamily: 'var(--font-body)',
-            lineHeight: 1.8,
-            maxWidth: '520px',
-          }}
+          style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '520px' }}
         >
-          Describe the communication challenge you are facing or the
-          outcome you are trying to achieve. The clearer the question,
-          the better the first conversation.
+          Describe the communication challenge you are facing or the outcome
+          you are trying to achieve. The clearer the question, the better the
+          first conversation.
         </p>
       </section>
 
-      {/* Divider */}
+      {/* ── Divider ── */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── Booking ── */}
-      <BookingSection />
+      {/* ── Leo profile card ── */}
+      <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
 
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* Form */}
-      <section
-        className="px-6 py-20"
-        style={{ maxWidth: '1200px', margin: '0 auto' }}
-      >
-        <div className="grid md:grid-cols-2 gap-20">
-          {/* Left: form */}
-          <div>
-            {status === 'sent' ? (
-              <div className="flex flex-col gap-4 py-8">
-                <h2
-                  className="text-3xl font-light"
-                  style={{ fontFamily: 'var(--font-cormorant)', color: 'var(--color-text)' }}
-                >
-                  Message received.
-                </h2>
-                <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
-                  We will be in touch shortly.
-                </p>
-              </div>
-            ) : (
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                onSubmit={handleSubmit}
-                className="flex flex-col gap-5"
-                aria-label="Contact form"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div className="flex flex-col gap-2">
-                    <label
-                      htmlFor="name"
-                      className="text-xs tracking-widest uppercase"
-                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                    >
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      autoComplete="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      style={inputStyle}
-                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
-                      onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <label
-                      htmlFor="company"
-                      className="text-xs tracking-widest uppercase"
-                      style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                    >
-                      Company
-                    </label>
-                    <input
-                      id="company"
-                      name="company"
-                      type="text"
-                      autoComplete="organization"
-                      value={form.company}
-                      onChange={handleChange}
-                      style={inputStyle}
-                      onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
-                      onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label
-                    htmlFor="email"
-                    className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                  >
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    autoComplete="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    style={inputStyle}
-                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
-                    onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                    aria-required="true"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label
-                    htmlFor="message"
-                    className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                  >
-                    What are you working on?
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={form.message}
-                    onChange={handleChange}
-                    style={{ ...inputStyle, resize: 'vertical', minHeight: '140px' }}
-                    onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-blue)')}
-                    onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                    aria-required="true"
-                  />
-                </div>
-
-                {status === 'error' && (
-                  <p
-                    className="text-sm"
-                    style={{ color: '#EF4444', fontFamily: 'var(--font-body)' }}
-                    role="alert"
-                  >
-                    Something went wrong. Please try again or email directly.
-                  </p>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={status === 'sending'}
-                  className="btn-primary self-start disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {status === 'sending' ? 'Sending...' : 'Send message'}
-                </button>
-              </form>
-            )}
+          {/* Circle photo */}
+          <div style={{
+            width: '96px',
+            height: '96px',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            flexShrink: 0,
+            border: '1px solid var(--color-border)',
+          }}>
+            <img
+              src="/leo-sjoman.jpg"
+              alt="Leo Sjöman"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+            />
           </div>
 
-          {/* Right: context */}
-          <div className="flex flex-col gap-10">
-            <div>
-              <p
-                className="text-xs tracking-[0.3em] uppercase mb-4"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                What to expect
-              </p>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                We respond to all enquiries personally. There is no sales process.
-                The first conversation is a diagnostic — we want to understand the
-                specific challenge before we propose anything.
-              </p>
-            </div>
+          {/* Name + title */}
+          <div className="flex flex-col gap-1">
+            <span
+              className="text-xl font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.4rem' }}
+            >
+              Leo Sjöman
+            </span>
+            <span
+              className="text-sm"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Founder, DIAMON Finland
+            </span>
+          </div>
 
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+          {/* Divider (desktop) */}
+          <div className="hidden sm:block" style={{ width: '1px', height: '56px', backgroundColor: 'var(--color-border)', margin: '0 8px' }} />
 
-            <div>
-              <p
-                className="text-xs tracking-[0.3em] uppercase mb-4"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                Typical enquiries
-              </p>
-              <ul className="flex flex-col gap-3">
-                {[
-                  'Executive communication architecture for a senior leader',
-                  'Organizational communication capability development',
-                  'Preparation for a specific high-stakes moment',
-                  'Speaking, media, or investor communication',
-                  'Strategic communication advisory',
-                ].map(item => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 text-sm"
-                    style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-                  >
-                    <span
-                      className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
-                      style={{ backgroundColor: 'var(--color-blue)' }}
-                      aria-hidden="true"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Contact links */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/leo-sj%C3%B6man-33721558/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm transition-opacity hover:opacity-70"
+              style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', textDecoration: 'none' }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#5656D6" />
+                <path d="M7 10v7M7 7v.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M11 17v-3.5a2.5 2.5 0 0 1 5 0V17M11 10v7" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              LinkedIn
+            </a>
 
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-
-            <div>
-              <p
-                className="text-xs tracking-[0.3em] uppercase mb-3"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-              >
-                Direct
-              </p>
-              <a
-                href="mailto:leo@diamonfinland.com"
-                className="link-blue text-sm"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                leo@diamonfinland.com
-              </a>
-            </div>
+            {/* Email */}
+            <a
+              href="mailto:leo@diamonfinland.com"
+              className="flex items-center gap-2 text-sm transition-opacity hover:opacity-70"
+              style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', textDecoration: 'none' }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="20" height="14" rx="2" stroke="#5656D6" strokeWidth="1.5" />
+                <path d="M2 8l10 6 10-6" stroke="#5656D6" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+              leo@diamonfinland.com
+            </a>
           </div>
         </div>
+      </section>
+
+      {/* ── Divider ── */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── Calendar booking ── */}
+      <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          Book a meeting
+        </p>
+        <h2
+          className="text-2xl md:text-3xl font-light mb-10"
+          style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
+        >
+          Schedule a conversation directly.
+        </h2>
+
+        {BOOKING_URL ? (
+          <CalWidget calLink={getCalLink(BOOKING_URL)} />
+        ) : (
+          /* Placeholder when no URL is set */
+          <div
+            style={{
+              border: '1px solid var(--color-border)',
+              backgroundColor: 'var(--color-background)',
+              padding: '56px 48px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px',
+              maxWidth: '560px',
+            }}
+          >
+            <p className="text-2xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>
+              Calendar coming soon.
+            </p>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Online booking will be available shortly. In the meantime,
+              send a message below or reach out directly.
+            </p>
+            <a href="mailto:leo@diamonfinland.com" className="link-blue text-sm self-start" style={{ fontFamily: 'var(--font-body)' }}>
+              leo@diamonfinland.com
+            </a>
+          </div>
+        )}
+      </section>
+
+      {/* ── Divider ── */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── Contact form ── */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          Or send a message
+        </p>
+        <ContactForm />
       </section>
     </>
   )
