@@ -1,172 +1,361 @@
-// ICA Framework Diagram — SVG-based visual diagram
-// Three connected nodes: Identity → Composition → Action
-// Aristotelian three-act layer below
-// Outcome axis at base
+// ICA Framework Diagram — premium visual centrepiece
+// Three-column architecture: Identity → Composition → Action
+// With Aristotelian three-act layer and outcome axis
+
+const levels = [
+  {
+    id: 'ICA I',
+    model: 'DCI™',
+    name: 'Identity',
+    question: 'Who are you as a communicator?',
+    act: 'Beginning',
+    actDesc: 'Create contact, presence and trust',
+    outcome: 'Presence',
+    elements: [
+      'Communicational self-awareness',
+      'Credibility and trust architecture',
+      'Presence under pressure',
+    ],
+    body: 'Authenticity, professional role, credibility, trust and personal presence. The foundation all communication capability is built on.',
+  },
+  {
+    id: 'ICA II',
+    model: 'TNT™',
+    name: 'Composition',
+    question: 'How is communication designed?',
+    act: 'Middle',
+    actDesc: 'Build message, structure and shared understanding',
+    outcome: 'Clarity',
+    elements: [
+      'State and communication readiness',
+      'Narrative construction',
+      'Strategic structure and sequencing',
+    ],
+    body: 'State, narrative, structure, clarity and strategic intention. How impactful leadership communication is intentionally constructed before delivery.',
+  },
+  {
+    id: 'ICA III',
+    model: 'K3™',
+    name: 'Action',
+    question: 'How does communication perform in practice?',
+    act: 'Ending',
+    actDesc: 'Move towards action, decision and impact',
+    outcome: 'Impact',
+    elements: [
+      'Physical presence and embodiment',
+      'Attentional focus under pressure',
+      'Language precision and rhythm',
+    ],
+    body: 'Physical presence, focus, language, interaction and performance under pressure. Where architecture meets reality.',
+  },
+]
 
 export default function ICAFrameworkDiagram() {
   return (
     <section style={{ backgroundColor: '#F4F3F1' }}>
-      <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px' }}>
+      <div className="px-6 py-24 mx-auto" style={{ maxWidth: '1200px' }}>
 
-        {/* ── Header ── */}
-        <div className="mb-14 grid md:grid-cols-2 gap-10 items-end">
+        {/* ── Section header ── */}
+        <div className="mb-20 grid md:grid-cols-2 gap-12 items-end">
           <div>
             <p
               className="text-xs tracking-[0.3em] uppercase mb-5"
-              style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
             >
-              The methodology
+              The DIAMON ICA Framework™
             </p>
             <h2
-              className="font-light"
+              className="text-3xl md:text-5xl font-light"
               style={{
                 fontFamily: 'var(--font-heading)',
-                color: '#111010',
-                fontSize: 'clamp(1.8rem, 4vw, 3rem)',
+                color: 'var(--color-text)',
                 lineHeight: 1.1,
               }}
             >
-              The DIAMON{' '}
-              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>ICA Framework™</span>
+              Identity.{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>
+                Composition.
+              </span>{' '}
+              Action.
             </h2>
           </div>
           <p
             className="text-sm leading-relaxed"
-            style={{ color: '#5A5450', fontFamily: 'var(--font-body)' }}
+            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
           >
-            Three integrated levels. One coherent architecture. Leadership
-            communication developed from personal presence through to organisational impact.
+            Three integrated levels. One coherent architecture. The ICA Framework
+            develops communication capability from personal presence through to
+            organisational impact — systematically, not accidentally.
           </p>
         </div>
 
-        {/* ── SVG Diagram ── */}
-        <div style={{ width: '100%', overflowX: 'auto' }}>
-          <svg
-            viewBox="0 0 1100 520"
-            style={{ width: '100%', minWidth: '640px', display: 'block' }}
-            xmlns="http://www.w3.org/2000/svg"
+        {/* ── Main diagram — three columns ── */}
+        <div
+          style={{
+            border: '1px solid var(--color-border)',
+            backgroundColor: 'var(--color-background)',
+          }}
+        >
+
+          {/* Top label bar */}
+          <div
+            className="grid grid-cols-3"
+            style={{ borderBottom: '1px solid var(--color-border)' }}
           >
-            <defs>
-              {/* Blue arrowhead */}
-              <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
-                <path d="M0,0.5 L0,5.5 L7,3 z" fill="#5656D6" />
-              </marker>
-              {/* Subtle arrowhead for outcome axis */}
-              <marker id="arr-subtle" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
-                <path d="M0,0.5 L0,5.5 L7,3 z" fill="#C8C4BC" />
-              </marker>
-            </defs>
+            {levels.map((level, i) => (
+              <div
+                key={level.id}
+                className="px-8 py-4 flex items-center justify-between"
+                style={{
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                }}
+              >
+                <span
+                  className="text-xs tracking-[0.25em] uppercase"
+                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+                >
+                  {level.id}
+                </span>
+                <span
+                  className="text-xs tracking-wide"
+                  style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+                >
+                  {level.model}
+                </span>
+              </div>
+            ))}
+          </div>
 
-            {/* ── Background subtle vertical columns ── */}
-            <rect x="30" y="0" width="320" height="340" rx="2" fill="white" opacity="0.5" />
-            <rect x="390" y="0" width="320" height="340" rx="2" fill="white" opacity="0.5" />
-            <rect x="750" y="0" width="320" height="340" rx="2" fill="white" opacity="0.5" />
+          {/* Level names — large */}
+          <div
+            className="grid grid-cols-3"
+            style={{ borderBottom: '1px solid var(--color-border)' }}
+          >
+            {levels.map((level, i) => (
+              <div
+                key={level.id}
+                className="px-8 pt-10 pb-6 flex flex-col gap-3"
+                style={{
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                  position: 'relative',
+                }}
+              >
+                {/* Arrow connector */}
+                {i < 2 && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      right: '-13px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      zIndex: 2,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '2px',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '20px',
+                        height: '1px',
+                        backgroundColor: 'var(--color-blue)',
+                      }}
+                    />
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
+                      <path d="M1 1L5 5L1 9" stroke="#5656D6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                )}
 
-            {/* ── NODE 1 — Identity ── */}
-            <rect x="30" y="30" width="320" height="170" rx="2" fill="white" stroke="#D8D4CC" strokeWidth="1" />
-            {/* Top label strip */}
-            <rect x="30" y="30" width="320" height="34" rx="2" fill="#F4F3F1" />
-            <rect x="30" y="52" width="320" height="12" fill="#F4F3F1" />
-            <text x="50" y="52" fontSize="9" fill="#5656D6" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">ICA I</text>
-            <text x="330" y="52" fontSize="9" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif" textAnchor="end">DCI™</text>
-            {/* Divider */}
-            <line x1="30" y1="64" x2="350" y2="64" stroke="#D8D4CC" strokeWidth="0.75" />
-            {/* Level name */}
-            <text x="190" y="130" fontSize="42" fill="#111010" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Identity</text>
-            {/* Question italic */}
-            <text x="190" y="158" fontSize="11" fill="#9E9890" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontStyle="italic">Who are you as a communicator?</text>
-            {/* Model full */}
-            <text x="190" y="185" fontSize="10" fill="#5656D6" textAnchor="middle" fontFamily="Inter, system-ui, sans-serif" letterSpacing="0.5">Dual Communicational Identity™</text>
+                <h3
+                  className="font-light"
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    color: 'var(--color-text)',
+                    fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+                    lineHeight: 1.0,
+                    letterSpacing: '-0.01em',
+                  }}
+                >
+                  {level.name}
+                </h3>
+                <p
+                  className="text-xs italic"
+                  style={{
+                    color: 'var(--color-subtle)',
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '0.95rem',
+                    lineHeight: 1.4,
+                  }}
+                >
+                  {level.question}
+                </p>
+              </div>
+            ))}
+          </div>
 
-            {/* ── ARROW 1 ── */}
-            <line x1="354" y1="115" x2="386" y2="115" stroke="#5656D6" strokeWidth="1.2" markerEnd="url(#arr-blue)" />
+          {/* Body description row */}
+          <div
+            className="grid grid-cols-3"
+            style={{ borderBottom: '1px solid var(--color-border)' }}
+          >
+            {levels.map((level, i) => (
+              <div
+                key={level.id}
+                className="px-8 py-6"
+                style={{
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                }}
+              >
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+                >
+                  {level.body}
+                </p>
+              </div>
+            ))}
+          </div>
 
-            {/* ── NODE 2 — Composition ── */}
-            <rect x="390" y="30" width="320" height="170" rx="2" fill="white" stroke="#D8D4CC" strokeWidth="1" />
-            <rect x="390" y="30" width="320" height="34" rx="2" fill="#F4F3F1" />
-            <rect x="390" y="52" width="320" height="12" fill="#F4F3F1" />
-            <text x="410" y="52" fontSize="9" fill="#5656D6" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">ICA II</text>
-            <text x="690" y="52" fontSize="9" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif" textAnchor="end">TNT™</text>
-            <line x1="390" y1="64" x2="710" y2="64" stroke="#D8D4CC" strokeWidth="0.75" />
-            <text x="550" y="126" fontSize="34" fill="#111010" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Composition</text>
-            <text x="550" y="158" fontSize="11" fill="#9E9890" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontStyle="italic">How is communication designed?</text>
-            <text x="550" y="185" fontSize="10" fill="#5656D6" textAnchor="middle" fontFamily="Inter, system-ui, sans-serif" letterSpacing="0.5">State · Narrative · Structure</text>
+          {/* Elements row */}
+          <div
+            className="grid grid-cols-3"
+            style={{ borderBottom: '1px solid var(--color-border)' }}
+          >
+            {levels.map((level, i) => (
+              <div
+                key={level.id}
+                className="px-8 py-6 flex flex-col gap-3"
+                style={{
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                }}
+              >
+                {level.elements.map((el) => (
+                  <div key={el} className="flex items-start gap-3">
+                    <span
+                      style={{
+                        color: 'var(--color-blue)',
+                        fontFamily: 'var(--font-body)',
+                        fontSize: '0.8rem',
+                        marginTop: '1px',
+                        flexShrink: 0,
+                      }}
+                    >
+                      —
+                    </span>
+                    <span
+                      className="text-xs leading-relaxed"
+                      style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+                    >
+                      {el}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
 
-            {/* ── ARROW 2 ── */}
-            <line x1="714" y1="115" x2="746" y2="115" stroke="#5656D6" strokeWidth="1.2" markerEnd="url(#arr-blue)" />
+          {/* ── Three-act structure layer ── */}
+          <div
+            style={{
+              backgroundColor: 'var(--color-blue)',
+              padding: '0',
+            }}
+          >
+            {/* Act label header */}
+            <div
+              className="grid grid-cols-3 px-8 pt-5 pb-2"
+              style={{ borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+            >
+              <span
+                className="col-span-3 text-xs tracking-[0.3em] uppercase"
+                style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}
+              >
+                Aristotelian structure — applied to leadership communication
+              </span>
+            </div>
 
-            {/* ── NODE 3 — Action ── */}
-            <rect x="750" y="30" width="320" height="170" rx="2" fill="white" stroke="#D8D4CC" strokeWidth="1" />
-            <rect x="750" y="30" width="320" height="34" rx="2" fill="#F4F3F1" />
-            <rect x="750" y="52" width="320" height="12" fill="#F4F3F1" />
-            <text x="770" y="52" fontSize="9" fill="#5656D6" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">ICA III</text>
-            <text x="1050" y="52" fontSize="9" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif" textAnchor="end">K3™</text>
-            <line x1="750" y1="64" x2="1070" y2="64" stroke="#D8D4CC" strokeWidth="0.75" />
-            <text x="910" y="130" fontSize="42" fill="#111010" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Action</text>
-            <text x="910" y="158" fontSize="11" fill="#9E9890" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontStyle="italic">How does communication perform?</text>
-            <text x="910" y="185" fontSize="10" fill="#5656D6" textAnchor="middle" fontFamily="Inter, system-ui, sans-serif" letterSpacing="0.5">Body · Focus · Language</text>
+            <div className="grid grid-cols-3">
+              {levels.map((level, i) => (
+                <div
+                  key={level.act}
+                  className="px-8 py-6 flex flex-col gap-2"
+                  style={{
+                    borderRight: i < 2 ? '1px solid rgba(255,255,255,0.12)' : 'none',
+                  }}
+                >
+                  <span
+                    className="text-xs tracking-widest uppercase"
+                    style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
+                  >
+                    {level.act}
+                  </span>
+                  <span
+                    className="text-sm font-light"
+                    style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3, fontSize: '1.05rem' }}
+                  >
+                    {level.actDesc}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
 
-            {/* ── ELEMENT LISTS ── */}
-            {/* Node 1 elements */}
-            <text x="50" y="228" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="66" y="228" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Communicational self-awareness</text>
-            <text x="50" y="252" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="66" y="252" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Credibility and trust architecture</text>
-            <text x="50" y="276" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="66" y="276" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Presence under pressure</text>
+          {/* ── Outcome axis ── */}
+          <div
+            className="grid grid-cols-3"
+            style={{ backgroundColor: '#ECEAE6' }}
+          >
+            {levels.map((level, i) => (
+              <div
+                key={level.outcome}
+                className="px-8 py-5 flex items-center gap-3"
+                style={{
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                }}
+              >
+                <span
+                  className="text-xs tracking-widest uppercase"
+                  style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+                >
+                  Outcome
+                </span>
+                <span
+                  className="text-sm font-light"
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    color: 'var(--color-blue)',
+                    fontSize: '1.1rem',
+                    letterSpacing: '0.02em',
+                  }}
+                >
+                  {level.outcome}
+                </span>
+                {i < 2 && (
+                  <span
+                    style={{
+                      color: 'var(--color-subtle)',
+                      fontFamily: 'var(--font-body)',
+                      fontSize: '0.75rem',
+                      marginLeft: 'auto',
+                    }}
+                  >
+                    →
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
 
-            {/* Node 2 elements */}
-            <text x="410" y="228" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="426" y="228" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">State and communication readiness</text>
-            <text x="410" y="252" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="426" y="252" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Narrative construction</text>
-            <text x="410" y="276" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="426" y="276" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Strategic structure and sequencing</text>
-
-            {/* Node 3 elements */}
-            <text x="770" y="228" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="786" y="228" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Physical presence and embodiment</text>
-            <text x="770" y="252" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="786" y="252" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Attentional focus under pressure</text>
-            <text x="770" y="276" fontSize="11" fill="#9E9890" fontFamily="Inter, system-ui, sans-serif">—</text>
-            <text x="786" y="276" fontSize="11" fill="#5A5450" fontFamily="Inter, system-ui, sans-serif">Language precision and rhythm</text>
-
-            {/* ── THREE-ACT BAR ── */}
-            <rect x="30" y="308" width="1040" height="78" rx="2" fill="#5656D6" />
-            {/* Internal dividers */}
-            <line x1="377" y1="314" x2="377" y2="380" stroke="rgba(255,255,255,0.18)" strokeWidth="1" />
-            <line x1="723" y1="314" x2="723" y2="380" stroke="rgba(255,255,255,0.18)" strokeWidth="1" />
-            {/* Act labels */}
-            <text x="50" y="332" fontSize="8" fill="rgba(255,255,255,0.45)" letterSpacing="2.5" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">BEGINNING</text>
-            <text x="397" y="332" fontSize="8" fill="rgba(255,255,255,0.45)" letterSpacing="2.5" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">MIDDLE</text>
-            <text x="743" y="332" fontSize="8" fill="rgba(255,255,255,0.45)" letterSpacing="2.5" fontFamily="Inter, system-ui, sans-serif" fontWeight="500">ENDING</text>
-            {/* Act descriptions */}
-            <text x="50" y="358" fontSize="12.5" fill="white" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Create contact, presence and trust</text>
-            <text x="397" y="358" fontSize="12.5" fill="white" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Build message, structure and understanding</text>
-            <text x="743" y="358" fontSize="12.5" fill="white" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Move towards action, decision and impact</text>
-            {/* Aristotle note */}
-            <text x="30" y="376" fontSize="9" fill="rgba(255,255,255,0.35)" fontFamily="Inter, system-ui, sans-serif" fontStyle="italic">Rooted in Aristotelian dramaturgical structure — applied to leadership communication</text>
-
-            {/* ── OUTCOME AXIS ── */}
-            <text x="190" y="422" fontSize="8" fill="#9E9890" textAnchor="middle" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif">OUTCOME</text>
-            <text x="190" y="446" fontSize="22" fill="#5656D6" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Presence</text>
-
-            {/* Outcome arrows */}
-            <line x1="310" y1="436" x2="370" y2="436" stroke="#C8C4BC" strokeWidth="1" markerEnd="url(#arr-subtle)" />
-
-            <text x="550" y="422" fontSize="8" fill="#9E9890" textAnchor="middle" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif">OUTCOME</text>
-            <text x="550" y="446" fontSize="22" fill="#5656D6" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Clarity</text>
-
-            {/* Outcome arrow 2 */}
-            <line x1="668" y1="436" x2="728" y2="436" stroke="#C8C4BC" strokeWidth="1" markerEnd="url(#arr-subtle)" />
-
-            <text x="910" y="422" fontSize="8" fill="#9E9890" textAnchor="middle" letterSpacing="2" fontFamily="Inter, system-ui, sans-serif">OUTCOME</text>
-            <text x="910" y="446" fontSize="22" fill="#5656D6" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="300">Impact</text>
-
-            {/* Bottom caption */}
-            <text x="1070" y="510" fontSize="9" fill="#C8C4BC" textAnchor="end" fontFamily="Inter, system-ui, sans-serif" fontStyle="italic">DIAMON ICA Framework™ — from personal presence to organisational impact</text>
-          </svg>
         </div>
+
+        {/* ── Flow caption ── */}
+        <p
+          className="text-xs mt-5 text-right"
+          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+        >
+          DIAMON ICA Framework™ — from personal presence to organisational impact
+        </p>
 
       </div>
     </section>
