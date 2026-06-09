@@ -2,8 +2,20 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import CalInline from '../components/CalInline'
 
 const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL
+
+// Extract the cal.com path from the full URL
+// e.g. "https://cal.com/leo-sjoman/intro" → "leo-sjoman/intro"
+function getCalLink(url: string): string {
+  try {
+    const u = new URL(url)
+    return u.pathname.replace(/^\//, '')
+  } catch {
+    return url
+  }
+}
 
 function BookingSection() {
   const [open, setOpen] = useState(false)
@@ -75,16 +87,7 @@ function BookingSection() {
             ))}
           </ul>
 
-          {BOOKING_URL ? (
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary inline-block"
-            >
-              Book a meeting with DIAMON
-            </a>
-          ) : (
+          {!BOOKING_URL && (
             <button
               onClick={() => setOpen(o => !o)}
               className="btn-primary"
@@ -97,18 +100,8 @@ function BookingSection() {
         {/* Right: calendar embed or placeholder */}
         <div>
           {BOOKING_URL ? (
-            /* Live embed — shown inline once URL is set */
-            <iframe
-              src={BOOKING_URL}
-              title="Book a meeting with DIAMON"
-              style={{
-                width: '100%',
-                height: '620px',
-                border: 'none',
-                display: 'block',
-              }}
-              loading="lazy"
-            />
+            /* Cal.com inline embed — full calendar widget */
+            <CalInline calLink={getCalLink(BOOKING_URL)} />
           ) : open ? (
             /* Placeholder shown when no URL is configured */
             <div
