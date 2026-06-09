@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { BlueprintHomepageSection } from './components/ArchitectureBlueprint'
 
 const pillars = [
   {
@@ -181,6 +182,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Architecture of Influence — homepage section */}
+      <BlueprintHomepageSection />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
