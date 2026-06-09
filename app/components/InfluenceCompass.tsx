@@ -233,7 +233,7 @@ export default function InfluenceCompass() {
               width: '44%',
               aspectRatio: '1/1',
               borderRadius: '50%',
-              background: 'conic-gradient(from 200deg, #5656D6, #4499FF, #44CCCC, #88DD44, #FFDD00, #FF8800, #FF4488, #CC44AA, #8844DD, #5656D6)',
+              background: 'conic-gradient(from 0deg, #2020A0, #5656D6, #8888EE, #AAAAFF, #CCCCFF, #8888EE, #5656D6, #3030B8, #2020A0)',
               zIndex: 4,
               display: 'flex',
               alignItems: 'center',
