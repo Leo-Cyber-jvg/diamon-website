@@ -86,8 +86,8 @@ const services = [
       'Continuous support and follow-up between sessions',
       'Outcome: leadership communication profile and practical operating model',
     ],
-    note: 'Built on the DIAMON ICA Framework™ — ensuring the leader’s message, presence and style are aligned with their role, personal profile and the organisation’s strategic goals.',
-    link: null,
+    note: "Built on the DIAMON ICA Framework™ — ensuring the leader's message, presence and style are aligned with their role, personal profile and the organisation's strategic goals.",
+    link: '/annual-leadership-program',
   },
   {
     id: '06',
@@ -104,7 +104,7 @@ const services = [
       'Optional follow-up sparring or final content refinement',
     ],
     note: 'Built on the DIAMON ICA Framework™ — turning one important performance into a clear, confident and strategically impactful communication moment.',
-    link: null,
+    link: '/impact-session',
   },
 ]
 
@@ -205,7 +205,7 @@ export default function ServicesPage() {
                     className="link-blue text-sm self-start mt-2 inline-block"
                     style={{ fontFamily: 'var(--font-body)' }}
                   >
-                    Explore Thought Leader Studio &rarr;
+                    Explore {service.title} &rarr;
                   </Link>
                 )}
               </div>
