@@ -22,21 +22,23 @@ const services = [
       'Media, board, and investor interaction',
     ],
     note: 'Engagements are structured, not open-ended. We define the objective first.',
+    link: null,
   },
   {
     id: '02',
-    title: 'Organizational Interaction Capability',
-    audience: 'Leadership teams, organizations, enterprise clients',
+    title: 'Organisational Interaction Capability',
+    audience: 'Leadership teams, organisations, enterprise clients',
     description:
-      'Organizations communicate at the level of their least capable communicators in critical moments. This engagement builds communication capability as organizational infrastructure — systematically, across the leadership layer.',
+      'Organisations communicate at the level of their least capable communicators in critical moments. This engagement builds communication capability as organisational infrastructure — systematically, across the leadership layer.',
     what: [
-      'Organizational communication audit',
+      'Organisational communication audit',
       'Leadership communication system design',
       'Team interaction capability development',
       'Strategic alignment communication',
-      'Organizational presence and culture',
+      'Organisational presence and culture',
     ],
     note: 'Scope and depth are agreed before engagement begins. No off-the-shelf programmes.',
+    link: null,
   },
   {
     id: '03',
@@ -52,6 +54,23 @@ const services = [
       'Pre-event refinement',
     ],
     note: 'Available as a standalone engagement or as part of a longer architecture programme.',
+    link: null,
+  },
+  {
+    id: '04',
+    title: 'DIAMON Thought Leader Studio',
+    audience: 'Organisations, leadership teams, senior experts',
+    description:
+      'A structured coaching, content and video production programme that turns leadership expertise into consistent, credible and strategically managed visibility. One studio session per month produces ten high-quality videos — one hundred pieces of strategic content per year.',
+    what: [
+      'Personal communication coaching and ICA Framework™',
+      'Strategic narrative and content planning',
+      'Professional video production',
+      'LinkedIn and multi-platform publishing rhythm',
+      'Visibility tracking and continuous development',
+    ],
+    note: "DIAMON Thought Leader Studio is your organisation's own communication powerhouse — where thought leadership becomes visibility, visibility becomes trust, and trust becomes business.",
+    link: '/thought-leader-studio',
   },
 ]
 
@@ -146,6 +165,15 @@ export default function ServicesPage() {
                 >
                   {service.note}
                 </p>
+                {service.link && (
+                  <Link
+                    href={service.link}
+                    className="link-blue text-sm self-start mt-2 inline-block"
+                    style={{ fontFamily: 'var(--font-body)' }}
+                  >
+                    Explore Thought Leader Studio &rarr;
+                  </Link>
+                )}
               </div>
 
               <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
