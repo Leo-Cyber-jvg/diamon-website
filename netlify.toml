@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Redirects for static export — all routes served from out/
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
