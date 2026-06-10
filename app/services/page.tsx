@@ -72,6 +72,40 @@ const services = [
     note: "DIAMON Thought Leader Studio is your organisation's own communication powerhouse — where thought leadership becomes visibility, visibility becomes trust, and trust becomes business.",
     link: '/thought-leader-studio',
   },
+  {
+    id: '05',
+    title: 'DIAMON Annual Leadership Program',
+    audience: 'Leaders, executives, managers and senior experts',
+    description:
+      'A 12-month coaching program designed to strengthen a leader\'s communication impact, executive presence and strategic role as a communicator. Not a one-off training — a structured, long-term development engagement that builds a consistent, measurable and strategically aligned communication profile.',
+    what: [
+      '6 tailored coaching sessions of 4 hours each',
+      'Personal coach throughout the full year',
+      'Communication strategy and executive presence',
+      'Personal communication profile and strategic storytelling',
+      'Continuous support and follow-up between sessions',
+      'Outcome: leadership communication profile and practical operating model',
+    ],
+    note: 'Built on the DIAMON ICA Framework™ — ensuring the leader’s message, presence and style are aligned with their role, personal profile and the organisation’s strategic goals.',
+    link: null,
+  },
+  {
+    id: '06',
+    title: 'DIAMON Impact Session',
+    audience: 'Leaders and experts preparing for a single high-stakes moment',
+    description:
+      'An intensive individual coaching session that prepares a leader or expert to succeed in a specific communication situation where impact matters most. For moments where the message matters — and how it is delivered matters just as much.',
+    what: [
+      'Individual or small group coaching (1–3 participants)',
+      '3-hour session — remote, on-site or studio format',
+      'Keynote, media interview, board or investor presentation',
+      'Clear and convincing performance structure',
+      'Stronger confidence and controlled presence',
+      'Optional follow-up sparring or final content refinement',
+    ],
+    note: 'Built on the DIAMON ICA Framework™ — turning one important performance into a clear, confident and strategically impactful communication moment.',
+    link: null,
+  },
 ]
 
 export default function ServicesPage() {
