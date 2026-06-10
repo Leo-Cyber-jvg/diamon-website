@@ -53,7 +53,7 @@ export default function Home() {
           >
             Communication architecture
             <span style={{ fontStyle: 'italic', opacity: 0.85 }}> for leaders</span>
-            {' '}who cannot afford to be misunderstood.
+            {' '}in an era that demands human clarity.
           </h1>
 
           <p
@@ -65,9 +65,10 @@ export default function Home() {
               maxWidth: '580px',
             }}
           >
-            Human-Centered Communication Architecture for the AI Era. We build the
-            communication capability that determines whether your expertise,
-            presence, and strategy actually land.
+            As automation reshapes how organisations operate, the ability to
+            communicate with precision, authority and presence becomes the
+            defining leadership capability. We build that capability —
+            systematically, and for the long term.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
