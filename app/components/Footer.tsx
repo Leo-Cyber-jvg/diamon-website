@@ -24,10 +24,10 @@ export default function Footer() {
 
         <nav className="flex flex-wrap gap-6" aria-label="Footer navigation">
           {[
-            { href: '/about', label: 'About' },
-            { href: '/framework', label: 'Framework' },
-            { href: '/services', label: 'Services' },
-            { href: '/contact', label: 'Contact' },
+            { href: '/privacy', label: 'Privacy' },
+            { href: '/cookies', label: 'Cookies' },
+            { href: '/settings', label: 'Settings' },
+            { href: '/faq', label: 'FAQ' },
           ].map(({ href, label }) => (
             <Link
               key={href}
@@ -41,7 +41,7 @@ export default function Footer() {
         </nav>
 
         <p className="text-xs" style={{ color: 'var(--color-subtle)' }}>
-          &copy; {new Date().getFullYear()} Diamon Finland Oy
+          &copy; 2026 Diamon Finland
         </p>
       </div>
     </footer>
