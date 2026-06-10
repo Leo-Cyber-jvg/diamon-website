@@ -20,8 +20,8 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        backgroundColor: 'var(--color-blue)',
-        borderBottom: '1px solid rgba(255,255,255,0.15)',
+        backgroundColor: '#fff',
+        borderBottom: '1px solid var(--color-border)',
       }}
     >
       <div
@@ -47,7 +47,7 @@ export default function Nav() {
               className="text-sm tracking-wide transition-colors duration-200 cursor-pointer"
               style={{
                 fontFamily: 'var(--font-body)',
-                color: pathname === href ? '#fff' : 'rgba(255,255,255,0.65)',
+                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
                 fontWeight: pathname === href ? 500 : 400,
               }}
             >
@@ -63,8 +63,8 @@ export default function Nav() {
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
         >
-          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: '#fff', transform: open ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
-          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: '#fff', opacity: open ? 0 : 1 }} />
+          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
+          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', opacity: open ? 0 : 1 }} />
           <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: '#fff', transform: open ? 'rotate(-45deg) translate(4px, -4px)' : 'none' }} />
         </button>
       </div>
@@ -73,7 +73,7 @@ export default function Nav() {
       {open && (
         <nav
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
-          style={{ borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '1rem' }}
+          style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1rem' }}
           aria-label="Mobile navigation"
         >
           {links.map(({ href, label }) => (
@@ -84,7 +84,7 @@ export default function Nav() {
               className="text-sm tracking-wide cursor-pointer"
               style={{
                 fontFamily: 'var(--font-body)',
-                color: pathname === href ? '#fff' : 'rgba(255,255,255,0.65)',
+                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
               }}
             >
               {label}
