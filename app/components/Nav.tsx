@@ -5,11 +5,12 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const links = [
+  { href: '/for-individuals', label: 'For Individuals' },
+  { href: '/for-organisations', label: 'For Organisations' },
+  { href: '/executive-programmes', label: 'Programmes' },
+  { href: '/framework', label: 'ICA Framework' },
+  { href: '/insights', label: 'Insights' },
   { href: '/about', label: 'About' },
-  { href: '/blueprint', label: 'Blueprint' },
-  { href: '/framework', label: 'Framework' },
-  { href: '/services', label: 'Services' },
-  { href: '/contact', label: 'Contact' },
 ]
 
 export default function Nav() {
@@ -28,7 +29,7 @@ export default function Nav() {
         className="mx-auto flex items-center justify-between px-6 py-3"
         style={{ maxWidth: '1200px' }}
       >
-        {/* Logo — top left */}
+        {/* Logo */}
         <Link href="/" aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -39,7 +40,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -47,8 +48,8 @@ export default function Nav() {
               className="text-sm tracking-wide transition-colors duration-200 cursor-pointer"
               style={{
                 fontFamily: 'var(--font-body)',
-                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
-                fontWeight: pathname === href ? 500 : 400,
+                color: pathname.startsWith(href) ? 'var(--color-blue)' : 'var(--color-muted)',
+                fontWeight: pathname.startsWith(href) ? 500 : 400,
               }}
             >
               {label}
@@ -56,9 +57,27 @@ export default function Nav() {
           ))}
         </nav>
 
+        {/* Desktop CTA */}
+        <Link
+          href="/contact"
+          className="hidden lg:inline-block text-sm"
+          style={{
+            fontFamily: 'var(--font-body)',
+            backgroundColor: 'var(--color-blue)',
+            color: '#fff',
+            padding: '9px 20px',
+            textDecoration: 'none',
+            letterSpacing: '0.04em',
+            fontWeight: 400,
+            transition: 'opacity 200ms',
+          }}
+        >
+          Start a conversation
+        </Link>
+
         {/* Mobile toggle */}
         <button
-          className="md:hidden flex flex-col gap-1.5 cursor-pointer p-2"
+          className="lg:hidden flex flex-col gap-1.5 cursor-pointer p-2"
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
@@ -72,7 +91,7 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <nav
-          className="md:hidden px-6 pb-6 flex flex-col gap-4"
+          className="lg:hidden px-6 pb-6 flex flex-col gap-4"
           style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1rem' }}
           aria-label="Mobile navigation"
         >
@@ -84,12 +103,27 @@ export default function Nav() {
               className="text-sm tracking-wide cursor-pointer"
               style={{
                 fontFamily: 'var(--font-body)',
-                color: pathname === href ? 'var(--color-blue)' : 'var(--color-muted)',
+                color: pathname.startsWith(href) ? 'var(--color-blue)' : 'var(--color-muted)',
               }}
             >
               {label}
             </Link>
           ))}
+          <Link
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="text-sm self-start mt-2"
+            style={{
+              fontFamily: 'var(--font-body)',
+              backgroundColor: 'var(--color-blue)',
+              color: '#fff',
+              padding: '10px 20px',
+              textDecoration: 'none',
+              letterSpacing: '0.04em',
+            }}
+          >
+            Start a conversation
+          </Link>
         </nav>
       )}
     </header>
