@@ -3,8 +3,9 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { getAlternateRoute, isFinRoute } from '../lib/langRoutes'
 
-const links = [
+const enLinks = [
   { href: '/for-individuals', label: 'For Individuals' },
   { href: '/for-organisations', label: 'For Organisations' },
   { href: '/executive-programmes', label: 'Programmes' },
@@ -13,30 +14,61 @@ const links = [
   { href: '/about', label: 'About' },
 ]
 
+const fiLinks = [
+  { href: '/fi/yksiloille', label: 'Yksilöille' },
+  { href: '/fi/organisaatioille', label: 'Organisaatioille' },
+  { href: '/fi/ohjelmat', label: 'Ohjelmat' },
+  { href: '/fi/ica-viitekehys', label: 'ICA-viitekehys' },
+  { href: '/fi/nakemyksia', label: 'Näkemyksiä' },
+  { href: '/fi/tietoa', label: 'Tietoa' },
+]
+
+function LangSwitcher() {
+  const pathname = usePathname()
+  const isFi = isFinRoute(pathname)
+  const alternate = getAlternateRoute(pathname)
+
+  return (
+    <Link
+      href={alternate.href}
+      className="text-xs tracking-widest transition-colors duration-200"
+      style={{
+        fontFamily: 'var(--font-body)',
+        color: 'var(--color-subtle)',
+        letterSpacing: '0.12em',
+        padding: '4px 0',
+        textDecoration: 'none',
+        borderBottom: '1px solid var(--color-border)',
+      }}
+      aria-label={isFi ? 'Switch to English' : 'Vaihda suomeksi'}
+    >
+      {isFi ? 'EN' : 'FI'}
+    </Link>
+  )
+}
+
 export default function Nav() {
   const pathname = usePathname()
+  const isFi = isFinRoute(pathname)
+  const links = isFi ? fiLinks : enLinks
+  const contactHref = isFi ? '/fi/ota-yhteytta' : '/contact'
+  const contactLabel = isFi ? 'Ota yhteyttä' : 'Start a conversation'
+
   const [open, setOpen] = useState(false)
 
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50"
-      style={{
-        backgroundColor: '#fff',
-        borderBottom: '1px solid var(--color-border)',
-      }}
+      style={{ backgroundColor: '#fff', borderBottom: '1px solid var(--color-border)' }}
     >
       <div
         className="mx-auto flex items-center justify-between px-6 py-3"
         style={{ maxWidth: '1200px' }}
       >
         {/* Logo */}
-        <Link href="/" aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center' }}>
+        <Link href={isFi ? '/fi' : '/'} aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/diamon-logo.png"
-            alt="Diamon Finland"
-            style={{ height: '36px', width: 'auto', display: 'block' }}
-          />
+          <img src="/diamon-logo.png" alt="Diamon Finland" style={{ height: '36px', width: 'auto', display: 'block' }} />
         </Link>
 
         {/* Desktop nav */}
@@ -57,23 +89,25 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
-        <Link
-          href="/contact"
-          className="hidden lg:inline-block text-sm"
-          style={{
-            fontFamily: 'var(--font-body)',
-            backgroundColor: 'var(--color-blue)',
-            color: '#fff',
-            padding: '9px 20px',
-            textDecoration: 'none',
-            letterSpacing: '0.04em',
-            fontWeight: 400,
-            transition: 'opacity 200ms',
-          }}
-        >
-          Start a conversation
-        </Link>
+        {/* Desktop right: lang switcher + CTA */}
+        <div className="hidden lg:flex items-center gap-5">
+          <LangSwitcher />
+          <Link
+            href={contactHref}
+            className="text-sm"
+            style={{
+              fontFamily: 'var(--font-body)',
+              backgroundColor: 'var(--color-blue)',
+              color: '#fff',
+              padding: '9px 20px',
+              textDecoration: 'none',
+              letterSpacing: '0.04em',
+              fontWeight: 400,
+            }}
+          >
+            {contactLabel}
+          </Link>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -109,21 +143,24 @@ export default function Nav() {
               {label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="text-sm self-start mt-2"
-            style={{
-              fontFamily: 'var(--font-body)',
-              backgroundColor: 'var(--color-blue)',
-              color: '#fff',
-              padding: '10px 20px',
-              textDecoration: 'none',
-              letterSpacing: '0.04em',
-            }}
-          >
-            Start a conversation
-          </Link>
+          <div className="flex items-center gap-5 mt-2">
+            <LangSwitcher />
+            <Link
+              href={contactHref}
+              onClick={() => setOpen(false)}
+              className="text-sm"
+              style={{
+                fontFamily: 'var(--font-body)',
+                backgroundColor: 'var(--color-blue)',
+                color: '#fff',
+                padding: '10px 20px',
+                textDecoration: 'none',
+                letterSpacing: '0.04em',
+              }}
+            >
+              {contactLabel}
+            </Link>
+          </div>
         </nav>
       )}
     </header>
