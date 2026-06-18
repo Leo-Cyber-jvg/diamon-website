@@ -82,7 +82,7 @@ export default function YksiloillePage() {
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
               { label: 'ICA I — Identiteetti', model: 'DCI™', desc: 'Kuka olet viestijänä. Uskottavuutesi, läsnäolosi, ammatillinen viestintäidentiteettisi.' },
-              { label: 'ICA II — Kompositio', model: 'TNT™', desc: 'Miten rakennat vaikuttavan viestinnän. Tila, narratiivi, rakenne ja strateginen intentio.' },
+              { label: 'ICA II — Kompositio', model: 'SNS™', desc: 'Miten rakennat vaikuttavan viestinnän. Tila, narratiivi, rakenne ja strateginen intentio.' },
               { label: 'ICA III — Toiminta', model: 'K3™', desc: 'Miten suoritat oikeissa tilanteissa. Keho, fokus, kieli — toteutus paineessa.' },
             ].map(({ label, model, desc }) => (
               <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'ICA-viitekehys™ — DIAMON Finland',
-  description: 'DIAMON ICA-viitekehys™ — Identity, Composition, Action. Omistautunut metodologia johtamisviestinnän suorituskyvyn kehittämiseen. DCI™, TNT™, K3™.',
+  description: 'DIAMON ICA-viitekehys™ — Identity, Composition, Action. Omistautunut metodologia johtamisviestinnän suorituskyvyn kehittämiseen. DCI™, SNS™, K3™.',
 }
 
 export default function IcaViitekehysPage() {
@@ -42,7 +42,7 @@ export default function IcaViitekehysPage() {
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
               { id: 'ICA I', name: 'Identiteetti', model: 'DCI™', q: 'Kuka olen viestijänä ja johtajana?' },
-              { id: 'ICA II', name: 'Kompositio', model: 'TNT™', q: 'Miten rakennan vaikuttavan viestinnän intentionaalisesti?' },
+              { id: 'ICA II', name: 'Kompositio', model: 'SNS™', q: 'Miten rakennan vaikuttavan viestinnän intentionaalisesti?' },
               { id: 'ICA III', name: 'Toiminta', model: 'K3™', q: 'Miten viestin tehokkaasti oikeissa tilanteissa?' },
             ].map(({ id, name, model, q }) => (
               <div key={id} className="px-8 py-6 flex items-start gap-6" style={{ backgroundColor: 'var(--color-background)' }}>
@@ -98,12 +98,12 @@ export default function IcaViitekehysPage() {
           <div>
             <div className="flex items-baseline gap-3 mb-6">
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II</span>
-              <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>TNT™</span>
+              <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>SNS™</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Kompositio</h2>
             <p className="text-base italic mb-6" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)' }}>Miten rakennan vaikuttavan viestinnän intentionaalisesti?</p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA II rakentuu TNT™ (Tila, Narratiivi, Rakenne) -mallin varaan. Se tutkii sitä, miten vaikuttava viestintä rakennetaan ennen toimitusta — miten kommunikatiivinen tila valmistellaan, miten narratiivi konstruoidaan ja miten rakenne palvelee strategista tavoitetta.
+              ICA II rakentuu SNS™ (Tila, Narratiivi, Rakenne) -mallin varaan. Se tutkii sitä, miten vaikuttava viestintä rakennetaan ennen toimitusta — miten kommunikatiivinen tila valmistellaan, miten narratiivi konstruoidaan ja miten rakenne palvelee strategista tavoitetta.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Tila, narratiivi, rakenne, selkeys ja strateginen intentio. Miten vaikuttava johtamisviestintä rakennetaan intentionaalisesti ennen kuin avaat suusi.

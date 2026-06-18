@@ -19,7 +19,7 @@ const programmes = [
     structure: [
       'ICA Baseline Assessment and communication profile',
       'ICA I — Identity and DCI™ development',
-      'ICA II — Composition and TNT™ architecture',
+      'ICA II — Composition and SNS™ architecture',
       'ICA III — Action and K3™ performance',
       'High-stakes performance integration',
       'Final ICA review and forward programme',
@@ -225,7 +225,7 @@ export default function ExecutiveProgrammesPage() {
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
               { label: 'ICA I — Identity', model: 'DCI™', desc: 'Communication identity, credibility, authenticity and professional presence.' },
-              { label: 'ICA II — Composition', model: 'TNT™', desc: 'State, narrative, structure — how impactful communication is intentionally designed.' },
+              { label: 'ICA II — Composition', model: 'SNS™', desc: 'State, narrative, structure — how impactful communication is intentionally designed.' },
               { label: 'ICA III — Action', model: 'K3™', desc: 'Body, focus, language — communication performance in real situations under pressure.' },
             ].map(({ label, model, desc }) => (
               <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>

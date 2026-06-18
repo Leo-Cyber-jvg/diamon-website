@@ -143,7 +143,7 @@ export default function ForIndividualsPage() {
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
               { label: 'ICA I — Identity', model: 'DCI™', desc: 'Who you are as a communicator. Your credibility, your presence, your professional communication identity.' },
-              { label: 'ICA II — Composition', model: 'TNT™', desc: 'How you construct impactful communication. State, narrative, structure and strategic intention.' },
+              { label: 'ICA II — Composition', model: 'SNS™', desc: 'How you construct impactful communication. State, narrative, structure and strategic intention.' },
               { label: 'ICA III — Action', model: 'K3™', desc: 'How you perform in real situations. Body, focus, language — execution under pressure.' },
             ].map(({ label, model, desc }) => (
               <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>

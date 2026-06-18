@@ -285,7 +285,7 @@ export default function InfluenceCompass() {
         >
           {[
             { id: 'ICA I', model: 'DCI™', name: 'Identity' },
-            { id: 'ICA II', model: 'TNT™', name: 'Composition' },
+            { id: 'ICA II', model: 'SNS™', name: 'Composition' },
             { id: 'ICA III', model: 'K3™', name: 'Action' },
           ].map(level => (
             <div

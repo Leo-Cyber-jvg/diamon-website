@@ -85,7 +85,7 @@ export default function FiHome() {
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
             { id: 'ICA I', model: 'DCI™', name: 'Identity', fi: 'Identiteetti', desc: 'Dual Communicational Identity™ — kuka olet viestijänä, miten rakennat uskottavuutta ja miten säilytät läsnäolon painetilanteissa.' },
-            { id: 'ICA II', model: 'TNT™', name: 'Composition', fi: 'Kompositio', desc: 'Tila, narratiivi, rakenne. Miten vaikuttava johtamisviestintä rakennetaan ennen kuin avaat suusi.' },
+            { id: 'ICA II', model: 'SNS™', name: 'Composition', fi: 'Kompositio', desc: 'Tila, narratiivi, rakenne. Miten vaikuttava johtamisviestintä rakennetaan ennen kuin avaat suusi.' },
             { id: 'ICA III', model: 'K3™', name: 'Action', fi: 'Toiminta', desc: 'Keho, fokus, kieli. Miten viestintä toteutetaan paineessa, oikeissa tilanteissa, oikeilla panoksilla.' },
           ].map((p) => (
             <div key={p.id} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>

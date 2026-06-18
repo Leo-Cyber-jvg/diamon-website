@@ -68,7 +68,7 @@ export default function TietoaPage() {
             { area: 'Johtamisviestintä', items: ['Johtajan viestintävalmennus', 'Johtoryhmäkehitys', 'ICA-viitekehys™ metodologia', 'Viestintäarkkitehtuurin suunnittelu'] },
             { area: 'Esiintyminen ja suorituskyky', items: ['Yli 20 v. ammattilaisesiintyminen', 'Elokuva, televisio ja teatteri', 'Kaupallinen viestintä', 'Suorituspsykologia'] },
             { area: 'Executive Performance', items: ['Johtajaläsnäolon kehittäminen', 'Viestintä paineessa', 'Media- ja kameravalmennus', 'Keynote- ja esitysvalmistautuminen'] },
-            { area: 'Ajatusjohtajuus', items: ['DIAMON ICA Framework™', 'DCI™, TNT™, K3™', 'Organisaatioviestintä', 'Viestinnällinen suorituskyky'] },
+            { area: 'Ajatusjohtajuus', items: ['DIAMON ICA Framework™', 'DCI™, SNS™, K3™', 'Organisaatioviestintä', 'Viestinnällinen suorituskyky'] },
           ].map(({ area, items }) => (
             <div key={area} className="p-7 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
               <h3 className="text-base font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{area}</h3>

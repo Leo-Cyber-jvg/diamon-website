@@ -14,7 +14,7 @@ const programmes = [
     duration: '12 kuukautta — 6 syväistuntoa',
     audience: 'Toimitusjohtajat, johtajat, hallituksen jäsenet, ylimmän johdon edustajat',
     desc: 'DIAMONin kattavin yksilöllinen johtamisviestinnän kehitysohjelma. 12 kuukauden rakenteellinen matka läpi koko DIAMON ICA-viitekehyksen™ — viestintäidentiteetin, viestirakenteiden ja suorituskyvyn rakentaminen perustasta lähtien.',
-    structure: ['ICA-lähtötason arviointi ja viestintäprofiili', 'ICA I — Identiteetti ja DCI™-kehitys', 'ICA II — Kompositio ja TNT™-arkkitehtuuri', 'ICA III — Toiminta ja K3™-suoritus', 'Vaativien tilanteiden integraatio', 'Loppuarviointi ja eteenpäin suunnitelma'],
+    structure: ['ICA-lähtötason arviointi ja viestintäprofiili', 'ICA I — Identiteetti ja DCI™-kehitys', 'ICA II — Kompositio ja SNS™-arkkitehtuuri', 'ICA III — Toiminta ja K3™-suoritus', 'Vaativien tilanteiden integraatio', 'Loppuarviointi ja eteenpäin suunnitelma'],
     outcomes: 'Täydellinen henkilökohtainen viestintäarkkitehtuuri — identiteetti, kompositio ja toiminta — yhdensuuntaistettuna roolisi, tavoitteidesi ja johtajuuden vaatimusten kanssa.',
   },
   {

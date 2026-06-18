@@ -25,7 +25,7 @@ const levels = [
   },
   {
     id: 'ICA II',
-    model: 'TNT™',
+    model: 'SNS™',
     name: 'Composition',
     question: 'How is communication designed?',
     act: 'Middle',

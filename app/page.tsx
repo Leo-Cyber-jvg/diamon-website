@@ -13,7 +13,7 @@ const pillars = [
   {
     id: 'II',
     name: 'Composition',
-    model: 'TNT™',
+    model: 'SNS™',
     description:
       'State, Narrative, Structure. How impactful leadership communication is intentionally constructed — before you open your mouth.',
   },
