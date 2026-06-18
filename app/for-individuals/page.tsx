@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import ProfileMap from '../components/ProfileMap'
+import DiamondFramework from '../components/DiamondFramework'
 
 export const metadata: Metadata = {
   title: 'For Individuals — DIAMON Finland',
@@ -113,6 +114,27 @@ export default function ForIndividualsPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* DIAMON Leadership Development Framework */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          The development philosophy
+        </p>
+        <div className="grid md:grid-cols-2 gap-12 items-end mb-16">
+          <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+            Leadership communication begins
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}> with the individual.</span>
+          </h2>
+          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+            The DIAMON approach is built on a single principle: before technique, before structure, before performance — there is identity. Every development journey starts with the question at the center.
+          </p>
+        </div>
+        <DiamondFramework />
       </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
