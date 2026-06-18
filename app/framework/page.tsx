@@ -43,16 +43,16 @@ const levels = [
     id: 'ICA III',
     name: 'Action',
     model: 'K3™',
-    modelFull: 'Body, Focus, Language',
+    modelFull: 'Physicality, Focus, Language',
     question: 'How is communication executed effectively in real situations?',
     points: [
-      'Body — physical presence and embodiment',
+      'Physicality — physical presence and embodiment',
       'Focus — attention management under pressure',
       'Language — verbal communication, clarity, and rhythm',
       'Performance under real conditions',
       'The execution layer of leadership communication',
     ],
-    body: 'Architecture without execution is theory. The K3™ model addresses the physical, attentional, and verbal dimensions of how communication actually lands in the room. This is where performance psychology intersects directly with leadership behaviour.',
+    body: 'Architecture without execution is theory. The K3™ model addresses the physicality, focus, and language dimensions of how communication actually lands in the room. This is where performance psychology intersects directly with leadership behaviour.',
   },
 ]
 

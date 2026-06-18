@@ -38,7 +38,7 @@ const offerings = [
     id: '03',
     title: 'Executive Presence Development',
     duration: 'Focused engagement — flexible format',
-    desc: 'Develop the physical, attentional and verbal dimensions of executive presence. Based on ICA III — K3™ (Body, Focus, Language) — this engagement targets how you show up, hold the room and lead interaction.',
+    desc: 'Develop the physicality, focus and language dimensions of executive presence. Based on ICA III — K3™ (Physicality, Focus, Language) — this engagement targets how you show up, hold the room and lead interaction.',
     outcomes: ['K3™ presence architecture', 'Performance under pressure', 'Interaction leadership'],
   },
   {
@@ -144,7 +144,7 @@ export default function ForIndividualsPage() {
             {[
               { label: 'ICA I — Identity', model: 'DCI™', desc: 'Who you are as a communicator. Your credibility, your presence, your professional communication identity.' },
               { label: 'ICA II — Composition', model: 'SNS™', desc: 'How you construct impactful communication. State, narrative, structure and strategic intention.' },
-              { label: 'ICA III — Action', model: 'K3™', desc: 'How you perform in real situations. Body, focus, language — execution under pressure.' },
+              { label: 'ICA III — Action', model: 'K3™', desc: 'How you perform in real situations. Physicality, focus, language — execution under pressure.' },
             ].map(({ label, model, desc }) => (
               <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>
                 <div className="flex items-baseline gap-3">

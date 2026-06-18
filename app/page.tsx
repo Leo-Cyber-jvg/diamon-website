@@ -22,7 +22,7 @@ const pillars = [
     name: 'Action',
     model: 'K3™',
     description:
-      'Body, Focus, Language. How communication is executed under pressure, in real situations, with real stakes.',
+      'Physicality, Focus, Language. How communication is executed under pressure, in real situations, with real stakes.',
   },
 ]
 

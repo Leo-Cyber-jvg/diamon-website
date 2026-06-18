@@ -47,11 +47,11 @@ const levels = [
     actDesc: 'Move towards action, decision and impact',
     outcome: 'Impact',
     elements: [
-      'Physical presence and embodiment',
+      'Physicality and embodied presence',
       'Attentional focus under pressure',
       'Language precision and rhythm',
     ],
-    body: 'Physical presence, focus, language, interaction and performance under pressure. Where architecture meets reality.',
+    body: 'Physicality, focus, language, interaction and performance under pressure. Where architecture meets reality.',
   },
 ]
 

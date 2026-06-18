@@ -133,7 +133,7 @@ export default function IcaViitekehysPage() {
             <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Toiminta</h2>
             <p className="text-base italic mb-6" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)' }}>Miten viestin tehokkaasti oikeissa tilanteissa?</p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA III rakentuu K3™ (Keho, Fokus, Kieli) -mallin varaan. Se tutkii viestinnän toteutusta — sitä, miten kehoa käytetään, miten fokus säilytetään paineessa ja miten kieltä käytetään täsmällisesti ja rytmisesti.
+              ICA III rakentuu K3™ (Fyysisyys, Fokus, Kieli) -mallin varaan. Se tutkii viestinnän toteutusta — sitä, miten fyysisyyttä käytetään, miten fokus säilytetään paineessa ja miten kieltä käytetään täsmällisesti ja rytmisesti.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Fyysinen läsnäolo, fokus, kieli, vuorovaikutus ja suoritus paineessa. Missä arkkitehtuuri kohtaa todellisuuden.

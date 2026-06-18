@@ -226,7 +226,7 @@ export default function ExecutiveProgrammesPage() {
             {[
               { label: 'ICA I — Identity', model: 'DCI™', desc: 'Communication identity, credibility, authenticity and professional presence.' },
               { label: 'ICA II — Composition', model: 'SNS™', desc: 'State, narrative, structure — how impactful communication is intentionally designed.' },
-              { label: 'ICA III — Action', model: 'K3™', desc: 'Body, focus, language — communication performance in real situations under pressure.' },
+              { label: 'ICA III — Action', model: 'K3™', desc: 'Physicality, focus, language — communication performance in real situations under pressure.' },
             ].map(({ label, model, desc }) => (
               <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>
                 <div className="flex items-baseline gap-3">
