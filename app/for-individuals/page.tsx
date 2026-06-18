@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ProfileMap from '../components/ProfileMap'
 
 export const metadata: Metadata = {
   title: 'For Individuals — DIAMON Finland',
@@ -155,6 +156,27 @@ export default function ForIndividualsPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* Leadership Communication Profile Map */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          A coaching profile
+        </p>
+        <div className="grid md:grid-cols-2 gap-12 items-end mb-16">
+          <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+            What individual DIAMON coaching
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}> looks like in practice.</span>
+          </h2>
+          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+            Every individual engagement produces a structured Leadership Communication Profile — a living document that maps your development across the full ICA Framework. Select any component to explore what each part of the profile addresses.
+          </p>
+        </div>
+        <ProfileMap />
       </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
