@@ -151,12 +151,6 @@ export default function DiamondFramework() {
             preserveAspectRatio="xMidYMid slice"
           />
 
-          {/* Edge vignette — blends portrait edges into background */}
-          <circle cx={CX} cy={CY} r={R_PHOTO}
-            fill="url(#dfPhotoVignette)"
-            style={{ pointerEvents: 'none' }}
-          />
-
           {/* Text background overlay at bottom of portrait */}
           <circle cx={CX} cy={CY} r={R_PHOTO}
             fill="url(#dfTextBg)"
