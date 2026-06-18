@@ -4,13 +4,13 @@ import { useState } from 'react'
 
 const CX = 380
 const CY = 380
-const R_IN = 180
-const R_OUT = 232
-const R_LBL = 274  // label anchor radius (just outside ring)
+const R_PHOTO = 168    // portrait circle
+const R_IN = 192       // ring inner edge
+const R_OUT = 218      // ring outer edge (width = 26px — thin, elegant)
+const R_LBL = 270      // label anchor just outside ring
 const GAP = 4
 const SPAN = (360 - 3 * GAP) / 3  // ≈ 116.67°
 
-// Segment start angles — top (270°), lower-right (30°), lower-left (150°)
 const A0 = 270 - SPAN / 2
 const SEG = [A0, A0 + SPAN + GAP, A0 + SPAN * 2 + GAP * 2]
 
@@ -31,7 +31,7 @@ function arcPath(r1: number, r2: number, a1: number, a2: number) {
   ].join(' ')
 }
 
-// Tangential rotation ensuring text is always readable (never upside-down)
+// Tangential rotation — text always readable, never upside-down
 function labelRot(deg: number) {
   const n = ((deg % 360) + 360) % 360
   let r = (n + 90) % 360
@@ -92,29 +92,105 @@ export default function DiamondFramework() {
   return (
     <div>
       {/* ── Circular diagram ── */}
-      <div style={{ maxWidth: '580px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '560px', margin: '0 auto' }}>
         <svg
           viewBox="0 0 760 760"
           style={{ width: '100%', display: 'block' }}
           aria-label="DIAMON Leadership Development Framework"
         >
           <defs>
-            <radialGradient id="dfBg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#5656D6" stopOpacity="0.05" />
-              <stop offset="100%" stopColor="#5656D6" stopOpacity="0" />
+            {/* Portrait clip mask */}
+            <clipPath id="dfPhotoMask">
+              <circle cx={CX} cy={CY} r={R_PHOTO} />
+            </clipPath>
+
+            {/* Ring gradient — unified across all three segments
+                Slightly stronger blue at top and bottom, softer in mid-zones
+                Creates the same directional depth language as the Architecture of Influence */}
+            <linearGradient
+              id="dfRingGrad"
+              gradientUnits="userSpaceOnUse"
+              x1={CX} y1={CY - R_OUT}
+              x2={CX} y2={CY + R_OUT}
+            >
+              <stop offset="0%"   stopColor="#5656D6" stopOpacity="0.38" />
+              <stop offset="40%"  stopColor="#5656D6" stopOpacity="0.10" />
+              <stop offset="100%" stopColor="#5656D6" stopOpacity="0.28" />
+            </linearGradient>
+
+            {/* Photo edge vignette — fades portrait into the ring seamlessly */}
+            <radialGradient id="dfPhotoVignette" cx="50%" cy="50%" r="50%">
+              <stop offset="60%" stopColor="#F4F3F1" stopOpacity="0" />
+              <stop offset="100%" stopColor="#F4F3F1" stopOpacity="0.88" />
             </radialGradient>
+
+            {/* Bottom text shadow on portrait */}
+            <radialGradient id="dfTextBg" cx="50%" cy="88%" r="55%">
+              <stop offset="0%"   stopColor="#0F172A" stopOpacity="0.55" />
+              <stop offset="100%" stopColor="#0F172A" stopOpacity="0" />
+            </radialGradient>
+
+            {/* Outer ring soft glow */}
+            <filter id="dfRingGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
           </defs>
 
-          {/* Subtle atmosphere behind ring */}
-          <circle cx={CX} cy={CY} r={R_OUT + 100} fill="url(#dfBg)" />
+          {/* ── Portrait — centered, clipped to circle ── */}
+          <image
+            href="/framework-portrait.png"
+            x={CX - R_PHOTO}
+            y={CY - R_PHOTO}
+            width={R_PHOTO * 2}
+            height={R_PHOTO * 2}
+            clipPath="url(#dfPhotoMask)"
+            preserveAspectRatio="xMidYMid slice"
+          />
 
-          {/* Outer guide circle */}
-          <circle cx={CX} cy={CY} r={R_OUT + 14}
-            fill="none" stroke="var(--color-border)" strokeWidth={0.5} />
+          {/* Edge vignette — blends portrait edges into background */}
+          <circle cx={CX} cy={CY} r={R_PHOTO}
+            fill="url(#dfPhotoVignette)"
+            style={{ pointerEvents: 'none' }}
+          />
 
-          {/* Inner guide circle */}
-          <circle cx={CX} cy={CY} r={R_IN - 14}
-            fill="none" stroke="var(--color-border)" strokeWidth={0.5} />
+          {/* Text background overlay at bottom of portrait */}
+          <circle cx={CX} cy={CY} r={R_PHOTO}
+            fill="url(#dfTextBg)"
+            style={{ pointerEvents: 'none' }}
+          />
+
+          {/* "What's your story?" — overlaid on portrait */}
+          <text
+            x={CX} y={CY + R_PHOTO - 24}
+            textAnchor="middle"
+            fontFamily="var(--font-heading)"
+            fontStyle="italic"
+            fontWeight={300}
+            fontSize={15}
+            fill="white"
+            opacity={0.88}
+            style={{ pointerEvents: 'none' }}
+          >
+            What&apos;s your story?
+          </text>
+
+          {/* ── Ring — three thin arc segments ── */}
+
+          {/* Glow layer (behind segments) */}
+          <circle
+            cx={CX} cy={CY}
+            r={(R_IN + R_OUT) / 2}
+            fill="none"
+            stroke="#5656D6"
+            strokeWidth={R_OUT - R_IN + 2}
+            strokeOpacity={0.06}
+            filter="url(#dfRingGlow)"
+            style={{ pointerEvents: 'none' }}
+          />
 
           {/* Three arc segments */}
           {MODELS.map((m, i) => {
@@ -130,36 +206,65 @@ export default function DiamondFramework() {
                 aria-pressed={active}
                 style={{ cursor: 'pointer', outline: 'none' }}
               >
+                {/* Invisible wider hit area */}
+                <path
+                  d={arcPath(R_IN - 20, R_OUT + 50, m.a1, m.a2)}
+                  fill="transparent"
+                />
+                {/* Visible segment */}
                 <path
                   d={arcPath(R_IN, R_OUT, m.a1, m.a2)}
-                  fill={active ? '#5656D6' : 'rgba(86,86,214,0.08)'}
-                  stroke={active ? '#5656D6' : 'rgba(86,86,214,0.18)'}
-                  strokeWidth={active ? 1 : 0.5}
-                  style={{ transition: 'fill 0.3s ease, stroke 0.3s ease' }}
-                />
-                {/* Hover-area extension (invisible) for easier clicking */}
-                <path
-                  d={arcPath(R_OUT, R_OUT + 55, m.a1, m.a2)}
-                  fill="transparent"
+                  fill={active ? '#5656D6' : 'url(#dfRingGrad)'}
+                  stroke={active ? '#5656D6' : 'rgba(86,86,214,0.25)'}
+                  strokeWidth={active ? 0.5 : 0.5}
+                  style={{ transition: 'fill 0.3s ease' }}
                 />
               </g>
             )
           })}
 
-          {/* Gap markers — small circles at segment boundaries */}
+          {/* Thin outer definition ring */}
+          <circle
+            cx={CX} cy={CY} r={R_OUT + 0.5}
+            fill="none"
+            stroke="rgba(86,86,214,0.35)"
+            strokeWidth={0.7}
+            style={{ pointerEvents: 'none' }}
+          />
+
+          {/* Thin inner definition ring */}
+          <circle
+            cx={CX} cy={CY} r={R_IN - 0.5}
+            fill="none"
+            stroke="rgba(86,86,214,0.2)"
+            strokeWidth={0.5}
+            style={{ pointerEvents: 'none' }}
+          />
+
+          {/* Outer guide circle */}
+          <circle
+            cx={CX} cy={CY} r={R_OUT + 14}
+            fill="none"
+            stroke="rgba(86,86,214,0.12)"
+            strokeWidth={0.5}
+            strokeDasharray="3 7"
+            style={{ pointerEvents: 'none' }}
+          />
+
+          {/* Gap markers */}
           {SEG.map((a1, i) => {
             const a2 = a1 + SPAN
             return (
               <g key={`gm-${i}`} style={{ pointerEvents: 'none' }}>
                 {[a1, a2].map((a, j) => {
-                  const oP = pt(R_OUT, a)
-                  const iP = pt(R_IN, a)
+                  const oP = pt(R_OUT + 1, a)
+                  const iP = pt(R_IN - 1, a)
                   return (
                     <g key={j}>
                       <circle cx={oP.x} cy={oP.y} r={2.5}
-                        fill="var(--color-background)" stroke="var(--color-border)" strokeWidth={0.8} />
-                      <circle cx={iP.x} cy={iP.y} r={2}
-                        fill="var(--color-background)" stroke="var(--color-border)" strokeWidth={0.8} />
+                        fill="#F4F3F1" stroke="rgba(86,86,214,0.3)" strokeWidth={0.7} />
+                      <circle cx={iP.x} cy={iP.y} r={1.8}
+                        fill="#F4F3F1" stroke="rgba(86,86,214,0.2)" strokeWidth={0.5} />
                     </g>
                   )
                 })}
@@ -167,38 +272,40 @@ export default function DiamondFramework() {
             )
           })}
 
-          {/* Ring labels */}
+          {/* ── Ring labels ── */}
           {MODELS.map((m, i) => {
             const active = sel === i
             return m.ringItems.map((item, j) => {
               const offset = item.main ? 6 : 22
               const lPt = pt(R_LBL + offset, item.angle)
-              const dotPt = pt(R_OUT + 7, item.angle)
+              const dotPt = pt(R_OUT + 8, item.angle)
               const rot = labelRot(item.angle)
 
               return (
                 <g key={`li-${i}-${j}`} style={{ pointerEvents: 'none' }}>
-                  {/* Marker dot on ring edge */}
+                  {/* Dot on outer ring edge */}
                   <circle
                     cx={dotPt.x} cy={dotPt.y}
-                    r={item.main ? 3.5 : 2}
-                    fill={active ? '#5656D6' : item.main ? 'var(--color-text)' : 'var(--color-border)'}
+                    r={item.main ? 3 : 2}
+                    fill={active ? '#5656D6' : item.main ? 'rgba(86,86,214,0.6)' : 'rgba(86,86,214,0.25)'}
                     style={{ transition: 'fill 0.3s' }}
                   />
-                  {/* Radial tick line from ring to dot */}
+
+                  {/* Tick line for model labels */}
                   {item.main && (() => {
-                    const p1 = pt(R_OUT + 4, item.angle)
-                    const p2 = pt(R_OUT + 16, item.angle)
+                    const p1 = pt(R_OUT + 5, item.angle)
+                    const p2 = pt(R_OUT + 18, item.angle)
                     return (
                       <line
                         x1={p1.x} y1={p1.y} x2={p2.x} y2={p2.y}
-                        stroke={active ? '#5656D6' : 'var(--color-border)'}
+                        stroke={active ? '#5656D6' : 'rgba(86,86,214,0.3)'}
                         strokeWidth={0.8}
                         style={{ transition: 'stroke 0.3s' }}
                       />
                     )
                   })()}
-                  {/* Label (rotated tangentially) */}
+
+                  {/* Label */}
                   <g transform={`translate(${lPt.x.toFixed(1)},${lPt.y.toFixed(1)}) rotate(${rot})`}>
                     <text
                       y={item.main ? -5.5 : 0}
@@ -208,9 +315,11 @@ export default function DiamondFramework() {
                       fontSize={item.main ? 9 : 8}
                       fontWeight={item.main ? 500 : 400}
                       letterSpacing={item.main ? '0.2em' : '0.1em'}
-                      fill={active
-                        ? item.main ? '#5656D6' : 'rgba(86,86,214,0.6)'
-                        : item.main ? 'var(--color-text)' : 'var(--color-subtle)'}
+                      fill={
+                        active
+                          ? item.main ? '#5656D6' : 'rgba(86,86,214,0.55)'
+                          : item.main ? 'var(--color-text)' : 'var(--color-subtle)'
+                      }
                       style={{ transition: 'fill 0.3s' }}
                     >
                       {item.text}
@@ -224,7 +333,7 @@ export default function DiamondFramework() {
                         fontSize={8}
                         fontWeight={400}
                         letterSpacing="0.2em"
-                        fill={active ? 'rgba(86,86,214,0.5)' : 'var(--color-subtle)'}
+                        fill={active ? 'rgba(86,86,214,0.45)' : 'var(--color-subtle)'}
                         style={{ transition: 'fill 0.3s' }}
                       >
                         {item.sub}
@@ -235,76 +344,13 @@ export default function DiamondFramework() {
               )
             })
           })}
-
-          {/* ── Inner circle — human figure area ── */}
-
-          {/* Dotted accent circle (Hintsa-style inner ring) */}
-          <circle cx={CX} cy={CY} r={70}
-            fill="none"
-            stroke="rgba(86,86,214,0.2)"
-            strokeWidth={1}
-            strokeDasharray="2 6"
-          />
-
-          {/* Human silhouette — standing figure, 140px tall */}
-          {/* Positioned so figure reads as "at the center" of the framework */}
-          <g opacity={0.58} style={{ pointerEvents: 'none' }}>
-            {/* Head */}
-            <circle cx={CX} cy={330} r={15} fill="var(--color-text)" />
-            {/* Body (tapered trapezoid) */}
-            <path
-              d={`M ${CX - 21} 350
-                  C ${CX - 21} 347 ${CX + 21} 347 ${CX + 21} 350
-                  L ${CX + 15} 396
-                  L ${CX - 15} 396 Z`}
-              fill="var(--color-text)"
-            />
-            {/* Left arm */}
-            <line
-              x1={CX - 20} y1={358}
-              x2={CX - 32} y2={384}
-              stroke="var(--color-text)" strokeWidth={8} strokeLinecap="round"
-            />
-            {/* Right arm */}
-            <line
-              x1={CX + 20} y1={358}
-              x2={CX + 32} y2={384}
-              stroke="var(--color-text)" strokeWidth={8} strokeLinecap="round"
-            />
-            {/* Left leg */}
-            <line
-              x1={CX - 9} y1={396}
-              x2={CX - 12} y2={450}
-              stroke="var(--color-text)" strokeWidth={11} strokeLinecap="round"
-            />
-            {/* Right leg */}
-            <line
-              x1={CX + 9} y1={396}
-              x2={CX + 12} y2={450}
-              stroke="var(--color-text)" strokeWidth={11} strokeLinecap="round"
-            />
-          </g>
-
-          {/* "What's your story?" — below the figure */}
-          <text
-            x={CX} y={472}
-            textAnchor="middle"
-            fontFamily="var(--font-heading)"
-            fontStyle="italic"
-            fontWeight={300}
-            fontSize={14}
-            fill="var(--color-muted)"
-            style={{ pointerEvents: 'none' }}
-          >
-            What&apos;s your story?
-          </text>
         </svg>
       </div>
 
       {/* ── Three model panels ── */}
       <div
         className="grid md:grid-cols-3 gap-px"
-        style={{ backgroundColor: 'var(--color-border)', marginTop: '2.5rem' }}
+        style={{ backgroundColor: 'var(--color-border)', marginTop: '2rem' }}
       >
         {MODELS.map((m, i) => {
           const active = sel === i
@@ -324,7 +370,6 @@ export default function DiamondFramework() {
                 transition: 'background-color 0.25s ease',
               }}
             >
-              {/* Number */}
               <span
                 style={{
                   display: 'block',
@@ -332,15 +377,13 @@ export default function DiamondFramework() {
                   fontStyle: 'italic',
                   fontSize: '1rem',
                   fontWeight: 300,
-                  color: active ? 'rgba(255,255,255,0.4)' : 'var(--color-blue)',
+                  color: active ? 'rgba(255,255,255,0.38)' : 'var(--color-blue)',
                   marginBottom: '0.6rem',
                   transition: 'color 0.25s',
                 }}
               >
                 {m.num}
               </span>
-
-              {/* Model name */}
               <h3
                 style={{
                   fontFamily: 'var(--font-heading)',
@@ -354,22 +397,18 @@ export default function DiamondFramework() {
               >
                 {m.label}
               </h3>
-
-              {/* Question */}
               <p
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontStyle: 'italic',
                   fontSize: '0.85rem',
-                  color: active ? 'rgba(255,255,255,0.42)' : 'var(--color-subtle)',
+                  color: active ? 'rgba(255,255,255,0.4)' : 'var(--color-subtle)',
                   margin: active ? '0 0 1rem' : 0,
                   transition: 'color 0.25s',
                 }}
               >
                 {m.question}
               </p>
-
-              {/* Expanded content */}
               {active && (
                 <>
                   <p
@@ -408,7 +447,6 @@ export default function DiamondFramework() {
         })}
       </div>
 
-      {/* Flow caption */}
       <p
         style={{
           fontFamily: 'var(--font-body)',
