@@ -207,7 +207,7 @@ export default function AboutPage() {
                 width: '100%',
                 aspectRatio: '3/4',
                 objectFit: 'cover',
-                objectPosition: 'center top',
+                objectPosition: 'center 75%',
                 display: 'block',
               }}
             />

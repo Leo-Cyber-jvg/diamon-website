@@ -51,9 +51,9 @@ export default function Home() {
               maxWidth: '820px',
             }}
           >
-            Communication architecture
-            <span style={{ fontStyle: 'italic', opacity: 0.85 }}> for leaders</span>
-            {' '}in an era that demands human clarity.
+            Communication Architecture
+            <span style={{ fontStyle: 'italic', opacity: 0.85 }}> for Leaders</span>
+            {' '}in an Era that Demands Human Clarity
           </h1>
 
           <p

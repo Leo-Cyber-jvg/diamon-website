@@ -217,7 +217,7 @@ export default function ContactPage() {
             <img
               src="/leo-sjoman.jpg"
               alt="Leo Sjöman"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 75%' }}
             />
           </div>
 

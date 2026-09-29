@@ -128,7 +128,7 @@ export default function OtaYhteyttaPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
           <div style={{ width: '96px', height: '96px', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, border: '1px solid var(--color-border)' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
+            <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 75%' }} />
           </div>
           <div className="flex flex-col gap-1">
             <span className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.4rem' }}>Leo Sjöman</span>

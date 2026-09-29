@@ -30,7 +30,7 @@ export default function TietoaPage() {
           <div>
             <div style={{ width: '100%', maxWidth: '420px', aspectRatio: '3/4', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+              <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 75%', display: 'block' }} />
             </div>
             <div className="mt-6">
               <p className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Leo Sjöman</p>
