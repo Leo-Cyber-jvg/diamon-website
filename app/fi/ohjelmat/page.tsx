@@ -69,17 +69,33 @@ export default function OhjelmatPage() {
         </div>
       </section>
 
-      {/* Programme strip */}
-      <section style={{ backgroundColor: '#ECEAE6', borderBottom: '1px solid var(--color-border)' }}>
-        <div className="px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-px" style={{ maxWidth: '1200px', margin: '0 auto', backgroundColor: 'var(--color-border)' }}>
-          {programmes.map((p) => (
-            <div key={p.id} className="px-6 py-4" style={{ backgroundColor: '#ECEAE6' }}>
-              <p className="text-xs tracking-widest mb-1" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{p.code}</p>
-              <p className="text-xs font-light" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.4 }}>{p.duration}</p>
+      {/* Quick comparison */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Mikä ohjelma sopii sinulle?</p>
+        <h2 className="text-2xl md:text-3xl font-light mb-10" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Valitse tilanteesi mukaan.</h2>
+        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {[
+            { situation: 'Valmistaudun vaativaan viestintätilanteeseen — nopeasti', programme: 'DCPL™ — Communication Performance Lab', duration: '1–3 päivää', cta: 'Impact, nopea' },
+            { situation: 'Haluan systemaattisen muutoksen omaan viestintäkykyyni', programme: 'DECP™ — Executive Communication Programme', duration: '12 kuukautta', cta: 'Yksilö, syvä' },
+            { situation: 'Johtoryhmämme viestintä kaipaa yhteistä arkkitehtuuria', programme: 'DLCP™ — Leadership Communication Programme', duration: '6–12 kuukautta', cta: 'Tiimi' },
+            { situation: 'Haluamme rakentaa viestintäkyvyn koko organisaatioon', programme: 'DICA™ — ICA Academy', duration: 'Jatkuva', cta: 'Organisaatio' },
+          ].map((row) => (
+            <div key={row.situation} className="grid md:grid-cols-3 gap-0" style={{ backgroundColor: 'var(--color-background)' }}>
+              <div className="p-6 md:border-r" style={{ borderColor: 'var(--color-border)' }}>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', fontStyle: 'italic' }}>{row.situation}</p>
+              </div>
+              <div className="p-6 md:border-r" style={{ borderColor: 'var(--color-border)' }}>
+                <p className="text-sm font-medium" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{row.programme}</p>
+              </div>
+              <div className="p-6 flex items-center">
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{row.duration}</span>
+              </div>
             </div>
           ))}
         </div>
       </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
 
       {/* Programmes */}
       {programmes.map((p, idx) => (

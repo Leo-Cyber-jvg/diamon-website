@@ -41,7 +41,7 @@ export default function YksiloillePage() {
             Henkilökohtainen johtamisviestinnän valmennus johtajille, yrittäjille, asiantuntijoille ja suorituskykyammattilaisille, jotka haluavat kuroa umpeen kuilun osaamisen ja sen vaikuttavuuden välillä.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/fi/ota-yhteytta" style={{ display: 'inline-block', backgroundColor: '#fff', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em' }}>Varaa konsultaatio</Link>
+            <Link href="/fi/ota-yhteytta" style={{ display: 'inline-block', backgroundColor: '#fff', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em' }}>Varaa kartoituskeskustelu</Link>
             <Link href="/fi/ica-viitekehys" style={{ display: 'inline-block', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: 'var(--font-body)', fontSize: '0.875rem', padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em' }}>ICA-viitekehys</Link>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function YksiloillePage() {
             <p className="text-sm" style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)' }}>Tunnistamme konkreettisen kehityskohteen ennen kuin ehdotamme mitään.</p>
           </div>
           <Link href="/fi/ota-yhteytta" style={{ display: 'inline-block', backgroundColor: '#fff', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em', flexShrink: 0 }}>
-            Varaa konsultaatio
+            Varaa kartoituskeskustelu
           </Link>
         </div>
       </section>
