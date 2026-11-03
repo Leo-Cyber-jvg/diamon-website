@@ -99,8 +99,7 @@ export default function Home() {
               className="text-3xl md:text-4xl font-light"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
-              Communication capability is built.
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}> Not trained. Not coached. Built.</span>
+              Communication architecture for leaders in an era that demands human clarity.
             </h2>
           </div>
           <div className="flex flex-col gap-5 pt-2 md:pt-10">
