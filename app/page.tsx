@@ -124,6 +124,69 @@ export default function Home() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* ── LEO SJÖMAN ── */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative overflow-hidden" style={{ aspectRatio: '3/4', maxHeight: '580px' }}>
+            <img
+              src="/leo-sjoman.jpg"
+              alt="Leo Sjöman — Founder, Diamon Finland"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
+            />
+          </div>
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              Founder
+            </p>
+            <h2
+              className="font-light mb-2"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
+            >
+              Leo Sjöman
+            </h2>
+            <p
+              className="mb-8 text-sm"
+              style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', letterSpacing: '0.04em' }}
+            >
+              Diamon Finland
+            </p>
+            <p
+              className="text-sm leading-relaxed mb-5"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Leo Sjöman is a communication performance specialist and the founder of Diamon Finland.
+              His background spans two decades of professional performance — theatre, opera, physical
+              theatre — combined with leadership development and executive coaching.
+            </p>
+            <p
+              className="text-sm leading-relaxed mb-5"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              The DIAMON ICA Framework™ was built from that practice: not from consulting methodology
+              or academic theory, but from the lived understanding of what it takes to perform at your
+              best when the stakes are highest.
+            </p>
+            <p
+              className="text-sm leading-relaxed mb-10"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Today he works with executives, senior leaders and organisations across Finland and internationally —
+              helping them build communication capability that is systematic, measurable, and built to last.
+            </p>
+            <Link href="/about" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+              About Leo and Diamon &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* ── ARCHITECTURE OF INFLUENCE ── */}
       <InfluenceCompass />
 
