@@ -1,150 +1,105 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { services } from '../lib/services'
 
 export const metadata: Metadata = {
-  title: 'For Organisations — DIAMON Finland',
-  description:
-    'Leadership communication capability for executive teams, leadership teams and organisations. Build communication as strategic infrastructure — not a training event.',
+  title: 'For Organizations — DIAMON Finland',
+  description: 'Leadership communication development for executive teams and organisations. Annual Leadership Program, Thought Leader Studio, Impact Session.',
 }
-
-const challenges = [
-  { n: '01', title: 'Strategy that does not land', body: 'The strategy is clear at the top. By the time it reaches the organisation, it has lost its precision, urgency and direction. The gap is not in the strategy — it is in the communication architecture.' },
-  { n: '02', title: 'Leadership teams that do not align', body: 'Each leader communicates their own version. The result is fragmentation, confusion and competing narratives. Communication alignment is a leadership capability — not a communication department function.' },
-  { n: '03', title: 'Expertise that does not convert to credibility', body: 'Senior experts and specialists know more than anyone in the room. But their ability to communicate that expertise — to investors, boards, clients, media — often does not match the depth of their knowledge.' },
-  { n: '04', title: 'Change communication that fails', body: 'Most change initiatives fail not because of the change itself, but because of how it is communicated. The structure, timing, framing and leadership communication behind the change determines whether people follow.' },
-  { n: '05', title: 'High-stakes moments without preparation', body: 'Capital markets days, investor presentations, media appearances, board meetings, town halls. These moments define perception. Most organisations prepare the content and neglect the communication performance.' },
-  { n: '06', title: 'Communication capability that does not scale', body: 'A great communicator at the top does not make a communication-capable organisation. Capability needs to be developed systematically, at the leadership layer, as organisational infrastructure.' },
-]
-
-const solutions = [
-  {
-    id: '01',
-    title: 'Leadership Communication Architecture',
-    audience: 'Executive teams, leadership teams',
-    desc: 'A structured engagement that builds shared communication architecture across the leadership team. Aligned narrative, consistent presence, shared interaction capability. Communication as collective leadership infrastructure.',
-    what: ['Organisational communication audit', 'Shared leadership narrative', 'ICA-based team capability development', 'Interaction and alignment workshops', 'Ongoing development and tracking'],
-  },
-  {
-    id: '02',
-    title: 'Executive Communication Development',
-    audience: 'Individual executives within organisations',
-    desc: 'Structured personal communication development for executives within an organisational context. Combines personal ICA development with organisational communication goals and strategic alignment.',
-    what: ['Personal ICA baseline and profile', 'Executive presence and credibility', 'Stakeholder communication architecture', 'High-stakes communication preparation', 'Progress tracking and development reviews'],
-  },
-  {
-    id: '03',
-    title: 'Expert Communication Programme',
-    audience: 'Senior experts, specialists, spokespersons',
-    desc: 'For organisations with experts who must communicate complex knowledge with clarity, authority and impact — to boards, clients, media, investors or internal leadership. Turns expertise into credible, structured communication.',
-    what: ['Expert communication profile', 'Clarity and structure methodology', 'Media and stakeholder preparation', 'Camera and digital communication', 'ICA Action — K3™ presence development'],
-  },
-  {
-    id: '04',
-    title: 'Change Communication Leadership',
-    audience: 'Leadership teams navigating transformation',
-    desc: 'Communication architecture for organisational change. We work with leadership teams to build the communication structure, narrative and capability that enables change to land — rather than stall or fracture.',
-    what: ['Change communication strategy', 'Leadership narrative architecture', 'Internal communication design', 'Leadership communication coaching', 'Communication measurement and adjustment'],
-  },
-  {
-    id: '05',
-    title: 'Communication Performance Lab',
-    audience: 'Leadership teams and key spokespersons',
-    desc: 'High-pressure communication performance training. Designed for organisations preparing for capital markets days, investor days, board-level performance, media events or critical stakeholder presentations.',
-    what: ['Real-situation pressure simulation', 'Message architecture under pressure', 'Spokesperson and leadership preparation', 'Media interaction and Q&A training', 'Post-performance review and development'],
-  },
-  {
-    id: '06',
-    title: 'ICA Capability Programme',
-    audience: 'Organisations building long-term communication capability',
-    desc: 'A scalable, structured programme that builds ICA-based communication capability across the leadership layer of an organisation. Designed for long-term impact rather than one-off development.',
-    what: ['ICA Framework rollout across leadership', 'Structured development programme design', 'Progress measurement and tracking', 'Internal communication culture development', 'Scalable coaching and support system'],
-  },
-]
 
 export default function ForOrganisationsPage() {
   return (
     <>
       {/* Hero */}
       <section
-        className="px-6 pt-40 pb-24 flex flex-col justify-center"
-        style={{ backgroundColor: 'var(--color-blue)', minHeight: '70vh' }}
+        className="flex flex-col justify-end px-6 pb-24 pt-40"
+        style={{ backgroundColor: 'var(--color-blue)', minHeight: '60vh' }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
-          <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}>
-            For Organisations
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-10"
+            style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
+          >
+            Diamon Finland
           </p>
           <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-light mb-8"
-            style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '860px' }}
+            className="font-light mb-8"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              color: '#fff',
+              fontSize: 'clamp(2.4rem, 5.5vw, 5rem)',
+              lineHeight: 1.05,
+              maxWidth: '820px',
+              letterSpacing: '-0.01em',
+            }}
           >
-            Organisations communicate at the level of
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}> their leadership layer.</span>
+            Leadership communication<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>as an organisational capability.</span>
           </h1>
           <p
-            className="text-lg font-light mb-12"
-            style={{ color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '580px' }}
+            className="font-light"
+            style={{
+              color: 'rgba(255,255,255,0.65)',
+              fontFamily: 'var(--font-body)',
+              lineHeight: 1.75,
+              maxWidth: '520px',
+              fontSize: '1rem',
+            }}
           >
-            We build communication capability as organisational infrastructure — systematically, across the leadership layer, built to last.
+            Long-term development programmes for executive teams, senior leaders and organisations.
+            Systematic, measurable and built to last.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/contact" style={{ display: 'inline-block', backgroundColor: '#fff', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em' }}>
-              Start a conversation
-            </Link>
-            <Link href="/framework" style={{ display: 'inline-block', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: 'var(--font-body)', fontSize: '0.875rem', padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em' }}>
-              The ICA Framework
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Challenges */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-          Where communication fails organisations
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {challenges.map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.3 }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* Positioning statement */}
+      {/* Intro */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
               Our approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Communication capability is not a soft skill.
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}> It is infrastructure.</span>
+            <h2
+              className="text-3xl md:text-4xl font-light mb-6"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              Communication performance is a strategic asset.
             </h2>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON builds communication capability as organisational infrastructure — not as isolated training events. Every engagement is grounded in the DIAMON ICA Framework™ and designed for measurable, long-term impact.
+            <p
+              className="text-sm leading-relaxed mb-5"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              The most consequential leadership decisions are executed through communication.
+              Strategy, culture, trust and change all depend on leaders who can communicate
+              with clarity, presence and intention.
             </p>
-            <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              We do not begin work without a precise definition of what needs to change, at what level, and what it will mean for the organisation when it does.
+            <p
+              className="text-sm leading-relaxed"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Diamon builds this capability systematically — not through training events, but through
+              structured development programmes grounded in the DIAMON ICA Framework™.
             </p>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-8 md:pt-12">
             {[
-              { title: 'Systematic, not episodic', body: 'Communication development that builds over time — not a workshop that fades within weeks.' },
-              { title: 'Leadership-layer focus', body: 'The capability that matters most lives at the leadership layer. That is where we work.' },
-              { title: 'Measurable outcomes', body: 'Every engagement is designed around a defined outcome. We track progress against it.' },
-              { title: 'Built on the ICA Framework™', body: 'A proven, proprietary methodology — not a generic communication model adapted from a training catalogue.' },
-            ].map(({ title, body }) => (
-              <div key={title} style={{ borderLeft: '2px solid var(--color-blue)', paddingLeft: '20px' }}>
-                <h3 className="text-base font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              { n: '01', text: 'Develop leadership communication as a core organisational capability.' },
+              { n: '02', text: 'Build executive presence, strategic storytelling and stakeholder influence.' },
+              { n: '03', text: 'Create measurable, lasting change — not isolated training events.' },
+            ].map(({ n, text }) => (
+              <div key={n} className="flex gap-5 items-start">
+                <span
+                  className="text-xs tracking-widest shrink-0 pt-0.5"
+                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '28px' }}
+                >
+                  {n}
+                </span>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                  {text}
+                </p>
               </div>
             ))}
           </div>
@@ -155,32 +110,90 @@ export default function ForOrganisationsPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Solutions */}
+      {/* Services */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-          Organisational solutions
-        </p>
-        <h2 className="text-3xl font-light mb-16" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2, maxWidth: '560px' }}>
-          Structured for the challenge. Designed for the long term.
-        </h2>
+        <div className="mb-14">
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-4"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+          >
+            Programmes
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-light"
+            style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}
+          >
+            Three programmes.<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>One development continuum.</span>
+          </h2>
+        </div>
+
         <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {solutions.map((s) => (
-            <div key={s.id} className="grid md:grid-cols-3 gap-0" style={{ backgroundColor: 'var(--color-background)' }}>
-              <div className="px-8 py-8 md:border-r" style={{ borderColor: 'var(--color-border)' }}>
-                <span className="text-xs tracking-widest block mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{s.id}</span>
-                <h3 className="text-xl font-light mb-2" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>{s.title}</h3>
-                <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{s.audience}</span>
+          {services.map((s, i) => (
+            <div
+              key={s.id}
+              className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
+              style={{ backgroundColor: i % 2 === 1 ? 'var(--color-surface)' : 'var(--color-background)' }}
+            >
+              {/* Left: name + value */}
+              <div className="md:col-span-1">
+                <p
+                  className="text-xs tracking-[0.25em] uppercase mb-4"
+                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+                >
+                  {s.duration}
+                </p>
+                <h3
+                  className="text-2xl md:text-3xl font-light mb-4"
+                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
+                >
+                  {s.name}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed mb-6"
+                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+                >
+                  {s.valueOrg}
+                </p>
+                <Link href={s.href} className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+                  Programme details &rarr;
+                </Link>
               </div>
-              <div className="px-8 py-8 md:border-r" style={{ borderColor: 'var(--color-border)' }}>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{s.desc}</p>
+
+              {/* Middle: for / structure */}
+              <div className="md:col-span-1 flex flex-col gap-6">
+                <div>
+                  <p
+                    className="text-xs tracking-[0.2em] uppercase mb-3"
+                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+                  >
+                    Designed for
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                    {s.forOrg}
+                  </p>
+                </div>
               </div>
-              <div className="px-8 py-8">
-                <p className="text-xs tracking-widest uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>What this covers</p>
+
+              {/* Right: structure list */}
+              <div className="md:col-span-1">
+                <p
+                  className="text-xs tracking-[0.2em] uppercase mb-4"
+                  style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+                >
+                  Programme includes
+                </p>
                 <div className="flex flex-col gap-2">
-                  {s.what.map((item) => (
+                  {s.structure.map(item => (
                     <div key={item} className="flex items-start gap-3">
-                      <span style={{ color: 'var(--color-blue)', fontSize: '0.75rem', marginTop: '1px', flexShrink: 0 }}>—</span>
-                      <span className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
+                      <span
+                        className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
+                        style={{ backgroundColor: 'var(--color-blue)' }}
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                        {item}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -194,19 +207,80 @@ export default function ForOrganisationsPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* ICA reference */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-5"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              Methodology
+            </p>
+            <h2
+              className="text-3xl font-light mb-5"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              All programmes are built on the DIAMON ICA Framework™
+            </h2>
+            <p
+              className="text-sm leading-relaxed mb-6"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Identity. Composition. Action. A structured development methodology grounded in performance
+              psychology and two decades of professional performance practice.
+            </p>
+            <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+              Explore the ICA Framework &rarr;
+            </Link>
+          </div>
+          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { l: 'I — Identity', d: 'Leadership identity, self-awareness and personal presence.' },
+              { l: 'C — Composition', d: 'Message structure, purpose, focus and strategic clarity.' },
+              { l: 'A — Action', d: 'Execution, physicality, presence and performance under pressure.' },
+            ].map(({ l, d }) => (
+              <div key={l} className="flex items-start gap-6 px-8 py-5" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span
+                  className="text-sm font-light shrink-0"
+                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', minWidth: '110px' }}
+                >
+                  {l}
+                </span>
+                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{d}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div>
-            <h2 className="text-2xl md:text-3xl font-light mb-3" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.3, maxWidth: '500px' }}>
-              Every engagement starts with the right question.
+        <div
+          className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10"
+          style={{ maxWidth: '1200px', margin: '0 auto' }}
+        >
+          <div style={{ maxWidth: '560px' }}>
+            <h2
+              className="text-3xl md:text-4xl font-light mb-4"
+              style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
+            >
+              Start the conversation about your organisation.
             </h2>
-            <p className="text-sm" style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)' }}>
-              What needs to change — and what will it mean when it does?
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
+              Every engagement begins with a diagnostic conversation — not a sales process.
             </p>
           </div>
-          <Link href="/contact" style={{ display: 'inline-block', backgroundColor: '#fff', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em', flexShrink: 0 }}>
-            Start a conversation
+          <Link
+            href="/contact"
+            className="btn-primary shrink-0"
+            style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}
+          >
+            Book a conversation
           </Link>
         </div>
       </section>
