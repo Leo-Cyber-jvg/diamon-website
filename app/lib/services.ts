@@ -50,7 +50,7 @@ export const services: Service[] = [
       'Johtamisviestinnän profiili ja käytännön toimintamalli',
     ],
     href: '/annual-leadership-program',
-    hrefFi: '/fi/ohjelmat',
+    hrefFi: '/fi/vuosittainen-johtajuusohjelma',
   },
   {
     id: 'studio',
@@ -82,7 +82,7 @@ export const services: Service[] = [
       'Oma henkilökohtainen coach ja jatkuva tuki',
     ],
     href: '/thought-leader-studio',
-    hrefFi: '/fi/ohjelmat',
+    hrefFi: '/fi/thought-leader-studio',
   },
   {
     id: 'impact',
@@ -114,6 +114,6 @@ export const services: Service[] = [
       'Rakennettu DIAMON ICA Framework™ -mallin pohjalle',
     ],
     href: '/impact-session',
-    hrefFi: '/fi/ohjelmat',
+    hrefFi: '/fi/vaikuttavuussessio',
   },
 ]
