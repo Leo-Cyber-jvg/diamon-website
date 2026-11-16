@@ -6,20 +6,14 @@ import { useState } from 'react'
 import { getAlternateRoute, isFinRoute } from '../lib/langRoutes'
 
 const enLinks = [
-  { href: '/for-individuals', label: 'For Individuals' },
-  { href: '/for-organisations', label: 'For Organisations' },
-  { href: '/executive-programmes', label: 'Programmes' },
-  { href: '/framework', label: 'ICA Framework' },
-  { href: '/insights', label: 'Insights' },
+  { href: '/for-organisations', label: 'For Organizations' },
+  { href: '/for-individuals', label: 'For Executives' },
   { href: '/about', label: 'About' },
 ]
 
 const fiLinks = [
-  { href: '/fi/yksiloille', label: 'Yksilöille' },
   { href: '/fi/organisaatioille', label: 'Organisaatioille' },
-  { href: '/fi/ohjelmat', label: 'Ohjelmat' },
-  { href: '/fi/ica-viitekehys', label: 'ICA-viitekehys' },
-  { href: '/fi/nakemyksia', label: 'Näkemyksiä' },
+  { href: '/fi/yksiloille', label: 'Johtajille' },
   { href: '/fi/tietoa', label: 'Tietoa' },
 ]
 
@@ -66,18 +60,18 @@ export default function Nav() {
         style={{ maxWidth: '1200px' }}
       >
         {/* Logo */}
-        <Link href={isFi ? '/fi' : '/'} aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center' }}>
+        <Link href={isFi ? '/fi' : '/'} aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/diamon-logo.png" alt="Diamon Finland" style={{ height: '36px', width: 'auto', display: 'block' }} />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+        <nav className="hidden xl:flex items-center gap-5" aria-label="Main navigation">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-sm tracking-wide transition-colors duration-200 cursor-pointer"
+              className="text-sm tracking-wide transition-colors duration-200 cursor-pointer whitespace-nowrap"
               style={{
                 fontFamily: 'var(--font-body)',
                 color: pathname.startsWith(href) ? 'var(--color-blue)' : 'var(--color-muted)',
@@ -90,11 +84,11 @@ export default function Nav() {
         </nav>
 
         {/* Desktop right: lang switcher + CTA */}
-        <div className="hidden lg:flex items-center gap-5">
+        <div className="hidden xl:flex items-center gap-5">
           <LangSwitcher />
           <Link
             href={contactHref}
-            className="text-sm"
+            className="text-sm whitespace-nowrap"
             style={{
               fontFamily: 'var(--font-body)',
               backgroundColor: 'var(--color-blue)',
@@ -111,7 +105,7 @@ export default function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden flex flex-col gap-1.5 cursor-pointer p-2"
+          className="xl:hidden flex flex-col gap-1.5 cursor-pointer p-2"
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
@@ -125,7 +119,7 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <nav
-          className="lg:hidden px-6 pb-6 flex flex-col gap-4"
+          className="xl:hidden px-6 pb-6 flex flex-col gap-4"
           style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1rem' }}
           aria-label="Mobile navigation"
         >
