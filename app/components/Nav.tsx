@@ -7,7 +7,7 @@ import { getAlternateRoute, isFinRoute } from '../lib/langRoutes'
 
 const enLinks = [
   { href: '/for-organisations', label: 'For Organizations' },
-  { href: '/for-individuals', label: 'For Executives' },
+  { href: '/for-individuals', label: 'For Individuals' },
   { href: '/about', label: 'About' },
 ]
 
