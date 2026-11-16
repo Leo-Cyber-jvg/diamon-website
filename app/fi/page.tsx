@@ -70,18 +70,25 @@ export default function FiHome() {
             Diamon Finland
           </p>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl mb-8 font-light"
-            style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '860px' }}
+            className="font-light mb-10"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              color: '#fff',
+              fontSize: 'clamp(2.8rem, 7vw, 6.5rem)',
+              lineHeight: 1.0,
+              maxWidth: '900px',
+              letterSpacing: '-0.01em',
+            }}
           >
-            Johtamisviestintä,
-            <span style={{ fontStyle: 'italic', opacity: 0.85 }}> joka toimii</span>
-            {' '}silloin kun sillä on merkitystä.
+            Johtamisviestinnän<br />
+            uudelleenrakentaminen,<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtajuustaitojen uudelleenohjelmointi.</span>
           </h1>
           <p
-            className="text-lg md:text-xl mb-12 font-light"
-            style={{ color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-body)', lineHeight: 1.7, maxWidth: '560px' }}
+            className="mb-12 font-light"
+            style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', lineHeight: 1.75, maxWidth: '500px', fontSize: '1rem' }}
           >
-            Kehitämme johtajien, johtoryhmien ja organisaatioiden viestinnällistä suorituskykyä — järjestelmällisesti ja pitkäjänteisesti.
+            Rakennamme viestinnällistä suorituskykyä johtajille, johtoryhmille ja organisaatioille — järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}>
