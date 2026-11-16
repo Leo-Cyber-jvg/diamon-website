@@ -157,24 +157,27 @@ export default function Home() {
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Leo Sjöman is a communication performance specialist and the founder of Diamon Finland.
-              His background spans two decades of professional performance — theatre, opera, physical
-              theatre — combined with leadership development and executive coaching.
+              Leo Sjöman is an actor, entrepreneur, and leadership communication coach who works with
+              leaders, experts, and teams on developing more effective communication, public speaking,
+              and interpersonal skills.
             </p>
             <p
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              The DIAMON ICA Framework™ was built from that practice: not from consulting methodology
-              or academic theory, but from the lived understanding of what it takes to perform at your
-              best when the stakes are highest.
+              In his work, he combines strategic communication, business acumen, and over 20 years of
+              experience performing in theatre, television, and film. He is known for creating a trusting,
+              direct, and goal-oriented working atmosphere — where the lessons learned are applied
+              concretely to everyday leadership and interpersonal situations.
             </p>
             <p
-              className="text-sm leading-relaxed mb-10"
+              className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Today he works with executives, senior leaders and organisations across Finland and internationally —
-              helping them build communication capability that is systematic, measurable, and built to last.
+              Leo has coached leaders ranging from medium-sized family businesses to international
+              organisations and the executive leadership of large corporations. He holds a Master of Arts
+              in Theatre Arts (University of the Arts Helsinki) and is the founder of the production
+              company Hoka Films.
             </p>
             <Link href="/about" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               About Leo and Diamon &rarr;
@@ -362,6 +365,80 @@ export default function Home() {
       {/* ── PATHWAY / TRUST ── */}
       <BlueprintHomepageSection />
 
+      {/* ── SOCIAL PROOF ── */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-14">
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-4"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+          >
+            Results
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-light"
+            style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '600px' }}
+          >
+            What participants report<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>after the work.</span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-px mb-16" style={{ backgroundColor: 'var(--color-border)' }}>
+          {[
+            { stat: '100%', label: 'reported an improvement in their leadership communication.' },
+            { stat: '100%', label: 'gained a deeper understanding of their own behaviour in communication and performance situations.' },
+            { stat: '100%', label: 'reported stronger capacity to perform under pressure in demanding communication situations.' },
+          ].map((s) => (
+            <div
+              key={s.label}
+              className="p-8 flex flex-col gap-4"
+              style={{ backgroundColor: 'var(--color-background)' }}
+            >
+              <p
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  color: 'var(--color-blue)',
+                  fontSize: 'clamp(3rem, 6vw, 5rem)',
+                  fontWeight: 300,
+                  lineHeight: 1,
+                  letterSpacing: '-0.02em',
+                }}
+              >
+                {s.stat}
+              </p>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div
+          className="p-10 md:p-14"
+          style={{ backgroundColor: 'var(--color-surface)', borderLeft: '3px solid var(--color-blue)' }}
+        >
+          <blockquote
+            className="text-xl md:text-2xl font-light mb-6"
+            style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic', maxWidth: '820px' }}
+          >
+            &ldquo;Presentation skill is a master key to leadership and influence. DIAMON has uniquely high-level expertise in developing performance, presence and communication. Their personal coaching concept truly works.&rdquo;
+          </blockquote>
+          <p
+            className="text-xs tracking-[0.2em] uppercase"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+          >
+            Tuomas Liisanantti &mdash; Marketing Director, SDM
+          </p>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* ── FINAL CTA ── */}
       <section
         className="px-6 py-24"
@@ -382,7 +459,7 @@ export default function Home() {
               className="text-3xl md:text-4xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
             >
-              The right conversation starts with a precise question.
+              The right conversation starts with a question.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
               Describe the challenge or the outcome you are working toward.

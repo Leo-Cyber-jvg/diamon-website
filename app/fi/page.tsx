@@ -230,29 +230,42 @@ export default function FiHome() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── REFERENSSIT (placeholder — lisää asiakaskommentit tähän) ── */}
+      {/* ── TULOKSET / REFERENSSIT ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p className="text-xs tracking-[0.3em] uppercase mb-12" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-          Asiakkaat
-        </p>
-        {/* TODO: Lisää 3–5 spesifistä asiakasreferenssiä tähän.
-            Formaatti: lainaus + nimi/rooli/organisaatio (tai anonyymi: "Toimitusjohtaja, fintech-yritys")
-            Spesifinen muutos > yleinen kehupuhe. */}
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div className="mb-14">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Tulokset
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '600px' }}>
+            Mitä osallistujat raportoivat<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>valmennuksen jälkeen.</span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-px mb-16" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { quote: '"Viestinnästä tuli johtamisen työkalu — ei pelkkä lisä."', who: 'Toimitusjohtaja' },
-            { quote: '"Ensimmäistä kertaa ymmärsin miksi samat sanat toimivat joillain tilanteissa ja epäonnistuvat toisissa."', who: 'Johtoryhmän jäsen, teknologiayritys' },
-            { quote: '"Systemaattinen lähestymistapa muutti sekä esiintymisen että itseymmärryksen."', who: 'Perustaja' },
-          ].map((r) => (
-            <div key={r.who} className="p-8 flex flex-col justify-between gap-8" style={{ backgroundColor: 'var(--color-background)', minHeight: '200px' }}>
-              <p className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.5, fontStyle: 'italic' }}>
-                {r.quote}
+            { stat: '100 %', label: 'koki johtamisviestintänsä kehittyneen.' },
+            { stat: '100 %', label: 'koki ymmärryksensä omasta toiminnastaan vahvistuneen viestintä- ja esiintymistilanteissa.' },
+            { stat: '100 %', label: 'koki kykynsä toimia paineen alla vahvistuneen vaativissa viestintä- ja esiintymistilanteissa.' },
+          ].map((s) => (
+            <div key={s.label} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+              <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 300, lineHeight: 1, letterSpacing: '-0.02em' }}>
+                {s.stat}
               </p>
-              <p className="text-xs tracking-[0.15em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-                {r.who}
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                {s.label}
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="p-10 md:p-14" style={{ backgroundColor: 'var(--color-surface)', borderLeft: '3px solid var(--color-blue)' }}>
+          <blockquote className="text-xl md:text-2xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic', maxWidth: '820px' }}>
+            &ldquo;Esiintymistaito on yleisavain johtamiseen ja vaikuttamiseen. Diamonilta löytyy ainutlaatuisen korkeatasoista osaamista esiintymisen kehittämiseen ja henkilökohtaisuuteen perustuva valmennuskonsepti todellakin toimii.&rdquo;
+          </blockquote>
+          <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Tuomas Liisanantti &mdash; Markkinointijohtaja, SDM
+          </p>
         </div>
       </section>
 
