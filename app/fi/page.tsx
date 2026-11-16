@@ -254,8 +254,8 @@ export default function FiHome() {
             Tulokset
           </p>
           <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '600px' }}>
-            Mitä osallistujat raportoivat<br />
-            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>valmennuksen jälkeen.</span>
+            How Diamon coaching strengthens<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>leadership communication.</span>
           </h2>
         </div>
 
