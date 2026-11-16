@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { BlueprintHomepageSection } from '../components/ArchitectureBlueprint'
+import InfluenceCompass from '../components/InfluenceCompass'
 
 export const metadata: Metadata = {
   title: 'DIAMON Finland — Johtamisviestinnän suorituskyky',
@@ -165,7 +167,8 @@ export default function FiHome() {
               Palvelut
             </p>
             <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}>
-              Mikä sopii sinulle?
+              Kehitys, joka tuottaa<br />
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>todellisia tuloksia.</span>
             </h2>
           </div>
           <Link href="/fi/ohjelmat" className="link-blue text-sm self-start md:self-auto" style={{ fontFamily: 'var(--font-body)', flexShrink: 0 }}>
@@ -232,6 +235,13 @@ export default function FiHome() {
           </div>
         </div>
       </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── ARCHITECTURE OF INFLUENCE ── */}
+      <InfluenceCompass />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
@@ -314,6 +324,9 @@ export default function FiHome() {
           </div>
         </div>
       </section>
+
+      {/* ── BLUEPRINT ── */}
+      <BlueprintHomepageSection />
 
       {/* ── CTA (kaksitasoinen) ── */}
       <section className="px-6 py-24 text-center" style={{ backgroundColor: 'var(--color-blue)' }}>
