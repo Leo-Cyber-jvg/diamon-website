@@ -378,8 +378,8 @@ export default function Home() {
             className="text-3xl md:text-4xl font-light"
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '600px' }}
           >
-            What participants report<br />
-            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>after the work.</span>
+            How Diamon coaching strengthens<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>leadership communication.</span>
           </h2>
         </div>
 
