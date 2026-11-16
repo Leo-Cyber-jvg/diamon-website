@@ -211,8 +211,8 @@ export default function Home() {
               className="text-3xl md:text-4xl font-light"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
             >
-              Development journeys,<br />
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>not training events.</span>
+              Development that drives<br />
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>real impact.</span>
             </h2>
           </div>
           <Link
