@@ -132,7 +132,7 @@ export default function InfluenceCompass() {
               className="text-xs uppercase tracking-wider"
               style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
             >
-              Focus on:
+              Core Focus:
             </span>
             <h3
               className="text-lg md:text-xl font-semibold leading-tight"
@@ -157,7 +157,7 @@ export default function InfluenceCompass() {
               className="text-xs uppercase tracking-wider"
               style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
             >
-              Focus on:
+              Core Focus:
             </span>
             <h3
               className="text-lg md:text-xl font-semibold leading-tight"
@@ -182,7 +182,7 @@ export default function InfluenceCompass() {
               className="text-xs uppercase tracking-wider"
               style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
             >
-              Focus on:
+              Core Focus:
             </span>
             <h3
               className="text-lg md:text-xl font-semibold leading-tight"
@@ -207,7 +207,7 @@ export default function InfluenceCompass() {
               className="text-xs uppercase tracking-wider"
               style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
             >
-              Focus on:
+              Core Focus:
             </span>
             <h3
               className="text-lg md:text-xl font-semibold leading-tight"
@@ -259,7 +259,7 @@ export default function InfluenceCompass() {
                 className="text-xs uppercase tracking-wider mb-1"
                 style={{ color: '#9E9890', fontFamily: 'var(--font-body)', fontSize: '0.55rem', letterSpacing: '0.15em' }}
               >
-                Way Forward:
+                Path to Impact:
               </span>
               <span
                 style={{
