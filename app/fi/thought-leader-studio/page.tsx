@@ -160,12 +160,13 @@ export default function ThoughtLeaderStudioFiPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Referenssi */}
+      {/* Referenssi — vaaka 16:9 */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Referenssit
         </p>
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Vaakavideo 16:9 */}
           <div
             style={{
               position: 'relative',
@@ -215,7 +216,7 @@ export default function ThoughtLeaderStudioFiPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Esimerkkivideot */}
+      {/* Esimerkkivideot — pysty 9:16, 3 kpl rinnakkain */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Esimerkkejä tuotetuista videoista
@@ -225,8 +226,10 @@ export default function ThoughtLeaderStudioFiPage() {
           ajatusjohtajuutta rakentavien lyhytvideoiden parissa LinkedInissä, YouTubessa
           ja TikTokissa.
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* 3 pystymuotovideota rinnakkain — paddingBottom 177.78% = 9:16 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
+            'tuDKr0dif28',
             'Ri0zlk2M-Ds',
             'zv3r1XjjGHk',
           ].map(videoId => (
@@ -234,7 +237,7 @@ export default function ThoughtLeaderStudioFiPage() {
               key={videoId}
               style={{
                 position: 'relative',
-                paddingBottom: '56.25%',
+                paddingBottom: '177.78%',
                 height: 0,
                 overflow: 'hidden',
                 backgroundColor: '#000',
