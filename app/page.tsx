@@ -1,33 +1,4 @@
 import Link from 'next/link'
-import { BlueprintHomepageSection } from './components/ArchitectureBlueprint'
-import InfluenceCompass from './components/InfluenceCompass'
-
-const services = [
-  {
-    code: 'Impact Session',
-    name: 'High-Stakes Communication Preparation',
-    for: 'Leaders, executives and experts preparing for a defining moment',
-    benefit: 'Walk into the room ready. Clear message, controlled delivery, no surprises.',
-    href: '/executive-programmes',
-    duration: 'Intensive · 1 day',
-  },
-  {
-    code: 'Annual Leadership Program',
-    name: 'Leadership Communication Architecture',
-    for: 'Executives and senior leaders who want systematic, long-term capability',
-    benefit: 'Communication capability that scales with your role — built, not trained.',
-    href: '/executive-programmes',
-    duration: 'Structured · 12 months',
-  },
-  {
-    code: 'Thought Leader Studio',
-    name: 'Thought Leadership Development',
-    for: 'Founders, experts and executives building a visible strategic voice',
-    benefit: 'A distinctive point of view, expressed with authority and consistency.',
-    href: '/executive-programmes',
-    duration: 'Ongoing · Strategic',
-  },
-]
 
 export default function Home() {
   return (
@@ -80,43 +51,213 @@ export default function Home() {
             className="btn-primary"
             style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}
           >
-            Book a conversation
+            Start a conversation
           </Link>
         </div>
       </section>
 
-      {/* ── WHAT WE DO ── */}
+      {/* ── WHO WE SERVE ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="mb-14">
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-4"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+          >
+            Who we work with
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-light"
+            style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '640px' }}
+          >
+            Development for organisations<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>and individual leaders.</span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {/* For Organizations */}
+          <div className="p-10 flex flex-col gap-6" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p
+                className="text-xs tracking-[0.25em] uppercase mb-5"
+                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+              >
+                For Organizations
+              </p>
+              <h3
+                className="text-2xl md:text-3xl font-light mb-4"
+                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+              >
+                Leadership communication<br />as an organisational capability.
+              </h3>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                Long-term development programmes for executive teams, senior leaders and organisations.
+                Annual Leadership Program, tailored workshops and strategic communication consulting.
+              </p>
+            </div>
+            <Link href="/for-organisations" className="link-blue text-sm mt-auto" style={{ fontFamily: 'var(--font-body)' }}>
+              For organizations &rarr;
+            </Link>
+          </div>
+
+          {/* For Executives */}
+          <div className="p-10 flex flex-col gap-6" style={{ backgroundColor: 'var(--color-surface)' }}>
+            <div>
+              <p
+                className="text-xs tracking-[0.25em] uppercase mb-5"
+                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+              >
+                For Executives
+              </p>
+              <h3
+                className="text-2xl md:text-3xl font-light mb-4"
+                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+              >
+                Personal coaching for<br />high-impact leadership presence.
+              </h3>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                Individual development for executives, founders and leaders in transition.
+                Thought Leader Studio, Impact Session and ongoing executive coaching.
+              </p>
+            </div>
+            <Link href="/for-individuals" className="link-blue text-sm mt-auto" style={{ fontFamily: 'var(--font-body)' }}>
+              For executives &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── ICA FRAMEWORK ── */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
+              className="text-xs tracking-[0.3em] uppercase mb-4"
               style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
             >
-              What we do
+              Methodology
             </p>
             <h2
               className="text-3xl md:text-4xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}
             >
-              Communication architecture for leaders in an era that demands human clarity.
+              The DIAMON ICA Framework™
             </h2>
           </div>
-          <div className="flex flex-col gap-5 pt-2 md:pt-10">
-            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.85, fontSize: '0.9rem' }}>
-              Diamon Finland is a leadership communication capability company.
-              We work with executives, senior leaders, and organisations whose communication
-              must operate at the level of their actual ambition.
-            </p>
-            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.85, fontSize: '0.9rem' }}>
-              The work is grounded in performance psychology, structural narrative theory,
-              and two decades of professional performance practice — not presentation skills training.
-              Communication architecture.
-            </p>
-            <Link href="/about" className="link-blue text-sm self-start" style={{ fontFamily: 'var(--font-body)' }}>
-              About Leo Sjöman and Diamon &rarr;
-            </Link>
-          </div>
+          <Link href="/framework" className="link-blue text-sm shrink-0" style={{ fontFamily: 'var(--font-body)' }}>
+            Explore the framework &rarr;
+          </Link>
+        </div>
+
+        <p
+          className="text-sm leading-relaxed mb-16"
+          style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '600px' }}
+        >
+          A structured development methodology grounded in performance psychology and two decades of
+          professional performance practice. Three integrated levels — applied systematically to real leadership situations.
+        </p>
+
+        {/* ICA three circles */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '0',
+            position: 'relative',
+          }}
+        >
+          {/* Connecting line behind circles */}
+          <div
+            style={{
+              position: 'absolute',
+              left: '16.6%',
+              right: '16.6%',
+              top: '75px',
+              height: '1px',
+              backgroundColor: 'var(--color-border)',
+            }}
+          />
+
+          {[
+            {
+              letter: 'I',
+              label: 'Identity',
+              desc: 'Leadership identity, self-awareness, personal presence and individual impact in communication.',
+              bg: 'var(--color-background)',
+              border: '1px solid var(--color-blue)',
+              color: 'var(--color-text)',
+            },
+            {
+              letter: 'C',
+              label: 'Composition',
+              desc: 'Building the message: purpose, focus, clarity and consideration of the recipient.',
+              bg: 'var(--color-surface)',
+              border: '1px solid var(--color-border)',
+              color: 'var(--color-text)',
+            },
+            {
+              letter: 'A',
+              label: 'Action',
+              desc: 'Concrete interaction, physicality, presence, listening and performance in real leadership situations.',
+              bg: 'var(--color-blue)',
+              border: 'none',
+              color: '#fff',
+            },
+          ].map((item) => (
+            <div
+              key={item.letter}
+              className="flex flex-col items-center text-center px-6"
+              style={{ position: 'relative' }}
+            >
+              <div
+                style={{
+                  width: '150px',
+                  height: '150px',
+                  borderRadius: '50%',
+                  border: item.border,
+                  backgroundColor: item.bg,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '3.5rem',
+                    fontWeight: 300,
+                    color: item.color,
+                    lineHeight: 1,
+                  }}
+                >
+                  {item.letter}
+                </span>
+              </div>
+              <p
+                className="mt-5 text-sm font-medium tracking-[0.3em] uppercase"
+                style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', letterSpacing: '0.3em' }}
+              >
+                {item.label}
+              </p>
+              <p
+                className="mt-3 text-sm leading-relaxed"
+                style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)', maxWidth: '240px' }}
+              >
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -128,6 +269,7 @@ export default function Home() {
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative overflow-hidden" style={{ aspectRatio: '3/4', maxHeight: '580px' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
               alt="Leo Sjöman — Founder, Diamon Finland"
@@ -189,181 +331,6 @@ export default function Home() {
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
-
-      {/* ── ARCHITECTURE OF INFLUENCE ── */}
-      <InfluenceCompass />
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* ── SERVICES ── */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-4"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Services
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
-            >
-              Development that drives<br />
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>real impact.</span>
-            </h2>
-          </div>
-          <Link
-            href="/executive-programmes"
-            className="link-blue text-sm self-start md:self-auto"
-            style={{ fontFamily: 'var(--font-body)', flexShrink: 0 }}
-          >
-            All programmes &rarr;
-          </Link>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {services.map((s) => (
-            <div
-              key={s.code}
-              className="p-8 flex flex-col gap-5"
-              style={{ backgroundColor: 'var(--color-background)' }}
-            >
-              <div>
-                <p
-                  className="text-xs tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
-                >
-                  {s.code}
-                </p>
-                <h3
-                  className="text-xl font-light"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.25 }}
-                >
-                  {s.name}
-                </h3>
-              </div>
-
-              <p
-                className="text-xs"
-                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.02em' }}
-              >
-                {s.duration}
-              </p>
-
-              <div
-                style={{ height: '1px', backgroundColor: 'var(--color-border)' }}
-              />
-
-              <p
-                className="text-xs leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-              >
-                <span style={{ fontWeight: 500, color: 'var(--color-text)' }}>For: </span>
-                {s.for}
-              </p>
-
-              <p
-                className="text-sm leading-relaxed flex-1"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontStyle: 'italic' }}
-              >
-                {s.benefit}
-              </p>
-
-              <Link
-                href={s.href}
-                className="link-blue text-sm mt-auto"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                Explore &rarr;
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* ── APPROACH ── */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-4"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Our approach
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light mb-6"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
-            >
-              The DIAMON ICA Framework™
-            </h2>
-            <p
-              className="text-sm leading-relaxed mb-5"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              A professional performer does not think about how they look.
-              They think about what they want to create in another person.
-              That is where the ICA Framework was born — from two decades of
-              professional performance practice, not from consulting.
-            </p>
-            <p
-              className="text-sm leading-relaxed mb-8"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              Three integrated levels — Identity, Composition, Action — applied
-              to leadership communication systematically and measurably.
-            </p>
-            <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Explore the framework &rarr;
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { id: 'ICA I', name: 'Identity', desc: 'Who you are as a communicator. How you build credibility, hold presence, and establish trust before you speak.' },
-              { id: 'ICA II', name: 'Composition', desc: 'How impactful communication is intentionally built — state, narrative, structure — before you open your mouth.' },
-              { id: 'ICA III', name: 'Action', desc: 'How communication is executed under pressure, in real situations, with real stakes. Physicality, focus, language.' },
-            ].map((level) => (
-              <div
-                key={level.id}
-                className="p-6 flex gap-6 items-start"
-                style={{ backgroundColor: 'var(--color-background)' }}
-              >
-                <span
-                  className="text-xs tracking-widest pt-0.5 shrink-0"
-                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '44px' }}
-                >
-                  {level.id}
-                </span>
-                <div>
-                  <p
-                    className="text-base font-light mb-2"
-                    style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.1rem' }}
-                  >
-                    {level.name}
-                  </p>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-                  >
-                    {level.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PATHWAY / TRUST ── */}
-      <BlueprintHomepageSection />
 
       {/* ── SOCIAL PROOF ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -475,7 +442,7 @@ export default function Home() {
               Book a conversation
             </Link>
             <Link
-              href="/executive-programmes"
+              href="/for-organisations"
               className="btn-outline-white"
             >
               View programmes
