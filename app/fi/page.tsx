@@ -290,37 +290,47 @@ export default function FiHome() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── LEO / DIAMON TRUST ── */}
+      {/* ── LEO SJÖMAN ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative overflow-hidden" style={{ aspectRatio: '3/4', maxHeight: '580px' }}>
+            <img
+              src="/leo-sjoman.jpg"
+              alt="Leo Sjöman — Perustaja, Diamon Finland"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
+            />
+          </div>
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              DIAMON Finland
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              Perustaja
             </p>
-            <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}>
-              Kehitetty käytännöstä — ei teoriasta.
+            <h2
+              className="font-light mb-2"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
+            >
+              Leo Sjöman
             </h2>
-            <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA-viitekehys syntyi yli kahden vuosikymmenen ammattiesiintyjäkokemuksesta — elokuvassa, televisiossa ja teatterissa. Kyse ei ole konsultoinnissa kehitetystä mallista vaan siitä, miten ammattilaiset todella rakentavat vaikuttavan suorituksen.
+            <p
+              className="mb-8 text-sm"
+              style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', letterSpacing: '0.04em' }}
+            >
+              Diamon Finland
             </p>
-            <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON soveltaa tätä logiikkaa johtamisviestintään: systemaattisesti, mitattavasti ja pitkäjänteisesti.
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Leo Sjöman on näyttelijä, yrittäjä ja johtamisviestinnän valmentaja, joka työskentelee johtajien, asiantuntijoiden ja tiimien kanssa viestinnän, esiintymisen ja vuorovaikutustaitojen kehittämiseksi.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Hän yhdistää työssään strategisen viestinnän, liiketoimintaosaamisen ja yli 20 vuoden ammattiesiintyjäkokemuksen teatterista, televisiosta ja elokuvasta. Leo tunnetaan luottamuksellisen, suoran ja tavoitteellisen työskentelyilmapiirin luojana — jossa opittu siirtyy konkreettisesti arkiseen johtamiseen.
+            </p>
+            <p className="text-sm leading-relaxed mb-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Leo on valmentanut johtajia pk-perheyrityksistä kansainvälisiin organisaatioihin ja suuryritysten ylimpään johtoon. Hänellä on teatteritaiteen maisterin tutkinto (Taideyliopisto) ja hän on elokuvatuotantoyhtiö Hoka Filmsin perustaja.
             </p>
             <Link href="/fi/tietoa" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Leo Sjömanista ja DIAMONista &rarr;
             </Link>
-          </div>
-          <div className="flex flex-col gap-6">
-            {[
-              { label: 'Perustaja', value: 'Leo Sjöman — 20+ vuotta ammattiesiintyjä, ICA Framework™ kehittäjä' },
-              { label: 'Lähestymistapa', value: 'Suorituspsykologia · Rakenteellinen narratiivi · Kehollinen läsnäolo' },
-              { label: 'Asiakkaat', value: 'Toimitusjohtajat, johtoryhmät, asiantuntijat ja julkiset johtajat' },
-            ].map((item) => (
-              <div key={item.label} style={{ borderTop: '1px solid var(--color-border)', paddingTop: '20px' }}>
-                <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{item.label}</p>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item.value}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
