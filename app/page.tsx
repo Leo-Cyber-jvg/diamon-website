@@ -103,14 +103,14 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* For Executives */}
+          {/* For Individuals */}
           <div className="p-10 flex flex-col gap-6" style={{ backgroundColor: 'var(--color-surface)' }}>
             <div>
               <p
                 className="text-xs tracking-[0.25em] uppercase mb-5"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
-                For Executives
+                For Individuals
               </p>
               <h3
                 className="text-2xl md:text-3xl font-light mb-4"
@@ -127,7 +127,7 @@ export default function Home() {
               </p>
             </div>
             <Link href="/for-individuals" className="link-blue text-sm mt-auto" style={{ fontFamily: 'var(--font-body)' }}>
-              For executives &rarr;
+              For individuals &rarr;
             </Link>
           </div>
         </div>
