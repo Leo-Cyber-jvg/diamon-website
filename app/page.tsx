@@ -171,7 +171,7 @@ export default function Home() {
         {/* ICA three circles */}
         <div
           className="grid grid-cols-1 md:grid-cols-3"
-          style={{ gap: '0', position: 'relative' }}
+          style={{ gap: '0', position: 'relative', rowGap: '48px' }}
         >
           {/* Connecting line behind circles — desktop only */}
           <div
