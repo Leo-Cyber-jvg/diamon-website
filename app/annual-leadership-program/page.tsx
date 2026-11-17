@@ -117,7 +117,7 @@ export default function AnnualLeadershipProgramPage() {
             {[
               '12-month development program',
               '6 tailored coaching sessions during the year',
-              '4 hours per session',
+              '3 hours per session',
               'Personal coach throughout the full year',
               'Continuous support and follow-up between sessions',
               'Outcome: leadership communication profile and practical operating model',

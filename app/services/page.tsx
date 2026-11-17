@@ -79,7 +79,7 @@ const services = [
     description:
       'A 12-month coaching program designed to strengthen a leader\'s communication impact, executive presence and strategic role as a communicator. Not a one-off training — a structured, long-term development engagement that builds a consistent, measurable and strategically aligned communication profile.',
     what: [
-      '6 tailored coaching sessions of 4 hours each',
+      '6 tailored coaching sessions of 3 hours each',
       'Personal coach throughout the full year',
       'Communication strategy and executive presence',
       'Personal communication profile and strategic storytelling',

@@ -37,14 +37,14 @@ export const services: Service[] = [
     forIndFi: 'Toimitusjohtajat, johtoryhmän jäsenet ja asiantuntijat, jotka ottavat laajempaa johtajuutta.',
     structure: [
       '6 tailored coaching sessions per year',
-      '4 hours per session',
+      '3 hours per session',
       'Personal coach throughout the full year',
       'Continuous support between sessions',
       'Leadership communication profile and practical operating model',
     ],
     structureFi: [
       '6 räätälöityä coachingtapaamista vuodessa',
-      '4 tuntia per tapaaminen',
+      '3 tuntia per tapaaminen',
       'Oma coach koko vuoden ajan',
       'Jatkuva tuki sessioiden välillä',
       'Johtamisviestinnän profiili ja käytännön toimintamalli',
