@@ -516,7 +516,7 @@ export default function Home() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
           {/* Left: photo */}
-          <div style={{ position: 'relative', overflow: 'hidden', minHeight: '460px' }}>
+          <div className="h-64 md:h-auto md:min-h-[460px]" style={{ position: 'relative', overflow: 'hidden' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
