@@ -49,6 +49,8 @@ export default function FiHome() {
         </div>
       </section>
 
+      <InfluenceCompass />
+
       {/* ── KENELLE ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="mb-14">
@@ -249,8 +251,6 @@ export default function FiHome() {
           ))}
         </div>
       </section>
-
-      <InfluenceCompass />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
