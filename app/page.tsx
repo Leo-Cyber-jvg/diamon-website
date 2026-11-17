@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import InfluenceCompass from './components/InfluenceCompass'
 
 export default function Home() {
   return (
@@ -260,6 +261,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <InfluenceCompass />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
