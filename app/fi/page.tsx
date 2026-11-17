@@ -480,14 +480,14 @@ export default function FiHome() {
             className="text-xs tracking-[0.3em] uppercase mb-4"
             style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
           >
-            Tulokset
+            Tuloksia valmennuksista
           </p>
           <h2
             className="text-3xl md:text-4xl font-light"
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '600px' }}
           >
-            How Diamon coaching strengthens<br />
-            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>leadership communication.</span>
+            Näin Diamonin valmennus vahvistaa<br />
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>johtamisviestintää.</span>
           </h2>
         </div>
 
@@ -539,7 +539,7 @@ export default function FiHome() {
               className="text-3xl md:text-4xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
             >
-              Oikea keskustelu alkaa tarkasta kysymyksestä.
+              Hyvä keskustelu alkaa kysymyksestä.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
               Kuvaile haaste tai tavoite. Ensimmäinen keskustelu on diagnostiikka, ei myyntiprosessi.
