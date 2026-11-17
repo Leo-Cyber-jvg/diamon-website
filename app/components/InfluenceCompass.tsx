@@ -30,14 +30,29 @@ export default function InfluenceCompass() {
     <section style={{ backgroundColor: '#F4F3F1' }}>
       <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px' }}>
 
-        {/* Split layout: compass left, text right */}
-        <div
-          className="grid md:grid-cols-2"
-          style={{ gap: '80px', alignItems: 'center' }}
-        >
+        <div className="grid md:grid-cols-2" style={{ gap: '80px', alignItems: 'center' }}>
 
-          {/* LEFT: Compass diagram */}
+          {/* LEFT: Title + Compass */}
           <div>
+            <p
+              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)', margin: '0 0 12px' }}
+            >
+              The DIAMON Architecture of Influence&#x2122;
+            </p>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(26px, 3vw, 36px)',
+                fontWeight: 300,
+                lineHeight: 1.18,
+                color: '#111010',
+                margin: '0 0 32px',
+              }}
+            >
+              Where communication capability meets{' '}
+              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
+            </h2>
+
             <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
               Personal Development
             </p>
@@ -102,56 +117,11 @@ export default function InfluenceCompass() {
             </p>
           </div>
 
-          {/* RIGHT: Text */}
+          {/* RIGHT: Body text + CTA */}
           <div className="flex flex-col" style={{ gap: '28px' }}>
-            <p
-              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)', margin: 0 }}
-            >
-              The DIAMON Architecture of Influence&#x2122;
-            </p>
-
-            <h2
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(28px, 3.5vw, 40px)',
-                fontWeight: 300,
-                lineHeight: 1.18,
-                color: '#111010',
-                margin: 0,
-              }}
-            >
-              Where communication capability meets{' '}
-              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
-            </h2>
-
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', lineHeight: 1.75, color: '#5A5450', margin: 0, maxWidth: '46ch' }}>
               From individual presence to organisation-wide capability — four dimensions that together define how communication drives leadership performance.
             </p>
-
-            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', borderTop: '1px solid #DDDBD6', paddingTop: '24px' }}>
-              {[
-                {
-                  name: 'Communication Identity & Executive Presence',
-                  desc: 'Clarity, authority and impact at the individual level.',
-                },
-                {
-                  name: 'Leadership Culture & Business Performance',
-                  desc: 'Communication embedded in how teams operate and results are built.',
-                },
-              ].map((item, i) => (
-                <li key={i} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#5656D6', flexShrink: 0, marginTop: '6px' }} />
-                  <div>
-                    <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 2px' }}>
-                      {item.name}
-                    </p>
-                    <p style={{ fontSize: '12px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.6, margin: 0 }}>
-                      {item.desc}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
 
             <a
               href="/methodology"
