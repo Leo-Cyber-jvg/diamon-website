@@ -30,104 +30,151 @@ export default function InfluenceCompass() {
     <section style={{ backgroundColor: '#F4F3F1' }}>
       <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px' }}>
 
-        <p
-          className="text-center text-xs tracking-[0.28em] uppercase mb-3"
-          style={{ color: '#9E9890', fontFamily: 'var(--font-body)' }}
-        >
-          The DIAMON Architecture of Influence&#x2122;
-        </p>
-        <h2
-          className="text-center text-3xl md:text-4xl font-light mb-12"
-          style={{
-            fontFamily: 'var(--font-heading)',
-            color: '#111010',
-            lineHeight: 1.2,
-            maxWidth: '480px',
-            margin: '0 auto 3rem',
-          }}
-        >
-          Where communication capability meets organisational performance.
-        </h2>
-
-        {/* Axis label top */}
-        <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
-          Personal Development
-        </p>
-
-        {/* Compass — 2×2 grid with centered ring */}
+        {/* Split layout: compass left, text right */}
         <div
-          className="relative mx-auto"
-          style={{ maxWidth: '560px' }}
+          className="grid md:grid-cols-2"
+          style={{ gap: '80px', alignItems: 'center' }}
         >
-          {/* Axis lines */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{ zIndex: 0 }}
-          >
-            <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', backgroundColor: '#DDDBD6', transform: 'translateX(-50%)' }} />
-            <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', backgroundColor: '#DDDBD6', transform: 'translateY(-50%)' }} />
-          </div>
 
-          {/* 2×2 grid */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gridTemplateRows: 'auto auto',
-            }}
-          >
-            {quadrants.map((q, i) => (
-              <div
-                key={i}
-                className="flex flex-col gap-1"
-                style={{
-                  padding: '20px 16px 20px 16px',
-                  alignItems: q.align === 'right' ? 'flex-end' : 'flex-start',
-                  textAlign: q.align,
-                  position: 'relative',
-                  zIndex: 1,
-                  /* extra padding toward center to give ring space */
-                  ...(i === 0 && { paddingRight: '36px', paddingBottom: '36px' }),
-                  ...(i === 1 && { paddingLeft: '36px', paddingBottom: '36px' }),
-                  ...(i === 2 && { paddingRight: '36px', paddingTop: '36px' }),
-                  ...(i === 3 && { paddingLeft: '36px', paddingTop: '36px' }),
-                }}
-              >
-                <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#9E9890', fontFamily: 'var(--font-body)' }}>{q.label}</span>
-                <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
-                  {q.name[0]}<br />{q.name[1]}
-                </div>
-                <p className="hidden sm:block" style={{ fontSize: '11px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.5, maxWidth: '160px' }}>
-                  {q.desc}
-                </p>
+          {/* LEFT: Compass diagram */}
+          <div>
+            <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
+              Personal Development
+            </p>
+
+            <div className="relative">
+              {/* Axis lines */}
+              <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+                <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', backgroundColor: '#DDDBD6', transform: 'translateX(-50%)' }} />
+                <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', backgroundColor: '#DDDBD6', transform: 'translateY(-50%)' }} />
               </div>
-            ))}
+
+              {/* 2×2 grid */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto' }}>
+                {quadrants.map((q, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col gap-1"
+                    style={{
+                      padding: '20px 16px',
+                      alignItems: q.align === 'right' ? 'flex-end' : 'flex-start',
+                      textAlign: q.align,
+                      position: 'relative',
+                      zIndex: 1,
+                      ...(i === 0 && { paddingRight: '36px', paddingBottom: '36px' }),
+                      ...(i === 1 && { paddingLeft: '36px', paddingBottom: '36px' }),
+                      ...(i === 2 && { paddingRight: '36px', paddingTop: '36px' }),
+                      ...(i === 3 && { paddingLeft: '36px', paddingTop: '36px' }),
+                    }}
+                  >
+                    <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#9E9890', fontFamily: 'var(--font-body)' }}>{q.label}</span>
+                    <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
+                      {q.name[0]}<br />{q.name[1]}
+                    </div>
+                    <p className="hidden sm:block" style={{ fontSize: '11px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.5, maxWidth: '160px' }}>
+                      {q.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Center logo */}
+              <img
+                src="/diamon-logo-02.png"
+                alt="Diamon"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '50%',
+                  objectFit: 'contain',
+                  backgroundColor: '#F4F3F1',
+                  zIndex: 2,
+                }}
+              />
+            </div>
+
+            <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
+              Organisational Impact
+            </p>
           </div>
 
-          {/* Center logo — absolutely centered over the grid */}
-          <img
-            src="/diamon-logo-02.png"
-            alt="Diamon"
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: '64px',
-              height: '64px',
-              borderRadius: '50%',
-              objectFit: 'contain',
-              backgroundColor: '#F4F3F1',
-              zIndex: 2,
-            }}
-          />
+          {/* RIGHT: Text */}
+          <div className="flex flex-col" style={{ gap: '28px' }}>
+            <p
+              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)', margin: 0 }}
+            >
+              The DIAMON Architecture of Influence&#x2122;
+            </p>
+
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(28px, 3.5vw, 40px)',
+                fontWeight: 300,
+                lineHeight: 1.18,
+                color: '#111010',
+                margin: 0,
+              }}
+            >
+              Where communication capability meets{' '}
+              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
+            </h2>
+
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', lineHeight: 1.75, color: '#5A5450', margin: 0, maxWidth: '46ch' }}>
+              From individual presence to organisation-wide capability — four dimensions that together define how communication drives leadership performance.
+            </p>
+
+            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', borderTop: '1px solid #DDDBD6', paddingTop: '24px' }}>
+              {[
+                {
+                  name: 'Communication Identity & Executive Presence',
+                  desc: 'Clarity, authority and impact at the individual level.',
+                },
+                {
+                  name: 'Leadership Culture & Business Performance',
+                  desc: 'Communication embedded in how teams operate and results are built.',
+                },
+              ].map((item, i) => (
+                <li key={i} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#5656D6', flexShrink: 0, marginTop: '6px' }} />
+                  <div>
+                    <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 2px' }}>
+                      {item.name}
+                    </p>
+                    <p style={{ fontSize: '12px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.6, margin: 0 }}>
+                      {item.desc}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/methodology"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontSize: '11px',
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: '#111010',
+                fontFamily: 'var(--font-body)',
+                textDecoration: 'none',
+                borderBottom: '1px solid rgba(17,16,16,0.3)',
+                paddingBottom: '3px',
+                width: 'fit-content',
+              }}
+            >
+              Explore the framework →
+            </a>
+          </div>
+
         </div>
-
-        {/* Axis label bottom */}
-        <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
-          Organisational Impact
-        </p>
-
       </div>
     </section>
   )
