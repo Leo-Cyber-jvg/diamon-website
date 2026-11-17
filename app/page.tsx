@@ -378,6 +378,104 @@ export default function Home() {
 
       <InfluenceCompass />
 
+      {/* ── AJANKOHTAISTA ── */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="flex items-baseline justify-between gap-6 mb-10">
+          <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            What&apos;s on
+          </p>
+        </div>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
+
+        <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+          {/* Left: brand blue panel */}
+          <div
+            className="flex flex-col justify-between"
+            style={{
+              backgroundColor: '#5656D6',
+              padding: '36px 40px',
+              minHeight: '340px',
+              backgroundImage: 'repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(255,255,255,0.05) 40px, rgba(255,255,255,0.05) 41px)',
+            }}
+          >
+            <p style={{ fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.4)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Coaching series · Diamon Finland
+            </p>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(26px, 2.8vw, 36px)',
+                fontWeight: 300,
+                lineHeight: 1.12,
+                color: '#F4F3F1',
+                margin: '24px 0',
+              }}
+            >
+              Johtajan vaikuttavuus<br />
+              <em style={{ fontStyle: 'italic', color: 'rgba(244,243,241,0.75)' }}>ja toimintakyky.</em>
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ fontSize: '9px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.5)', fontFamily: 'var(--font-body)', border: '1px solid rgba(244,243,241,0.15)', padding: '4px 10px', whiteSpace: 'nowrap' }}>
+                  01 · pe 22.1.2027
+                </span>
+                <span style={{ fontSize: '11px', color: 'rgba(244,243,241,0.65)', fontFamily: 'var(--font-body)' }}>Leo Sjöman × Antti Pennanen</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ fontSize: '9px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.5)', fontFamily: 'var(--font-body)', border: '1px solid rgba(244,243,241,0.15)', padding: '4px 10px', whiteSpace: 'nowrap' }}>
+                  02 · pe 19.2.2027
+                </span>
+                <span style={{ fontSize: '11px', color: 'rgba(244,243,241,0.65)', fontFamily: 'var(--font-body)' }}>Leo Sjöman × Henri Tuomilehto</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: content panel */}
+          <div className="flex flex-col justify-center" style={{ backgroundColor: 'var(--color-background)', padding: '36px 40px', gap: '24px' }}>
+            <p style={{ fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Next session
+            </p>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(20px, 2vw, 28px)', fontWeight: 300, lineHeight: 1.18, color: 'var(--color-text)', margin: 0 }}>
+              Yhteys ja johtaminen <em style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>paineessa.</em>
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {[
+                { label: 'Date', value: 'Friday 22.1.2027 · 9–17' },
+                { label: 'Coaches', value: 'Leo Sjöman × Antti Pennanen' },
+                { label: 'Group', value: '10 executives' },
+              ].map(({ label, value }) => (
+                <div key={label} style={{ display: 'flex', gap: '10px', fontSize: '11px', color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                  <span style={{ color: 'var(--color-subtle)', letterSpacing: '0.08em', textTransform: 'uppercase', fontSize: '9px', minWidth: '56px', marginTop: '1px' }}>{label}</span>
+                  <span>{value}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+              <Link
+                href="/coaching-series"
+                className="text-xs tracking-[0.18em] uppercase"
+                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(17,16,16,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap' }}
+              >
+                Read more and register →
+              </Link>
+              <span style={{ fontSize: '11px', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>1 795 € · excl. VAT</span>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ marginTop: '20px', borderTop: '1px solid var(--color-border)', paddingTop: '20px', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', whiteSpace: 'nowrap' }}>Upcoming in series</span>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '11px', color: 'var(--color-muted)', fontFamily: 'var(--font-body)', border: '1px solid var(--color-border)', padding: '5px 12px' }}>02 · Sleep &amp; recovery · fri 19.2.2027</span>
+            <span style={{ fontSize: '11px', color: 'var(--color-muted)', fontFamily: 'var(--font-body)', border: '1px solid var(--color-border)', padding: '5px 12px' }}>More dates to be announced</span>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* ── SOCIAL PROOF ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="mb-14">
