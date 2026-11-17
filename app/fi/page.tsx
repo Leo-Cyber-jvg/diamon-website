@@ -68,6 +68,7 @@ export default function FiHome() {
         </div>
 
         {/* Aker-style full-bleed two-panel CTA grid */}
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
         <div className="grid md:grid-cols-2" style={{ gap: '3px', backgroundColor: 'var(--color-border)' }}>
           {/* Organisaatioille */}
           <div
@@ -150,6 +151,7 @@ export default function FiHome() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
