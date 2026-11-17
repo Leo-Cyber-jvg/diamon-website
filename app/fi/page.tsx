@@ -41,7 +41,7 @@ export default function FiHome() {
             className="mb-12 font-light"
             style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', lineHeight: 1.75, maxWidth: '500px', fontSize: '1rem' }}
           >
-            Rakennamme viestinnällistä suorituskykyä johtajille, johtoryhmille ja organisaatioille — järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
+            Rakennamme viestinnällistä suorituskykyä johtajille, johtoryhmille ja organisaatioille, järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
           </p>
           <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}>
             Varaa kartoituskeskustelu
@@ -400,7 +400,7 @@ export default function FiHome() {
               Oikea keskustelu alkaa tarkasta kysymyksestä.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Kuvaile haaste tai tavoite. Ensimmäinen keskustelu on diagnostiikka — ei myyntiprosessi.
+              Kuvaile haaste tai tavoite. Ensimmäinen keskustelu on diagnostiikka, ei myyntiprosessi.
             </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0">

@@ -43,7 +43,7 @@ export default function Home() {
               fontSize: '1rem',
             }}
           >
-            We build communication capability for leaders, executive teams and organisations —
+            We build communication capability for leaders, executive teams and organisations,
             systematically, measurably, and for the long term.
           </p>
 
@@ -455,7 +455,7 @@ export default function Home() {
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
               Describe the challenge or the outcome you are working toward.
-              The first conversation is a diagnostic — not a sales process.
+              The first conversation is a diagnostic, not a sales process.
             </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0">
