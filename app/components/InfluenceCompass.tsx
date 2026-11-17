@@ -122,7 +122,7 @@ export default function InfluenceCompass() {
               flexShrink: 0,
             }}
           >
-            <img src="/diamon-logo.png" alt="Diamon" style={{ width: '76%', height: '76%', borderRadius: '50%', objectFit: 'contain', backgroundColor: '#F4F3F1' }} />
+            <img src="/diamon-logo-02.png" alt="Diamon" style={{ width: '76%', height: '76%', borderRadius: '50%', objectFit: 'contain', backgroundColor: '#F4F3F1' }} />
           </div>
         </div>
 
