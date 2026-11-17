@@ -222,7 +222,8 @@ export default function Home() {
               desc: 'Leadership identity, self-awareness, personal presence and individual impact in communication.',
               bg: 'var(--color-background)',
               border: '1px solid var(--color-blue)',
-              color: 'var(--color-text)',
+              color: 'var(--color-blue)',
+              logoFilter: 'none',
             },
             {
               letter: 'C',
@@ -230,7 +231,8 @@ export default function Home() {
               desc: 'Building the message: purpose, focus, clarity and consideration of the recipient.',
               bg: 'var(--color-surface)',
               border: '1px solid var(--color-border)',
-              color: 'var(--color-text)',
+              color: '#9E9890',
+              logoFilter: 'saturate(0.25) opacity(0.55)',
             },
             {
               letter: 'A',
@@ -239,6 +241,7 @@ export default function Home() {
               bg: 'var(--color-blue)',
               border: 'none',
               color: '#fff',
+              logoFilter: 'brightness(0) invert(1)',
             },
           ].map((item) => (
             <div
@@ -253,19 +256,37 @@ export default function Home() {
                   borderRadius: '50%',
                   border: item.border,
                   backgroundColor: item.bg,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
                   flexShrink: 0,
+                  position: 'relative',
+                  overflow: 'hidden',
                 }}
               >
+                <img
+                  src="/diamon-logo-02.png"
+                  alt=""
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    filter: item.logoFilter,
+                  }}
+                />
                 <span
                   style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     fontFamily: 'var(--font-heading)',
                     fontSize: '3.5rem',
                     fontWeight: 300,
                     color: item.color,
                     lineHeight: 1,
+                    zIndex: 1,
                   }}
                 >
                   {item.letter}
