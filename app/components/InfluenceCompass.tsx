@@ -70,7 +70,7 @@ export default function InfluenceCompass() {
                     }}
                   >
                     <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#111010', fontFamily: 'var(--font-body)' }}>Focus</span>
-                    <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
+                    <div style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
                       {q.name[0]}<br />{q.name[1]}
                     </div>
                     <p className="hidden sm:block" style={{ fontSize: '11px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.5, maxWidth: '160px' }}>

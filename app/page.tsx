@@ -222,7 +222,7 @@ export default function Home() {
               desc: 'Leadership identity, self-awareness, personal presence and individual impact in communication.',
               bg: 'var(--color-background)',
               border: '1px solid var(--color-blue)',
-              color: 'var(--color-blue)',
+              color: '#F4F3F1',
               logoFilter: 'none',
             },
             {
@@ -231,7 +231,7 @@ export default function Home() {
               desc: 'Building the message: purpose, focus, clarity and consideration of the recipient.',
               bg: 'var(--color-surface)',
               border: '1px solid var(--color-border)',
-              color: '#9E9890',
+              color: '#F4F3F1',
               logoFilter: 'saturate(0.25) opacity(0.55)',
             },
             {
@@ -240,7 +240,7 @@ export default function Home() {
               desc: 'Concrete interaction, physicality, presence, listening and performance in real leadership situations.',
               bg: 'var(--color-blue)',
               border: 'none',
-              color: '#fff',
+              color: '#5656D6',
               logoFilter: 'brightness(0) invert(1)',
             },
           ].map((item) => (
@@ -282,8 +282,8 @@ export default function Home() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontFamily: 'var(--font-heading)',
-                    fontSize: '3.5rem',
-                    fontWeight: 300,
+                    fontSize: '4.5rem',
+                    fontWeight: 500,
                     color: item.color,
                     lineHeight: 1,
                     zIndex: 1,
