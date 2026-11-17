@@ -104,26 +104,23 @@ export default function InfluenceCompass() {
             ))}
           </div>
 
-          {/* Center ring — absolutely centered over the grid */}
-          <div
+          {/* Center logo — absolutely centered over the grid */}
+          <img
+            src="/diamon-logo-02.png"
+            alt="Diamon"
             style={{
               position: 'absolute',
               top: '50%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
-              width: '72px',
-              height: '72px',
+              width: '64px',
+              height: '64px',
               borderRadius: '50%',
-              background: 'conic-gradient(from 0deg, #2020A0, #5656D6, #8888EE, #CCCCFF, #8888EE, #5656D6, #2020A0)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              objectFit: 'contain',
+              backgroundColor: '#F4F3F1',
               zIndex: 2,
-              flexShrink: 0,
             }}
-          >
-            <img src="/diamon-logo-02.png" alt="Diamon" style={{ width: '76%', height: '76%', borderRadius: '50%', objectFit: 'contain', backgroundColor: '#F4F3F1' }} />
-          </div>
+          />
         </div>
 
         {/* Axis label bottom */}
