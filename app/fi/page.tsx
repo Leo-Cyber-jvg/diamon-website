@@ -362,17 +362,40 @@ export default function FiHome() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
 
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
-          {/* Left: brand blue panel */}
+          {/* Left: photo panel */}
           <div
             className="flex flex-col justify-between"
             style={{
-              backgroundColor: '#5656D6',
+              position: 'relative',
               padding: '36px 40px',
               minHeight: '340px',
-              backgroundImage: 'repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(255,255,255,0.05) 40px, rgba(255,255,255,0.05) 41px)',
+              overflow: 'hidden',
+              backgroundColor: '#111010',
             }}
           >
-            <p style={{ fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.4)', fontFamily: 'var(--font-body)', margin: 0 }}>
+            <img
+              src="/coaching-series-bg.webp"
+              alt=""
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center 20%',
+                display: 'block',
+                filter: 'brightness(0.45) saturate(0.6)',
+              }}
+            />
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(135deg, rgba(86,86,214,0.45) 0%, rgba(17,16,16,0.3) 100%)',
+                pointerEvents: 'none',
+              }}
+            />
+            <p style={{ fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.5)', fontFamily: 'var(--font-body)', margin: 0, position: 'relative', zIndex: 1 }}>
               Valmennussarja · Diamon Finland
             </p>
             <h2
@@ -383,12 +406,14 @@ export default function FiHome() {
                 lineHeight: 1.12,
                 color: '#F4F3F1',
                 margin: '24px 0',
+                position: 'relative',
+                zIndex: 1,
               }}
             >
               Johtajan vaikuttavuus<br />
               ja toimintakyky.
             </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative', zIndex: 1 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '9px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.5)', fontFamily: 'var(--font-body)', border: '1px solid rgba(244,243,241,0.15)', padding: '4px 10px', whiteSpace: 'nowrap' }}>
                   01 · pe 22.1.2027
