@@ -32,26 +32,13 @@ export default function InfluenceCompass() {
 
         <div className="grid md:grid-cols-2" style={{ gap: '80px', alignItems: 'center' }}>
 
-          {/* LEFT: Title + Compass */}
+          {/* LEFT: Eyebrow + Compass */}
           <div>
             <p
-              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)', margin: '0 0 12px' }}
+              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)', margin: '0 0 20px' }}
             >
               The DIAMON Architecture of Influence&#x2122;
             </p>
-            <h2
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(26px, 3vw, 36px)',
-                fontWeight: 300,
-                lineHeight: 1.18,
-                color: '#111010',
-                margin: '0 0 32px',
-              }}
-            >
-              Where communication capability meets{' '}
-              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
-            </h2>
 
             <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
               Personal Development
@@ -117,11 +104,21 @@ export default function InfluenceCompass() {
             </p>
           </div>
 
-          {/* RIGHT: Body text + CTA */}
-          <div className="flex flex-col" style={{ gap: '28px' }}>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', lineHeight: 1.75, color: '#5A5450', margin: 0, maxWidth: '46ch' }}>
-              From individual presence to organisation-wide capability — four dimensions that together define how communication drives leadership performance.
-            </p>
+          {/* RIGHT: Heading + CTA */}
+          <div className="flex flex-col" style={{ gap: '32px' }}>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(28px, 3.5vw, 42px)',
+                fontWeight: 300,
+                lineHeight: 1.18,
+                color: '#111010',
+                margin: 0,
+              }}
+            >
+              Where communication capability meets{' '}
+              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
+            </h2>
 
             <a
               href="/methodology"
