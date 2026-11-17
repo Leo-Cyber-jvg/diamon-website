@@ -304,53 +304,6 @@ export default function FiHome() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── LEO SJÖMAN ── */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="flex items-baseline justify-between gap-6 mb-10">
-          <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-            Perustaja
-          </p>
-        </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
-        <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
-          {/* Left: photo */}
-          <div style={{ position: 'relative', overflow: 'hidden', minHeight: '460px' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/leo-sjoman.jpg"
-              alt="Leo Sjöman — Perustaja, Diamon Finland"
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 18%', display: 'block' }}
-            />
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px', background: 'linear-gradient(to top, rgba(17,16,16,0.55) 0%, transparent 100%)' }}>
-              <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.6)', fontFamily: 'var(--font-body)' }}>
-                Diamon Finland
-              </p>
-            </div>
-          </div>
-          {/* Right: text */}
-          <div className="flex flex-col justify-center" style={{ padding: '48px 44px', gap: '20px', backgroundColor: 'var(--color-background)' }}>
-            <h2
-              className="font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', lineHeight: 1.1, margin: 0 }}
-            >
-              Leo Sjöman
-            </h2>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Leo Sjöman on näyttelijä, yrittäjä ja johtamisviestinnän valmentaja, joka työskentelee johtajien, asiantuntijoiden ja tiimien kanssa viestinnän, esiintymisen ja vuorovaikutustaitojen kehittämiseksi.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Hän yhdistää työssään strategisen viestinnän, liiketoimintaosaamisen ja yli 20 vuoden ammattiesiintyjäkokemuksen teatterista, televisiosta ja elokuvasta. Leo tunnetaan luottamuksellisen, suoran ja tavoitteellisen työskentelyilmapiirin luojana — jossa opittu siirtyy konkreettisesti arkiseen johtamiseen.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Leo on valmentanut johtajia pk-perheyrityksistä kansainvälisiin organisaatioihin ja suuryritysten ylimpään johtoon. Hänellä on teatteritaiteen maisterin tutkinto (Taideyliopisto) ja hän on elokuvatuotantoyhtiö Hoka Filmsin perustaja.
-            </p>
-            <Link href="/fi/tietoa" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)', marginTop: '4px' }}>
-              Leo Sjömanista ja DIAMONista &rarr;
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <InfluenceCompass lang="fi" />
 
       {/* ── AJANKOHTAISTA ── */}
@@ -516,6 +469,57 @@ export default function FiHome() {
           <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
             Tuomas Liisanantti &mdash; Markkinointijohtaja, SDM
           </p>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ── LEO SJÖMAN ── */}
+      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="flex items-baseline justify-between gap-6 mb-10">
+          <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Perustaja
+          </p>
+        </div>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
+        <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+          {/* Left: photo */}
+          <div style={{ position: 'relative', overflow: 'hidden', minHeight: '460px' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/leo-sjoman.jpg"
+              alt="Leo Sjöman — Perustaja, Diamon Finland"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 18%', display: 'block' }}
+            />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px', background: 'linear-gradient(to top, rgba(17,16,16,0.55) 0%, transparent 100%)' }}>
+              <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.6)', fontFamily: 'var(--font-body)' }}>
+                Diamon Finland
+              </p>
+            </div>
+          </div>
+          {/* Right: text */}
+          <div className="flex flex-col justify-center" style={{ padding: '48px 44px', gap: '20px', backgroundColor: 'var(--color-background)' }}>
+            <h2
+              className="font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', lineHeight: 1.1, margin: 0 }}
+            >
+              Leo Sjöman
+            </h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Leo Sjöman on näyttelijä, yrittäjä ja johtamisviestinnän valmentaja, joka työskentelee johtajien, asiantuntijoiden ja tiimien kanssa viestinnän, esiintymisen ja vuorovaikutustaitojen kehittämiseksi.
+            </p>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Hän yhdistää työssään strategisen viestinnän, liiketoimintaosaamisen ja yli 20 vuoden ammattiesiintyjäkokemuksen teatterista, televisiosta ja elokuvasta. Leo tunnetaan luottamuksellisen, suoran ja tavoitteellisen työskentelyilmapiirin luojana — jossa opittu siirtyy konkreettisesti arkiseen johtamiseen.
+            </p>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Leo on valmentanut johtajia pk-perheyrityksistä kansainvälisiin organisaatioihin ja suuryritysten ylimpään johtoon. Hänellä on teatteritaiteen maisterin tutkinto (Taideyliopisto) ja hän on elokuvatuotantoyhtiö Hoka Filmsin perustaja.
+            </p>
+            <Link href="/fi/tietoa" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)', marginTop: '4px' }}>
+              Leo Sjömanista ja DIAMONista &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 
