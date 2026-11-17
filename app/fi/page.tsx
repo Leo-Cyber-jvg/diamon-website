@@ -43,9 +43,26 @@ export default function FiHome() {
           >
             Rakennamme viestinnällistä suorituskykyä johtajille, johtoryhmille ja organisaatioille, järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
           </p>
-          <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}>
-            Varaa kartoituskeskustelu
-          </Link>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+            <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)', flexShrink: 0 }}>
+              Varaa kartoituskeskustelu
+            </Link>
+
+            {/* Ajankohtaista strip */}
+            <Link
+              href="/fi/valmennussarja"
+              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '16px', borderLeft: '1px solid rgba(255,255,255,0.2)', paddingLeft: '24px' }}
+            >
+              <div>
+                <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>
+                  Ajankohtaista
+                </p>
+                <p style={{ margin: '3px 0 0', fontSize: '13px', color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-body)', lineHeight: 1.3 }}>
+                  Johtajan vaikuttavuus ja toimintakyky →
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
