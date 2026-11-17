@@ -57,8 +57,6 @@ export default function Home() {
         </div>
       </section>
 
-      <InfluenceCompass />
-
       {/* ── WHO WE SERVE ── */}
       <section>
         <div className="px-6 pt-20 pb-12" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -355,9 +353,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
+      <InfluenceCompass />
 
       {/* ── SOCIAL PROOF ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
