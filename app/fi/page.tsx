@@ -48,19 +48,17 @@ export default function FiHome() {
               Varaa kartoituskeskustelu
             </Link>
 
-            {/* Ajankohtaista strip */}
+            {/* Ajankohtaista box */}
             <Link
               href="/fi/valmennussarja"
-              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '16px', borderLeft: '1px solid rgba(255,255,255,0.2)', paddingLeft: '24px' }}
+              style={{ textDecoration: 'none', display: 'inline-flex', flexDirection: 'column', gap: '4px', border: '1px solid rgba(255,255,255,0.25)', padding: '12px 20px', backgroundColor: 'rgba(255,255,255,0.07)' }}
             >
-              <div>
-                <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>
-                  Ajankohtaista
-                </p>
-                <p style={{ margin: '3px 0 0', fontSize: '13px', color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-body)', lineHeight: 1.3 }}>
-                  Johtajan vaikuttavuus ja toimintakyky →
-                </p>
-              </div>
+              <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>
+                Ajankohtaista
+              </p>
+              <p style={{ margin: 0, fontSize: '13px', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', lineHeight: 1.3 }}>
+                Johtajan vaikuttavuus ja toimintakyky →
+              </p>
             </Link>
           </div>
         </div>
