@@ -449,15 +449,13 @@ export default function FiHome() {
                 </div>
               ))}
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <div>
               <Link
                 href="/fi/valmennussarja"
-                className="text-xs tracking-[0.18em] uppercase"
-                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(17,16,16,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap' }}
+                style={{ fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(86,86,214,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap', textDecoration: 'none' }}
               >
                 Lue lisää ja ilmoittaudu →
               </Link>
-              <span style={{ fontSize: '11px', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>1 795 € · alv 0 %</span>
             </div>
           </div>
         </div>

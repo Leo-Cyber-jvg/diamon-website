@@ -475,15 +475,13 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <div>
               <Link
                 href="/coaching-series"
-                className="text-xs tracking-[0.18em] uppercase"
-                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(17,16,16,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap' }}
+                style={{ fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(86,86,214,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap', textDecoration: 'none' }}
               >
                 Read more and register →
               </Link>
-              <span style={{ fontSize: '11px', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>1 795 € · excl. VAT</span>
             </div>
           </div>
         </div>
