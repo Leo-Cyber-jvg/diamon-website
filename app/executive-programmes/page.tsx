@@ -129,6 +129,26 @@ export default function ExecutiveProgrammesPage() {
         </div>
       </section>
 
+      {/* Coaching series */}
+      <section className="px-6 pt-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <Link href="/coaching-series/" className="grid md:grid-cols-3 gap-8 p-8 md:p-10" style={{ textDecoration: 'none', backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)' }}>
+          <div className="md:col-span-2">
+            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>New · Coaching series</p>
+            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}>Leadership Impact and Performance</h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '620px' }}>
+              One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field.
+            </p>
+          </div>
+          <div className="flex flex-col justify-between gap-6">
+            <div className="flex flex-col gap-3">
+              <p className="text-sm" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}><span style={{ color: 'var(--color-blue)' }}>01</span> · Leo Sjöman × Antti Pennanen<br /><span style={{ color: 'var(--color-muted)' }}>Connection and Leading Under Pressure</span></p>
+              <p className="text-sm" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}><span style={{ color: 'var(--color-blue)' }}>02</span> · Leo Sjöman × Henri Tuomilehto<br /><span style={{ color: 'var(--color-muted)' }}>Sleep, Recovery and Impact</span></p>
+            </div>
+            <span className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>Explore the coaching days →</span>
+          </div>
+        </Link>
+      </section>
+
       {/* Programmes */}
       {programmes.map((p, idx) => (
         <div key={p.id}>

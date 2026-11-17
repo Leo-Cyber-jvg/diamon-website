@@ -7,6 +7,7 @@ export const routeMap: Record<string, string> = {
   '/for-individuals': '/fi/yksiloille',
   '/for-organisations': '/fi/organisaatioille',
   '/executive-programmes': '/fi/ohjelmat',
+  '/coaching-series': '/fi/valmennussarja',
   '/framework': '/fi/ica-viitekehys',
   '/insights': '/fi/nakemyksia',
   '/about': '/fi/tietoa',

@@ -69,6 +69,26 @@ export default function OhjelmatPage() {
         </div>
       </section>
 
+      {/* Valmennussarja */}
+      <section className="px-6 pt-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <Link href="/fi/valmennussarja/" className="group grid md:grid-cols-3 gap-8 p-8 md:p-10" style={{ textDecoration: 'none', backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)' }}>
+          <div className="md:col-span-2">
+            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>Uusi · Valmennussarja</p>
+            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}>Johtajan vaikuttavuus ja toimintakyky</h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '620px' }}>
+              Yhden päivän intensiivivalmennuksia johtajille. Leo Sjöman valmentaa jokaisessa päivässä yhdessä eri alan huippuasiantuntijan kanssa.
+            </p>
+          </div>
+          <div className="flex flex-col justify-between gap-6">
+            <div className="flex flex-col gap-3">
+              <p className="text-sm" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}><span style={{ color: 'var(--color-blue)' }}>01</span> · Leo Sjöman × Antti Pennanen<br /><span style={{ color: 'var(--color-muted)' }}>Yhteys ja johtaminen paineessa</span></p>
+              <p className="text-sm" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}><span style={{ color: 'var(--color-blue)' }}>02</span> · Leo Sjöman × Henri Tuomilehto<br /><span style={{ color: 'var(--color-muted)' }}>Uni, palautuminen ja vaikuttavuus</span></p>
+            </div>
+            <span className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>Tutustu valmennuspäiviin →</span>
+          </div>
+        </Link>
+      </section>
+
       {/* Quick comparison */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Mikä ohjelma sopii sinulle?</p>
