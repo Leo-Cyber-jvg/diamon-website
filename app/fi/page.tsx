@@ -350,7 +350,7 @@ export default function FiHome() {
         </div>
       </section>
 
-      <InfluenceCompass />
+      <InfluenceCompass lang="fi" />
 
       {/* ── AJANKOHTAISTA ── */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>

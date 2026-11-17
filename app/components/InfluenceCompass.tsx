@@ -1,27 +1,37 @@
-export default function InfluenceCompass() {
+export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }) {
+  const isFi = lang === 'fi'
+
   const quadrants = [
     {
-      label: 'Core Focus',
+      label: isFi ? 'Ydinosa' : 'Core Focus',
       name: ['Communication', 'Identity'],
-      desc: 'Who you are as a communicator determines how far your leadership travels',
+      desc: isFi
+        ? 'Viestijäidentiteettisi määrittää, kuinka kauas johtajuutesi kantaa'
+        : 'Who you are as a communicator determines how far your leadership travels',
       align: 'left' as const,
     },
     {
-      label: 'Core Focus',
+      label: isFi ? 'Ydinosa' : 'Core Focus',
       name: ['Executive', 'Presence'],
-      desc: 'Personal impact that creates trust, authority and influence',
+      desc: isFi
+        ? 'Henkilökohtainen vaikuttavuus, joka rakentaa luottamusta, auktoriteettia ja vaikutusvaltaa'
+        : 'Personal impact that creates trust, authority and influence',
       align: 'right' as const,
     },
     {
-      label: 'Core Focus',
+      label: isFi ? 'Ydinosa' : 'Core Focus',
       name: ['Leadership', 'Culture'],
-      desc: 'Communication capability embedded in how teams and organisations operate',
+      desc: isFi
+        ? 'Viestintäkyky osana tiimien ja organisaatioiden toimintatapaa'
+        : 'Communication capability embedded in how teams and organisations operate',
       align: 'left' as const,
     },
     {
-      label: 'Core Focus',
+      label: isFi ? 'Ydinosa' : 'Core Focus',
       name: ['Business', 'Performance'],
-      desc: 'Communication as the infrastructure that drives trust, alignment and results',
+      desc: isFi
+        ? 'Viestintä infrastruktuurina, joka ohjaa luottamusta, yhteistä suuntaa ja tuloksia'
+        : 'Communication as the infrastructure that drives trust, alignment and results',
       align: 'right' as const,
     },
   ]
@@ -41,7 +51,7 @@ export default function InfluenceCompass() {
             </p>
 
             <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)' }}>
-              Personal Development
+              {isFi ? 'Yksilön kehitys' : 'Personal Development'}
             </p>
 
             <div className="relative">
@@ -100,7 +110,7 @@ export default function InfluenceCompass() {
             </div>
 
             <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)' }}>
-              Organisational Impact
+              {isFi ? 'Organisaatiovaikutus' : 'Organisational Impact'}
             </p>
           </div>
 
@@ -116,12 +126,15 @@ export default function InfluenceCompass() {
                 margin: 0,
               }}
             >
-              Where communication capability meets{' '}
-              <span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span>
+              {isFi ? (
+                <>Siellä missä viestintäkyky kohtaa{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisaation suorituskyvyn.</span></>
+              ) : (
+                <>Where communication capability meets{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span></>
+              )}
             </h2>
 
             <a
-              href="/methodology"
+              href={isFi ? '/fi/ica-viitekehys' : '/methodology'}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -137,7 +150,7 @@ export default function InfluenceCompass() {
                 width: 'fit-content',
               }}
             >
-              Explore the framework →
+              {isFi ? 'Tutustu viitekehykseen →' : 'Explore the framework →'}
             </a>
           </div>
 
