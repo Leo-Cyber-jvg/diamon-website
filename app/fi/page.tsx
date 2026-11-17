@@ -365,7 +365,7 @@ export default function FiHome() {
               }}
             >
               Johtajan vaikuttavuus<br />
-              <em style={{ fontStyle: 'italic', color: 'rgba(244,243,241,0.75)' }}>ja toimintakyky.</em>
+              ja toimintakyky.
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
