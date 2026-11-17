@@ -161,14 +161,11 @@ export default function FiHome() {
 
         {/* ICA kolme ympyrää */}
         <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '0',
-            position: 'relative',
-          }}
+          className="grid grid-cols-1 md:grid-cols-3"
+          style={{ gap: '0', position: 'relative' }}
         >
           <div
+            className="hidden md:block"
             style={{
               position: 'absolute',
               left: '16.6%',
