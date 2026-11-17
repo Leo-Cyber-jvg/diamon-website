@@ -167,7 +167,7 @@ export default function FiHome() {
               className="text-xs tracking-[0.3em] uppercase mb-4"
               style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
             >
-              Menetelmä
+              Metodi
             </p>
             <h2
               className="text-3xl md:text-4xl font-light"
@@ -213,7 +213,8 @@ export default function FiHome() {
               desc: 'Johtajaidentiteetti, itsetuntemus, oma toimintatila ja henkilökohtainen vaikuttavuus viestinnässä.',
               bg: 'var(--color-background)',
               border: '1px solid var(--color-blue)',
-              color: 'var(--color-text)',
+              color: '#F4F3F1',
+              logoFilter: 'none',
             },
             {
               letter: 'C',
@@ -221,7 +222,8 @@ export default function FiHome() {
               desc: 'Viestin rakentaminen, tarkoitus, fokus, selkeys ja vastaanottajan huomioiminen.',
               bg: 'var(--color-surface)',
               border: '1px solid var(--color-border)',
-              color: 'var(--color-text)',
+              color: '#F4F3F1',
+              logoFilter: 'saturate(0.25) opacity(0.55)',
             },
             {
               letter: 'A',
@@ -229,7 +231,8 @@ export default function FiHome() {
               desc: 'Konkreettinen vuorovaikutus, kehollisuus, läsnäolo, kuunteleminen ja toiminta todellisissa johtamistilanteissa.',
               bg: 'var(--color-blue)',
               border: 'none',
-              color: '#fff',
+              color: '#5656D6',
+              logoFilter: 'brightness(0) invert(1)',
             },
           ].map((item) => (
             <div
@@ -244,19 +247,37 @@ export default function FiHome() {
                   borderRadius: '50%',
                   border: item.border,
                   backgroundColor: item.bg,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
                   flexShrink: 0,
+                  position: 'relative',
+                  overflow: 'hidden',
                 }}
               >
+                <img
+                  src="/diamon-logo-02.png"
+                  alt=""
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    filter: item.logoFilter,
+                  }}
+                />
                 <span
                   style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     fontFamily: 'var(--font-heading)',
-                    fontSize: '3.5rem',
-                    fontWeight: 300,
+                    fontSize: '4.5rem',
+                    fontWeight: 500,
                     color: item.color,
                     lineHeight: 1,
+                    zIndex: 1,
                   }}
                 >
                   {item.letter}
