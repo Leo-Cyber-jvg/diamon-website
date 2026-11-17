@@ -416,6 +416,7 @@ export default function Home() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
               {[
                 { label: 'Date', value: 'Friday 22.1.2027 · 9–17' },
+                { label: 'Location', value: 'Helsinki' },
                 { label: 'Coaches', value: 'Leo Sjöman × Antti Pennanen' },
                 { label: 'Group', value: '10 executives' },
               ].map(({ label, value }) => (

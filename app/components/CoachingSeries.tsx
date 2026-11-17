@@ -107,6 +107,7 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'Kenelle',
     facts: [
       ['Kesto', '1 lähipäivä'],
+      ['Paikka', 'Helsinki'],
       ['Ryhmä', '10 johtajaa'],
       ['Hinta', '1 795 € / hlö', 'alv 0 %'],
     ],
@@ -229,6 +230,7 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'For',
     facts: [
       ['Duration', '1 day, in person'],
+      ['Location', 'Helsinki'],
       ['Group', '10 leaders'],
       ['Price', '€1,795 / person', 'excl. VAT'],
     ],

@@ -411,6 +411,7 @@ export default function FiHome() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
               {[
                 { label: 'Ajankohta', value: 'Perjantai 22.1.2027 · klo 9–17' },
+                { label: 'Paikka', value: 'Helsinki' },
                 { label: 'Valmentajat', value: 'Leo Sjöman × Antti Pennanen' },
                 { label: 'Ryhmä', value: '10 johtajaa' },
               ].map(({ label, value }) => (
