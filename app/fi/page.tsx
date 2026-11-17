@@ -449,8 +449,7 @@ export default function FiHome() {
                 </div>
               ))}
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <span style={{ fontSize: '12px', color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>1 795 € · alv 0 %</span>
+            <div>
               <Link
                 href="/fi/valmennussarja"
                 style={{ fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(86,86,214,0.35)', paddingBottom: '3px', whiteSpace: 'nowrap', textDecoration: 'none', width: 'fit-content' }}
