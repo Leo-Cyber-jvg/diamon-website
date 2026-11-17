@@ -111,8 +111,8 @@ export default function InfluenceCompass() {
               top: '50%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
-              width: '52px',
-              height: '52px',
+              width: '72px',
+              height: '72px',
               borderRadius: '50%',
               background: 'conic-gradient(from 0deg, #2020A0, #5656D6, #8888EE, #CCCCFF, #8888EE, #5656D6, #2020A0)',
               display: 'flex',
@@ -122,7 +122,7 @@ export default function InfluenceCompass() {
               flexShrink: 0,
             }}
           >
-            <div style={{ width: '76%', height: '76%', borderRadius: '50%', backgroundColor: '#F4F3F1' }} />
+            <img src="/diamon-logo.png" alt="Diamon" style={{ width: '76%', height: '76%', borderRadius: '50%', objectFit: 'contain', backgroundColor: '#F4F3F1' }} />
           </div>
         </div>
 
