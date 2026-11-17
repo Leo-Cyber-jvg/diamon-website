@@ -411,8 +411,8 @@ export default function Home() {
                 margin: '24px 0',
               }}
             >
-              Johtajan vaikuttavuus<br />
-              ja toimintakyky.
+              Leadership Impact<br />
+              and Performance.
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -436,7 +436,7 @@ export default function Home() {
               Next session
             </p>
             <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(20px, 2vw, 28px)', fontWeight: 300, lineHeight: 1.18, color: 'var(--color-text)', margin: 0 }}>
-              Yhteys ja johtaminen <em style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>paineessa.</em>
+              Connection and leading <em style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>under pressure.</em>
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
               {[
