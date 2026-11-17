@@ -35,7 +35,7 @@ export default function InfluenceCompass() {
           {/* LEFT: Eyebrow + Compass */}
           <div>
             <p
-              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)', margin: '0 0 20px', textAlign: 'center' }}
+              style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 20px', textAlign: 'center' }}
             >
               The DIAMON Architecture of Influence
             </p>
