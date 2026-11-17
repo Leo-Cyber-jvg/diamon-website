@@ -52,8 +52,8 @@ export default function FiHome() {
       <InfluenceCompass />
 
       {/* ── KENELLE ── */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="mb-14">
+      <section>
+        <div className="px-6 pt-20 pb-12" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-4"
             style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
@@ -69,61 +69,88 @@ export default function FiHome() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        {/* Aker-style full-bleed two-panel CTA grid */}
+        <div className="grid md:grid-cols-2" style={{ gap: '3px', backgroundColor: 'var(--color-border)' }}>
           {/* Organisaatioille */}
-          <div className="p-10 flex flex-col gap-6" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
+          <div
+            className="relative flex flex-col justify-end"
+            style={{ minHeight: '520px', overflow: 'hidden' }}
+          >
+            <img
+              src="/cta-organizations.jpg"
+              alt="Johtamisviestintä organisaatioille"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+            />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
+            <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
-                className="text-xs tracking-[0.25em] uppercase mb-5"
-                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+                className="text-xs tracking-[0.25em] uppercase"
+                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
               >
                 Organisaatioille
               </p>
               <h3
-                className="text-2xl md:text-3xl font-light mb-4"
-                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+                className="text-2xl md:text-4xl font-light"
+                style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12, maxWidth: '20ch' }}
               >
-                Johtamisviestintä<br />organisaation kyvykkyydeksi.
+                Johtamisviestintä organisaation kyvykkyydeksi.
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+                style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
               >
                 Pitkäjänteiset kehitysohjelmat johtoryhmille, johtajille ja koko organisaatioille.
                 Vuosiohjelma, räätälöidyt työpajat ja strateginen viestintäkonsultointi.
               </p>
+              <Link
+                href="/fi/organisaatioille"
+                className="text-xs tracking-[0.18em] uppercase inline-flex items-center gap-2"
+                style={{ color: '#F4F3F1', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(244,243,241,0.3)', paddingBottom: '4px', width: 'fit-content' }}
+              >
+                Organisaatioille &rarr;
+              </Link>
             </div>
-            <Link href="/fi/organisaatioille" className="link-blue text-sm mt-auto" style={{ fontFamily: 'var(--font-body)' }}>
-              Organisaatioille &rarr;
-            </Link>
           </div>
 
           {/* Johtajille */}
-          <div className="p-10 flex flex-col gap-6" style={{ backgroundColor: 'var(--color-surface)' }}>
-            <div>
+          <div
+            className="relative flex flex-col justify-end"
+            style={{ minHeight: '520px', overflow: 'hidden' }}
+          >
+            <img
+              src="/cta-individuals.jpg"
+              alt="Henkilökohtainen valmennus johtajille"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+            />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
+            <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
-                className="text-xs tracking-[0.25em] uppercase mb-5"
-                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+                className="text-xs tracking-[0.25em] uppercase"
+                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
               >
                 Johtajille
               </p>
               <h3
-                className="text-2xl md:text-3xl font-light mb-4"
-                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+                className="text-2xl md:text-4xl font-light"
+                style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12, maxWidth: '20ch' }}
               >
-                Henkilökohtainen valmennus<br />vaikuttavaan johtajuuteen.
+                Henkilökohtainen valmennus vaikuttavaan johtajuuteen.
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+                style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
               >
                 Yksilövalmennus toimitusjohtajille, perustajille ja muutostilanteessa oleville johtajille.
                 Thought Leader Studio, Impact Session ja jatkuva johtamisvalmennus.
               </p>
+              <Link
+                href="/fi/yksiloille"
+                className="text-xs tracking-[0.18em] uppercase inline-flex items-center gap-2"
+                style={{ color: '#F4F3F1', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(244,243,241,0.3)', paddingBottom: '4px', width: 'fit-content' }}
+              >
+                Johtajille &rarr;
+              </Link>
             </div>
-            <Link href="/fi/yksiloille" className="link-blue text-sm mt-auto" style={{ fontFamily: 'var(--font-body)' }}>
-              Johtajille &rarr;
-            </Link>
           </div>
         </div>
       </section>
