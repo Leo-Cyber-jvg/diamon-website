@@ -40,7 +40,7 @@ export default function InfluenceCompass() {
               The DIAMON Architecture of Influence
             </p>
 
-            <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
+            <p className="text-center mb-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)' }}>
               Personal Development
             </p>
 
@@ -69,7 +69,7 @@ export default function InfluenceCompass() {
                       ...(i === 3 && { paddingLeft: '36px', paddingTop: '36px' }),
                     }}
                   >
-                    <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#9E9890', fontFamily: 'var(--font-body)' }}>{q.label}</span>
+                    <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#5656D6', fontFamily: 'var(--font-body)' }}>Focus</span>
                     <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
                       {q.name[0]}<br />{q.name[1]}
                     </div>
@@ -99,7 +99,7 @@ export default function InfluenceCompass() {
               />
             </div>
 
-            <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9E9890', fontFamily: 'var(--font-body)' }}>
+            <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)' }}>
               Organisational Impact
             </p>
           </div>
