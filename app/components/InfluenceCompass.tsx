@@ -127,7 +127,7 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
               }}
             >
               {isFi ? (
-                <>Siellä missä viestintäkyky kohtaa{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisaation suorituskyvyn.</span></>
+                <>Johtamisviestinnän vaikuttavuus näkyy{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisaation suorituskyvyssä.</span></>
               ) : (
                 <>Where communication capability meets{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span></>
               )}

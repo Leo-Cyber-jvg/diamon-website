@@ -315,45 +315,46 @@ export default function Home() {
 
       {/* ── LEO SJÖMAN ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative overflow-hidden" style={{ aspectRatio: '3/4', maxHeight: '580px' }}>
+        <div className="flex items-baseline justify-between gap-6 mb-10">
+          <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Founder
+          </p>
+        </div>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
+        <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+          {/* Left: photo */}
+          <div style={{ position: 'relative', overflow: 'hidden', minHeight: '460px' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
               alt="Leo Sjöman — Founder, Diamon Finland"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
             />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px', background: 'linear-gradient(to top, rgba(17,16,16,0.55) 0%, transparent 100%)' }}>
+              <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(244,243,241,0.6)', fontFamily: 'var(--font-body)' }}>
+                Diamon Finland
+              </p>
+            </div>
           </div>
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Founder
-            </p>
+          {/* Right: text */}
+          <div className="flex flex-col justify-center" style={{ padding: '48px 44px', gap: '20px', backgroundColor: 'var(--color-background)' }}>
             <h2
-              className="font-light mb-2"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
+              className="font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', lineHeight: 1.1, margin: 0 }}
             >
               Leo Sjöman
             </h2>
             <p
-              className="mb-8 text-sm"
-              style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', letterSpacing: '0.04em' }}
-            >
-              Diamon Finland
-            </p>
-            <p
-              className="text-sm leading-relaxed mb-5"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              className="text-sm leading-relaxed"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}
             >
               Leo Sjöman is an actor, entrepreneur, and leadership communication coach who works with
               leaders, experts, and teams on developing more effective communication, public speaking,
               and interpersonal skills.
             </p>
             <p
-              className="text-sm leading-relaxed mb-5"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              className="text-sm leading-relaxed"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}
             >
               In his work, he combines strategic communication, business acumen, and over 20 years of
               experience performing in theatre, television, and film. He is known for creating a trusting,
@@ -361,15 +362,15 @@ export default function Home() {
               concretely to everyday leadership and interpersonal situations.
             </p>
             <p
-              className="text-sm leading-relaxed mb-5"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+              className="text-sm leading-relaxed"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}
             >
               Leo has coached leaders ranging from medium-sized family businesses to international
               organisations and the executive leadership of large corporations. He holds a Master of Arts
               in Theatre Arts (University of the Arts Helsinki) and is the founder of the production
               company Hoka Films.
             </p>
-            <Link href="/about" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+            <Link href="/about" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)', marginTop: '4px' }}>
               About Leo and Diamon &rarr;
             </Link>
           </div>
