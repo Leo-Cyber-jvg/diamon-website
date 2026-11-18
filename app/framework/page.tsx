@@ -27,8 +27,8 @@ const levels = [
   {
     id: 'ICA II',
     name: 'Composition',
-    model: 'SNS™',
-    modelFull: 'State, Narrative, Structure',
+    model: 'TNT™',
+    modelFull: 'State, Narrative, Action Structure',
     question: 'How is impactful leadership communication intentionally constructed?',
     points: [
       'State — optimal communication state and presence',
@@ -37,7 +37,7 @@ const levels = [
       'Leadership interaction under pressure',
       'Pre-communication architecture',
     ],
-    body: 'High-performance communication is not improvised. It is composed. The SNS™ model provides the architecture for constructing communication that is strategically coherent before it is delivered. State, Narrative, and Structure are not sequential steps — they are interdependent layers that function together.',
+    body: 'High-performance communication is not improvised. It is composed. The TNT™ model provides the architecture for constructing communication that is strategically coherent before it is delivered. State, Narrative, and Structure are not sequential steps — they are interdependent layers that function together.',
   },
   {
     id: 'ICA III',

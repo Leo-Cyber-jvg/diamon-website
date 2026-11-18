@@ -25,7 +25,7 @@ const levels = [
   },
   {
     id: 'ICA II',
-    model: 'SNS™',
+    model: 'TNT™',
     name: 'Composition',
     question: 'How is communication designed?',
     act: 'Middle',
@@ -36,7 +36,7 @@ const levels = [
       'Narrative construction',
       'Strategic structure and sequencing',
     ],
-    body: 'State, narrative, structure, clarity and strategic intention. How impactful leadership communication is intentionally constructed before delivery.',
+    body: 'State, narrative, action structure, clarity and strategic intention. How impactful leadership communication is intentionally constructed before delivery.',
   },
   {
     id: 'ICA III',

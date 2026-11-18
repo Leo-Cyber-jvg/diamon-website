@@ -41,7 +41,7 @@ const icaLevels = [
   },
   {
     id: 'ICA II',
-    model: 'SNS™',
+    model: 'TNT™',
     name: 'Composition',
     question: 'How is your communication constructed?',
     body: 'State. Narrative. Structure. How high-performance communication is intentionally architected before it is delivered.',

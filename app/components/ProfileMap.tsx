@@ -27,10 +27,10 @@ const NODES: ProfileNode[] = [
     meta: 'DIAMON ICA Framework™ · Component I of III',
   },
   {
-    l1: 'ICA II', l2: 'Composition · SNS™',
+    l1: 'ICA II', l2: 'Composition · TNT™',
     title: 'ICA II — Composition',
     section: 'State · Narrative · Structure',
-    body: "Assesses how the leader structures messages, manages communication state, and constructs clear narrative. The SNS™ framework identifies patterns in how communication is composed and delivered across different situations.",
+    body: "Assesses how the leader structures messages, manages communication state, and constructs clear narrative. The TNT™ framework identifies patterns in how communication is composed and delivered across different situations.",
     meta: 'DIAMON ICA Framework™ · Component II of III',
   },
   {
