@@ -7,9 +7,12 @@ export default function Home() {
       {/* ── HERO ── */}
       <section
         className="flex flex-col justify-end px-6 pb-24 pt-40"
-        style={{ backgroundColor: 'var(--color-blue)', minHeight: '92vh' }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', minHeight: '92vh' }}
       >
-        <div className="mx-auto w-full" style={{ maxWidth: '1200px' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/coaching-series-bg.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', filter: 'brightness(0.4) saturate(0.5)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.35) 100%)' }} />
+        <div className="mx-auto w-full" style={{ maxWidth: '1200px', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-12"
             style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
