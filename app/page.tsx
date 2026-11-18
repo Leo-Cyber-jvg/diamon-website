@@ -351,7 +351,7 @@ export default function Home() {
             }}
           >
             <img
-              src="/coaching-series-bg.webp"
+              src="/speaker-stage.webp"
               alt=""
               style={{
                 position: 'absolute',

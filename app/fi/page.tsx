@@ -346,7 +346,7 @@ export default function FiHome() {
             }}
           >
             <img
-              src="/coaching-series-bg.webp"
+              src="/speaker-stage.webp"
               alt=""
               style={{
                 position: 'absolute',
