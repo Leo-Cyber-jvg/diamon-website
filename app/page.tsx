@@ -351,7 +351,7 @@ export default function Home() {
             }}
           >
             <img
-              src="/speaker-stage.webp"
+              src="/speaker-blue.webp"
               alt=""
               style={{
                 position: 'absolute',

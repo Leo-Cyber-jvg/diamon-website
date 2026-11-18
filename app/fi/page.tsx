@@ -346,7 +346,7 @@ export default function FiHome() {
             }}
           >
             <img
-              src="/speaker-stage.webp"
+              src="/speaker-blue.webp"
               alt=""
               style={{
                 position: 'absolute',
