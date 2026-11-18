@@ -559,7 +559,7 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
       <section className="px-6 pt-40 pb-20" style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010' }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/coaching-series-bg.webp"
+          src="/coaching-series-bg-new.jpg"
           alt=""
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', filter: 'brightness(0.4) saturate(0.5)' }}
         />
@@ -612,7 +612,7 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
         </div>
         <div className="flex flex-col gap-8">
           {rest.map((c) => (
-            <UpcomingDay key={c.id} c={c} t={t} />
+            <FeaturedDay key={c.id} c={c} t={t} />
           ))}
         </div>
       </section>
