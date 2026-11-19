@@ -110,7 +110,7 @@ export default function Home() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: '#5656D6', fontFamily: 'var(--font-body)', fontWeight: 600 }}
+                style={{ color: '#5656D6', fontFamily: 'var(--font-body)' }}
               >
                 For Organizations
               </p>
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: '#5656D6', fontFamily: 'var(--font-body)', fontWeight: 600 }}
+                style={{ color: '#5656D6', fontFamily: 'var(--font-body)' }}
               >
                 For Individuals
               </p>
