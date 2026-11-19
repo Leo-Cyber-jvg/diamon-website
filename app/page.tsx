@@ -46,8 +46,8 @@ export default function Home() {
               fontSize: '1rem',
             }}
           >
-            We build communication capability for leaders, executive teams and organisations,
-            systematically, measurably, and for the long term.
+            We build communication capability for leaders and organisations —
+            systematically, measurably and for the long term.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
@@ -110,7 +110,7 @@ export default function Home() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
+                style={{ color: '#5656D6', fontFamily: 'var(--font-body)', fontWeight: 600 }}
               >
                 For Organizations
               </p>
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
+                style={{ color: '#5656D6', fontFamily: 'var(--font-body)', fontWeight: 600 }}
               >
                 For Individuals
               </p>
@@ -613,11 +613,10 @@ export default function Home() {
               className="text-3xl md:text-4xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
             >
-              The right conversation starts with a question.
+              {"Let's talk."}
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Describe the challenge or the outcome you are working toward.
-              The first conversation is a diagnostic, not a sales process.
+              Tell us about your goals or challenges. We will explore together how Diamon could strengthen the impact of leadership communication and interaction.
             </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0">
