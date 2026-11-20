@@ -34,13 +34,13 @@ export default function TietoaPage() {
             objectFit: 'cover',
             objectPosition: 'center 20%',
             display: 'block',
-            filter: 'brightness(0.42) saturate(0.5)',
+            filter: 'brightness(0.35) saturate(0.5)',
           }}
         />
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to bottom, rgba(13,12,12,0.1) 0%, rgba(13,12,12,0.55) 60%, rgba(13,12,12,0.92) 100%)',
+          background: 'linear-gradient(135deg, rgba(86,86,214,0.55) 0%, rgba(17,16,16,0.35) 100%)',
           pointerEvents: 'none',
         }} />
         <div
