@@ -35,7 +35,7 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
     <section className="px-6 py-12" style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <div
         style={{
-          background: 'linear-gradient(135deg, #2D2DA0 0%, #5656D6 100%)',
+          backgroundColor: 'var(--color-blue)',
           position: 'relative',
           overflow: 'hidden',
         }}
@@ -116,28 +116,13 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
           />
 
           {copy.items.map((item, i) => {
-            // Circle visual: same hierarchy as homepage but adapted for blue bg
-            // I = outlined (white border), C = faint/neutral, A = filled white
-            const circleStyle = [
-              {
-                bg: 'rgba(255,255,255,0.1)',
-                border: '1px solid rgba(255,255,255,0.75)',
-                letterColor: '#F4F3F1',
-                logoFilter: 'none',
-              },
-              {
-                bg: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.25)',
-                letterColor: 'rgba(255,255,255,0.5)',
-                logoFilter: 'saturate(0.25) opacity(0.4)',
-              },
-              {
-                bg: 'rgba(255,255,255,0.92)',
-                border: 'none',
-                letterColor: '#5656D6',
-                logoFilter: 'none',
-              },
-            ][i]
+            // All circles: copy of homepage Action circle (white bg, logo as-is, blue letter)
+            const circleStyle = {
+              bg: 'var(--color-background)',
+              border: 'none',
+              letterColor: '#5656D6',
+              logoFilter: 'none',
+            }
 
             return (
               <div

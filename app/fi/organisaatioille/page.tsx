@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Organisaatioille — DIAMON Finland',
-  description: 'Johtamisviestinnän kehittäminen johtoryhmille ja organisaatioille. Vuosittainen johtajuusohjelma, Thought Leader Studio, Vaikuttavuussessio.',
+  description: 'Johtamisviestinnän kehittäminen johtoryhmille ja organisaatioille. Annual Leadership Program, Thought Leader Studio, Impact Session.',
 }
 
 export default function OrganisaatioillePage() {

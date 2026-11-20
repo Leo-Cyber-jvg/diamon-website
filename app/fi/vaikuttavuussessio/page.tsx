@@ -3,7 +3,7 @@ import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
-  title: 'Vaikuttavuussessio — DIAMON Finland',
+  title: 'Impact Session — DIAMON Finland',
   description:
     'Intensiivinen yksilöcoachingsessio, joka valmistaa johtajan tai asiantuntijan onnistumaan tietyssä korkean panoksen viestintätilanteessa. 3 tuntia. Etä-, lähi- tai studioformaatti.',
 }
@@ -27,7 +27,7 @@ export default function VaikuttavuussessioPage() {
             className="text-4xl md:text-6xl lg:text-7xl font-light mb-8"
             style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.05, maxWidth: '820px' }}
           >
-            Vaikuttavuussessio
+            Impact Session
           </h1>
           <p
             className="text-xl md:text-2xl font-light mb-12"
@@ -67,7 +67,7 @@ export default function VaikuttavuussessioPage() {
                 letterSpacing: '0.05em',
               }}
             >
-              Varaa Vaikuttavuussessio
+              Varaa Impact Session
             </Link>
             <Link
               href="/fi/ota-yhteytta"
@@ -99,7 +99,7 @@ export default function VaikuttavuussessioPage() {
               Yksi sessio. Yksi hetki. Täydellinen valmistautuminen.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON Vaikuttavuussessio on intensiivinen, yksilöllinen coachingkokonaisuus, joka
+              DIAMON Impact Session on intensiivinen, yksilöllinen coachingkokonaisuus, joka
               valmistaa johtajan tai asiantuntijan onnistumaan tietyssä viestintätilanteessa,
               jossa vaikutus ratkaisee eniten. Ei yleinen esiintymistaito — täsmällinen valmistautuminen
               juuri sinun hetkellesi.
@@ -209,7 +209,7 @@ export default function VaikuttavuussessioPage() {
               flexShrink: 0,
             }}
           >
-            Varaa Vaikuttavuussessio
+            Varaa Impact Session
           </Link>
         </div>
       </section>

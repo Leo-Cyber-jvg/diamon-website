@@ -3,7 +3,7 @@ import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
-  title: 'Johtajan viestinnän vuosiohjelma — DIAMON Finland',
+  title: 'Annual Leadership Program — DIAMON Finland',
   description:
     'Rakenteellinen valmennuskokonaisuus, joka rakentaa johtajalle johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin. 12 kuukautta, 6 sessiota.',
 }
@@ -30,8 +30,8 @@ export default function VuosittainenJohtajuusohjelmePage() {
             className="text-4xl md:text-6xl lg:text-7xl font-light mb-8"
             style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.05, maxWidth: '820px' }}
           >
-            Johtajan viestinnän<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>vuosiohjelma</span>
+            Annual<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>Leadership Program</span>
           </h1>
           <p
             className="text-xl md:text-2xl font-light mb-12"
@@ -105,7 +105,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               12 kuukautta. Järjestelmällistä. Mitattavaa.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Johtajan viestinnän vuosiohjelma on 12 kuukauden kehitysohjelma, joka on suunniteltu
+              Annual Leadership Program on 12 kuukauden kehitysohjelma, joka on suunniteltu
               vahvistamaan johtajan viestinnällistä vaikuttavuutta ja esiintymisen strategista roolia.
               Se on rakenteellinen valmennuskokonaisuus — ei yksittäinen kurssi — joka rakentaa
               johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin.
