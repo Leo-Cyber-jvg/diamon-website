@@ -13,9 +13,12 @@ export default function ForOrganisationsPage() {
       {/* Hero */}
       <section
         className="flex flex-col justify-end px-6 pb-24 pt-40"
-        style={{ backgroundColor: 'var(--color-blue)', minHeight: '60vh' }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', minHeight: '60vh' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/for-organisations-bg.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 25%', filter: 'brightness(0.38) saturate(0.6)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.45) 0%, rgba(17,16,16,0.3) 100%)' }} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
@@ -34,7 +37,7 @@ export default function ForOrganisationsPage() {
             }}
           >
             Leadership communication<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>as an organisational capability.</span>
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>as a strategic competitive advantage.</span>
           </h1>
           <p
             className="font-light"
@@ -66,29 +69,28 @@ export default function ForOrganisationsPage() {
               className="text-3xl md:text-4xl font-light mb-6"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
-              Communication performance is a strategic asset.
+              Leadership effectiveness is built in interaction.
             </h2>
             <p
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
               The most consequential leadership decisions are executed through communication.
-              Strategy, culture, trust and change all depend on leaders who can communicate
-              with clarity, presence and intention.
+              Strategy, culture, trust and change. All of it rests, in the end, on leaders
+              who communicate with clarity, presence and intention.
             </p>
             <p
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Diamon builds this capability systematically — not through training events, but through
-              structured development programmes grounded in the DIAMON ICA Framework™.
+              Diamon develops this capability systematically. The coaching is built on the DIAMON ICA Framework™.
             </p>
           </div>
           <div className="flex flex-col gap-8 md:pt-12">
             {[
               { n: '01', text: 'Develop leadership communication as a core organisational capability.' },
               { n: '02', text: 'Build executive presence, strategic storytelling and stakeholder influence.' },
-              { n: '03', text: 'Create measurable, lasting change — not isolated training events.' },
+              { n: '03', text: 'Create measurable, lasting change.' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span
@@ -128,12 +130,12 @@ export default function ForOrganisationsPage() {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {services.map((s, i) => (
+        <div className="flex flex-col gap-6">
+          {services.map((s) => (
             <div
               key={s.id}
               className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-              style={{ backgroundColor: i % 2 === 1 ? 'var(--color-surface)' : 'var(--color-background)' }}
+              style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
             >
               {/* Left: name + value */}
               <div className="md:col-span-1">
@@ -207,6 +209,85 @@ export default function ForOrganisationsPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* Keynotes */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div
+          className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
+          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
+        >
+          <div className="md:col-span-1">
+            <p
+              className="text-xs tracking-[0.25em] uppercase mb-4"
+              style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+            >
+              45–75 min · On-site or hybrid
+            </p>
+            <h3
+              className="text-2xl md:text-3xl font-light mb-4"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
+            >
+              Leo Sjöman — Keynote Speaking
+            </h3>
+            <p
+              className="text-sm leading-relaxed mb-6"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Keynotes on communication, presence and personal impact — drawing on over two
+              decades of professional performance and leadership coaching. Content is designed
+              around your organisation and audience.
+            </p>
+            <Link href="/keynotes" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+              Keynote details &rarr;
+            </Link>
+          </div>
+          <div className="md:col-span-1 flex flex-col gap-6">
+            <div>
+              <p
+                className="text-xs tracking-[0.2em] uppercase mb-3"
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+              >
+                Designed for
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                Leadership events, company days, strategy sessions, and conferences where
+                the theme is communication, leadership, or human performance.
+              </p>
+            </div>
+          </div>
+          <div className="md:col-span-1">
+            <p
+              className="text-xs tracking-[0.2em] uppercase mb-4"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              Key themes
+            </p>
+            <div className="flex flex-col gap-2">
+              {[
+                'Personal impact and presence',
+                'Communication, interaction and leadership',
+                'Performance under pressure',
+                'Professional identity and finding your voice',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-3">
+                  <span
+                    className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
+                    style={{ backgroundColor: 'var(--color-blue)' }}
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* ICA reference */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -221,13 +302,13 @@ export default function ForOrganisationsPage() {
               className="text-3xl font-light mb-5"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
-              All programmes are built on the DIAMON ICA Framework™
+              Coaching built on the DIAMON ICA Framework™
             </h2>
             <p
               className="text-sm leading-relaxed mb-6"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Identity. Composition. Action. A structured development methodology grounded in performance
+              A structured development methodology grounded in performance
               psychology and two decades of professional performance practice.
             </p>
             <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
@@ -272,7 +353,7 @@ export default function ForOrganisationsPage() {
               Start the conversation about your organisation.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Every engagement begins with a diagnostic conversation — not a sales process.
+              Every engagement begins with a diagnostic conversation, not a sales process.
             </p>
           </div>
           <Link
