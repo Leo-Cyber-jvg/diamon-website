@@ -31,193 +31,136 @@ const t = {
 
 export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
   const copy = t[lang]
+  const [I, C, A] = copy.items
   return (
-    <section className="px-6 py-12" style={{ maxWidth: '1100px', margin: '0 auto' }}>
+    <section className="px-6 py-12" style={{ maxWidth: '1200px', margin: '0 auto' }}>
       <div
-        style={{
-          background: 'linear-gradient(90deg, #9999E8 0%, #5656D6 50%, #2D2DA0 100%)',
-          position: 'relative',
-          overflow: 'hidden',
-        }}
+        className="grid md:grid-cols-2"
+        style={{ alignItems: 'stretch' }}
       >
 
-        {/* Header */}
+        {/* Left: I/C/A circles in triangle */}
         <div
-          className="flex items-start justify-between gap-6 flex-wrap"
-          style={{
-            padding: '2rem 2rem 1.5rem',
-            borderBottom: '1px solid rgba(255,255,255,0.15)',
-            position: 'relative',
-          }}
+          className="flex flex-col items-center justify-center gap-5 py-14 px-10"
+          style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}
         >
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-4"
-              style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}
-            >
-              {copy.eyebrow}
-            </p>
-            <h2
-              className="text-3xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
-            >
-              {copy.title}
-            </h2>
+          {/* Top: I */}
+          <div className="flex justify-center">
+            <CircleItem letter={I.letter} label={I.label} />
           </div>
-          {/* DIAMON logo ball — same image used in homepage circles */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/diamon-logo-02.png"
-            alt=""
-            aria-hidden="true"
-            style={{
-              width: '64px',
-              height: '64px',
-              borderRadius: '50%',
-              objectFit: 'cover',
-              flexShrink: 0,
-              opacity: 0.7,
-            }}
-          />
+          {/* Bottom: C + A */}
+          <div className="flex justify-center gap-5">
+            <CircleItem letter={C.letter} label={C.label} />
+            <CircleItem letter={A.letter} label={A.label} />
+          </div>
         </div>
 
-        {/* Lead text */}
-        <p
-          className="text-sm leading-relaxed"
+        {/* Right: text */}
+        <div
+          className="flex flex-col justify-center py-14 px-12"
           style={{
-            color: 'rgba(255,255,255,0.65)',
-            fontFamily: 'var(--font-body)',
-            padding: '1.25rem 2rem',
-            borderBottom: '1px solid rgba(255,255,255,0.15)',
-            margin: 0,
-            position: 'relative',
+            border: '1px solid var(--color-border)',
+            marginLeft: '-1px',
+            backgroundColor: 'var(--color-background)',
           }}
         >
-          {copy.lead}
-        </p>
-
-        {/* Three circles */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-3"
-          style={{ position: 'relative' }}
-        >
-          {/* Connecting line (desktop) */}
-          <div
-            className="hidden md:block"
-            style={{
-              position: 'absolute',
-              left: 'calc(16.6% + 65px)',
-              right: 'calc(16.6% + 65px)',
-              top: '65px',
-              height: '1px',
-              backgroundColor: 'rgba(255,255,255,0.2)',
-              pointerEvents: 'none',
-            }}
-          />
-
-          {copy.items.map((item, i) => {
-            // All circles: glass on gradient bg, white letter
-            const circleStyle = {
-              bg: 'rgba(255,255,255,0.15)',
-              border: '1px solid rgba(255,255,255,0.35)',
-              letterColor: '#fff',
-              logoFilter: 'brightness(0) invert(1) opacity(0.7)',
-            }
-
-            return (
-              <div
-                key={item.letter}
-                className="flex flex-col items-center text-center px-6 py-8"
-                style={{
-                  borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none',
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    width: '130px',
-                    height: '130px',
-                    borderRadius: '50%',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    flexShrink: 0,
-                    backgroundColor: circleStyle.bg,
-                    border: circleStyle.border,
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/diamon-logo-02.png"
-                    alt=""
-                    style={{
-                      position: 'absolute',
-                      inset: 0,
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      display: 'block',
-                      filter: circleStyle.logoFilter,
-                    }}
-                  />
-                  <span
-                    style={{
-                      position: 'absolute',
-                      inset: 0,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontFamily: 'var(--font-heading)',
-                      fontSize: '4rem',
-                      fontWeight: 500,
-                      lineHeight: 1,
-                      zIndex: 1,
-                      color: circleStyle.letterColor,
-                    }}
-                  >
-                    {item.letter}
-                  </span>
-                </div>
-                <p
-                  className="mt-5 text-sm font-medium tracking-[0.3em] uppercase"
-                  style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)' }}
-                >
-                  {item.label}
-                </p>
-                <p
-                  className="mt-3 text-sm leading-relaxed"
-                  style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.55)', maxWidth: '200px' }}
-                >
-                  {item.desc}
-                </p>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Footer */}
-        <div
-          className="flex items-center justify-between"
-          style={{
-            padding: '1rem 2rem',
-            borderTop: '1px solid rgba(255,255,255,0.15)',
-            position: 'relative',
-          }}
-        >
-          <span
-            className="text-xs tracking-[0.15em]"
-            style={{ color: 'rgba(255,255,255,0.35)', fontFamily: 'var(--font-body)' }}
+          <p
+            className="text-xs tracking-[0.3em] uppercase mb-5"
+            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
           >
-            DIAMON ICA Framework™
-          </span>
+            {copy.eyebrow}
+          </p>
+          <h2
+            className="font-light mb-5"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(28px, 3.5vw, 42px)',
+              color: 'var(--color-text)',
+              lineHeight: 1.15,
+            }}
+          >
+            {copy.title}
+          </h2>
+          <p
+            className="text-sm leading-relaxed mb-8"
+            style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '420px' }}
+          >
+            {copy.lead}
+          </p>
           <Link
             href={copy.link}
-            className="text-sm"
-            style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.65)', textDecoration: 'none', letterSpacing: '0.03em' }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '11px',
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: 'var(--color-blue)',
+              textDecoration: 'none',
+              paddingBottom: '3px',
+              borderBottom: '1px solid var(--color-blue)',
+              display: 'inline-block',
+            }}
           >
             {copy.linkLabel}
           </Link>
         </div>
       </div>
     </section>
+  )
+}
+
+function CircleItem({ letter, label }: { letter: string; label: string }) {
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <div
+        style={{
+          width: '120px',
+          height: '120px',
+          borderRadius: '50%',
+          position: 'relative',
+          overflow: 'hidden',
+          flexShrink: 0,
+          backgroundColor: 'var(--color-blue)',
+        }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/diamon-logo-02.png"
+          alt=""
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            display: 'block',
+            opacity: 0.25,
+          }}
+        />
+        <span
+          style={{
+            position: 'absolute',
+            inset: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: 'var(--font-heading)',
+            fontSize: '3rem',
+            fontWeight: 300,
+            lineHeight: 1,
+            zIndex: 1,
+            color: '#fff',
+          }}
+        >
+          {letter}
+        </span>
+      </div>
+      <p
+        className="text-xs tracking-[0.2em] uppercase"
+        style={{ fontFamily: 'var(--font-body)', color: 'var(--color-subtle)' }}
+      >
+        {label}
+      </p>
+    </div>
   )
 }
