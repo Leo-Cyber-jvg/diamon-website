@@ -13,9 +13,12 @@ export default function YksiloillePage() {
       {/* Hero */}
       <section
         className="flex flex-col justify-end px-6 pb-24 pt-40"
-        style={{ backgroundColor: 'var(--color-blue)', minHeight: '60vh' }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', minHeight: '60vh' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/coaching-series-bg-new.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', filter: 'brightness(0.38) saturate(0.6)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.45) 0%, rgba(17,16,16,0.3) 100%)', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}

@@ -575,7 +575,7 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
       <section className="px-6 pt-40 pb-20" style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010' }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/coaching-series-bg-new.jpg"
+          src="/cta-individuals.jpg"
           alt=""
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', filter: 'brightness(0.4) saturate(0.5)' }}
         />
