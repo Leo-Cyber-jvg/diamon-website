@@ -42,16 +42,41 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
         {/* Left: I/C/A circles in triangle */}
         <div
           className="flex flex-col items-center justify-center gap-5 py-14 px-10"
-          style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}
+          style={{
+            border: '1px solid var(--color-border)',
+            backgroundColor: 'var(--color-background)',
+            position: 'relative',
+            overflow: 'hidden',
+          }}
         >
-          {/* Top: I */}
-          <div className="flex justify-center">
-            <CircleItem letter={I.letter} label={I.label} />
-          </div>
-          {/* Bottom: C + A */}
-          <div className="flex justify-center gap-5">
-            <CircleItem letter={C.letter} label={C.label} />
-            <CircleItem letter={A.letter} label={A.label} />
+          {/* Aristotle background image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/Kopf_des_Aristoteles_1.jpg"
+            alt=""
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center top',
+              opacity: 0.12,
+              filter: 'grayscale(100%)',
+              pointerEvents: 'none',
+            }}
+          />
+          <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+            {/* Top: I */}
+            <div className="flex justify-center">
+              <CircleItem letter={I.letter} label={I.label} />
+            </div>
+            {/* Bottom: C + A */}
+            <div className="flex justify-center gap-5">
+              <CircleItem letter={C.letter} label={C.label} />
+              <CircleItem letter={A.letter} label={A.label} />
+            </div>
           </div>
         </div>
 
