@@ -12,40 +12,103 @@ export default function TietoaPage() {
     <>
       {/* Hero */}
       <section
-        className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)' }}
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          backgroundColor: '#0d0c0c',
+          minHeight: '90vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+        }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/aristoteles-hero.jpg"
+          alt=""
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center 20%',
+            display: 'block',
+            filter: 'brightness(0.42) saturate(0.5)',
+          }}
+        />
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to bottom, rgba(13,12,12,0.1) 0%, rgba(13,12,12,0.55) 60%, rgba(13,12,12,0.92) 100%)',
+          pointerEvents: 'none',
+        }} />
+        <div
+          className="px-6 pb-20 pt-40"
+          style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}
+        >
           <p
-            className="text-xs tracking-[0.3em] uppercase mb-10"
-            style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}
+            className="text-xs tracking-[0.35em] uppercase mb-12"
+            style={{ color: 'rgba(255,255,255,0.4)', fontFamily: 'var(--font-body)' }}
           >
-            Tietoa DIAMONista
+            Nimen takana
           </p>
           <h1
-            className="font-light mb-10"
+            className="font-light mb-12"
             style={{
               fontFamily: 'var(--font-heading)',
               color: '#fff',
-              fontSize: 'clamp(2.4rem, 5.5vw, 5rem)',
-              lineHeight: 1.05,
-              maxWidth: '860px',
+              fontSize: 'clamp(4rem, 11vw, 10rem)',
+              lineHeight: 0.95,
+              letterSpacing: '-0.02em',
             }}
           >
-            Johtamisviestintä strategisena kilpailuetuna.
+            DIAMON
           </h1>
-          <p
-            className="text-lg font-light"
+          <div
+            className="grid grid-cols-2 mb-12"
             style={{
-              color: 'rgba(255,255,255,0.7)',
-              fontFamily: 'var(--font-body)',
-              lineHeight: 1.75,
-              maxWidth: '620px',
+              maxWidth: '480px',
+              borderTop: '1px solid rgba(255,255,255,0.12)',
+              paddingTop: '28px',
             }}
           >
-            Johtajan kyky viestiä, vaikuttaa ja rakentaa luottamusta on keskeinen osa
-            organisaation toimintakykyä. Asiantuntemus ja strateginen ajattelu luovat arvoa,
-            kun ne välittyvät ymmärrettävästi, synnyttävät yhteistä näkemystä ja ohjaavat toimintaa.
+            <div className="flex flex-col gap-1 pr-8" style={{ borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+              <span style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 3vw, 2rem)', color: '#fff', fontWeight: 300, fontStyle: 'italic' }}>διά</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>dia</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', marginTop: '6px' }}>kautta, läpi</span>
+            </div>
+            <div className="flex flex-col gap-1 pl-8">
+              <span style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 3vw, 2rem)', color: '#fff', fontWeight: 300, fontStyle: 'italic' }}>μόνος</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>monos</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', marginTop: '6px' }}>yksi, yksittäinen</span>
+            </div>
+          </div>
+          <p
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(1.1rem, 2.2vw, 1.5rem)',
+              color: 'rgba(255,255,255,0.85)',
+              fontWeight: 300,
+              fontStyle: 'italic',
+              lineHeight: 1.4,
+              maxWidth: '520px',
+              marginBottom: '16px',
+            }}
+          >
+            Vaikutus syntyy yksilön kautta.
+          </p>
+          <p
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.875rem',
+              color: 'rgba(255,255,255,0.5)',
+              lineHeight: 1.75,
+              maxWidth: '500px',
+            }}
+          >
+            Diamonin nimi on saanut inspiraationsa kreikan kielestä. Sen taustalla on ajatus siitä,
+            että johtaminen, vuorovaikutus ja muutos tapahtuvat ihmisten kautta.
           </p>
         </div>
       </section>

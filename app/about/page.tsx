@@ -13,40 +13,114 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section
-        className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)' }}
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          backgroundColor: '#0d0c0c',
+          minHeight: '90vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+        }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* Background image */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/aristoteles-hero.jpg"
+          alt=""
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center 20%',
+            display: 'block',
+            filter: 'brightness(0.42) saturate(0.5)',
+          }}
+        />
+        {/* Gradient overlay */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to bottom, rgba(13,12,12,0.1) 0%, rgba(13,12,12,0.55) 60%, rgba(13,12,12,0.92) 100%)',
+          pointerEvents: 'none',
+        }} />
+
+        {/* Content */}
+        <div
+          className="px-6 pb-20 pt-40"
+          style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}
+        >
           <p
-            className="text-xs tracking-[0.3em] uppercase mb-10"
-            style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}
+            className="text-xs tracking-[0.35em] uppercase mb-12"
+            style={{ color: 'rgba(255,255,255,0.4)', fontFamily: 'var(--font-body)' }}
           >
-            About DIAMON
+            Behind the name
           </p>
+
+          {/* DIAMON large */}
           <h1
-            className="font-light mb-10"
+            className="font-light mb-12"
             style={{
               fontFamily: 'var(--font-heading)',
               color: '#fff',
-              fontSize: 'clamp(2.4rem, 5.5vw, 5rem)',
-              lineHeight: 1.05,
-              maxWidth: '860px',
+              fontSize: 'clamp(4rem, 11vw, 10rem)',
+              lineHeight: 0.95,
+              letterSpacing: '-0.02em',
             }}
           >
-            Leadership communication as a strategic competitive advantage.
+            DIAMON
           </h1>
-          <p
-            className="text-lg font-light"
+
+          {/* Greek etymology grid */}
+          <div
+            className="grid grid-cols-2 mb-12"
             style={{
-              color: 'rgba(255,255,255,0.7)',
-              fontFamily: 'var(--font-body)',
-              lineHeight: 1.75,
-              maxWidth: '620px',
+              maxWidth: '480px',
+              borderTop: '1px solid rgba(255,255,255,0.12)',
+              paddingTop: '28px',
+              gap: '0',
             }}
           >
-            A leader&apos;s ability to communicate, influence and build trust is a core part
-            of organisational performance. Expertise and strategic thinking create value
-            when they are communicated clearly, build shared understanding and guide action.
+            <div className="flex flex-col gap-1 pr-8" style={{ borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+              <span style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 3vw, 2rem)', color: '#fff', fontWeight: 300, fontStyle: 'italic' }}>διά</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>dia</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', marginTop: '6px' }}>through, by means of</span>
+            </div>
+            <div className="flex flex-col gap-1 pl-8">
+              <span style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 3vw, 2rem)', color: '#fff', fontWeight: 300, fontStyle: 'italic' }}>μόνος</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>monos</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', marginTop: '6px' }}>one, the individual</span>
+            </div>
+          </div>
+
+          {/* Philosophical conclusion */}
+          <p
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(1.1rem, 2.2vw, 1.5rem)',
+              color: 'rgba(255,255,255,0.85)',
+              fontWeight: 300,
+              fontStyle: 'italic',
+              lineHeight: 1.4,
+              maxWidth: '520px',
+              marginBottom: '16px',
+            }}
+          >
+            Impact happens through the individual.
+          </p>
+          <p
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.875rem',
+              color: 'rgba(255,255,255,0.5)',
+              lineHeight: 1.75,
+              maxWidth: '500px',
+            }}
+          >
+            DIAMON draws its name from the Greek. Behind it lies the idea that leadership,
+            interaction and change all happen through people.
           </p>
         </div>
       </section>
@@ -226,6 +300,36 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* DIAMON philosophy */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              The DIAMON philosophy
+            </p>
+            <h2
+              className="text-3xl font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              Leadership communication is a central part of organisational performance.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+            <p>DIAMON was born from a simple observation: many leaders are considerably more capable than their communication suggests.</p>
+            <p>Alongside substantive expertise and strategic understanding, it is essential to recognise what kind of communicator you are, how to build impactful communication, and how to interact effectively in decisive situations.</p>
+            <p>DIAMON helps leaders develop these capabilities with purpose and over the long term.</p>
           </div>
         </div>
       </section>
