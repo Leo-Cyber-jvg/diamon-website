@@ -91,9 +91,9 @@ export default function YksiloillePage() {
           </div>
           <div className="flex flex-col gap-8 md:pt-12">
             {[
-              { n: '01', text: 'Rakenna selkeä, johdonmukainen johtajaviestijän identiteetti.' },
-              { n: '02', text: 'Kehitä strategista tarinankerrontaa ja korkean panoksen viestintää.' },
-              { n: '03', text: 'Esiinny läsnäolevasti ja vakuuttavasti hetkissä, jotka ratkaisevat.' },
+              { n: '01', text: 'Selkeä ja johdonmukainen johtamisviestinnän identiteetti.' },
+              { n: '02', text: 'Strateginen rakenne ja narratiivi.' },
+              { n: '03', text: 'Esiintymisvarmuus, autenttinen läsnäolo ja vakuuttavuus hetkissä, jotka ratkaisevat.' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span
