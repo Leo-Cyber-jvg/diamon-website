@@ -127,8 +127,7 @@ export default function YksiloillePage() {
             className="text-3xl md:text-4xl font-light"
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}
           >
-            Kolme ohjelmaa.<br />
-            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Yksi kehityspolku.</span>
+            Räätälöity kehitys johtajan tarpeen mukaan.
           </h2>
         </div>
 
