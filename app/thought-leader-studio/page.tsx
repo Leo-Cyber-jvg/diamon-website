@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'DIAMON Thought Leader Studio — Making Thought Leadership Visible',
@@ -313,69 +314,7 @@ export default function ThoughtLeaderStudioPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── ICA Framework ── */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              The methodology
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.2 }}
-            >
-              Grounded in the DIAMON ICA Framework™
-            </h2>
-            <p
-              className="text-sm leading-relaxed mt-6"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              DIAMON Thought Leader Studio is built on the DIAMON ICA Framework™ —
-              Individual Communication Alignment. ICA connects individual communication
-              capability with the organisation&apos;s strategic goals, aligning the leader&apos;s
-              personal message, communication development, business priorities, and
-              long-term visibility into one coherent system.
-            </p>
-            <Link
-              href="/framework"
-              className="link-blue text-sm mt-6 inline-block"
-              style={{ fontFamily: 'var(--font-body)' }}
-            >
-              Explore the ICA Framework →
-            </Link>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              'Aligns individual communication with business strategy',
-              'Connects presentation, leadership, interaction, and thought leadership',
-              'Supports continuous and measurable development',
-              'Ensures every piece of content supports the organisation&apos;s long-term vision',
-              'Builds communication capability as an organisational asset, not a personal habit',
-            ].map((point) => (
-              <div
-                key={point}
-                className="flex items-start gap-4 px-6 py-4"
-                style={{ backgroundColor: 'var(--color-background)' }}
-              >
-                <span
-                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', fontSize: '0.8rem', marginTop: '1px', flexShrink: 0 }}
-                >
-                  —
-                </span>
-                <span
-                  className="text-sm"
-                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-                >
-                  {point}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="en" />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>

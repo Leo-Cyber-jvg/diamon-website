@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkSection from '../../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Vaikuttavuussessio — DIAMON Finland',
@@ -181,40 +182,7 @@ export default function VaikuttavuussessioPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ICA Framework */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              Menetelmä
-            </p>
-            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Rakennettu ICA Framework™ -mallin pohjalle
-            </h2>
-            <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Jokainen Vaikuttavuussessio perustuu DIAMON ICA Framework™ -malliin. Viitekehys
-              varmistaa, että puhujan viesti, läsnäolo ja viestintätyyli ovat linjassa roolin,
-              henkilökohtaisen profiilin ja organisaation strategisten tavoitteiden kanssa.
-            </p>
-            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Tutustu ICA-viitekehykseen &rarr;
-            </Link>
-          </div>
-          <div style={{ border: '1px solid var(--color-border)', padding: '40px' }}>
-            <p className="text-xs tracking-widest uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>ICA Framework™</p>
-            {[
-              { label: 'I — Identiteetti', desc: 'Kuka olet viestijänä' },
-              { label: 'C — Kompositio', desc: 'Miten viesti on rakennettu' },
-              { label: 'A — Toiminta', desc: 'Miten se laskeutuu ja ajaa muutosta' },
-            ].map(({ label, desc }) => (
-              <div key={label} className="flex items-start gap-4 py-4" style={{ borderTop: '1px solid var(--color-border)' }}>
-                <span className="text-sm font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', minWidth: '130px' }}>{label}</span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{desc}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="fi" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { services } from '../lib/services'
+import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'For Organizations — DIAMON Finland',
@@ -287,52 +288,7 @@ export default function ForOrganisationsPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ICA reference */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-5"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Methodology
-            </p>
-            <h2
-              className="text-3xl font-light mb-5"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              Coaching built on the DIAMON ICA Framework™
-            </h2>
-            <p
-              className="text-sm leading-relaxed mb-6"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              A structured development methodology grounded in performance
-              psychology and two decades of professional performance practice.
-            </p>
-            <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Explore the ICA Framework &rarr;
-            </Link>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { l: 'I — Identity', d: 'Leadership identity, self-awareness and personal presence.' },
-              { l: 'C — Composition', d: 'Message structure, purpose, focus and strategic clarity.' },
-              { l: 'A — Action', d: 'Execution, physicality, presence and performance under pressure.' },
-            ].map(({ l, d }) => (
-              <div key={l} className="flex items-start gap-6 px-8 py-5" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span
-                  className="text-sm font-light shrink-0"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', minWidth: '110px' }}
-                >
-                  {l}
-                </span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{d}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="en" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
