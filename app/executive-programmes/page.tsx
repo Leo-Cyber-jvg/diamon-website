@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Executive Programmes — DIAMON Finland',
@@ -225,40 +226,7 @@ export default function ExecutiveProgrammesPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ICA Foundation */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              The foundation
-            </p>
-            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Every programme is built on the DIAMON ICA Framework™
-            </h2>
-            <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The ICA Framework is the proprietary methodology at the centre of all DIAMON development work. It provides a common language, a consistent development structure and a measurable progress model — across all programmes, all levels and all contexts.
-            </p>
-            <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Explore the ICA Framework →
-            </Link>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { label: 'ICA I — Identity', model: 'DCI™', desc: 'Communication identity, credibility, authenticity and professional presence.' },
-              { label: 'ICA II — Composition', model: 'TNT™', desc: 'State, narrative, action structure — how impactful communication is intentionally designed.' },
-              { label: 'ICA III — Action', model: 'K3™', desc: 'Physicality, focus, language — communication performance in real situations under pressure.' },
-            ].map(({ label, model, desc }) => (
-              <div key={label} className="px-7 py-6 flex flex-col gap-2" style={{ backgroundColor: 'var(--color-background)' }}>
-                <div className="flex items-baseline gap-3">
-                  <span className="text-sm font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{label}</span>
-                  <span className="text-xs" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{model}</span>
-                </div>
-                <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="en" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />

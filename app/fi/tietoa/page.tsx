@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkSection from '../../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Tietoa DIAMONista — Johtamisviestintä AI-aikakaudella',
@@ -207,49 +208,7 @@ export default function TietoaPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ICA Framework */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p
-          className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-        >
-          Metodologia
-        </p>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2
-              className="text-3xl font-light mb-6"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              ICA Framework™
-            </h2>
-            <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Järjestelmällinen kehittämismetodologia, joka yhdistää viestijän identiteetin,
-              viestin rakentamisen ja konkreettisen toiminnan toisiinsa.
-            </p>
-            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Tutustu ICA-viitekehykseen &rarr;
-            </Link>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { l: 'I — Identity', d: 'Viestijän ammatillinen identiteetti ja henkilökohtainen profiili.' },
-              { l: 'C — Composition', d: 'Viestin tarkoituksenmukainen rakentaminen, selkeys ja vaikuttavuus.' },
-              { l: 'A — Action', d: 'Viestinnällinen toiminta käytännössä, läsnäolo, kehollisuus ja kieli.' },
-            ].map(({ l, d }) => (
-              <div key={l} className="flex items-start gap-6 px-8 py-5" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span
-                  className="text-sm font-light shrink-0"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', minWidth: '110px' }}
-                >
-                  {l}
-                </span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{d}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="fi" />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>

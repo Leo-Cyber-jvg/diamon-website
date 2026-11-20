@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ICAFrameworkDiagram from '../components/ICAFrameworkDiagram'
+import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'About DIAMON — Leadership Communication for the AI Era',
@@ -220,13 +220,7 @@ export default function AboutPage() {
       </div>
 
       {/* ICA Framework */}
-      <ICAFrameworkDiagram />
-
-      <div className="px-6 py-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-          Explore the full ICA Framework &rarr;
-        </Link>
-      </div>
+      <ICAFrameworkSection lang="en" />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
