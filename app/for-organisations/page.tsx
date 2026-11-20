@@ -220,7 +220,7 @@ export default function ForOrganisationsPage() {
               className="text-xs tracking-[0.25em] uppercase mb-4"
               style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
             >
-              45–75 min · On-site or hybrid
+              30–60 min
             </p>
             <h3
               className="text-2xl md:text-3xl font-light mb-4"

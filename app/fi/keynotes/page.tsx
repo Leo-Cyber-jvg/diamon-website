@@ -211,11 +211,10 @@ export default function KeynotesFiPage() {
             </div>
             <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
               {[
-                'Keynote-puheenvuorot: 45–75 minuuttia',
+                'Keynote-puheenvuorot: 30–60 minuuttia',
                 'Paneelkeskustelut ja moderoidut vuoropuhelut',
                 'Workshopkeynote interaktiivisilla elementeillä',
                 'Suomeksi ja englanniksi',
-                'Lähitilaisuudet ja hybridiformaatit',
               ].map((item) => (
                 <div
                   key={item}

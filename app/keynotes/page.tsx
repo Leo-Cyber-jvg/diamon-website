@@ -211,11 +211,10 @@ export default function KeynotesPage() {
             </div>
             <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
               {[
-                'Keynote speeches: 45–75 minutes',
+                'Keynote speeches: 30–60 minutes',
                 'Panel discussions and moderated conversations',
                 'Workshop keynotes with interactive elements',
                 'Available in Finnish and English',
-                'On-site and hybrid formats',
               ].map((item) => (
                 <div
                   key={item}
