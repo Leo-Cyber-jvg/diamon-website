@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ICAFrameworkDiagram from '../../components/ICAFrameworkDiagram'
+import InfluenceCompass from '../../components/InfluenceCompass'
 
 export const metadata: Metadata = {
   title: 'ICA-viitekehys™ — DIAMON Finland',
@@ -10,176 +12,84 @@ export default function IcaViitekehysPage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 pt-40 pb-24" style={{ backgroundColor: 'var(--color-blue)', minHeight: '65vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+      <section className="px-6 pt-40 pb-24" style={{ backgroundColor: 'var(--color-blue)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}>ICA-viitekehys™</p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-8" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '820px' }}>
-            Kolme tasoa.
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}> Yksi yhtenäinen järjestelmä.</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-10" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '820px' }}>
+            Miten vaikuttavaa viestintää kehitetään?
+            <span className="block mt-3" style={{ fontStyle: 'italic', opacity: 0.65, fontSize: '0.7em' }}>Identiteetti. Kompositio. Toiminta.</span>
           </h1>
-          <p className="text-lg font-light" style={{ color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '560px' }}>
-            DIAMON ICA-viitekehys™ on omistautunut metodologia, joka kehittää viestinnällistä suorituskykyä identiteetistä kompositioon ja toimintaan — järjestelmällisesti, ei sattumanvaraisesti.
+          <p className="text-lg font-light" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '620px' }}>
+            Diamonin ICA-viitekehys auttaa ymmärtämään, mistä oma viestintätapa rakentuu, miten viestinnästä tehdään tavoitteellisempaa ja miten näitä taitoja kehitetään käytännön harjoittelulla.
           </p>
         </div>
       </section>
 
-      {/* Framework overview */}
+      {/* Visual diagram */}
+      <ICAFrameworkDiagram lang="fi" />
+
+      {/* How it works — single coherent text */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Metodologia</p>
-            <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Vaikuttava johtamisviestintä ei ole synnynnäinen lahja.
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}> Se on arkkitehtuuri.</span>
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Miten viitekehys toimii</p>
+            <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.2 }}>
+              Kolme tasoa. Jokainen rakentaa edellisen päälle. Yksikään ei riitä yksinään.
             </h2>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA-viitekehys kehitettiin vastauksena yhteen keskeiseen havainnon: useimmat viestintäkehitysohjelmat kohdistuvat siihen, mitä sanot ja miten sanot sen. Ne ohittavat sen, kuka sen sanoo ja miksi sillä on merkitystä.
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10">
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Johtamisviestintä ei epäonnistu toimitushetkellä — vaan kauan sitä ennen. Se epäonnistuu, koska viestijä ei ole ratkaissut, kuka hän on, ei ole suunnitellut mitä haluaa sanoa, tai ei osaa toteuttaa sitä todellisessa paineessa.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Viitekehys yhdistää suorituspsykologian, rakenteellisen narratiivin teorian ja yli kahden vuosikymmenen ammatillisen esiintyjäkokemuksen. Se on testattua käytännössä — ei suunniteltu luokkahuoneessa.
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identiteetti</strong> tulee ensin. DCI™-mallin kautta rakennetaan vakaa viestinnällinen perusta — kuka olet aidosti johtajana ja miten se muuntuu läsnäoloksi, uskottavuudeksi ja luottamukseksi.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Kompositio</strong> seuraa. TNT™-mallin kautta suunnitellaan viestin arkkitehtuuri: tila, narratiivi, toimintarakenne. Ei improvisaatiota — intentionaalista rakentamista.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Toiminta</strong> viimeiseksi. K3™-mallin kautta kehitetään kehollisuus, fokus ja kieli, joilla viestintä todella laskeutuu tilaan — paineessa, oikeissa johtamistilanteissa.
             </p>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { id: 'ICA I', name: 'Identiteetti', model: 'DCI™', q: 'Kuka olen viestijänä ja johtajana?' },
-              { id: 'ICA II', name: 'Kompositio', model: 'TNT™', q: 'Miten rakennan vaikuttavan viestinnän intentionaalisesti?' },
-              { id: 'ICA III', name: 'Toiminta', model: 'K3™', q: 'Miten viestin tehokkaasti oikeissa tilanteissa?' },
-            ].map(({ id, name, model, q }) => (
-              <div key={id} className="px-8 py-6 flex items-start gap-6" style={{ backgroundColor: 'var(--color-background)' }}>
-                <div style={{ minWidth: '80px' }}>
-                  <span className="text-xs tracking-widest block" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{id}</span>
-                  <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{model}</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{name}</h3>
-                  <p className="text-xs italic" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{q}</p>
-                </div>
-              </div>
-            ))}
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Tuloksena ei ole parempi tekniikka. Se on johdonmukainen, kestävä viestintäkyky — joka kestää paineessa, skaalautuu eri tilanteisiin ja vahvistuu käytössä.
+            </p>
           </div>
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
 
-      {/* ICA I */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16">
+      {/* Architecture of Influence connector */}
+      <section className="px-6 pt-20 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-end">
           <div>
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I</span>
-              <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>DCI™</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Identiteetti</h2>
-            <p className="text-base italic mb-6" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)' }}>Kuka olen viestijänä ja johtajana?</p>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA I rakentuu DCI™ (Dual Communicational Identity) -mallin varaan. Se tutkii viestijän identiteettiä kahdesta ulottuvuudesta: sitä, kuka olet autenttisesti, ja sitä, miten sinun täytyy esiintyä ammatillisessa roolissasi.
-            </p>
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Laajempi kokonaisuus</p>
+            <h2 className="text-3xl md:text-4xl font-light mb-5" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+              Yksilön kehityksestä{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>organisaatiovaikutukseen.</span>
+            </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Autenttisuus, ammatillinen rooli, uskottavuus, luottamus ja henkilökohtainen läsnäolo. Se perusta, jolle kaikki viestintäkyky rakentuu.
+              ICA-viitekehys kehittää yksilöä. DIAMON Vaikuttavuuden Arkkitehtuuri näyttää, mihin se kehitys kohdistuu — neljään ulottuvuuteen, jotka yhdessä määrittävät organisaation viestintäkyvyn: viestintäidentiteetti, johtajaläsnäolo, johtamiskulttuuri ja liiketoimintasuoritus.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {['Kommunikatiivinen itsetuntemus', 'Uskottavuuden ja luottamuksen arkkitehtuuri', 'Läsnäolo paineessa', 'Ammatillinen viestintäidentiteetti', 'Autenttinen johtajarooli'].map((el) => (
-              <div key={el} className="flex items-center gap-4 px-7 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span style={{ color: 'var(--color-blue)', fontSize: '0.75rem', flexShrink: 0 }}>—</span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{el}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-sm leading-relaxed md:pb-2" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+            Kun ICA-kehitystä sovelletaan järjestelmällisesti — johtajien kesken ja ajan kuluessa — se muuttaa paitsi yksilön suoritusta myös sitä, miten koko organisaatio viestii, päättää ja johtaa. Alla oleva malli kuvaa tätä organisatorista ulottuvuutta.
+          </p>
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
+      <InfluenceCompass lang="fi" />
 
-      {/* ICA II */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16">
-          <div>
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II</span>
-              <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>TNT™</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Kompositio</h2>
-            <p className="text-base italic mb-6" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)' }}>Miten rakennan vaikuttavan viestinnän intentionaalisesti?</p>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA II rakentuu TNT™ (Tila, Narratiivi, Toimintarakenne) -mallin varaan. Se tutkii sitä, miten vaikuttava viestintä rakennetaan ennen toimitusta — miten kommunikatiivinen tila valmistellaan, miten narratiivi konstruoidaan ja miten rakenne palvelee strategista tavoitetta.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Tila, narratiivi, toimintarakenne, selkeys ja strateginen intentio. Miten vaikuttava johtamisviestintä rakennetaan intentionaalisesti ennen kuin avaat suusi.
-            </p>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {['Kommunikatiivisen tilan ja valmiuden hallinta', 'Narratiivin rakentaminen', 'Strateginen rakenne ja sekvenssointi', 'Viestintätavoitteen määrittely', 'Yleisön yhdensuuntaisuus'].map((el) => (
-              <div key={el} className="flex items-center gap-4 px-7 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span style={{ color: 'var(--color-blue)', fontSize: '0.75rem', flexShrink: 0 }}>—</span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{el}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
-
-      {/* ICA III */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16">
-          <div>
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III</span>
-              <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>K3™</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Toiminta</h2>
-            <p className="text-base italic mb-6" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)' }}>Miten viestin tehokkaasti oikeissa tilanteissa?</p>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA III rakentuu K3™ (Fyysisyys, Fokus, Kieli) -mallin varaan. Se tutkii viestinnän toteutusta — sitä, miten fyysisyyttä käytetään, miten fokus säilytetään paineessa ja miten kieltä käytetään täsmällisesti ja rytmisesti.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Fyysinen läsnäolo, fokus, kieli, vuorovaikutus ja suoritus paineessa. Missä arkkitehtuuri kohtaa todellisuuden.
-            </p>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {['Fyysinen läsnäolo ja kehollinen ilmaisu', 'Attentionaalinen fokus paineessa', 'Kielen täsmällisyys ja rytmi', 'Vuorovaikutuksen johtaminen', 'Suoritus oikeissa tilanteissa'].map((el) => (
-              <div key={el} className="flex items-center gap-4 px-7 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span style={{ color: 'var(--color-blue)', fontSize: '0.75rem', flexShrink: 0 }}>—</span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{el}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
-
-      {/* Aristotelian layer */}
-      <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p className="text-xs tracking-[0.3em] uppercase mb-8" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>Aristotelinen rakenne — sovellettuna johtamisviestintään</p>
-          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-            {[
-              { act: 'Alku', ica: 'ICA I — Identiteetti', desc: 'Luo kontakti, läsnäolo ja luottamus.' },
-              { act: 'Keskikohta', ica: 'ICA II — Kompositio', desc: 'Rakenna viesti, rakenne ja yhteinen ymmärrys.' },
-              { act: 'Loppu', ica: 'ICA III — Toiminta', desc: 'Ohjaa kohti toimintaa, päätöstä ja vaikutusta.' },
-            ].map(({ act, ica, desc }) => (
-              <div key={act} className="px-8 py-8 flex flex-col gap-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
-                <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>{act}</span>
-                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: '#fff' }}>{ica}</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', lineHeight: 1.6 }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}><div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} /></div>
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <h2 className="text-2xl md:text-3xl font-light mb-3" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.3, maxWidth: '500px' }}>Valmis aloittamaan ICA-kehityksen?</h2>
-            <p className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Ensimmäinen keskustelu on diagnostiikka — tunnistamme tarkan kehityskohteen.</p>
+            <h2 className="text-2xl md:text-3xl font-light mb-3" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.3, maxWidth: '540px' }}>Kehitetään johtamisviestintää yhdessä.</h2>
+            <p className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Keskustellaan siitä, miten ICA-kehystä voidaan hyödyntää organisaationne johtamisviestinnän kehittämisessä.</p>
           </div>
           <Link href="/fi/ota-yhteytta" style={{ display: 'inline-block', backgroundColor: 'var(--color-blue)', color: '#fff', fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 500, padding: '14px 28px', textDecoration: 'none', letterSpacing: '0.05em', flexShrink: 0 }}>Ota yhteyttä</Link>
         </div>

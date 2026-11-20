@@ -93,91 +93,47 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* Aker-style full-bleed two-panel CTA grid */}
+          {/* Single full-width panel */}
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-        <div className="grid md:grid-cols-2" style={{ gap: '3px', backgroundColor: 'var(--color-border)' }}>
-          {/* For Organizations */}
-          <div
-            className="relative flex flex-col justify-end"
-            style={{ minHeight: '520px', overflow: 'hidden' }}
-          >
+          <div className="relative flex flex-col justify-end" style={{ minHeight: '520px', overflow: 'hidden' }}>
             <img
               src="/cta-organizations.jpg"
-              alt="Leadership communication for organisations"
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+              alt="Leadership communication for organisations and individuals"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }}
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
-            <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
-              <p
-                className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: '#5656D6', fontFamily: 'var(--font-body)' }}
-              >
-                For Organizations
-              </p>
-              <h3
-                className="text-2xl md:text-4xl font-light"
-                style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12, maxWidth: '20ch' }}
-              >
-                Leadership communication as an organisational capability.
-              </h3>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
-              >
-                Long-term development programmes for executive teams, senior leaders and organisations.
-                Annual Leadership Program, tailored workshops and strategic communication consulting.
-              </p>
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.82) 0%, rgba(10,9,8,0.3) 55%, transparent 100%)' }} />
+            <div className="relative p-10 md:p-14 flex flex-col md:flex-row md:items-end md:justify-between gap-8" style={{ zIndex: 1 }}>
+              <div className="flex flex-col gap-5" style={{ maxWidth: '640px' }}>
+                <p
+                  className="text-xs tracking-[0.25em] uppercase"
+                  style={{ color: '#5656D6', fontFamily: 'var(--font-body)' }}
+                >
+                  For organisations and individuals
+                </p>
+                <h3
+                  className="text-2xl md:text-4xl font-light"
+                  style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12 }}
+                >
+                  Leadership communication as an organisational capability.
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: 'rgba(244,243,241,0.72)', fontFamily: 'var(--font-body)', maxWidth: '52ch' }}
+                >
+                  Long-term development programmes for leaders and organisations.
+                  Annual Leadership Program, tailored workshops and strategic communication consulting.
+                  Individual development for executives, founders and leaders in transition.
+                </p>
+              </div>
               <Link
                 href="/for-organisations"
-                className="text-xs tracking-[0.18em] uppercase inline-flex items-center gap-2"
+                className="text-xs tracking-[0.18em] uppercase inline-flex items-center gap-2 shrink-0"
                 style={{ color: '#F4F3F1', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(244,243,241,0.3)', paddingBottom: '4px', width: 'fit-content' }}
               >
-                For organizations &rarr;
+                Read more &rarr;
               </Link>
             </div>
           </div>
-
-          {/* For Individuals */}
-          <div
-            className="relative flex flex-col justify-end"
-            style={{ minHeight: '520px', overflow: 'hidden' }}
-          >
-            <img
-              src="/cta-individuals.jpg"
-              alt="Personal coaching for individual leaders"
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
-            />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
-            <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
-              <p
-                className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: '#5656D6', fontFamily: 'var(--font-body)' }}
-              >
-                For Individuals
-              </p>
-              <h3
-                className="text-2xl md:text-4xl font-light"
-                style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12, maxWidth: '20ch' }}
-              >
-                Personal coaching for high-impact leadership presence.
-              </h3>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
-              >
-                Individual development for executives, founders and leaders in transition.
-                Thought Leader Studio, Impact Session and ongoing executive coaching.
-              </p>
-              <Link
-                href="/for-individuals"
-                className="text-xs tracking-[0.18em] uppercase inline-flex items-center gap-2"
-                style={{ color: '#F4F3F1', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(244,243,241,0.3)', paddingBottom: '4px', width: 'fit-content' }}
-              >
-                For individuals &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
         </div>
       </section>
 

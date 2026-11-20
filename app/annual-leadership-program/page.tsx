@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'DIAMON Annual Leadership Program — 12-Month Leadership Communication Development',
+  title: 'Leadership Communication Annual Program — DIAMON Finland',
   description:
-    'A structured 12-month coaching program that builds a consistent, measurable and strategically aligned communication profile for leaders and executives.',
+    'A structured 12-month coaching programme that builds a consistent, measurable and strategically aligned communication profile for leaders and executives.',
 }
 
 export default function AnnualLeadershipProgramPage() {
@@ -13,12 +13,12 @@ export default function AnnualLeadershipProgramPage() {
       {/* Hero */}
       <section
         className="px-6 pt-40 pb-24"
-        style={{
-          backgroundColor: 'var(--color-blue)',
-          color: '#fff',
-        }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/aristoteles-hero.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(0.3) saturate(0.4)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.4) 100%)' }} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)' }}
@@ -33,7 +33,8 @@ export default function AnnualLeadershipProgramPage() {
               maxWidth: '820px',
             }}
           >
-            DIAMON Annual Leadership Program
+            Leadership Communication<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>Annual Program</span>
           </h1>
           <p
             className="text-xl md:text-2xl font-light mb-12"
@@ -45,7 +46,7 @@ export default function AnnualLeadershipProgramPage() {
               fontStyle: 'italic',
             }}
           >
-            Leadership communication development program
+            12 months of structured coaching
           </p>
           <p
             className="text-lg font-light mb-12"
@@ -56,7 +57,7 @@ export default function AnnualLeadershipProgramPage() {
               lineHeight: 1.8,
             }}
           >
-            Not a one-off training. A structured, long-term engagement that builds a consistent, measurable and strategically aligned communication profile.
+            Not a one-off course. A structured coaching programme that builds a consistent, measurable and strategically aligned communication profile — with a personal coach throughout the full year.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -104,8 +105,11 @@ export default function AnnualLeadershipProgramPage() {
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
               12 months. Systematic. Measurable.
             </h2>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              The Leadership Communication Annual Program is a 12-month coaching programme designed to strengthen a leader&apos;s communication impact and the strategic role of communication. It is not a one-off course — it is a structural coaching engagement that builds a consistent, measurable and strategically aligned communication profile.
+            </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The DIAMON Annual Leadership Program is a structured coaching program designed to strengthen a leader&apos;s communication impact, executive presence and strategic role as a communicator. Over 12 months, we build the communication architecture that makes leadership consistent, convincing and business-driven.
+              The programme provides personal coach support throughout the full year, along with methods that make communication purposeful and business-driven.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -120,7 +124,7 @@ export default function AnnualLeadershipProgramPage() {
               '3 hours per session',
               'Personal coach throughout the full year',
               'Continuous support and follow-up between sessions',
-              'Outcome: leadership communication profile and practical operating model',
+              "Outcome: leader's communication profile and personal operating model",
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
@@ -142,12 +146,12 @@ export default function AnnualLeadershipProgramPage() {
         </p>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { title: 'Communication strategy', body: 'Building a communication approach that is aligned with your leadership role and business objectives.' },
-            { title: 'Executive presence', body: 'Developing the authority, confidence and composure that high-stakes communication demands.' },
-            { title: 'Personal communication profile', body: 'Defining and strengthening the individual communication identity that makes you distinctive and credible.' },
+            { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives — and how your communication aligns with the organisation\'s direction.' },
+            { title: 'Standing out', body: 'Individual strengths and development areas — building a communication profile that is distinctive, credible and yours.' },
+            { title: 'Communication identity', body: 'The balance between personal and public profile — a consistent communication identity across all platforms and contexts.' },
             { title: 'Strategic storytelling', body: 'Constructing narratives that move people — from data to decisions, from complexity to clarity.' },
-            { title: 'Preparation, performance and evaluation', body: 'A repeatable system for preparing, delivering and learning from every significant communication moment.' },
-            { title: 'Communication aligned with business goals', body: 'Connecting every communication act to organisational strategy, culture and direction.' },
+            { title: 'Preparation, performance, evaluation', body: 'A repeatable process: strategic preparation, performance and post-analysis for every significant communication moment.' },
+            { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria — communication that supports and drives the business.' },
           ].map(({ title, body }) => (
             <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
@@ -168,10 +172,10 @@ export default function AnnualLeadershipProgramPage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Consistent', body: 'Your communication carries the same authority and clarity in every context — not just when you are prepared.' },
-            { n: '02', title: 'Convincing', body: 'Messages that land. Arguments that move people. Presentations that are remembered after the meeting ends.' },
-            { n: '03', title: 'Strategically aligned', body: 'Every communication act connected to your leadership role and the organisation&apos;s direction.' },
-            { n: '04', title: 'Measurable', body: 'A defined communication profile and operating model that makes development visible and repeatable.' },
+            { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context — not just when you are prepared.' },
+            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable — not random. Every act connected to your leadership role and the organisation\'s direction.' },
+            { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business — not a presentational skill, but a strategic capability.' },
+            { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth — not a one-off effort.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
@@ -194,10 +198,10 @@ export default function AnnualLeadershipProgramPage() {
               The method
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Built on the ICA Framework™
+              Built on the DIAMON ICA Framework™
             </h2>
-            <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Annual Leadership Program is built on the DIAMON ICA Framework™ — Individual Communication Alignment. The framework ensures that the leader&apos;s message, presence and communication style are aligned with their role, personal profile and the organisation&apos;s strategic goals throughout the full 12 months.
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              The programme is built on the DIAMON ICA Framework™ — a personal coaching model that supports a leader&apos;s communicative growth and impact. It connects individual communication to the organisation&apos;s strategy, combines presence, leadership and interaction, and is grounded in measurable, action-oriented development.
             </p>
             <Link href="/framework" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Explore the ICA Framework →
@@ -231,10 +235,10 @@ export default function AnnualLeadershipProgramPage() {
               Who it is for
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Leaders who treat communication as part of strategic leadership.
+              Leaders who treat communication as a strategic capability.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The program is designed for leaders, executives, managers and senior experts who want to develop communication not as a presentational skill but as a core dimension of strategic leadership and organisational culture.
+              The programme is designed for leaders, executives and senior experts who want to develop their communication purposefully — not as a presentational skill, but as a core part of strategic leadership and organisational culture.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -263,10 +267,18 @@ export default function AnnualLeadershipProgramPage() {
         className="px-6 py-20"
         style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}
       >
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 className="text-2xl md:text-3xl font-light" style={{ fontFamily: 'var(--font-heading)', maxWidth: '480px', lineHeight: 1.3 }}>
-            Build leadership communication that lasts.
-          </h2>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '560px' }}>
+            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>
+              Next step
+            </p>
+            <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}>
+              {"Let's talk."}
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
+              Tell us about your goals or challenges. We will explore together how Diamon could strengthen the impact of leadership communication and interaction.
+            </p>
+          </div>
           <Link
             href="/contact"
             style={{

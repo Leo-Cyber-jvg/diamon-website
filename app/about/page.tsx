@@ -26,7 +26,7 @@ export default function AboutPage() {
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/aristoteles-hero.jpg"
+          src="/Kopf_des_Aristoteles_1.jpg"
           alt=""
           style={{
             position: 'absolute',
@@ -124,6 +124,36 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      {/* DIAMON philosophy */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              The DIAMON philosophy
+            </p>
+            <h2
+              className="text-3xl font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              Leadership communication is a central part of organisational performance.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+            <p>DIAMON was born from a simple observation: many leaders are considerably more capable than their communication suggests.</p>
+            <p>Alongside substantive expertise and strategic understanding, it is essential to recognise what kind of communicator you are, how to build impactful communication, and how to interact effectively in decisive situations.</p>
+            <p>DIAMON helps leaders develop these capabilities with purpose and over the long term.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
 
       {/* Four themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -300,36 +330,6 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* DIAMON philosophy */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              The DIAMON philosophy
-            </p>
-            <h2
-              className="text-3xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              Leadership communication is a central part of organisational performance.
-            </h2>
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
-            <p>DIAMON was born from a simple observation: many leaders are considerably more capable than their communication suggests.</p>
-            <p>Alongside substantive expertise and strategic understanding, it is essential to recognise what kind of communicator you are, how to build impactful communication, and how to interact effectively in decisive situations.</p>
-            <p>DIAMON helps leaders develop these capabilities with purpose and over the long term.</p>
           </div>
         </div>
       </section>

@@ -228,7 +228,7 @@ export default function YksiloillePage() {
               Identiteetti. Kompositio. Toiminta. Rakenteinen kehitysmetodologia, joka perustuu
               suorituspsykologiaan ja kahden vuosikymmenen ammattimaiseen suoritusosaamiseen.
             </p>
-            <Link href="/fi/viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Tutustu ICA-viitekehykseen &rarr;
             </Link>
           </div>

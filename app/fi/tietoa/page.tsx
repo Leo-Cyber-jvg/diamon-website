@@ -24,7 +24,7 @@ export default function TietoaPage() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/aristoteles-hero.jpg"
+          src="/Kopf_des_Aristoteles_1.jpg"
           alt=""
           style={{
             position: 'absolute',
@@ -112,6 +112,36 @@ export default function TietoaPage() {
           </p>
         </div>
       </section>
+
+      {/* DIAMON-filosofia */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p
+              className="text-xs tracking-[0.3em] uppercase mb-6"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              DIAMON-filosofia
+            </p>
+            <h2
+              className="text-3xl font-light"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            >
+              Johtamisviestintä on keskeinen osa organisaation suorituskykyä.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+            <p>DIAMON syntyi yksinkertaisesta havainnosta: monet johtajat ovat huomattavasti osaavampia kuin heidän viestintänsä antaa ymmärtää.</p>
+            <p>Substanssiosaamisen ja strategisen ymmärryksen rinnalla on olennaista tunnistaa, millainen on viestijänä, miten rakentaa vaikuttavaa viestintää ja miten toimii vuorovaikutuksessa ratkaisevissa tilanteissa.</p>
+            <p>DIAMON auttaa johtajia kehittämään näitä valmiuksia tavoitteellisesti ja pitkäjänteisesti.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
 
       {/* Four themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -295,36 +325,6 @@ export default function TietoaPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* DIAMON-filosofia */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              DIAMON-filosofia
-            </p>
-            <h2
-              className="text-3xl font-light"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              Johtamisviestintä on keskeinen osa organisaation suorituskykyä.
-            </h2>
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
-            <p>DIAMON syntyi yksinkertaisesta havainnosta: monet johtajat ovat huomattavasti osaavampia kuin heidän viestintänsä antaa ymmärtää.</p>
-            <p>Substanssiosaamisen ja strategisen ymmärryksen rinnalla on olennaista tunnistaa, millainen on viestijänä, miten rakentaa vaikuttavaa viestintää ja miten toimii vuorovaikutuksessa ratkaisevissa tilanteissa.</p>
-            <p>DIAMON auttaa johtajia kehittämään näitä valmiuksia tavoitteellisesti ja pitkäjänteisesti.</p>
           </div>
         </div>
       </section>

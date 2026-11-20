@@ -196,7 +196,7 @@ export default function VaikuttavuussessioPage() {
               varmistaa, että puhujan viesti, läsnäolo ja viestintätyyli ovat linjassa roolin,
               henkilökohtaisen profiilin ja organisaation strategisten tavoitteiden kanssa.
             </p>
-            <Link href="/fi/viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Tutustu ICA-viitekehykseen &rarr;
             </Link>
           </div>

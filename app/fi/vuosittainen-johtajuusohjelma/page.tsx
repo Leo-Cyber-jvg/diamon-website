@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Vuosittainen johtajuusohjelma — DIAMON Finland',
+  title: 'Johtajan viestinnän vuosiohjelma — DIAMON Finland',
   description:
-    'Rakenteinen 12 kuukauden coachingohjelma, joka rakentaa selkeän, mitattavan ja strategisesti johdonmukaisen johtamisviestinnän profiilin.',
+    'Rakenteellinen valmennuskokonaisuus, joka rakentaa johtajalle johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin. 12 kuukautta, 6 sessiota.',
 }
 
 export default function VuosittainenJohtajuusohjelmePage() {
@@ -13,9 +13,12 @@ export default function VuosittainenJohtajuusohjelmePage() {
       {/* Hero */}
       <section
         className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/aristoteles-hero.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(0.3) saturate(0.4)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.4) 100%)' }} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)' }}
@@ -26,7 +29,8 @@ export default function VuosittainenJohtajuusohjelmePage() {
             className="text-4xl md:text-6xl lg:text-7xl font-light mb-8"
             style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.05, maxWidth: '820px' }}
           >
-            Vuosittainen johtajuusohjelma
+            Johtajan viestinnän<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>vuosiohjelma</span>
           </h1>
           <p
             className="text-xl md:text-2xl font-light mb-12"
@@ -38,7 +42,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               fontStyle: 'italic',
             }}
           >
-            Johtamisviestinnän kehittämisohjelma
+            12 kuukauden rakenteellinen valmennuskokonaisuus
           </p>
           <p
             className="text-lg font-light mb-12"
@@ -49,8 +53,9 @@ export default function VuosittainenJohtajuusohjelmePage() {
               lineHeight: 1.8,
             }}
           >
-            Ei yksittäinen koulutus. Rakenteinen, pitkäjänteinen prosessi, joka rakentaa
-            selkeän, mitattavan ja strategisesti johdonmukaisen viestintäprofiilin.
+            Tämä ei ole yksittäinen esiintymiskurssi — vaan rakenteellinen valmennuskokonaisuus,
+            joka rakentaa johtajalle johdonmukaisen, mitattavan ja strategisesti linjatun
+            viestintäprofiilin. Henkilökohtainen valmentaja koko vuoden ajan.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -98,11 +103,15 @@ export default function VuosittainenJohtajuusohjelmePage() {
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
               12 kuukautta. Järjestelmällistä. Mitattavaa.
             </h2>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Johtajan viestinnän vuosiohjelma on 12 kuukauden kehitysohjelma, joka on suunniteltu
+              vahvistamaan johtajan viestinnällistä vaikuttavuutta ja esiintymisen strategista roolia.
+              Se on rakenteellinen valmennuskokonaisuus — ei yksittäinen kurssi — joka rakentaa
+              johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin.
+            </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON Vuosittainen johtajuusohjelma on rakenteinen coachingohjelma, joka vahvistaa
-              johtajan viestintävaikutusta, johtajaläsnäoloa ja strategista roolia viestijänä.
-              12 kuukauden aikana rakennamme viestintäarkkitehtuurin, joka tekee johtamisesta
-              johdonmukaista, vakuuttavaa ja liiketoimintalähtöistä.
+              Ohjelma tarjoaa henkilökohtaisen valmentajan tuen koko vuoden ajalle sekä menetelmät,
+              joilla viestinnästä tulee tavoitteellista ja liiketoimintaa tukevaa.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -117,7 +126,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               '3 tuntia per tapaaminen',
               'Oma coach koko vuoden ajan',
               'Jatkuva tuki ja seuranta sessioiden välillä',
-              'Tulos: johtamisviestinnän profiili ja käytännön toimintamalli',
+              'Tulos: johtajan viestintäprofiili ja käytännön toimintamalli',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
@@ -139,12 +148,12 @@ export default function VuosittainenJohtajuusohjelmePage() {
         </p>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { title: 'Viestintästrategia', body: 'Viestintälähestymistavan rakentaminen, joka on linjassa johtajuusroolisi ja liiketoimintatavoitteidesi kanssa.' },
-            { title: 'Johtajaläsnäolo', body: 'Auktoriteetin, itseluottamuksen ja rauhallisen varmuuden kehittäminen, jota korkean panoksen viestintä edellyttää.' },
-            { title: 'Henkilökohtainen viestintäprofiili', body: 'Yksilöllisen viestijäidentiteetin määrittäminen ja vahvistaminen, joka tekee sinusta tunnistettavan ja uskottavan.' },
+            { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin — ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
+            { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet — viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
+            { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino — johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
             { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä — datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
-            { title: 'Valmistautuminen, suoritus ja arviointi', body: 'Toistettava järjestelmä jokaisen merkittävän viestintähetken valmisteluun, toteutukseen ja oppimiseen.' },
-            { title: 'Liiketoimintalähtöinen viestintä', body: 'Jokaisen viestintäteon kytkeminen organisaation strategiaan, kulttuuriin ja suuntaan.' },
+            { title: 'Kokonaisprosessi: valmistautuminen, esiintyminen, jälkityö', body: 'Toistettava prosessi: strateginen valmistautuminen, suoritus ja jälkianalyysi jokaiseen merkittävään viestintähetkeen.' },
+            { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit — viestintä, joka tukee ja ajaa liiketoimintaa.' },
           ].map(({ title, body }) => (
             <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
@@ -165,10 +174,10 @@ export default function VuosittainenJohtajuusohjelmePage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Johdonmukainen', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa kontekstissa — ei vain silloin, kun olet valmistautunut.' },
-            { n: '02', title: 'Vakuuttava', body: 'Viestit, jotka laskeutuvat. Argumentit, jotka liikuttavat. Esitykset, jotka muistetaan kokouksen jälkeen.' },
-            { n: '03', title: 'Strategisesti linjassa', body: 'Jokainen viestintäteko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
-            { n: '04', title: 'Mitattava', body: 'Määritelty viestintäprofiili ja toimintamalli, joka tekee kehittymisestä näkyvää ja toistettavaa.' },
+            { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä — ei vain silloin, kun olet valmistautunut.' },
+            { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista — ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
+            { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa — ei esiintymistaito, vaan strateginen kyvykkyys.' },
+            { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu — ei kertaluonteinen ponnistus.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
@@ -191,15 +200,15 @@ export default function VuosittainenJohtajuusohjelmePage() {
               Menetelmä
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Rakennettu ICA Framework™ -mallin pohjalle
+              Pohjana DIAMON ICA Framework™
             </h2>
-            <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Vuosittainen johtajuusohjelma perustuu DIAMON ICA Framework™ -malliin. Viitekehys
-              varmistaa, että johtajan viesti, läsnäolo ja viestintätyyli ovat linjassa roolin,
-              henkilökohtaisen profiilin ja organisaation strategisten tavoitteiden kanssa koko
-              12 kuukauden ajan.
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Ohjelma perustuu DIAMON ICA Framework™ -malliin — henkilökohtaisuuteen perustuvaan
+              valmennusmalliin, joka tukee johtajan viestinnällistä kasvua ja vaikuttavuutta.
+              Se sitoo yksilön viestinnän liiketoiminnan strategiaan, yhdistää esiintymisen,
+              johtajuuden ja vuorovaikutuksen, ja perustuu mitattaviin tuloksiin.
             </p>
-            <Link href="/fi/viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Tutustu ICA-viitekehykseen &rarr;
             </Link>
           </div>
@@ -231,12 +240,11 @@ export default function VuosittainenJohtajuusohjelmePage() {
               Kenelle
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Johtajille, jotka pitävät viestintää strategisen johtajuuden osana.
+              Johtajille, jotka haluavat kehittää viestintää tavoitteellisesti.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Ohjelma on suunniteltu johtajille, esimiehille ja ylimmän johdon edustajille, jotka
-              haluavat kehittää viestintää ei esitystaiteena, vaan strategisen johtajuuden ja
-              organisaatiokulttuurin ydindimensiona.
+              Johtajille, esihenkilöille ja asiantuntijoille, jotka haluavat kehittää esiintymistään
+              ja viestintäänsä tavoitteellisesti osana organisaation strategista johtamista ja kulttuuria.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -262,10 +270,18 @@ export default function VuosittainenJohtajuusohjelmePage() {
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 className="text-2xl md:text-3xl font-light" style={{ fontFamily: 'var(--font-heading)', maxWidth: '480px', lineHeight: 1.3 }}>
-            Rakenna johtamisviestintä, joka kestää.
-          </h2>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '560px' }}>
+            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>
+              Seuraava askel
+            </p>
+            <h2 className="text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}>
+              Keskustellaan lisää.
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
+              Kerro tavoitteistasi tai haasteistasi. Kartoitetaan yhdessä, miten Diamon voisi vahvistaa johtamisviestinnän ja vuorovaikutuksen vaikuttavuutta.
+            </p>
+          </div>
           <Link
             href="/fi/ota-yhteytta"
             style={{

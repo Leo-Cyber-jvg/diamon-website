@@ -563,10 +563,10 @@ export default function FiHome() {
               className="text-3xl md:text-4xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.15 }}
             >
-              Hyvä keskustelu alkaa kysymyksestä.
+              Keskustellaan lisää.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Kuvaile haaste tai tavoite. Ensimmäinen keskustelu on diagnostiikka, ei myyntiprosessi.
+              Kerro tavoitteistasi tai haasteistasi. Kartoitetaan yhdessä, miten Diamon voisi vahvistaa johtamisviestinnän ja vuorovaikutuksen vaikuttavuutta.
             </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0">

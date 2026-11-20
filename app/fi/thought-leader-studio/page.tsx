@@ -281,7 +281,7 @@ export default function ThoughtLeaderStudioFiPage() {
               (Individual Communication Alignment). ICA yhdistää yksilön viestinnän ja yrityksen
               strategiset tavoitteet yhdeksi johdonmukaiseksi viestintäprosessiksi.
             </p>
-            <Link href="/fi/viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               Tutustu ICA-viitekehykseen &rarr;
             </Link>
           </div>

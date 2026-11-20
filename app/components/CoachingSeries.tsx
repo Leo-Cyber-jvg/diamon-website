@@ -107,11 +107,11 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'Kenelle',
     facts: [
       ['Kesto', '1 lähipäivä'],
-      ['Paikka', 'Helsinki'],
+      ['Paikka', 'VALO Hotel & Work, Helsinki'],
       ['Ryhmä', '10 johtajaa'],
       ['Hinta', '1 795 € / hlö', 'alv 0 %'],
     ],
-    cta: 'Ilmoita kiinnostuksesi',
+    cta: 'Varaa paikkasi',
     concepts: [
       {
         id: '01',
@@ -153,7 +153,7 @@ const content: Record<Lang, Content> = {
       {
         id: '02',
         anchor: 'uni',
-        tag: 'Valmennuspäivä 02',
+        tag: 'Toinen valmennuspäivä',
         guest: 'Henri Tuomilehto',
         guestImg: HENRI_IMG,
         guestImgPos: '50% 20%',
@@ -161,6 +161,14 @@ const content: Record<Lang, Content> = {
         weekday: 'Perjantai',
         date: '19.2.2027',
         signupValue: '02 · Leo Sjöman × Henri Tuomilehto · Uni, palautuminen ja vaikuttavuus · pe 19.2.2027',
+        headline: 'Millaisia päätöksiä sinä teet, kun olet väsynyt?',
+        promise: 'Rakenna unesta perusta omalle ajattelullesi, tunnesäätelyllesi ja vuorovaikutuksellesi — ja kehitä kykyäsi vaikuttaa myös silloin, kun paine on kova.',
+        story: [
+          'Väsyneitä aivoja ei kiinnosta sinun tavoitteesi. Puutteellinen uni iskee ensimmäisenä harkintaan, itsesäätelyyn ja vuorovaikutukseen — juuri niihin kykyihin, joita johtaminen eniten vaatii.',
+          'Johtajan toimintakyky rakentuu kahdella aikajänteellä: pitkällä aikajänteellä unesta ja palautumisesta, hetkessä omasta tilasta ja läsnäolosta. Molempia voidaan harjoittaa.',
+          'Leo Sjöman ja unilääkäri Henri Tuomilehto yhdistävät kaksi alaa — johtamisviestintä ja unilääketiede — yhden päivän intensiivivalmennuksessa, jossa rakennetaan johtajan henkilökohtainen toimintakyvyn suunnitelma.',
+        ],
+        smallGroup: 'Pieni, kymmenen johtajan ryhmä mahdollistaa henkilökohtaisen harjoittelun ja oman uniprofiilityöskentelyn.',
         core: 'Johtajan toimintakyvyllä on kaksi aikajännettä.',
         coreSplit: ['Pitkä aikajänne: uni', 'Hetki: oma tila'],
         intro:
@@ -182,7 +190,7 @@ const content: Record<Lang, Content> = {
     coachesTitle: 'Kolme näkökulmaa johtajan toimintakykyyn.',
     coaches: [
       { name: 'Leo Sjöman', role: 'Johtamisviestinnän valmentaja · Diamon Finland', img: LEO_IMG, pos: '50% 18%', text: 'Teatteritaiteen maisteri (Taideyliopiston Teatterikorkeakoulu). Yli 20 vuoden ura ammattinäyttelijänä teatterissa, televisiossa ja elokuvissa. DIAMON ICA Framework™ -viitekehyksen kehittäjä. Valmentaa johtajia henkilökohtaisessa vaikuttavuudessa ja johtamisviestinnässä.', meta: 'Valmennustyössä muun muassa Suomen Jääkiekkoliitto ja SDM' },
-      { name: 'Antti Pennanen', role: 'Jääkiekon miesten maajoukkueen päävalmentaja', img: ANTTI_IMG, pos: '50% 22%', text: 'Maailmanmestaruus ja olympiapronssi 2026 päävalmentajana. Suomen mestaruus HPK:n kanssa ja Liigan vuoden valmentaja 2019. Aiemmin päävalmentajana HPK:ssa, Ilveksessä, Jukureissa ja Nuorissa Leijonissa.', meta: 'Valmennuspäivä 01 · Yhteys ja johtaminen paineessa' },
+      { name: 'Antti Pennanen', role: 'Jääkiekon miesten maajoukkueen päävalmentaja', img: ANTTI_IMG, pos: '50% 22%', text: 'Maailmanmestaruus ja olympiapronssi 2026 päävalmentajana. Suomen mestaruus HPK:n kanssa ja Liigan vuoden valmentaja 2019. Aiemmin päävalmentajana HPK:ssa, Ilveksessä, Jukureissa ja Nuorissa Leijonissa. Myös koulutettu terapeutti.', meta: 'Valmennuspäivä 01 · Yhteys ja johtaminen paineessa' },
       { name: 'Henri Tuomilehto', role: 'Unilääkäri ja dosentti', img: HENRI_IMG, pos: '50% 15%', text: 'Yli 20 vuotta unitutkimusta ja yli 15 000 hoidettua potilasta. Perusti Oivauni Uniklinikan ja on Sleep Academy® -univalmennuskeskuksen perustajia. Kirjat Nukkumalla menestykseen (2018) ja Nukkumisen taito (2024).', meta: 'Huippu-urheilussa muun muassa NHL-seurat Buffalo Sabres ja Columbus Blue Jackets' },
     ],
     processEyebrow: 'Näin päivä etenee',
@@ -196,26 +204,26 @@ const content: Record<Lang, Content> = {
     signupAnchor: 'ilmoittaudu',
     formName: 'valmennussarja-fi',
     postPath: '/fi/valmennussarja/',
-    finalEyebrow: 'Ilmoita kiinnostuksesi',
-    finalTitle: 'Ryhmissä on tilaa kymmenelle johtajalle.',
-    finalText: 'Valitse valmennuspäivä ja jätä yhteystietosi. Olemme sinuun yhteydessä henkilökohtaisesti ja kerromme, miten ilmoittautuminen etenee. Päivän voi toteuttaa myös oman organisaation johtoryhmälle.',
+    finalEyebrow: 'Seuraava askel',
+    finalTitle: 'Keskustellaan lisää.',
+    finalText: 'Kerro tavoitteistasi tai haasteistasi. Kartoitetaan yhdessä, miten Diamon voisi vahvistaa johtamisviestinnän ja vuorovaikutuksen vaikuttavuutta.',
   },
 
   en: {
     heroEyebrow: 'Coaching series · Diamon Finland',
     heroTitle: ['Leadership Impact', ' and Performance.'],
     heroLead:
-      'One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field. We combine leadership communication, psychophysical training and the expert’s own discipline.',
+      "One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field. We combine leadership communication, psychophysical training and the expert's own discipline.",
     heroPills: ['01 · Leading under pressure', '02 · Sleep and recovery'],
     whyEyebrow: 'Why this series',
-    whyTitle: 'As the demands of leadership grow, a leader’s personal capacity to perform has to grow with them.',
+    whyTitle: "As the demands of leadership grow, a leader's personal capacity to perform has to grow with them.",
     whyText: [
-      'Growing responsibility, constant change, uncertainty and pressure call for the ability to lead your own actions, people’s thinking, interaction and the atmosphere around you.',
+      "Growing responsibility, constant change, uncertainty and pressure call for the ability to lead your own actions, people's thinking, interaction and the atmosphere around you.",
       'Impact is not built on subject expertise alone. Increasingly, what matters is the ability to recognise and regulate your own state, to be present and to influence other people personally.',
     ],
     format: [
-      ['The expert’s part', 'A guest expert brings the knowledge of their own field into the day.'],
-      ['Leo’s part', 'Leadership communication and personal impact. Practice, not lectures.'],
+      ["The expert's part", 'A guest expert brings the knowledge of their own field into the day.'],
+      ["Leo's part", 'Leadership communication and personal impact. Practice, not lectures.'],
       ['The shared part', 'We coach together. Everyone leaves with a plan of their own.'],
     ],
     conceptsEyebrow: 'Coaching days',
@@ -230,11 +238,11 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'For',
     facts: [
       ['Duration', '1 day, in person'],
-      ['Location', 'Helsinki'],
+      ['Location', 'VALO Hotel & Work, Helsinki'],
       ['Group', '10 leaders'],
       ['Price', '€1,795 / person', 'excl. VAT'],
     ],
-    cta: 'Register your interest',
+    cta: 'Reserve your place',
     concepts: [
       {
         id: '01',
@@ -252,14 +260,14 @@ const content: Record<Lang, Content> = {
         story: [
           'Leadership calls for the ability to make decisions, influence people and build a shared direction. But what happens to your thinking, your presence and your interaction when the pressure rises?',
           'Pressure can narrow our options and push us into automatic reactions. Impactful leadership calls for the ability to recognise these reactions and find new, more conscious ways to act.',
-          'Leo Sjöman and Antti Pennanen bring together experience from acting and elite sport in a one-day intensive that develops a leader’s personal impact, interaction and capacity to perform.',
+          "Leo Sjöman and Antti Pennanen bring together experience from acting and elite sport in a one-day intensive that develops a leader's personal impact, interaction and capacity to perform.",
         ],
         smallGroup: 'A small group of ten leaders makes personal practice and feedback possible.',
         core: 'Under pressure, a leader needs two connections.',
         coreSplit: ['Connection to yourself', 'Connection to others'],
         intro: '',
         parts: [
-          { label: 'Part I', who: 'Leo Sjöman', title: 'Personal impact and presence', text: 'Presence, intention and the body. A leader’s address: everyone works in turn while Leo coaches in the moment.' },
+          { label: 'Part I', who: 'Leo Sjöman', title: 'Personal impact and presence', text: "Presence, intention and the body. A leader's address: everyone works in turn while Leo coaches in the moment." },
           { label: 'Part II', who: 'Antti Pennanen', title: 'Leading under pressure', text: 'What pressure does to a leader. First-hand experience of leading under high pressure, and exercises: listening to the body, facing difficult emotions, staying present under pressure.' },
           { label: 'Part III', who: 'Together', title: 'Performance in practice', text: 'Bringing the day together: presence, understanding, change and applying it to your own leadership.' },
         ],
@@ -276,7 +284,7 @@ const content: Record<Lang, Content> = {
       {
         id: '02',
         anchor: 'sleep',
-        tag: 'Coaching day 02',
+        tag: 'Second coaching day',
         guest: 'Henri Tuomilehto',
         guestImg: HENRI_IMG,
         guestImgPos: '50% 20%',
@@ -284,13 +292,21 @@ const content: Record<Lang, Content> = {
         weekday: 'Friday',
         date: '19 February 2027',
         signupValue: '02 · Leo Sjöman × Henri Tuomilehto · Sleep, Recovery and Impact · Fri 19 Feb 2027',
-        core: 'A leader’s capacity to perform runs on two timescales.',
+        headline: "What kind of decisions do you make when you are tired?",
+        promise: "Build sleep as the foundation for your thinking, emotional regulation and interaction — and develop your ability to make an impact even under pressure.",
+        story: [
+          "A tired brain doesn't care about your goals. Poor sleep hits judgement, self-regulation and interaction first — precisely the capacities that leadership demands most.",
+          "A leader's capacity to perform runs on two timescales: over the long term through sleep and recovery, and in the moment through your own state and presence. Both can be trained.",
+          "Leo Sjöman and sleep physician Henri Tuomilehto bring together two fields — leadership communication and sleep medicine — in a one-day intensive where each participant builds a personal performance plan.",
+        ],
+        smallGroup: "A small group of ten leaders makes personal practice and individual sleep-profile work possible.",
+        core: "A leader's capacity to perform runs on two timescales.",
         coreSplit: ['The long term: sleep', 'The moment: your state'],
         intro:
-          'A tired brain doesn’t care about your goals. Poor sleep hits judgement, self-regulation and interaction first. The day connects sleep and recovery to how a leader acts and makes an impact in demanding situations.',
+          "A tired brain doesn't care about your goals. Poor sleep hits judgement, self-regulation and interaction first. The day connects sleep and recovery to how a leader acts and makes an impact in demanding situations.",
         parts: [
           { label: 'Part 1', who: 'Henri Tuomilehto', title: 'Sleep and performance', text: 'The tired brain: what kind of decisions do you make, and how do you meet others while making them. Sleep as a skill, and your own sleep profile.' },
-          { label: 'Part 2', who: 'Leo Sjöman', title: 'Impact and interaction', text: 'What personal impact is and how it is built. Physical preparation and a leader’s address, with Leo coaching in the moment.' },
+          { label: 'Part 2', who: 'Leo Sjöman', title: 'Impact and interaction', text: "What personal impact is and how it is built. Physical preparation and a leader's address, with Leo coaching in the moment." },
           { label: 'Part 3', who: 'Together', title: 'Two timescales in everyday life', text: 'When do I recover, and how do I prepare for the moments that matter. A performance plan for your own week.' },
         ],
         outcomes: [
@@ -302,11 +318,11 @@ const content: Record<Lang, Content> = {
       },
     ],
     coachesEyebrow: 'Coaches',
-    coachesTitle: 'Three perspectives on a leader’s capacity to perform.',
+    coachesTitle: "Three perspectives on a leader's capacity to perform.",
     coaches: [
       { name: 'Leo Sjöman', role: 'Leadership communication coach · Diamon Finland', img: LEO_IMG, pos: '50% 18%', text: 'Master of Arts in Theatre (Theatre Academy, Uniarts Helsinki). Over 20 years as a professional actor in theatre, television and film. Creator of the DIAMON ICA Framework™. Coaches leaders in personal impact and leadership communication.', meta: 'Clients include the Finnish Ice Hockey Association and SDM' },
-      { name: 'Antti Pennanen', role: 'Head coach, Finland men’s national ice hockey team', img: ANTTI_IMG, pos: '50% 22%', text: 'World Championship gold and Olympic bronze in 2026 as head coach. Finnish championship with HPK and Liiga Coach of the Year 2019. Previously head coach at HPK, Ilves, Jukurit and the Finnish U20 national team.', meta: 'Coaching day 01 · Connection and Leading Under Pressure' },
-      { name: 'Henri Tuomilehto', role: 'Sleep physician and adjunct professor', img: HENRI_IMG, pos: '50% 15%', text: 'Over 20 years of sleep research and more than 15,000 patients treated. Founded the Oivauni sleep clinic and co-founded the Sleep Academy® sleep coaching centre. Author of two books on sleep (2018, 2024).', meta: 'Work in elite sport includes the NHL’s Buffalo Sabres and Columbus Blue Jackets' },
+      { name: 'Antti Pennanen', role: "Head coach, Finland men's national ice hockey team", img: ANTTI_IMG, pos: '50% 22%', text: 'World Championship gold and Olympic bronze in 2026 as head coach. Finnish championship with HPK and Liiga Coach of the Year 2019. Previously head coach at HPK, Ilves, Jukurit and the Finnish U20 national team. Also a qualified therapist.', meta: 'Coaching day 01 · Connection and Leading Under Pressure' },
+      { name: 'Henri Tuomilehto', role: 'Sleep physician and adjunct professor', img: HENRI_IMG, pos: '50% 15%', text: 'Over 20 years of sleep research and more than 15,000 patients treated. Founded the Oivauni sleep clinic and co-founded the Sleep Academy® sleep coaching centre. Author of two books on sleep (2018, 2024).', meta: "Work in elite sport includes the NHL's Buffalo Sabres and Columbus Blue Jackets" },
     ],
     processEyebrow: 'How it works',
     processTitle: 'From assessment to everyday life.',
@@ -319,9 +335,9 @@ const content: Record<Lang, Content> = {
     signupAnchor: 'register',
     formName: 'coaching-series-en',
     postPath: '/coaching-series/',
-    finalEyebrow: 'Register your interest',
-    finalTitle: 'Each group has room for ten leaders.',
-    finalText: 'Choose a coaching day and leave your details. We will contact you personally and explain how registration works. Either day can also be run for your own leadership team.',
+    finalEyebrow: 'Next step',
+    finalTitle: "Let's talk.",
+    finalText: 'Tell us about your goals or challenges. We will explore together how Diamon could strengthen the impact of leadership communication and interaction.',
   },
 }
 

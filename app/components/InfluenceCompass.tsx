@@ -3,47 +3,47 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
 
   const quadrants = [
     {
-      label: isFi ? 'Ydinosa' : 'Core Focus',
+      label: '01',
       name: ['Communication', 'Identity'],
       desc: isFi
-        ? 'Viestijäidentiteettisi määrittää, kuinka kauas johtajuutesi kantaa'
-        : 'Who you are as a communicator determines how far your leadership travels',
+        ? 'Viestinnällisen identiteetin tunnistaminen ja ymmärtäminen.'
+        : 'Recognising and understanding your communicational identity.',
       align: 'left' as const,
     },
     {
-      label: isFi ? 'Ydinosa' : 'Core Focus',
+      label: '02',
       name: ['Executive', 'Presence'],
       desc: isFi
-        ? 'Henkilökohtainen vaikuttavuus, joka rakentaa luottamusta, auktoriteettia ja vaikutusvaltaa'
-        : 'Personal impact that creates trust, authority and influence',
+        ? 'Henkilökohtainen vuorovaikutus luottamuksen ja vaikuttamisen välineenä.'
+        : 'Personal interaction as a tool for trust and influence.',
       align: 'right' as const,
     },
     {
-      label: isFi ? 'Ydinosa' : 'Core Focus',
+      label: '03',
       name: ['Leadership', 'Culture'],
       desc: isFi
-        ? 'Viestintäkyky osana tiimien ja organisaatioiden toimintatapaa'
-        : 'Communication capability embedded in how teams and organisations operate',
+        ? 'Johtamisviestintä tiimien ja organisaatioiden toimintakulttuurin rakentajana.'
+        : 'Leadership communication as a builder of team and organisational culture.',
       align: 'left' as const,
     },
     {
-      label: isFi ? 'Ydinosa' : 'Core Focus',
+      label: '04',
       name: ['Business', 'Performance'],
       desc: isFi
-        ? 'Viestintä infrastruktuurina, joka ohjaa luottamusta, yhteistä suuntaa ja tuloksia'
-        : 'Communication as the infrastructure that drives trust, alignment and results',
+        ? 'Johtamisviestinnän kehittäminen osana liiketoiminnan tavoitteita ja tuloksellisuutta.'
+        : 'Developing leadership communication as part of business objectives and performance.',
       align: 'right' as const,
     },
   ]
 
   return (
     <section style={{ backgroundColor: '#F4F3F1' }}>
-      <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px' }}>
+      <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px', width: '100%' }}>
 
-        <div className="grid md:grid-cols-2" style={{ gap: '80px', alignItems: 'center' }}>
+        <div className="grid md:grid-cols-2" style={{ alignItems: 'stretch' }}>
 
           {/* LEFT: Eyebrow + Compass */}
-          <div>
+          <div className="p-6 md:p-10" style={{ border: '1px solid #DDDBD6', minWidth: 0 }}>
             <p
               style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 20px', textAlign: 'center' }}
             >
@@ -79,7 +79,7 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
                       ...(i === 3 && { paddingLeft: '36px', paddingTop: '36px' }),
                     }}
                   >
-                    <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.14em', color: '#111010', fontFamily: 'var(--font-body)' }}>Focus</span>
+                    <span style={{ fontSize: '9px', letterSpacing: '0.14em', color: '#111010', fontFamily: 'var(--font-body)' }}>{q.label}</span>
                     <div style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)', lineHeight: 1.25 }}>
                       {q.name[0]}<br />{q.name[1]}
                     </div>
@@ -115,7 +115,7 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
           </div>
 
           {/* RIGHT: Heading + CTA */}
-          <div className="flex flex-col" style={{ gap: '32px' }}>
+          <div className="flex flex-col p-6 md:p-10" style={{ gap: '32px', border: '1px solid #DDDBD6', marginLeft: '-1px', justifyContent: 'center', minWidth: 0 }}>
             <h2
               style={{
                 fontFamily: 'var(--font-heading)',
@@ -134,7 +134,7 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
             </h2>
 
             <a
-              href={isFi ? '/fi/ica-viitekehys' : '/methodology'}
+              href={isFi ? '/fi/ica-viitekehys' : '/framework'}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
