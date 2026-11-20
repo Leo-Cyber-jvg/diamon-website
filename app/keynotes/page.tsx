@@ -63,56 +63,6 @@ export default function KeynotesPage() {
         </div>
       </section>
 
-      {/* About Leo */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              The speaker
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light mb-8"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              A unique combination of performance expertise and leadership coaching.
-            </h2>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/leo-sjoman-keynote.jpg"
-              alt="Leo Sjöman"
-              style={{ width: '100%', maxWidth: '420px', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
-            />
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10">
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leo Sjöman is an actor, entrepreneur and leadership communication coach with
-              over 20 years of experience as a professional performer in theatre, television
-              and film — and an equal number of years working with leaders, executives and
-              experts on their communication, presence and impact.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              His keynotes combine the practical craft of professional performance
-              with the real-world demands of leadership communication — grounded in
-              experience from both sides of the stage.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leo holds a Master of Arts in Theatre Arts from the University of the
-              Arts Helsinki and is the founder of the production company Hoka Films.
-              He has coached leaders in organisations ranging from family businesses
-              to publicly listed companies and international organisations.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Speaker panel */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>

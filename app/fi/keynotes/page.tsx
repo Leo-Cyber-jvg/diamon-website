@@ -63,57 +63,6 @@ export default function KeynotesFiPage() {
         </div>
       </section>
 
-      {/* About Leo */}
-      <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Puhuja
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light mb-8"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              Ainutlaatuinen yhdistelmä esiintymisosaamista ja johtamisviestinnän asiantuntemusta.
-            </h2>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/leo-sjoman-keynote.jpg"
-              alt="Leo Sjöman"
-              style={{ width: '100%', maxWidth: '420px', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
-            />
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10">
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leo Sjöman on näyttelijä, yrittäjä ja johtamisviestinnän valmentaja, jolla on
-              yli 20 vuoden kokemus ammattiesiintyjänä teatterissa, televisiossa ja elokuvissa —
-              ja yhtä pitkä kokemus johtajien, asiantuntijoiden ja tiimien valmentamisesta
-              viestinnässä, esiintymisessä ja vuorovaikutuksessa.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Sjömanin puheenvuoroissa yhdistyvät näyttelijäntyön käytännön kokemus
-              sekä johtajien valmentamisesta syntynyt ymmärrys työelämän viestintätilanteista.
-              Keskeisiä teemoja ovat luottamuksen rakentaminen, oman äänen löytäminen,
-              epävarmuuden kohtaaminen sekä kyky toimia ja vaikuttaa myös paineen alla.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leo on koulutukseltaan Teatteritaiteen maisteri (Taideyliopiston
-              Teatterikorkeakoulu) ja Hoka Films -tuotantoyhtiön perustajayrittäjä.
-              Hän on valmentanut johtajia perheyrityksistä pörssiyhtiöihin ja
-              kansainvälisiin organisaatioihin.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Speaker panel */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
