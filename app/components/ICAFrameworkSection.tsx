@@ -134,7 +134,7 @@ function CircleItem({ letter, label }: { letter: string; label: string }) {
             height: '100%',
             objectFit: 'cover',
             display: 'block',
-            opacity: 0.25,
+            opacity: 0.7,
           }}
         />
         <span
