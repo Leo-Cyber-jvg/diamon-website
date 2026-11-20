@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { services } from '../../lib/services'
+import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Johtajille — DIAMON Finland',
@@ -207,52 +208,7 @@ export default function YksiloillePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ICA reference */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-5"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              Metodologia
-            </p>
-            <h2
-              className="text-3xl font-light mb-5"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              Kaikki coaching rakentuu DIAMON ICA Framework™ -mallille
-            </h2>
-            <p
-              className="text-sm leading-relaxed mb-6"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              Identiteetti. Kompositio. Toiminta. Rakenteinen kehitysmetodologia, joka perustuu
-              suorituspsykologiaan ja kahden vuosikymmenen ammattimaiseen suoritusosaamiseen.
-            </p>
-            <Link href="/fi/ica-viitekehys" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-              Tutustu ICA-viitekehykseen &rarr;
-            </Link>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { l: 'I — Identiteetti', d: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
-              { l: 'C — Kompositio', d: 'Viestirakenteen, tarkoituksen, fokuksen ja strategisen selkeyden kehittäminen.' },
-              { l: 'A — Toiminta', d: 'Toteutus, kehollinen läsnäolo ja suorituskyky paineen alla.' },
-            ].map(({ l, d }) => (
-              <div key={l} className="flex items-start gap-6 px-8 py-5" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span
-                  className="text-sm font-light shrink-0"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', minWidth: '130px' }}
-                >
-                  {l}
-                </span>
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{d}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ICAFrameworkSection lang="fi" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
