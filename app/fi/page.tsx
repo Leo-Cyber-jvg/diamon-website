@@ -548,6 +548,45 @@ export default function FiHome() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* ── ASIAKKAAT ── */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          Asiakkaat
+        </p>
+        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {[
+            {
+              title: 'Johtajat',
+              desc: 'Toimitusjohtajat, johtoryhmäjäsenet ja johtajat, jotka kehittävät viestinnällistä vaikuttavuuttaan — strategisesti, johdonmukaisesti ja mitattavasti.',
+              link: '/fi/yksiloille',
+              linkLabel: 'Johtajille →',
+            },
+            {
+              title: 'Asiantuntijat',
+              desc: 'Asiantuntijat, jotka ottavat laajempaa näkyvyyttä, rakentavat ajatusjohtajuutta tai valmistautuvat korkean panoksen viestintätilanteisiin.',
+              link: '/fi/yksiloille',
+              linkLabel: 'Asiantuntijoille →',
+            },
+            {
+              title: 'Organisaatiot',
+              desc: 'Johtoryhmät ja organisaatiot, jotka rakentavat johtamisviestinnästä strategisen kilpailuedun — koko johtotiimin tasolla.',
+              link: '/fi/organisaatioille',
+              linkLabel: 'Organisaatioille →',
+            },
+          ].map(({ title, desc, link, linkLabel }) => (
+            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', flex: 1 }}>{desc}</p>
+              <Link href={link} className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>{linkLabel}</Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* ── CTA ── */}
       <section className="px-6 py-24" style={{ backgroundColor: 'var(--color-blue)' }}>
         <div
