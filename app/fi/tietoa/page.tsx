@@ -276,7 +276,7 @@ export default function TietoaPage() {
                 { label: 'Rooli', value: 'Johtamisviestinnän valmentaja, DIAMON Finland' },
                 { label: 'Viitekehys', value: 'DIAMON ICA Framework™ — Identity, Composition, Action' },
                 { label: 'Tausta', value: 'Ammattiesiintyjä — elokuva, televisio, teatteri (20+ v.)' },
-                { label: 'Asiakkaat', value: 'Johtajat, johtoryhmät, organisaatiot' },
+                { label: 'Asiakkaat', value: 'Johtajat, asiantuntijat, organisaatiot' },
               ].map(({ label, value }) => (
                 <div key={label} className="flex flex-col gap-1 px-5 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                   <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{label}</span>
