@@ -6,7 +6,7 @@ const t = {
   fi: {
     eyebrow: 'Metodologia',
     title: 'DIAMON ICA Framework™',
-    lead: 'DIAMON ICA Framework™ yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen johtamisviestinnän kehittämiseen.',
+    lead: 'Diamonin valmennukset perustuvat ICA-viitekehykseen — malliin, joka yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen johtamisviestinnän kehittämiseen.',
     items: [
       { letter: 'I', label: 'Identity', desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
       { letter: 'C', label: 'Composition', desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.' },
