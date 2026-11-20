@@ -132,12 +132,12 @@ export default function YksiloillePage() {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {services.map((s, i) => (
+        <div className="flex flex-col gap-4">
+          {services.map((s) => (
             <div
               key={s.id}
               className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-              style={{ backgroundColor: i % 2 === 1 ? 'var(--color-surface)' : 'var(--color-background)' }}
+              style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}
             >
               <div className="md:col-span-1">
                 <p
