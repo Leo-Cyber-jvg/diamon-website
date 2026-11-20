@@ -161,7 +161,7 @@ export default function TietoaPage() {
             },
             {
               number: '02',
-              title: 'The Human Edge in the AI Era',
+              title: 'Inhimillinen etulyöntiasema tekoälyn aikakaudella',
               body: 'Tekoäly ja digitaalinen murros muuttavat tapaamme tuottaa tietoa, viestiä ja tehdä työtä. Samalla henkilökohtainen vuorovaikutus, läsnäolo ja kyky kohdata ihmisiä säilyvät johtamisen keskeisinä taitoina. Vaikuttava viestintä edellyttää selkeyttä, tilannetajua ja kykyä rakentaa yhteys vastaanottajaan — kasvokkain, digitaalisilla alustoilla ja erilaisten yleisöjen edessä.',
             },
             {
