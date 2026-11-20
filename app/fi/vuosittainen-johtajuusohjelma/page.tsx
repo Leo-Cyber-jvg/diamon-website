@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ICAFrameworkSection from '../../../components/ICAFrameworkSection'
+import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Johtajan viestinnän vuosiohjelma — DIAMON Finland',
