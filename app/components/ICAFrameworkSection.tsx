@@ -35,7 +35,7 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
     <section className="px-6 py-12" style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <div
         style={{
-          backgroundColor: 'var(--color-blue)',
+          background: 'linear-gradient(90deg, #9999E8 0%, #5656D6 50%, #2D2DA0 100%)',
           position: 'relative',
           overflow: 'hidden',
         }}
@@ -116,12 +116,12 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
           />
 
           {copy.items.map((item, i) => {
-            // All circles: copy of homepage Action circle (white bg, logo as-is, blue letter)
+            // All circles: glass on gradient bg, white letter
             const circleStyle = {
-              bg: 'var(--color-background)',
-              border: 'none',
-              letterColor: '#5656D6',
-              logoFilter: 'none',
+              bg: 'rgba(255,255,255,0.15)',
+              border: '1px solid rgba(255,255,255,0.35)',
+              letterColor: '#fff',
+              logoFilter: 'brightness(0) invert(1) opacity(0.7)',
             }
 
             return (
