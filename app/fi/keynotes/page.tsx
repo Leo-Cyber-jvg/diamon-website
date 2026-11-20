@@ -114,6 +114,61 @@ export default function KeynotesFiPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* Speaker panel */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+          {/* Left: photo */}
+          <div style={{ position: 'relative', minHeight: '480px', overflow: 'hidden', backgroundColor: '#111010' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/leo-sjoman-keynote.jpg"
+              alt="Leo Sjöman"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                display: 'block',
+              }}
+            />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.3) 0%, rgba(17,16,16,0.2) 100%)', pointerEvents: 'none' }} />
+          </div>
+          {/* Right: content */}
+          <div className="flex flex-col justify-center" style={{ backgroundColor: 'var(--color-background)', padding: '48px 40px', gap: '24px' }}>
+            <p style={{ fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Puhuja
+            </p>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 300, lineHeight: 1.15, color: 'var(--color-text)', margin: 0 }}>
+              Leo Sjöman — näyttelijä, yrittäjä ja johtamisviestinnän valmentaja.
+            </h2>
+            <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Yli 20 vuotta ammattiesiintyjänä teatterissa, televisiossa ja elokuvissa —
+              ja yhtä pitkä kokemus johtajien, asiantuntijoiden ja tiimien valmentamisesta
+              viestinnässä, esiintymisessä ja läsnäolossa.
+            </p>
+            <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Teatteritaiteen maisteri, Taideyliopiston Teatterikorkeakoulu. Hoka Films -tuotantoyhtiön perustajayrittäjä.
+              Asiakkaina perheyrityksistä pörssiyhtiöihin ja kansainvälisiin organisaatioihin.
+            </p>
+            <div>
+              <Link
+                href="/fi/ota-yhteytta"
+                style={{ fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-blue)', fontFamily: 'var(--font-body)', borderBottom: '1px solid rgba(86,86,214,0.35)', paddingBottom: '3px', textDecoration: 'none' }}
+              >
+                Kysy puheenvuorosta →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* Themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p
