@@ -259,6 +259,83 @@ export default function YksiloillePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* Valmennussarja */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div
+          className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
+          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
+        >
+          <div className="md:col-span-1">
+            <p
+              className="text-xs tracking-[0.25em] uppercase mb-4"
+              style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
+            >
+              Yhden päivän intensiivivalmennus
+            </p>
+            <h3
+              className="text-2xl md:text-3xl font-light mb-4"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
+            >
+              Johtajan vaikuttavuus ja toimintakyky — Valmennussarja
+            </h3>
+            <p
+              className="text-sm leading-relaxed mb-6"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Yhden päivän intensiivivalmennuksia johtajille. Leo Sjöman valmentaa jokaisessa päivässä
+              yhdessä eri alan huippuasiantuntijan kanssa — Antti Pennanen (johtaminen paineessa)
+              ja Henri Tuomilehto (uni ja palautuminen).
+            </p>
+            <Link href="/fi/valmennussarja" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+              Lue lisää valmennussarjasta &rarr;
+            </Link>
+          </div>
+          <div className="md:col-span-1 flex flex-col gap-6">
+            <div>
+              <p
+                className="text-xs tracking-[0.2em] uppercase mb-3"
+                style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+              >
+                Kenelle
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                Johtajille ja asiantuntijoille, jotka haluavat kehittää toimintakykyään,
+                viestintäänsä ja johtamisosaamistaan intensiivisessä yhden päivän formaatissa.
+              </p>
+            </div>
+          </div>
+          <div className="md:col-span-1">
+            <p
+              className="text-xs tracking-[0.2em] uppercase mb-4"
+              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
+            >
+              Valmennuspäivät
+            </p>
+            <div className="flex flex-col gap-2">
+              {[
+                'Johtaminen paineessa — Leo Sjöman & Antti Pennanen',
+                'Uni, palautuminen ja johtajan toimintakyky — Leo Sjöman & Henri Tuomilehto',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-3">
+                  <span
+                    className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
+                    style={{ backgroundColor: 'var(--color-blue)' }}
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>
         <div
