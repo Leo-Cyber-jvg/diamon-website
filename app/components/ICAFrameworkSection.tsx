@@ -44,12 +44,12 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
           className="flex flex-col items-center justify-center gap-5 py-14 px-10"
           style={{
             border: '1px solid var(--color-border)',
-            backgroundColor: 'var(--color-background)',
+            backgroundColor: '#111010',
             position: 'relative',
             overflow: 'hidden',
           }}
         >
-          {/* Aristotle background image */}
+          {/* Aristotle background image — dark hero treatment */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/Kopf_des_Aristoteles_1.jpg"
@@ -62,11 +62,18 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
               height: '100%',
               objectFit: 'cover',
               objectPosition: 'center top',
-              opacity: 0.12,
-              filter: 'grayscale(100%)',
+              display: 'block',
+              filter: 'brightness(0.35) saturate(0.5)',
               pointerEvents: 'none',
             }}
           />
+          {/* Blue gradient overlay */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(135deg, rgba(86,86,214,0.4) 0%, rgba(17,16,16,0.25) 100%)',
+            pointerEvents: 'none',
+          }} />
           <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
             {/* Top: I */}
             <div className="flex justify-center">
@@ -182,7 +189,7 @@ function CircleItem({ letter, label }: { letter: string; label: string }) {
       </div>
       <p
         className="text-xs tracking-[0.2em] uppercase"
-        style={{ fontFamily: 'var(--font-body)', color: 'var(--color-subtle)' }}
+        style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.6)' }}
       >
         {label}
       </p>
