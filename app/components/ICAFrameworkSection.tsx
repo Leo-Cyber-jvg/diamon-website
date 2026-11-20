@@ -8,36 +8,9 @@ const t = {
     title: 'DIAMON ICA Framework™',
     lead: 'Kaikki coaching rakentuu DIAMON ICA Framework™ -mallille — rakenteiselle metodologialle, joka yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen johtamisviestinnän kehittämiseen.',
     items: [
-      {
-        letter: 'I',
-        label: 'Identity',
-        desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.',
-        bg: '#0E0E18',
-        border: '1px solid var(--color-blue)',
-        letterColor: '#9898E8',
-        logoFilter: 'saturate(0.4) opacity(0.5) hue-rotate(220deg) brightness(0.6)',
-        glow: '0 0 20px rgba(86,86,214,0.3)',
-      },
-      {
-        letter: 'C',
-        label: 'Composition',
-        desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.',
-        bg: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.12)',
-        letterColor: 'rgba(255,255,255,0.28)',
-        logoFilter: 'saturate(0.1) opacity(0.25) brightness(1.4)',
-        glow: 'none',
-      },
-      {
-        letter: 'A',
-        label: 'Action',
-        desc: 'Toteutus, kehollisuus, läsnäolo ja toiminta todellisissa tilanteissa.',
-        bg: 'var(--color-blue)',
-        border: 'none',
-        letterColor: 'rgba(86,86,214,0.5)',
-        logoFilter: 'brightness(0) invert(1) opacity(0.9)',
-        glow: '0 4px 28px rgba(86,86,214,0.55)',
-      },
+      { letter: 'I', label: 'Identity', desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
+      { letter: 'C', label: 'Composition', desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.' },
+      { letter: 'A', label: 'Action', desc: 'Toteutus, kehollisuus, läsnäolo ja toiminta todellisissa tilanteissa.' },
     ],
     link: '/fi/ica-viitekehys',
     linkLabel: 'Tutustu viitekehykseen →',
@@ -47,36 +20,9 @@ const t = {
     title: 'DIAMON ICA Framework™',
     lead: 'All coaching is built on the DIAMON ICA Framework™ — a structured development methodology grounded in performance psychology and two decades of professional performance practice.',
     items: [
-      {
-        letter: 'I',
-        label: 'Identity',
-        desc: 'Leadership identity, self-awareness and personal presence.',
-        bg: '#0E0E18',
-        border: '1px solid var(--color-blue)',
-        letterColor: '#9898E8',
-        logoFilter: 'saturate(0.4) opacity(0.5) hue-rotate(220deg) brightness(0.6)',
-        glow: '0 0 20px rgba(86,86,214,0.3)',
-      },
-      {
-        letter: 'C',
-        label: 'Composition',
-        desc: 'Message structure, purpose, focus and strategic clarity.',
-        bg: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.12)',
-        letterColor: 'rgba(255,255,255,0.28)',
-        logoFilter: 'saturate(0.1) opacity(0.25) brightness(1.4)',
-        glow: 'none',
-      },
-      {
-        letter: 'A',
-        label: 'Action',
-        desc: 'Execution, physicality, presence and performance under pressure.',
-        bg: 'var(--color-blue)',
-        border: 'none',
-        letterColor: 'rgba(86,86,214,0.5)',
-        logoFilter: 'brightness(0) invert(1) opacity(0.9)',
-        glow: '0 4px 28px rgba(86,86,214,0.55)',
-      },
+      { letter: 'I', label: 'Identity', desc: 'Leadership identity, self-awareness and personal presence.' },
+      { letter: 'C', label: 'Composition', desc: 'Message structure, purpose, focus and strategic clarity.' },
+      { letter: 'A', label: 'Action', desc: 'Execution, physicality, presence and performance under pressure.' },
     ],
     link: '/framework',
     linkLabel: 'Explore the ICA Framework →',
@@ -86,38 +32,28 @@ const t = {
 export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
   const copy = t[lang]
   return (
-    <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <section className="px-6 py-12" style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <div
         style={{
-          backgroundColor: '#0E0E18',
+          background: 'linear-gradient(135deg, #2D2DA0 0%, #5656D6 100%)',
           position: 'relative',
           overflow: 'hidden',
         }}
       >
-        {/* Subtle blue radial glow */}
-        <div
-          aria-hidden="true"
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'radial-gradient(ellipse 55% 75% at 72% 50%, rgba(86,86,214,0.1) 0%, transparent 65%)',
-            pointerEvents: 'none',
-          }}
-        />
 
         {/* Header */}
         <div
           className="flex items-start justify-between gap-6 flex-wrap"
           style={{
-            padding: '2.5rem 2.5rem 2rem',
-            borderBottom: '1px solid rgba(255,255,255,0.08)',
+            padding: '2rem 2rem 1.5rem',
+            borderBottom: '1px solid rgba(255,255,255,0.15)',
             position: 'relative',
           }}
         >
           <div>
             <p
               className="text-xs tracking-[0.3em] uppercase mb-4"
-              style={{ color: 'rgba(255,255,255,0.35)', fontFamily: 'var(--font-body)' }}
+              style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}
             >
               {copy.eyebrow}
             </p>
@@ -135,12 +71,12 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
             alt=""
             aria-hidden="true"
             style={{
-              width: '72px',
-              height: '72px',
+              width: '64px',
+              height: '64px',
               borderRadius: '50%',
               objectFit: 'cover',
               flexShrink: 0,
-              opacity: 0.65,
+              opacity: 0.7,
             }}
           />
         </div>
@@ -149,10 +85,10 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
         <p
           className="text-sm leading-relaxed"
           style={{
-            color: 'rgba(255,255,255,0.45)',
+            color: 'rgba(255,255,255,0.65)',
             fontFamily: 'var(--font-body)',
-            padding: '1.5rem 2.5rem',
-            borderBottom: '1px solid rgba(255,255,255,0.08)',
+            padding: '1.25rem 2rem',
+            borderBottom: '1px solid rgba(255,255,255,0.15)',
             margin: 0,
             position: 'relative',
           }}
@@ -174,100 +110,124 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
               right: 'calc(16.6% + 65px)',
               top: '65px',
               height: '1px',
-              backgroundColor: 'rgba(255,255,255,0.08)',
+              backgroundColor: 'rgba(255,255,255,0.2)',
               pointerEvents: 'none',
             }}
           />
 
-          {copy.items.map((item, i) => (
-            <div
-              key={item.letter}
-              className="flex flex-col items-center text-center px-6 py-10"
-              style={{
-                borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
-                position: 'relative',
-              }}
-            >
+          {copy.items.map((item, i) => {
+            // Circle visual: same hierarchy as homepage but adapted for blue bg
+            // I = outlined (white border), C = faint/neutral, A = filled white
+            const circleStyle = [
+              {
+                bg: 'rgba(255,255,255,0.1)',
+                border: '1px solid rgba(255,255,255,0.75)',
+                letterColor: '#F4F3F1',
+                logoFilter: 'none',
+              },
+              {
+                bg: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.25)',
+                letterColor: 'rgba(255,255,255,0.5)',
+                logoFilter: 'saturate(0.25) opacity(0.4)',
+              },
+              {
+                bg: 'rgba(255,255,255,0.92)',
+                border: 'none',
+                letterColor: '#5656D6',
+                logoFilter: 'none',
+              },
+            ][i]
+
+            return (
               <div
+                key={item.letter}
+                className="flex flex-col items-center text-center px-6 py-8"
                 style={{
-                  width: '130px',
-                  height: '130px',
-                  borderRadius: '50%',
+                  borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none',
                   position: 'relative',
-                  overflow: 'hidden',
-                  flexShrink: 0,
-                  backgroundColor: item.bg,
-                  border: item.border,
-                  boxShadow: item.glow,
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/diamon-logo-02.png"
-                  alt=""
+                <div
                   style={{
-                    position: 'absolute',
-                    inset: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    display: 'block',
-                    filter: item.logoFilter,
-                  }}
-                />
-                <span
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: 'var(--font-heading)',
-                    fontSize: '4rem',
-                    fontWeight: 500,
-                    lineHeight: 1,
-                    zIndex: 1,
-                    color: item.letterColor,
+                    width: '130px',
+                    height: '130px',
+                    borderRadius: '50%',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    flexShrink: 0,
+                    backgroundColor: circleStyle.bg,
+                    border: circleStyle.border,
                   }}
                 >
-                  {item.letter}
-                </span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/diamon-logo-02.png"
+                    alt=""
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      display: 'block',
+                      filter: circleStyle.logoFilter,
+                    }}
+                  />
+                  <span
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontFamily: 'var(--font-heading)',
+                      fontSize: '4rem',
+                      fontWeight: 500,
+                      lineHeight: 1,
+                      zIndex: 1,
+                      color: circleStyle.letterColor,
+                    }}
+                  >
+                    {item.letter}
+                  </span>
+                </div>
+                <p
+                  className="mt-5 text-sm font-medium tracking-[0.3em] uppercase"
+                  style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)' }}
+                >
+                  {item.label}
+                </p>
+                <p
+                  className="mt-3 text-sm leading-relaxed"
+                  style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.55)', maxWidth: '200px' }}
+                >
+                  {item.desc}
+                </p>
               </div>
-              <p
-                className="mt-5 text-sm font-medium tracking-[0.3em] uppercase"
-                style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.6)' }}
-              >
-                {item.label}
-              </p>
-              <p
-                className="mt-3 text-sm leading-relaxed"
-                style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.35)', maxWidth: '200px' }}
-              >
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Footer */}
         <div
           className="flex items-center justify-between"
           style={{
-            padding: '1.25rem 2.5rem',
-            borderTop: '1px solid rgba(255,255,255,0.08)',
+            padding: '1rem 2rem',
+            borderTop: '1px solid rgba(255,255,255,0.15)',
             position: 'relative',
           }}
         >
           <span
             className="text-xs tracking-[0.15em]"
-            style={{ color: 'rgba(255,255,255,0.2)', fontFamily: 'var(--font-body)' }}
+            style={{ color: 'rgba(255,255,255,0.35)', fontFamily: 'var(--font-body)' }}
           >
             DIAMON ICA Framework™
           </span>
           <Link
             href={copy.link}
             className="text-sm"
-            style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', letterSpacing: '0.03em' }}
+            style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.65)', textDecoration: 'none', letterSpacing: '0.03em' }}
           >
             {copy.linkLabel}
           </Link>
