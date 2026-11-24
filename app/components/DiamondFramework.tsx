@@ -6,7 +6,7 @@ const CX = 380
 const CY = 380
 const R_PHOTO = 168    // portrait circle
 const R_IN = 192       // ring inner edge
-const R_OUT = 218      // ring outer edge (width = 26px — thin, elegant)
+const R_OUT = 218      // ring outer edge (width = 26px, thin, elegant)
 const R_LBL = 270      // label anchor just outside ring
 const GAP = 4
 const SPAN = (360 - 3 * GAP) / 3  // ≈ 116.67°
@@ -47,7 +47,7 @@ const MODELS = [
     label: 'Foundational Model',
     question: 'Who are you as a leader?',
     themes: ['Identity', 'Self-awareness', 'Purpose', 'Values', 'Motivation', 'Presence'],
-    body: 'Effective leadership communication begins with self-knowledge. The Foundational Model explores who you are as a communicator — your values, your identity, and the personal presence you bring to every room. This is the layer everything else is built on.',
+    body: 'Effective leadership communication begins with self-knowledge. The Foundational Model explores who you are as a communicator, your values, your identity, and the personal presence you bring to every room. This is the layer everything else is built on.',
     ringItems: [
       { text: 'FOUNDATIONAL', sub: 'MODEL', angle: 270, main: true },
       { text: 'Identity', angle: 237 },
@@ -61,7 +61,7 @@ const MODELS = [
     label: 'Tactical Model',
     question: 'How do you influence others?',
     themes: ['Communication', 'Influence', 'Storytelling', 'Trust-building', 'Executive Presence', 'Listening'],
-    body: 'The Tactical Model translates inner clarity into outward impact. It develops the communication and influence capabilities that allow leaders to inspire, align, and move people — consistently and with intention.',
+    body: 'The Tactical Model translates inner clarity into outward impact. It develops the communication and influence capabilities that allow leaders to inspire, align, and move people, consistently and with intention.',
     ringItems: [
       { text: 'TACTICAL', sub: 'MODEL', angle: 30, main: true },
       { text: 'Influence', angle: 357 },
@@ -75,7 +75,7 @@ const MODELS = [
     label: 'Practical Model',
     question: 'How do you show up in practice?',
     themes: ['Presentations', 'Meetings', 'Feedback', 'Change Communication', 'Stakeholder Management', 'Everyday Leadership'],
-    body: 'The Practical Model is where capability becomes visible behaviour. It addresses real leadership situations — board presentations, difficult conversations, team leadership, and the everyday interactions that define how a leader is experienced.',
+    body: 'The Practical Model is where capability becomes visible behaviour. It addresses real leadership situations, board presentations, difficult conversations, team leadership, and the everyday interactions that define how a leader is experienced.',
     ringItems: [
       { text: 'PRACTICAL', sub: 'MODEL', angle: 150, main: true },
       { text: 'Leadership', angle: 117 },

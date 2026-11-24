@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'Leadership Communication Intensive — DIAMON Finland',
   description:
-    'A focused 6-month coaching engagement that builds clear and measurable leadership communication capability — with direct, intensive coaching throughout.',
+    'A focused 6-month coaching engagement that builds clear and measurable leadership communication capability, with direct, intensive coaching throughout.',
 }
 
 export default function LeadershipCommunicationIntensivePage() {
@@ -58,7 +58,7 @@ export default function LeadershipCommunicationIntensivePage() {
               lineHeight: 1.8,
             }}
           >
-            A focused, intensive coaching engagement that builds measurable leadership communication capability in six months — with direct, personal coaching throughout.
+            A focused, intensive coaching engagement that builds measurable leadership communication capability in six months, with direct, personal coaching throughout.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -107,7 +107,7 @@ export default function LeadershipCommunicationIntensivePage() {
               6 months. Focused. Measurable.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Leadership Communication Intensive is a 6-month coaching engagement designed for leaders and executives who want to build communication capability quickly and purposefully — with high focus and clear outcomes. Six sessions, three hours each, with a personal coach throughout the full programme.
+              The Leadership Communication Intensive is a 6-month coaching engagement designed for leaders and executives who want to build communication capability quickly and purposefully, with high focus and clear outcomes. Six sessions, three hours each, with a personal coach throughout the full programme.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               The programme is built around the client&apos;s real communication situations and leadership goals, delivering measurable progress within a defined timeframe.
@@ -146,9 +146,9 @@ export default function LeadershipCommunicationIntensivePage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Rapid, measurable progress', body: 'Six intensive sessions that move the needle — not a gradual drift, but a focused development sprint with clear outcomes.' },
-            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and connected to your leadership role and organisation&apos;s direction — not a presentational skill, but a strategic capability.' },
-            { n: '03', title: 'Consistent under pressure', body: 'The same authority and clarity in every context — prepared or not. Performance that holds in the moments that matter.' },
+            { n: '01', title: 'Rapid, measurable progress', body: 'Six intensive sessions that move the needle, not a gradual drift, but a focused development sprint with clear outcomes.' },
+            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and connected to your leadership role and organisation&apos;s direction, not a presentational skill, but a strategic capability.' },
+            { n: '03', title: 'Consistent under pressure', body: 'The same authority and clarity in every context, prepared or not. Performance that holds in the moments that matter.' },
             { n: '04', title: 'A defined profile and model', body: 'A leadership communication profile and personal operating model that continues to serve you after the programme ends.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
@@ -181,7 +181,7 @@ export default function LeadershipCommunicationIntensivePage() {
               Leaders who want to build capability quickly and purposefully.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Intensive is designed for leaders, executives and senior experts who want intensive, focused development in a defined timeframe — with high focus and clear, measurable outcomes.
+              The Intensive is designed for leaders, executives and senior experts who want intensive, focused development in a defined timeframe, with high focus and clear, measurable outcomes.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>

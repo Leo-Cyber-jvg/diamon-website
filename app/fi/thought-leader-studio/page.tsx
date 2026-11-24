@@ -121,7 +121,7 @@ export default function ThoughtLeaderStudioFiPage() {
               '1 kuvauspäivä per kuukausi',
               '10 valmista videota per studiopäivä',
               'Tuloksena 100 korkeatasoista LinkedIn-videota vuodessa',
-              'Julkaisusuunnitelma ja seuranta — näkyvyydestä mitattavaa ja pitkäjänteistä',
+              'Julkaisusuunnitelma ja seuranta, näkyvyydestä mitattavaa ja pitkäjänteistä',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
@@ -143,10 +143,10 @@ export default function ThoughtLeaderStudioFiPage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti — kaikissa kanavissa.' },
+            { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti, kaikissa kanavissa.' },
             { n: '02', title: 'Asiantuntijuus ja johtajuus näkyväksi', body: 'Yrityksen asiantuntijuus ja johtajuus tulevat näkyviksi tavalla, joka rakentaa uskottavuutta.' },
             { n: '03', title: 'Näkyvyys muuttuu liiketoiminnaksi', body: 'Strateginen näkyvyys rakentaa luottamusta asiakkaisiin, sijoittajiin ja yhteistyökumppaneihin.' },
-            { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua — ei satunnaista.' },
+            { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua, ei satunnaista.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
@@ -179,7 +179,7 @@ export default function ThoughtLeaderStudioFiPage() {
           >
             <iframe
               src="https://www.youtube.com/embed/tuDKr0dif28"
-              title="Tuomas Liisanantti, Markkinointijohtaja SDM — DIAMON referenssi"
+              title="Tuomas Liisanantti, Markkinointijohtaja SDM, DIAMON referenssi"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               style={{
@@ -207,7 +207,7 @@ export default function ThoughtLeaderStudioFiPage() {
               &ldquo;Esiintymistaito on yleisavain johtamiseen ja vaikuttamiseen. Diamonilta löytyy ainutlaatuisen korkeatasoista osaamista esiintymisen kehittämiseen ja henkilökohtaisuuteen perustuva valmennuskonsepti todellakin toimii.&rdquo;
             </blockquote>
             <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
-              — Tuomas Liisanantti, Markkinointijohtaja, SDM
+             , Tuomas Liisanantti, Markkinointijohtaja, SDM
             </p>
           </div>
         </div>
@@ -246,7 +246,7 @@ export default function ThoughtLeaderStudioFiPage() {
             >
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
-                title="DIAMON Thought Leader Studio — esimerkki"
+                title="DIAMON Thought Leader Studio, esimerkki"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 style={{

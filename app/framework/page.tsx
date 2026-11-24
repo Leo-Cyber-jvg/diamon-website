@@ -51,7 +51,7 @@ export default function FrameworkPage() {
             }}
           >
             The DIAMON ICA Framework™ is not a collection of communication techniques.
-            It is a coherent architecture — designed to build the communication
+            It is a coherent architecture, designed to build the communication
             capability that operates at the level of your actual leadership.
           </p>
         </div>
@@ -83,15 +83,15 @@ export default function FrameworkPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10">
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership communication fails not at the moment of delivery — but long before it. It fails because the communicator has not resolved who they are, has not designed what they want to say, or does not know how to execute it under real pressure.
+              Leadership communication fails not at the moment of delivery, but long before it. It fails because the communicator has not resolved who they are, has not designed what they want to say, or does not know how to execute it under real pressure.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identity</strong> comes first. Through the DCI™ model, we build a stable communicational foundation — who you genuinely are as a leader, and how that translates into presence, credibility and trust.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Composition</strong> follows. Through TNT™, we design the architecture of the message: state, narrative, action structure. Not improvisation — intentional construction.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identity</strong> comes first. Through the DCI™ model, we build a stable communicational foundation, who you genuinely are as a leader, and how that translates into presence, credibility and trust.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Composition</strong> follows. Through TNT™, we design the architecture of the message: state, narrative, action structure. Not improvisation, intentional construction.{' '}
               <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Action</strong> last. Through K3™, we develop the physicality, focus and language that make communication land in the room, under pressure, in real leadership situations.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The result is not better technique. It is a coherent, durable communication capability — one that holds under pressure, scales across situations, and strengthens with use.
+              The result is not better technique. It is a coherent, durable communication capability, one that holds under pressure, scales across situations, and strengthens with use.
             </p>
           </div>
         </div>
@@ -120,11 +120,11 @@ export default function FrameworkPage() {
               <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>organisational impact.</span>
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The ICA Framework develops the individual. The DIAMON Architecture of Influence shows where that development lands — in the four dimensions that together define an organisation's communication capability: Communication Identity, Executive Presence, Leadership Culture, and Business Performance.
+              The ICA Framework develops the individual. The DIAMON Architecture of Influence shows where that development lands, in the four dimensions that together define an organisation's communication capability: Communication Identity, Executive Presence, Leadership Culture, and Business Performance.
             </p>
           </div>
           <p className="text-sm leading-relaxed md:pb-2" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-            When ICA development is applied systematically — across leaders and over time — it shifts not just individual performance but how the whole organisation communicates, decides, and leads. The framework below maps that organisational dimension.
+            When ICA development is applied systematically, across leaders and over time, it shifts not just individual performance but how the whole organisation communicates, decides, and leads. The framework below maps that organisational dimension.
           </p>
         </div>
       </section>

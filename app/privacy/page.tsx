@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
         <div>
           <h2 className="text-lg font-light mb-3" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>2. Data we collect</h2>
-          <p>We collect only the information you provide directly — name, company, email address and message — when you submit the contact form on this website. We do not collect any data automatically beyond standard server logs.</p>
+          <p>We collect only the information you provide directly, name, company, email address and message, when you submit the contact form on this website. We do not collect any data automatically beyond standard server logs.</p>
         </div>
 
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />

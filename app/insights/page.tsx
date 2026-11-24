@@ -29,13 +29,13 @@ const featured = [
   {
     category: 'AI and Leadership',
     title: 'In the AI era, human communication becomes the scarcest strategic asset',
-    intro: 'As automation handles more of what organisations used to need people for, the ability to create trust, build alignment, lead interaction and perform under pressure becomes exponentially more valuable — and exponentially rarer.',
+    intro: 'As automation handles more of what organisations used to need people for, the ability to create trust, build alignment, lead interaction and perform under pressure becomes exponentially more valuable, and exponentially rarer.',
     readTime: '8 min read',
     date: 'May 2026',
   },
   {
     category: 'Executive Presence',
-    title: 'The three components of executive presence — and why most leaders develop only one',
+    title: 'The three components of executive presence, and why most leaders develop only one',
     intro: 'Executive presence is not a single quality. It is a system. Most development programmes address how people look and sound. Very few address the underlying architecture that makes presence consistent, sustainable and genuinely impactful.',
     readTime: '5 min read',
     date: 'April 2026',
@@ -43,13 +43,13 @@ const featured = [
   {
     category: 'Communication Performance',
     title: 'What elite sport can teach us about communication under pressure',
-    intro: 'Elite athletes spend thousands of hours developing the ability to perform under pressure — not by training harder, but by building the specific capability to manage state, focus and execution when it matters most. Leadership communication demands the same discipline.',
+    intro: 'Elite athletes spend thousands of hours developing the ability to perform under pressure, not by training harder, but by building the specific capability to manage state, focus and execution when it matters most. Leadership communication demands the same discipline.',
     readTime: '7 min read',
     date: 'March 2026',
   },
   {
     category: 'Organisational Communication',
-    title: 'Why most change communication fails — and what to do instead',
+    title: 'Why most change communication fails, and what to do instead',
     intro: 'Most change initiatives fail not because the change is wrong, but because the communication architecture behind it is missing. Strategy without communication is intention without impact.',
     readTime: '6 min read',
     date: 'February 2026',
@@ -57,7 +57,7 @@ const featured = [
   {
     category: 'ICA Framework',
     title: 'Identity before strategy: why communicators who do not know who they are cannot land what they say',
-    intro: 'The first level of the DIAMON ICA Framework is Identity — and it is consistently the most underestimated. Most communication development begins with what to say and how to say it. We begin with who is saying it, and why that matters.',
+    intro: 'The first level of the DIAMON ICA Framework is Identity, and it is consistently the most underestimated. Most communication development begins with what to say and how to say it. We begin with who is saying it, and why that matters.',
     readTime: '5 min read',
     date: 'January 2026',
   },
@@ -196,7 +196,7 @@ export default function InsightsPage() {
               Stay informed
             </p>
             <h2 className="text-2xl md:text-3xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.3 }}>
-              Thinking on leadership communication — delivered when it matters.
+              Thinking on leadership communication, delivered when it matters.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Follow Leo Sjöman on LinkedIn for regular perspectives on leadership communication, executive presence, and the future of human communication in organisations.

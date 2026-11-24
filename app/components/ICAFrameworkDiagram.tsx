@@ -12,8 +12,8 @@ const levels = [
     nameFi: 'Identiteetti',
     question: 'Who am I as a communicator and leader?',
     questionFi: 'Kuka olen viestijänä ja johtajana?',
-    body: 'Most communication problems are identity problems. The DCI™ model maps the tension between who you genuinely are and the role you are required to perform — and builds from it.',
-    bodyFi: 'Useimmat viestintäongelmat ovat identiteettiongelmia. DCI™-malli kartoittaa jännitteen aidon persoonan ja johtajaroolin välillä — ja rakentaa siitä lähtökohdasta.',
+    body: 'Most communication problems are identity problems. The DCI™ model maps the tension between who you genuinely are and the role you are required to perform, and builds from it.',
+    bodyFi: 'Useimmat viestintäongelmat ovat identiteettiongelmia. DCI™-malli kartoittaa jännitteen aidon persoonan ja johtajaroolin välillä, ja rakentaa siitä lähtökohdasta.',
     elements: [
       'Communicational self-awareness',
       'Credibility and trust architecture',
@@ -40,8 +40,8 @@ const levels = [
     nameFi: 'Kompositio',
     question: 'How do I build impactful communication with intention?',
     questionFi: 'Miten rakennan vaikuttavan viestinnän intentionaalisesti?',
-    body: 'High-performance communication is not improvised — it is composed. The TNT™ model provides the architecture for constructing communication that is strategically coherent before it is delivered.',
-    bodyFi: 'Tehokas johtamisviestintä ei synny improvisoimalla — se rakennetaan. TNT™-malli tarjoaa arkkitehtuurin strategisesti johdonmukaisen viestinnän rakentamiseen ennen esittämistä.',
+    body: 'High-performance communication is not improvised, it is composed. The TNT™ model provides the architecture for constructing communication that is strategically coherent before it is delivered.',
+    bodyFi: 'Tehokas johtamisviestintä ei synny improvisoimalla, se rakennetaan. TNT™-malli tarjoaa arkkitehtuurin strategisesti johdonmukaisen viestinnän rakentamiseen ennen esittämistä.',
     elements: [
       'State and communication readiness',
       'Narrative construction',
@@ -68,8 +68,8 @@ const levels = [
     nameFi: 'Toiminta',
     question: 'How do I communicate it effectively in different situations?',
     questionFi: 'Miten viestin sen tehokkaasti eri tilanteissa?',
-    body: 'Architecture without execution is theory. The K3™ model addresses the physicality, focus, and language dimensions of how communication actually lands — where performance psychology meets leadership behaviour.',
-    bodyFi: 'Arkkitehtuuri ilman toteutusta on teoriaa. K3™-malli käsittelee kehollisuuden, fokuksen ja kielen ulottuvuuksia — missä suorituspsykologia kohtaa johtamiskäyttäytymisen.',
+    body: 'Architecture without execution is theory. The K3™ model addresses the physicality, focus, and language dimensions of how communication actually lands, where performance psychology meets leadership behaviour.',
+    bodyFi: 'Arkkitehtuuri ilman toteutusta on teoriaa. K3™-malli käsittelee kehollisuuden, fokuksen ja kielen ulottuvuuksia, missä suorituspsykologia kohtaa johtamiskäyttäytymisen.',
     elements: [
       'Physicality and embodied presence',
       'Attentional focus under pressure',
@@ -221,7 +221,7 @@ export default function ICAFrameworkDiagram({ lang = 'en' }: { lang?: 'en' | 'fi
           className="text-xs mt-5 text-right"
           style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
         >
-          DIAMON ICA Framework™ — {isFi ? 'henkilökohtaisesta läsnäolosta organisaatiovaikutukseen' : 'from personal presence to organisational impact'}
+          DIAMON ICA Framework™, {isFi ? 'henkilökohtaisesta läsnäolosta organisaatiovaikutukseen' : 'from personal presence to organisational impact'}
         </p>
 
       </div>

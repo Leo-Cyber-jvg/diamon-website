@@ -6,14 +6,14 @@ const pathway = [
     title: 'Personal Impact',
     driver: 'Identity & Presence',
     unlocks: 'Trust, credibility, authority',
-    description: 'A leader\'s communication begins with who they are. Before strategy, before structure — there is presence. How you hold a room before you speak.',
+    description: 'A leader\'s communication begins with who they are. Before strategy, before structure, there is presence. How you hold a room before you speak.',
   },
   {
     stage: '02',
     title: 'Leadership Communication',
     driver: 'Narrative & Structure',
     unlocks: 'Clarity, alignment, influence',
-    description: 'Communication that is intentionally composed — not improvised. Narrative that moves people. Structure that makes complex ideas land.',
+    description: 'Communication that is intentionally composed, not improvised. Narrative that moves people. Structure that makes complex ideas land.',
   },
   {
     stage: '03',
@@ -74,7 +74,7 @@ const wayForward = [
   },
   {
     step: 'Amplify',
-    description: 'AI-supported reflection, practice, feedback and reinforcement accelerates development between human-led sessions. A multiplier — not a replacement.',
+    description: 'AI-supported reflection, practice, feedback and reinforcement accelerates development between human-led sessions. A multiplier, not a replacement.',
   },
 ]
 
@@ -222,7 +222,7 @@ export function BlueprintFull() {
         >
           Most organisations underperform because their leaders cannot communicate
           at the level of their strategy. The Architecture of Influence&#x2122; is
-          DIAMON's structured methodology for closing that gap — systematically,
+          DIAMON's structured methodology for closing that gap, systematically,
           measurably, and permanently.
         </p>
       </section>
@@ -255,7 +255,7 @@ export function BlueprintFull() {
               alignment comes more naturally, change gets adopted, and trust compounds across the organisation.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              When they don't, none of that happens — and because the cost is invisible, it never gets fixed.
+              When they don't, none of that happens, and because the cost is invisible, it never gets fixed.
               The Architecture of Influence makes that invisible cost visible, and provides a structured path
               to building communication capability as a strategic asset.
             </p>
@@ -345,7 +345,7 @@ export function BlueprintFull() {
             style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '540px', lineHeight: 1.8 }}
           >
             Three integrated levels that together constitute a complete communication development system.
-            Not a collection of techniques — a coherent architecture.
+            Not a collection of techniques, a coherent architecture.
           </p>
         </div>
 

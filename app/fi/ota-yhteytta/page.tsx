@@ -90,7 +90,7 @@ function ContactForm() {
         <div>
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Mitä odottaa</p>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-            Vastaamme kaikkiin tiedusteluihin henkilökohtaisesti. Ei myyntiprosessia. Ensimmäinen keskustelu on diagnostiikka — haluamme ymmärtää konkreettisen haasteen ennen kuin ehdotamme mitään.
+            Vastaamme kaikkiin tiedusteluihin henkilökohtaisesti. Ei myyntiprosessia. Ensimmäinen keskustelu on diagnostiikka, haluamme ymmärtää konkreettisen haasteen ennen kuin ehdotamme mitään.
           </p>
         </div>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />

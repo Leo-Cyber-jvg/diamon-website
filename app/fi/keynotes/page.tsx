@@ -90,7 +90,7 @@ export default function KeynotesFiPage() {
               Puhuja
             </p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 300, lineHeight: 1.15, color: 'var(--color-text)', margin: 0 }}>
-              Leo Sjöman — näyttelijä, yrittäjä ja johtamisviestinnän valmentaja.
+              Leo Sjöman, näyttelijä, yrittäjä ja johtamisviestinnän valmentaja.
             </h2>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
               Yli 20 vuotta ammattiesiintyjänä teatterissa, televisiossa ja elokuvissa —
@@ -131,7 +131,7 @@ export default function KeynotesFiPage() {
             {
               n: '01',
               title: 'Henkilökohtainen vaikuttavuus ja läsnäolo',
-              body: 'Mikä tekee ihmisestä kiinnostavan kuunnella — ja miten tätä voidaan kehittää tietoisesti. Läsnäolon, huomion ja luottamuksen suhde ammatillisessa viestinnässä.',
+              body: 'Mikä tekee ihmisestä kiinnostavan kuunnella, ja miten tätä voidaan kehittää tietoisesti. Läsnäolon, huomion ja luottamuksen suhde ammatillisessa viestinnässä.',
             },
             {
               n: '02',
@@ -141,12 +141,12 @@ export default function KeynotesFiPage() {
             {
               n: '03',
               title: 'Esiintyminen, jännitys ja toimintakyky paineen alla',
-              body: 'Mitä viestinnälle tapahtuu paineen alla — ja miten säilyttää toimintakyky, selkeys ja vaikuttavuus korkean panoksen tilanteissa. Käytännön välineitä suorituspsykologiasta ja ammattilavan kokemuksesta.',
+              body: 'Mitä viestinnälle tapahtuu paineen alla, ja miten säilyttää toimintakyky, selkeys ja vaikuttavuus korkean panoksen tilanteissa. Käytännön välineitä suorituspsykologiasta ja ammattilavan kokemuksesta.',
             },
             {
               n: '04',
               title: 'Ammatillinen identiteetti, rohkeus ja oman äänen löytäminen',
-              body: 'Itsetuntemuksen, aitouden ja uskottavuuden suhde. Miten johtajat ja asiantuntijat voivat viestiä aidosta auktoriteetistaan — ei suorituksena, vaan läsnäolona.',
+              body: 'Itsetuntemuksen, aitouden ja uskottavuuden suhde. Miten johtajat ja asiantuntijat voivat viestiä aidosta auktoriteetistaan, ei suorituksena, vaan läsnäolona.',
             },
           ].map(({ n, title, body }) => (
             <div
@@ -205,7 +205,7 @@ export default function KeynotesFiPage() {
               >
                 Puheenvuoron sisältö, kesto ja painotukset suunnitellaan organisaationne
                 tavoitteiden ja yleisön mukaan. Leo tutustuu etukäteen kontekstiinne
-                — ja toimittaa puheenvuoron, joka tuntuu teille räätälöidyltä,
+               , ja toimittaa puheenvuoron, joka tuntuu teille räätälöidyltä,
                 ei yleisluontoiselta.
               </p>
             </div>

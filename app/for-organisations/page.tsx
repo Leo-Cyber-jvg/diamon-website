@@ -226,13 +226,13 @@ export default function ForOrganisationsPage() {
               className="text-2xl md:text-3xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
             >
-              Leo Sjöman — Keynote Speaking
+              Leo Sjöman, Keynote Speaking
             </h3>
             <p
               className="text-sm leading-relaxed mb-6"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Keynotes on communication, presence and personal impact — drawing on over two
+              Keynotes on communication, presence and personal impact, drawing on over two
               decades of professional performance and leadership coaching. Content is designed
               around your organisation and audience.
             </p>

@@ -168,7 +168,7 @@ export default function Home() {
           style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '600px' }}
         >
           A structured development methodology grounded in performance psychology and two decades of
-          professional performance practice. Three integrated levels — applied systematically to real leadership situations.
+          professional performance practice. Three integrated levels, applied systematically to real leadership situations.
         </p>
 
         {/* ICA three circles */}
@@ -495,7 +495,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
-              alt="Leo Sjöman — Founder, Diamon Finland"
+              alt="Leo Sjöman, Founder, Diamon Finland"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 24%', display: 'block' }}
             />
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px', background: 'linear-gradient(to top, rgba(17,16,16,0.55) 0%, transparent 100%)' }}>
@@ -526,7 +526,7 @@ export default function Home() {
             >
               In his work, he combines strategic communication, business acumen, and over 20 years of
               experience performing in theatre, television, and film. He is known for creating a trusting,
-              direct, and goal-oriented working atmosphere — where the lessons learned are applied
+              direct, and goal-oriented working atmosphere, where the lessons learned are applied
               concretely to everyday leadership and interpersonal situations.
             </p>
             <p

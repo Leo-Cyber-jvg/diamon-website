@@ -49,7 +49,7 @@ export default function KeynotesPage() {
               maxWidth: '580px',
             }}
           >
-            Keynotes on communication, presence and personal impact — drawing on over
+            Keynotes on communication, presence and personal impact, drawing on over
             two decades of professional performance and leadership communication coaching.
             Content and emphasis are designed around your organisation and audience.
           </p>
@@ -90,7 +90,7 @@ export default function KeynotesPage() {
               The speaker
             </p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 300, lineHeight: 1.15, color: 'var(--color-text)', margin: 0 }}>
-              Leo Sjöman — actor, entrepreneur and leadership communication coach.
+              Leo Sjöman, actor, entrepreneur and leadership communication coach.
             </h2>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
               Over 20 years of professional performance in theatre, television and film —
@@ -131,7 +131,7 @@ export default function KeynotesPage() {
             {
               n: '01',
               title: 'Personal impact and presence',
-              body: 'What makes a person compelling to listen to — and how that quality can be developed deliberately. The relationship between presence, attention and trust in professional communication.',
+              body: 'What makes a person compelling to listen to, and how that quality can be developed deliberately. The relationship between presence, attention and trust in professional communication.',
             },
             {
               n: '02',
@@ -141,12 +141,12 @@ export default function KeynotesPage() {
             {
               n: '03',
               title: 'Performance, pressure and composure',
-              body: 'What happens to communication under pressure — and how to maintain composure, clarity and effectiveness in high-stakes situations. Practical tools from performance psychology and professional stage experience.',
+              body: 'What happens to communication under pressure, and how to maintain composure, clarity and effectiveness in high-stakes situations. Practical tools from performance psychology and professional stage experience.',
             },
             {
               n: '04',
               title: 'Professional identity, courage and finding your voice',
-              body: 'The relationship between self-knowledge, authenticity and credibility. How leaders and experts can communicate from a place of genuine authority — not performance, but presence.',
+              body: 'The relationship between self-knowledge, authenticity and credibility. How leaders and experts can communicate from a place of genuine authority, not performance, but presence.',
             },
           ].map(({ n, title, body }) => (
             <div
@@ -205,7 +205,7 @@ export default function KeynotesPage() {
               >
                 Keynote content, length and emphasis are designed around your
                 organisation's goals and the composition of the audience. Leo works
-                with the client before the event to understand the context — and
+                with the client before the event to understand the context, and
                 delivers a keynote that feels specific, not generic.
               </p>
             </div>

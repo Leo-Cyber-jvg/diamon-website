@@ -77,7 +77,7 @@ export default function YksiloillePage() {
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Tehokkaimmat johtajat viestivät tarkoituksellisesti — eivät vaistomaisesti. Heillä on
+              Tehokkaimmat johtajat viestivät tarkoituksellisesti, eivät vaistomaisesti. Heillä on
               selkeä käsitys omasta viestijäidentiteetistään, he rakentavat viestinsä tarkoituksella
               ja esiintyvät läsnäolevasti ja vakuuttavasti.
             </p>
@@ -85,7 +85,7 @@ export default function YksiloillePage() {
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Diamon-coaching rakentuu DIAMON ICA Framework™ -mallille — rakenteiselle metodologialle,
+              Diamon-coaching rakentuu DIAMON ICA Framework™ -mallille, rakenteiselle metodologialle,
               joka kehittää viestintäsuorituksen kaikkia kolmea ulottuvuutta.
             </p>
           </div>
@@ -231,14 +231,14 @@ export default function YksiloillePage() {
               className="text-2xl md:text-3xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
             >
-              Johtajan vaikuttavuus ja toimintakyky — Valmennussarja
+              Johtajan vaikuttavuus ja toimintakyky, Valmennussarja
             </h3>
             <p
               className="text-sm leading-relaxed mb-6"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
               Yhden päivän intensiivivalmennuksia johtajille. Leo Sjöman valmentaa jokaisessa päivässä
-              yhdessä eri alan huippuasiantuntijan kanssa — Antti Pennanen (johtaminen paineessa)
+              yhdessä eri alan huippuasiantuntijan kanssa, Antti Pennanen (johtaminen paineessa)
               ja Henri Tuomilehto (uni ja palautuminen).
             </p>
             <Link href="/fi/valmennussarja" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
@@ -268,8 +268,8 @@ export default function YksiloillePage() {
             </p>
             <div className="flex flex-col gap-2">
               {[
-                'Johtaminen paineessa — Leo Sjöman & Antti Pennanen',
-                'Uni, palautuminen ja johtajan toimintakyky — Leo Sjöman & Henri Tuomilehto',
+                'Johtaminen paineessa, Leo Sjöman & Antti Pennanen',
+                'Uni, palautuminen ja johtajan toimintakyky, Leo Sjöman & Henri Tuomilehto',
               ].map(item => (
                 <div key={item} className="flex items-start gap-3">
                   <span
@@ -305,7 +305,7 @@ export default function YksiloillePage() {
               Aloitetaan keskustelu kehittymisestäsi.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Jokainen yhteistyö alkaa diagnostisella keskustelulla — ei myyntiprosessilla.
+              Jokainen yhteistyö alkaa diagnostisella keskustelulla, ei myyntiprosessilla.
             </p>
           </div>
           <Link

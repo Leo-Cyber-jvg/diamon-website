@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'Tietoa DIAMONista — Johtamisviestintä AI-aikakaudella',
   description:
-    'DIAMON kehittää johtamisviestinnän toimintakykyä — auttaa johtajia ja organisaatioita muuttamaan osaamisen ja ajattelun näkyväksi, vaikuttavaksi viestinnäksi.',
+    'DIAMON kehittää johtamisviestinnän toimintakykyä, auttaa johtajia ja organisaatioita muuttamaan osaamisen ja ajattelun näkyväksi, vaikuttavaksi viestinnäksi.',
 }
 
 export default function TietoaPage() {
@@ -108,8 +108,8 @@ export default function TietoaPage() {
               maxWidth: '500px',
             }}
           >
-            Diamonin nimi on saanut inspiraationsa kreikan kielestä. Sen taustalla on ajatus siitä,
-            että johtaminen, vuorovaikutus ja muutos tapahtuvat ihmisten kautta.
+            Diamonin nimi tulee kreikan kielen juuresta. Sen taustalla on ajatus siitä,
+            että johtaminen, vuorovaikutus ja muutos tapahtuvat yksilön kautta.
           </p>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function TietoaPage() {
             {
               number: '02',
               title: 'Inhimillinen etulyöntiasema tekoälyn aikakaudella',
-              body: 'Tekoäly ja digitaalinen murros muuttavat tapaamme tuottaa tietoa, viestiä ja tehdä työtä. Samalla henkilökohtainen vuorovaikutus, läsnäolo ja kyky kohdata ihmisiä säilyvät johtamisen keskeisinä taitoina. Vaikuttava viestintä edellyttää selkeyttä, tilannetajua ja kykyä rakentaa yhteys vastaanottajaan — kasvokkain, digitaalisilla alustoilla ja erilaisten yleisöjen edessä.',
+              body: 'Tekoäly ja digitaalinen murros muuttavat tapaamme tuottaa tietoa, viestiä ja tehdä työtä. Samalla henkilökohtainen vuorovaikutus, läsnäolo ja kyky kohdata ihmisiä säilyvät johtamisen keskeisinä taitoina. Vaikuttava viestintä edellyttää selkeyttä, tilannetajua ja kykyä rakentaa yhteys vastaanottajaan, kasvokkain, digitaalisilla alustoilla ja erilaisten yleisöjen edessä.',
             },
             {
               number: '03',
@@ -228,7 +228,7 @@ export default function TietoaPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
-              alt="Leo Sjöman — Perustaja, DIAMON Finland"
+              alt="Leo Sjöman, Perustaja, DIAMON Finland"
               style={{
                 width: '100%',
                 aspectRatio: '3/4',
@@ -255,27 +255,21 @@ export default function TietoaPage() {
             </h2>
             <div className="flex flex-col gap-5 text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               <p>
-                Leo Sjöman on DIAMONin perustaja ja DIAMON ICA Framework™ -metodologian kehittäjä.
-                Hän työskentelee johtajien, johtoryhmien ja organisaatioiden kanssa Pohjoismaissa.
+                Leo Sjöman on DIAMONin perustaja ja DIAMON ICA Framework™ -mallin kehittäjä.
+                Hän työskentelee johtajien, johtoryhmien ja organisaatioiden kanssa.
               </p>
               <p>
                 Leo on ammattiesiintyjä, jolla on yli 20 vuoden kokemus elokuvasta, televisiosta ja
-                teatterista. Tämä tausta ei ole sivuseikka — se on viitekehyksen perusta. Näyttelijäntyö
-                vaatii syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä, läsnäolosta, tarinankerronnasta
-                ja toimintakyvystä paineen alla. Juuri tämä ymmärrys, sovellettuna johtamiseen ja
-                organisaatioihin, tekee DIAMONin lähestymistavasta vaikuttavan.
-              </p>
-              <p>
-                Kun useimmat viestintäkehitysohjelmat toimivat ulkoapäin — muokkaamalla käyttäytymistä
-                ja lisäämällä tekniikoita — DIAMON toimii sisältäpäin. Identiteetti ennen tekniikkaa.
-                Arkkitehtuuri ennen suoritusta.
+                teatterista. Näyttelijäntyö vaatii syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä,
+                läsnäolosta, tarinankerronnasta ja toimintakyvystä paineen alla. Juuri tämä ymmärrys,
+                sovellettuna johtamiseen ja organisaatioihin, tekee DIAMONin lähestymistavasta vaikuttavan.
               </p>
             </div>
             <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
               {[
                 { label: 'Rooli', value: 'Johtamisviestinnän valmentaja, DIAMON Finland' },
-                { label: 'Viitekehys', value: 'DIAMON ICA Framework™ — Identity, Composition, Action' },
-                { label: 'Tausta', value: 'Ammattiesiintyjä — elokuva, televisio, teatteri (20+ v.)' },
+                { label: 'Viitekehys', value: 'DIAMON ICA Framework™, Identity, Composition, Action' },
+                { label: 'Tausta', value: 'Ammattiesiintyjä, elokuva, televisio, teatteri (20+ v.)' },
                 { label: 'Asiakkaat', value: 'Johtajat, asiantuntijat, organisaatiot' },
               ].map(({ label, value }) => (
                 <div key={label} className="flex flex-col gap-1 px-5 py-4" style={{ backgroundColor: 'var(--color-background)' }}>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Services — Diamon Finland',
   description:
-    'Leadership communication systems, executive presence, organizational interaction capability. Diamon Finland builds communication architecture — not training programmes.',
+    'Leadership communication systems, executive presence, organizational interaction capability. Diamon Finland builds communication architecture, not training programmes.',
 }
 
 const services = [
@@ -13,7 +13,7 @@ const services = [
     title: 'Executive Communication Architecture',
     audience: 'Senior leaders, C-suite executives, board professionals',
     description:
-      'A structured engagement that maps your current communication architecture, identifies the specific gaps between your expertise and how it lands, and builds a system — grounded in the DIAMON ICA Framework™ — that closes that gap.',
+      'A structured engagement that maps your current communication architecture, identifies the specific gaps between your expertise and how it lands, and builds a system, grounded in the DIAMON ICA Framework™, that closes that gap.',
     what: [
       'Communication identity assessment (DCI™)',
       'Strategic narrative construction',
@@ -29,7 +29,7 @@ const services = [
     title: 'Organisational Interaction Capability',
     audience: 'Leadership teams, organisations, enterprise clients',
     description:
-      'Organisations communicate at the level of their least capable communicators in critical moments. This engagement builds communication capability as organisational infrastructure — systematically, across the leadership layer.',
+      'Organisations communicate at the level of their least capable communicators in critical moments. This engagement builds communication capability as organisational infrastructure, systematically, across the leadership layer.',
     what: [
       'Organisational communication audit',
       'Leadership communication system design',
@@ -61,7 +61,7 @@ const services = [
     title: 'DIAMON Thought Leader Studio',
     audience: 'Organisations, leadership teams, senior experts',
     description:
-      'A structured coaching, content and video production programme that turns leadership expertise into consistent, credible and strategically managed visibility. One studio session per month produces ten high-quality videos — one hundred pieces of strategic content per year.',
+      'A structured coaching, content and video production programme that turns leadership expertise into consistent, credible and strategically managed visibility. One studio session per month produces ten high-quality videos, one hundred pieces of strategic content per year.',
     what: [
       'Personal communication coaching and ICA Framework™',
       'Strategic narrative and content planning',
@@ -69,7 +69,7 @@ const services = [
       'LinkedIn and multi-platform publishing rhythm',
       'Visibility tracking and continuous development',
     ],
-    note: "DIAMON Thought Leader Studio is your organisation's own communication powerhouse — where thought leadership becomes visibility, visibility becomes trust, and trust becomes business.",
+    note: "DIAMON Thought Leader Studio is your organisation's own communication powerhouse, where thought leadership becomes visibility, visibility becomes trust, and trust becomes business.",
     link: '/thought-leader-studio',
   },
   {
@@ -77,7 +77,7 @@ const services = [
     title: 'DIAMON Annual Leadership Program',
     audience: 'Leaders, executives, managers and senior experts',
     description:
-      'A 12-month coaching program designed to strengthen a leader\'s communication impact, executive presence and strategic role as a communicator. Not a one-off training — a structured, long-term development engagement that builds a consistent, measurable and strategically aligned communication profile.',
+      'A 12-month coaching program designed to strengthen a leader\'s communication impact, executive presence and strategic role as a communicator. Not a one-off training, a structured, long-term development engagement that builds a consistent, measurable and strategically aligned communication profile.',
     what: [
       '6 tailored coaching sessions of 3 hours each',
       'Personal coach throughout the full year',
@@ -86,7 +86,7 @@ const services = [
       'Continuous support and follow-up between sessions',
       'Outcome: leadership communication profile and practical operating model',
     ],
-    note: "Built on the DIAMON ICA Framework™ — ensuring the leader's message, presence and style are aligned with their role, personal profile and the organisation's strategic goals.",
+    note: "Built on the DIAMON ICA Framework™, ensuring the leader's message, presence and style are aligned with their role, personal profile and the organisation's strategic goals.",
     link: '/annual-leadership-program',
   },
   {
@@ -94,16 +94,16 @@ const services = [
     title: 'DIAMON Impact Session',
     audience: 'Leaders and experts preparing for a single high-stakes moment',
     description:
-      'An intensive individual coaching session that prepares a leader or expert to succeed in a specific communication situation where impact matters most. For moments where the message matters — and how it is delivered matters just as much.',
+      'An intensive individual coaching session that prepares a leader or expert to succeed in a specific communication situation where impact matters most. For moments where the message matters, and how it is delivered matters just as much.',
     what: [
       'Individual or small group coaching (1–3 participants)',
-      '3-hour session — remote, on-site or studio format',
+      '3-hour session, remote, on-site or studio format',
       'Keynote, media interview, board or investor presentation',
       'Clear and convincing performance structure',
       'Stronger confidence and controlled presence',
       'Optional follow-up sparring or final content refinement',
     ],
-    note: 'Built on the DIAMON ICA Framework™ — turning one important performance into a clear, confident and strategically impactful communication moment.',
+    note: 'Built on the DIAMON ICA Framework™, turning one important performance into a clear, confident and strategically impactful communication moment.',
     link: '/impact-session',
   },
 ]
@@ -278,12 +278,12 @@ export default function ServicesPage() {
             {
               step: '2',
               title: 'Design the architecture',
-              body: 'We structure the engagement around the DIAMON ICA Framework™ — adapted to your specific context, level, and communication challenge.',
+              body: 'We structure the engagement around the DIAMON ICA Framework™, adapted to your specific context, level, and communication challenge.',
             },
             {
               step: '3',
               title: 'Build the capability',
-              body: 'Work that produces measurable change in how your communication lands — not a certificate, not a score. A tangible shift in performance.',
+              body: 'Work that produces measurable change in how your communication lands, not a certificate, not a score. A tangible shift in performance.',
             },
           ].map(({ step, title, body }) => (
             <div

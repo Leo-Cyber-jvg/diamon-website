@@ -223,14 +223,14 @@ export default function OrganisaatioillePage() {
               className="text-2xl md:text-3xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
             >
-              Leo Sjöman — Keynote-puheenvuorot
+              Leo Sjöman, Keynote-puheenvuorot
             </h3>
             <p
               className="text-sm leading-relaxed mb-6"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
               Puheenvuoroja viestinnästä, läsnäolosta ja henkilökohtaisesta vaikuttavuudesta
-              — yli kahden vuosikymmenen ammattiesiintymisen ja johtamisviestinnän valmennuksen
+             , yli kahden vuosikymmenen ammattiesiintymisen ja johtamisviestinnän valmennuksen
               pohjalta. Sisältö suunnitellaan organisaationne ja yleisönne mukaan.
             </p>
             <Link href="/fi/keynotes" className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
@@ -302,7 +302,7 @@ export default function OrganisaatioillePage() {
               className="text-2xl md:text-3xl font-light mb-4"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
             >
-              Johtajan vaikuttavuus ja toimintakyky — Valmennussarja
+              Johtajan vaikuttavuus ja toimintakyky, Valmennussarja
             </h3>
             <p
               className="text-sm leading-relaxed mb-6"
@@ -339,8 +339,8 @@ export default function OrganisaatioillePage() {
             </p>
             <div className="flex flex-col gap-2">
               {[
-                'Johtaminen paineessa — Leo Sjöman & Antti Pennanen',
-                'Uni, palautuminen ja johtajan toimintakyky — Leo Sjöman & Henri Tuomilehto',
+                'Johtaminen paineessa, Leo Sjöman & Antti Pennanen',
+                'Uni, palautuminen ja johtajan toimintakyky, Leo Sjöman & Henri Tuomilehto',
               ].map(item => (
                 <div key={item} className="flex items-start gap-3">
                   <span

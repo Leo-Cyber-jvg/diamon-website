@@ -21,21 +21,21 @@ const NODES: ProfileNode[] = [
   },
   {
     l1: 'ICA I', l2: 'Identity · DCI™',
-    title: 'ICA I — Identity',
+    title: 'ICA I, Identity',
     section: 'Driver · Communicator · Influencer',
     body: "Examines how the leader's core identity, values, and personal narrative shape their communication style and leadership presence. The DCI™ profile maps the interplay between intrinsic motivation, communication behaviour, and influence capacity.",
     meta: 'DIAMON ICA Framework™ · Component I of III',
   },
   {
     l1: 'ICA II', l2: 'Composition · TNT™',
-    title: 'ICA II — Composition',
+    title: 'ICA II, Composition',
     section: 'State · Narrative · Structure',
     body: "Assesses how the leader structures messages, manages communication state, and constructs clear narrative. The TNT™ framework identifies patterns in how communication is composed and delivered across different situations.",
     meta: 'DIAMON ICA Framework™ · Component II of III',
   },
   {
     l1: 'ICA III', l2: 'Action · K3™',
-    title: 'ICA III — Action',
+    title: 'ICA III, Action',
     section: 'Kontakt · Koherens · Kraft',
     body: "Evaluates the interpersonal impact of communication: how effectively the leader establishes contact, sustains coherence under pressure, and projects conviction and force. K3™ translates identity and composition into observable leadership behaviour.",
     meta: 'DIAMON ICA Framework™ · Component III of III',
@@ -44,7 +44,7 @@ const NODES: ProfileNode[] = [
     l1: 'Dramaturgy', l2: 'Analysis',
     title: 'Dramaturgical Communication Analysis',
     section: 'Advanced Assessment',
-    body: "An analysis of the leader's communication through the lens of theatrical dramaturgy — examining arc, tension, presence, and the dynamics of each interaction as a performed narrative. Draws on professional actor training methodology applied to leadership communication.",
+    body: "An analysis of the leader's communication through the lens of theatrical dramaturgy, examining arc, tension, presence, and the dynamics of each interaction as a performed narrative. Draws on professional actor training methodology applied to leadership communication.",
     meta: 'Proprietary DIAMON methodology · Grounded in theatre and performance studies',
   },
   {

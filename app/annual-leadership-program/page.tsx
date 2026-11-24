@@ -58,7 +58,7 @@ export default function AnnualLeadershipProgramPage() {
               lineHeight: 1.8,
             }}
           >
-            Not a one-off course. A structured coaching programme that builds a consistent, measurable and strategically aligned communication profile — with a personal coach throughout the full year.
+            Not a one-off course. A structured coaching programme that builds a consistent, measurable and strategically aligned communication profile, with a personal coach throughout the full year.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -107,7 +107,7 @@ export default function AnnualLeadershipProgramPage() {
               12 months. Systematic. Measurable.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Leadership Communication Annual Program is a 12-month coaching programme designed to strengthen a leader&apos;s communication impact and the strategic role of communication. It is not a one-off course — it is a structural coaching engagement that builds a consistent, measurable and strategically aligned communication profile.
+              The Leadership Communication Annual Program is a 12-month coaching programme designed to strengthen a leader&apos;s communication impact and the strategic role of communication. It is not a one-off course, it is a structural coaching engagement that builds a consistent, measurable and strategically aligned communication profile.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               The programme provides personal coach support throughout the full year, along with methods that make communication purposeful and business-driven.
@@ -147,12 +147,12 @@ export default function AnnualLeadershipProgramPage() {
         </p>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives — and how your communication aligns with the organisation\'s direction.' },
-            { title: 'Standing out', body: 'Individual strengths and development areas — building a communication profile that is distinctive, credible and yours.' },
-            { title: 'Communication identity', body: 'The balance between personal and public profile — a consistent communication identity across all platforms and contexts.' },
-            { title: 'Strategic storytelling', body: 'Constructing narratives that move people — from data to decisions, from complexity to clarity.' },
+            { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives, and how your communication aligns with the organisation\'s direction.' },
+            { title: 'Standing out', body: 'Individual strengths and development areas, building a communication profile that is distinctive, credible and yours.' },
+            { title: 'Communication identity', body: 'The balance between personal and public profile, a consistent communication identity across all platforms and contexts.' },
+            { title: 'Strategic storytelling', body: 'Constructing narratives that move people, from data to decisions, from complexity to clarity.' },
             { title: 'Preparation, performance, evaluation', body: 'A repeatable process: strategic preparation, performance and post-analysis for every significant communication moment.' },
-            { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria — communication that supports and drives the business.' },
+            { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria, communication that supports and drives the business.' },
           ].map(({ title, body }) => (
             <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
@@ -173,10 +173,10 @@ export default function AnnualLeadershipProgramPage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context — not just when you are prepared.' },
-            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable — not random. Every act connected to your leadership role and the organisation\'s direction.' },
-            { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business — not a presentational skill, but a strategic capability.' },
-            { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth — not a one-off effort.' },
+            { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context, not just when you are prepared.' },
+            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable, not random. Every act connected to your leadership role and the organisation\'s direction.' },
+            { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business, not a presentational skill, but a strategic capability.' },
+            { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth, not a one-off effort.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
@@ -208,7 +208,7 @@ export default function AnnualLeadershipProgramPage() {
               Leaders who treat communication as a strategic capability.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The programme is designed for leaders, executives and senior experts who want to develop their communication purposefully — not as a presentational skill, but as a core part of strategic leadership and organisational culture.
+              The programme is designed for leaders, executives and senior experts who want to develop their communication purposefully, not as a presentational skill, but as a core part of strategic leadership and organisational culture.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>

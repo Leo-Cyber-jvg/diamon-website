@@ -4,7 +4,7 @@ import InfluenceCompass from '../components/InfluenceCompass'
 
 export const metadata: Metadata = {
   title: 'DIAMON Finland — Johtamisviestinnän suorituskyky',
-  description: 'DIAMON kehittää johtajien, johtoryhmien ja organisaatioiden viestinnällistä suorituskykyä. ICA-viitekehys™ — Identity, Composition, Action.',
+  description: 'DIAMON kehittää johtajien, johtoryhmien ja organisaatioiden viestinnällistä suorituskykyä. ICA-viitekehys™, Identity, Composition, Action.',
 }
 
 export default function FiHome() {
@@ -204,7 +204,7 @@ export default function FiHome() {
           style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '600px' }}
         >
           ICA yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen käytännönläheiseksi johtamisviestinnän kehitysmenetelmäksi. Sen kolme osa-aluetta, identiteetti, viestin rakentaminen ja toiminta, muodostavat perustan tavoitteelliselle viestinnällisen toimintakyvyn kehittämiselle.
-          Kolme integroitua tasoa — sovellettuna systemaattisesti todellisiin johtamistilanteisiin.
+          Kolme integroitua tasoa, sovellettuna systemaattisesti todellisiin johtamistilanteisiin.
         </p>
 
         {/* ICA kolme ympyrää */}
@@ -511,7 +511,7 @@ export default function FiHome() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
-              alt="Leo Sjöman — Perustaja, Diamon Finland"
+              alt="Leo Sjöman, Perustaja, Diamon Finland"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 24%', display: 'block' }}
             />
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px', background: 'linear-gradient(to top, rgba(17,16,16,0.55) 0%, transparent 100%)' }}>
@@ -532,7 +532,7 @@ export default function FiHome() {
               Leo Sjöman on näyttelijä, yrittäjä ja johtamisviestinnän valmentaja, joka työskentelee johtajien, asiantuntijoiden ja tiimien kanssa viestinnän, esiintymisen ja vuorovaikutustaitojen kehittämiseksi.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Hän yhdistää työssään strategisen viestinnän, liiketoimintaosaamisen ja yli 20 vuoden ammattiesiintyjäkokemuksen teatterista, televisiosta ja elokuvasta. Leo tunnetaan luottamuksellisen, suoran ja tavoitteellisen työskentelyilmapiirin luojana — jossa opittu siirtyy konkreettisesti arkiseen johtamiseen.
+              Hän yhdistää työssään strategisen viestinnän, liiketoimintaosaamisen ja yli 20 vuoden ammattiesiintyjäkokemuksen teatterista, televisiosta ja elokuvasta. Leo tunnetaan luottamuksellisen, suoran ja tavoitteellisen työskentelyilmapiirin luojana, jossa opittu siirtyy konkreettisesti arkiseen johtamiseen.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
               Leo on valmentanut johtajia pk-perheyrityksistä kansainvälisiin organisaatioihin ja suuryritysten ylimpään johtoon. Hänellä on teatteritaiteen maisterin tutkinto (Taideyliopisto) ja hän on elokuvatuotantoyhtiö Hoka Filmsin perustaja.

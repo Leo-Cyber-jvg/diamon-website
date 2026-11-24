@@ -5,7 +5,7 @@ import InfluenceCompass from '../../components/InfluenceCompass'
 
 export const metadata: Metadata = {
   title: 'ICA-viitekehys™ — DIAMON Finland',
-  description: 'DIAMON ICA-viitekehys™ — Identity, Composition, Action. Omistautunut metodologia johtamisviestinnän suorituskyvyn kehittämiseen. DCI™, TNT™, K3™.',
+  description: 'DIAMON ICA-viitekehys™, Identity, Composition, Action. Omistautunut metodologia johtamisviestinnän suorituskyvyn kehittämiseen. DCI™, TNT™, K3™.',
 }
 
 export default function IcaViitekehysPage() {
@@ -39,15 +39,15 @@ export default function IcaViitekehysPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10">
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Johtamisviestintä ei epäonnistu toimitushetkellä — vaan kauan sitä ennen. Se epäonnistuu, koska viestijä ei ole ratkaissut, kuka hän on, ei ole suunnitellut mitä haluaa sanoa, tai ei osaa toteuttaa sitä todellisessa paineessa.
+              Johtamisviestintä ei epäonnistu toimitushetkellä, vaan kauan sitä ennen. Se epäonnistuu, koska viestijä ei ole ratkaissut, kuka hän on, ei ole suunnitellut mitä haluaa sanoa, tai ei osaa toteuttaa sitä todellisessa paineessa.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identiteetti</strong> tulee ensin. DCI™-mallin kautta rakennetaan vakaa viestinnällinen perusta — kuka olet aidosti johtajana ja miten se muuntuu läsnäoloksi, uskottavuudeksi ja luottamukseksi.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Kompositio</strong> seuraa. TNT™-mallin kautta suunnitellaan viestin arkkitehtuuri: tila, narratiivi, toimintarakenne. Ei improvisaatiota — intentionaalista rakentamista.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Toiminta</strong> viimeiseksi. K3™-mallin kautta kehitetään kehollisuus, fokus ja kieli, joilla viestintä todella laskeutuu tilaan — paineessa, oikeissa johtamistilanteissa.
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identiteetti</strong> tulee ensin. DCI™-mallin kautta rakennetaan vakaa viestinnällinen perusta, kuka olet aidosti johtajana ja miten se muuntuu läsnäoloksi, uskottavuudeksi ja luottamukseksi.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Kompositio</strong> seuraa. TNT™-mallin kautta suunnitellaan viestin arkkitehtuuri: tila, narratiivi, toimintarakenne. Ei improvisaatiota, intentionaalista rakentamista.{' '}
+              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Toiminta</strong> viimeiseksi. K3™-mallin kautta kehitetään kehollisuus, fokus ja kieli, joilla viestintä todella laskeutuu tilaan, paineessa, oikeissa johtamistilanteissa.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Tuloksena ei ole parempi tekniikka. Se on johdonmukainen, kestävä viestintäkyky — joka kestää paineessa, skaalautuu eri tilanteisiin ja vahvistuu käytössä.
+              Tuloksena ei ole parempi tekniikka. Se on johdonmukainen, kestävä viestintäkyky, joka kestää paineessa, skaalautuu eri tilanteisiin ja vahvistuu käytössä.
             </p>
           </div>
         </div>
@@ -68,11 +68,11 @@ export default function IcaViitekehysPage() {
               <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>organisaatiovaikutukseen.</span>
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA-viitekehys kehittää yksilöä. DIAMON Vaikuttavuuden Arkkitehtuuri näyttää, mihin se kehitys kohdistuu — neljään ulottuvuuteen, jotka yhdessä määrittävät organisaation viestintäkyvyn: viestintäidentiteetti, johtajaläsnäolo, johtamiskulttuuri ja liiketoimintasuoritus.
+              ICA-viitekehys kehittää yksilöä. DIAMON Vaikuttavuuden Arkkitehtuuri näyttää, mihin se kehitys kohdistuu, neljään ulottuvuuteen, jotka yhdessä määrittävät organisaation viestintäkyvyn: viestintäidentiteetti, johtajaläsnäolo, johtamiskulttuuri ja liiketoimintasuoritus.
             </p>
           </div>
           <p className="text-sm leading-relaxed md:pb-2" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-            Kun ICA-kehitystä sovelletaan järjestelmällisesti — johtajien kesken ja ajan kuluessa — se muuttaa paitsi yksilön suoritusta myös sitä, miten koko organisaatio viestii, päättää ja johtaa. Alla oleva malli kuvaa tätä organisatorista ulottuvuutta.
+            Kun ICA-kehitystä sovelletaan järjestelmällisesti, johtajien kesken ja ajan kuluessa, se muuttaa paitsi yksilön suoritusta myös sitä, miten koko organisaatio viestii, päättää ja johtaa. Alla oleva malli kuvaa tätä organisatorista ulottuvuutta.
           </p>
         </div>
       </section>

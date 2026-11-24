@@ -57,7 +57,7 @@ export default function ImpactSessionPage() {
               lineHeight: 1.8,
             }}
           >
-            For moments where the message matters — and how it is delivered matters just as much.
+            For moments where the message matters, and how it is delivered matters just as much.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -115,7 +115,7 @@ export default function ImpactSessionPage() {
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              The DIAMON Impact Session is an intensive, individual coaching engagement that prepares a leader or expert to succeed in a specific communication situation where impact matters most. Not a general presentation skills course — a precise preparation for your actual moment.
+              The DIAMON Impact Session is an intensive, individual coaching engagement that prepares a leader or expert to succeed in a specific communication situation where impact matters most. Not a general presentation skills course, a precise preparation for your actual moment.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>

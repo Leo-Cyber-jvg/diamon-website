@@ -54,7 +54,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               lineHeight: 1.8,
             }}
           >
-            Tämä ei ole yksittäinen esiintymiskurssi — vaan rakenteellinen valmennuskokonaisuus,
+            Tämä ei ole yksittäinen esiintymiskurssi, vaan rakenteellinen valmennuskokonaisuus,
             joka rakentaa johtajalle johdonmukaisen, mitattavan ja strategisesti linjatun
             viestintäprofiilin. Henkilökohtainen valmentaja koko vuoden ajan.
           </p>
@@ -107,7 +107,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Annual Leadership Program on 12 kuukauden kehitysohjelma, joka on suunniteltu
               vahvistamaan johtajan viestinnällistä vaikuttavuutta ja esiintymisen strategista roolia.
-              Se on rakenteellinen valmennuskokonaisuus — ei yksittäinen kurssi — joka rakentaa
+              Se on rakenteellinen valmennuskokonaisuus, ei yksittäinen kurssi, joka rakentaa
               johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
@@ -149,12 +149,12 @@ export default function VuosittainenJohtajuusohjelmePage() {
         </p>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin — ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
-            { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet — viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
-            { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino — johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
-            { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä — datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
+            { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin, ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
+            { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet, viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
+            { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino, johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
+            { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä, datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
             { title: 'Kokonaisprosessi: valmistautuminen, esiintyminen, jälkityö', body: 'Toistettava prosessi: strateginen valmistautuminen, suoritus ja jälkianalyysi jokaiseen merkittävään viestintähetkeen.' },
-            { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit — viestintä, joka tukee ja ajaa liiketoimintaa.' },
+            { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit, viestintä, joka tukee ja ajaa liiketoimintaa.' },
           ].map(({ title, body }) => (
             <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
@@ -175,10 +175,10 @@ export default function VuosittainenJohtajuusohjelmePage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä — ei vain silloin, kun olet valmistautunut.' },
-            { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista — ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
-            { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa — ei esiintymistaito, vaan strateginen kyvykkyys.' },
-            { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu — ei kertaluonteinen ponnistus.' },
+            { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä, ei vain silloin, kun olet valmistautunut.' },
+            { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista, ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
+            { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa, ei esiintymistaito, vaan strateginen kyvykkyys.' },
+            { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu, ei kertaluonteinen ponnistus.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>

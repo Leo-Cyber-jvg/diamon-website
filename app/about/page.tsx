@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'About DIAMON — Leadership Communication for the AI Era',
   description:
-    'DIAMON Finland develops leadership communication capability — helping leaders and organisations turn expertise and thinking into visible, effective influence.',
+    'DIAMON Finland develops leadership communication capability, helping leaders and organisations turn expertise and thinking into visible, effective influence.',
 }
 
 export default function AboutPage() {
@@ -119,8 +119,8 @@ export default function AboutPage() {
               maxWidth: '500px',
             }}
           >
-            DIAMON draws its name from the Greek. Behind it lies the idea that leadership,
-            interaction and change all happen through people.
+            DIAMON takes its name from Greek roots. Behind it lies the idea that leadership,
+            interaction and change all happen through the individual.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function AboutPage() {
             {
               number: '02',
               title: 'The Human Edge in the AI Era',
-              body: 'AI and digital transformation are changing how we produce information, communicate and work. At the same time, personal interaction, presence and the ability to connect with people remain central to leadership. Effective communication requires clarity, situational awareness and the ability to build a genuine connection with the audience — across in-person, digital and hybrid environments.',
+              body: 'AI and digital transformation are changing how we produce information, communicate and work. At the same time, personal interaction, presence and the ability to connect with people remain central to leadership. Effective communication requires clarity, situational awareness and the ability to build a genuine connection with the audience, across in-person, digital and hybrid environments.',
             },
             {
               number: '03',
@@ -241,7 +241,7 @@ export default function AboutPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/leo-sjoman.jpg"
-              alt="Leo Sjöman — Founder, DIAMON Finland"
+              alt="Leo Sjöman, Founder, DIAMON Finland"
               style={{
                 width: '100%',
                 aspectRatio: '3/4',
@@ -280,28 +280,22 @@ export default function AboutPage() {
               <p>
                 Leo Sjöman is the Founder of DIAMON Finland and the developer of the
                 DIAMON ICA Framework™. He works with executives, senior leaders,
-                leadership teams and organisations across the Nordic region.
+                leadership teams and organisations.
               </p>
               <p>
                 Leo is a professional actor with more than twenty years of experience
-                in film, television and theatre. That background is not a footnote —
-                it is the foundation of the framework. The craft of acting demands a
+                in film, television and theatre. The craft of acting demands a
                 deep, practical understanding of human behaviour, presence, storytelling
                 and performance under pressure. It is precisely this understanding,
                 applied to leadership and organisational contexts, that makes DIAMON&apos;s
                 approach distinctively effective.
               </p>
-              <p>
-                Where most communication development programmes work from the outside
-                in — adjusting behaviour, adding techniques — DIAMON works from the
-                inside out. Identity before technique. Architecture before delivery.
-              </p>
             </div>
             <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
               {[
                 { label: 'Role', value: 'Leadership Communication Coach, DIAMON Finland' },
-                { label: 'Framework', value: 'DIAMON ICA Framework™ — Identity, Composition, Action' },
-                { label: 'Background', value: 'Professional actor — film, television, theatre (20+ years)' },
+                { label: 'Framework', value: 'DIAMON ICA Framework™, Identity, Composition, Action' },
+                { label: 'Background', value: 'Professional actor, film, television, theatre (20+ years)' },
                 { label: 'Clients', value: 'Executives, leadership teams, organisations' },
               ].map(({ label, value }) => (
                 <div

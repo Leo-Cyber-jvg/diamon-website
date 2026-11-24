@@ -50,7 +50,7 @@ export default function VaikuttavuussessioPage() {
               lineHeight: 1.8,
             }}
           >
-            Hetkiin, joissa viestillä on väliä — ja sillä, miten se toimitetaan, on yhtä paljon väliä.
+            Hetkiin, joissa viestillä on väliä, ja sillä, miten se toimitetaan, on yhtä paljon väliä.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -101,7 +101,7 @@ export default function VaikuttavuussessioPage() {
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               DIAMON Impact Session on intensiivinen, yksilöllinen coachingkokonaisuus, joka
               valmistaa johtajan tai asiantuntijan onnistumaan tietyssä viestintätilanteessa,
-              jossa vaikutus ratkaisee eniten. Ei yleinen esiintymistaito — täsmällinen valmistautuminen
+              jossa vaikutus ratkaisee eniten. Ei yleinen esiintymistaito, täsmällinen valmistautuminen
               juuri sinun hetkellesi.
             </p>
           </div>

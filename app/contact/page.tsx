@@ -144,7 +144,7 @@ function ContactForm() {
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>What to expect</p>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
             We respond to all enquiries personally. There is no sales process.
-            The first conversation is a diagnostic — we want to understand the
+            The first conversation is a diagnostic, we want to understand the
             specific challenge before we propose anything.
           </p>
         </div>

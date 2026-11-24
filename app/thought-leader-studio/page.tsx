@@ -21,7 +21,7 @@ export default function ThoughtLeaderStudioPage() {
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
           >
-            Services — 04
+            Services, 04
           </p>
           <h1
             className="text-4xl md:text-6xl lg:text-7xl font-light mb-8"
@@ -50,8 +50,8 @@ export default function ThoughtLeaderStudioPage() {
             }}
           >
             Video is now at the core of corporate communication. When leaders
-            and experts communicate in their own voice — with their own presence
-            and authority — they create trust, credibility, and genuine human
+            and experts communicate in their own voice, with their own presence
+            and authority, they create trust, credibility, and genuine human
             connection. This is the essence of modern thought leadership:
             organisations whose people are seen and heard become more credible,
             more human, and more relevant.
@@ -88,7 +88,7 @@ export default function ThoughtLeaderStudioPage() {
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Customer buying journeys have moved almost entirely online. Before any
               conversation takes place, your clients, candidates, and partners have
-              already formed an opinion — based on what they have seen, read, and heard.
+              already formed an opinion, based on what they have seen, read, and heard.
               The question is not whether your organisation has a voice. The question
               is whether that voice is being heard.
             </p>
@@ -97,13 +97,13 @@ export default function ThoughtLeaderStudioPage() {
               communication. Yet the channel remains heavily underutilised: without a
               structured programme, typically only 3–5% of employees are active on
               LinkedIn. With the right coaching and framework, participation can rise
-              to 25% — and less than 1% of professionals currently publish content
+              to 25%, and less than 1% of professionals currently publish content
               several times per week.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Reaching 100,000 impressions through paid advertising can cost up to
               €3,000. The same reach through strategically guided employee content
-              is not only more cost-effective — it is more trusted, more human,
+              is not only more cost-effective, it is more trusted, more human,
               and more enduring.
             </p>
           </div>
@@ -144,7 +144,7 @@ export default function ThoughtLeaderStudioPage() {
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               DIAMON Thought Leader Studio is your organisation&apos;s own communication
-              powerhouse — a place where thought leadership becomes visibility,
+              powerhouse, a place where thought leadership becomes visibility,
               visibility becomes trust, and trust becomes business.
             </p>
           </div>
@@ -169,7 +169,7 @@ export default function ThoughtLeaderStudioPage() {
             {
               label: 'A',
               title: 'Coaching and\nvideo production',
-              body: 'Develop communication skill, presence, clarity, and impact to a high professional level. The Studio combines coaching, professional videography, and content planning into one integrated process — making expertise visible, compelling, and worth watching.',
+              body: 'Develop communication skill, presence, clarity, and impact to a high professional level. The Studio combines coaching, professional videography, and content planning into one integrated process, making expertise visible, compelling, and worth watching.',
             },
             {
               label: 'B',
@@ -179,7 +179,7 @@ export default function ThoughtLeaderStudioPage() {
             {
               label: 'C',
               title: 'Continuous\nvisibility',
-              body: 'Create a systematic publishing rhythm and tracking model so that visibility becomes consistent, measurable, and strategically managed. Thought leadership becomes a permanent part of the organisation&apos;s communication culture — not a one-off campaign.',
+              body: 'Create a systematic publishing rhythm and tracking model so that visibility becomes consistent, measurable, and strategically managed. Thought leadership becomes a permanent part of the organisation&apos;s communication culture, not a one-off campaign.',
             },
           ].map(({ label, title, body }) => (
             <div
@@ -241,7 +241,7 @@ export default function ThoughtLeaderStudioPage() {
             <div className="flex flex-col gap-4 md:pt-10">
               <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
                 The Studio is built around a monthly rhythm. One professionally
-                structured session produces ten high-quality videos — which,
+                structured session produces ten high-quality videos, which,
                 over twelve months, creates a library of one hundred pieces of
                 strategic content. Each session includes planning, coaching,
                 filming, a publishing plan, and follow-up.
@@ -331,12 +331,12 @@ export default function ThoughtLeaderStudioPage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Visible and credible leaders', body: 'Leaders who communicate with authority and consistency become a strategic asset — for sales, for recruitment, and for culture.' },
+            { n: '01', title: 'Visible and credible leaders', body: 'Leaders who communicate with authority and consistency become a strategic asset, for sales, for recruitment, and for culture.' },
             { n: '02', title: 'Stronger expert positioning', body: 'Expertise that stays inside the organisation creates no external value. Thought Leader Studio makes that expertise visible and credible.' },
             { n: '03', title: 'Consistent thought leadership content', body: 'One hundred strategically guided videos per year creates a content infrastructure that compounds over time.' },
-            { n: '04', title: 'Measurable, long-term visibility', body: 'Visibility becomes a managed business asset — tracked, optimised, and systematically developed rather than left to chance.' },
+            { n: '04', title: 'Measurable, long-term visibility', body: 'Visibility becomes a managed business asset, tracked, optimised, and systematically developed rather than left to chance.' },
             { n: '05', title: 'Communication that supports the business', body: 'Content that supports sales conversations, attracts talent, reinforces culture, and strengthens the organisation&apos;s human voice in the market.' },
-            { n: '06', title: 'A stronger human voice', body: 'In a world of automated content, human presence — a real face, a real voice, a real perspective — is the most credible communication an organisation can produce.' },
+            { n: '06', title: 'A stronger human voice', body: 'In a world of automated content, human presence, a real face, a real voice, a real perspective, is the most credible communication an organisation can produce.' },
           ].map(({ n, title, body }) => (
             <div
               key={n}

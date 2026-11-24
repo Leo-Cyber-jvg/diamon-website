@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'Leadership Communication Intensive — DIAMON Finland',
   description:
-    'Tiivis 6 kuukauden valmennusprosessi, joka rakentaa selkeää ja mitattavaa johtamisviestinnän toimintakykyä — intensiivisellä henkilökohtaisella valmennuksella.',
+    'Tiivis 6 kuukauden valmennusprosessi, joka rakentaa selkeää ja mitattavaa johtamisviestinnän toimintakykyä, intensiivisellä henkilökohtaisella valmennuksella.',
 }
 
 export default function JohtamisviestinnanIntensivePage() {
@@ -58,7 +58,7 @@ export default function JohtamisviestinnanIntensivePage() {
               lineHeight: 1.8,
             }}
           >
-            Tiivis, intensiivinen valmennuskokonaisuus, joka rakentaa mitattavaa johtamisviestinnän toimintakykyä kuudessa kuukaudessa — henkilökohtaisella valmennuksella koko prosessin ajan.
+            Tiivis, intensiivinen valmennuskokonaisuus, joka rakentaa mitattavaa johtamisviestinnän toimintakykyä kuudessa kuukaudessa, henkilökohtaisella valmennuksella koko prosessin ajan.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -107,10 +107,10 @@ export default function JohtamisviestinnanIntensivePage() {
               6 kuukautta. Tiiviisti. Mitattavasti.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership Communication Intensive on 6 kuukauden valmennusprosessi johtajille ja asiantuntijoille, jotka haluavat kehittää viestintäänsä nopeasti ja tavoitteellisesti — tiiviisti ja selkein tuloksin. Kuusi sessiota, kolme tuntia kukin, henkilökohtaisen valmentajan kanssa koko ohjelman ajan.
+              Leadership Communication Intensive on 6 kuukauden valmennusprosessi johtajille ja asiantuntijoille, jotka haluavat kehittää viestintäänsä nopeasti ja tavoitteellisesti, tiiviisti ja selkein tuloksin. Kuusi sessiota, kolme tuntia kukin, henkilökohtaisen valmentajan kanssa koko ohjelman ajan.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Ohjelma rakentuu asiakkaan todellisten viestintätilanteiden ja johtamisellisten tavoitteiden ympärille — ja tuottaa mitattavaa kehitystä rajatulla aikavälillä.
+              Ohjelma rakentuu asiakkaan todellisten viestintätilanteiden ja johtamisellisten tavoitteiden ympärille, ja tuottaa mitattavaa kehitystä rajatulla aikavälillä.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -146,9 +146,9 @@ export default function JohtamisviestinnanIntensivePage() {
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { n: '01', title: 'Nopea, mitattava kehitys', body: 'Kuusi intensiivistä sessiota, jotka tuottavat tuloksia — ei asteittaista ajelehtimista, vaan fokusoitu kehityskokonaisuus selkein tavoittein.' },
-            { n: '02', title: 'Strategisesti linjattu', body: 'Viestintäsi on tavoitteellista ja kytketty johtajarooliisi ja organisaatiosi suuntaan — ei esiintymistaitona, vaan strategisena toimintakykynä.' },
-            { n: '03', title: 'Johdonmukainen paineessa', body: 'Sama auktoriteetti ja selkeys joka tilanteessa — valmistautuneena tai ei. Toimintakyky, joka pitää ratkaisevissa hetkissä.' },
+            { n: '01', title: 'Nopea, mitattava kehitys', body: 'Kuusi intensiivistä sessiota, jotka tuottavat tuloksia, ei asteittaista ajelehtimista, vaan fokusoitu kehityskokonaisuus selkein tavoittein.' },
+            { n: '02', title: 'Strategisesti linjattu', body: 'Viestintäsi on tavoitteellista ja kytketty johtajarooliisi ja organisaatiosi suuntaan, ei esiintymistaitona, vaan strategisena toimintakykynä.' },
+            { n: '03', title: 'Johdonmukainen paineessa', body: 'Sama auktoriteetti ja selkeys joka tilanteessa, valmistautuneena tai ei. Toimintakyky, joka pitää ratkaisevissa hetkissä.' },
             { n: '04', title: 'Määritelty profiili ja toimintamalli', body: 'Johtajan viestintäprofiili ja henkilökohtainen toimintamalli, jotka palvelevat ohjelman jälkeenkin.' },
           ].map(({ n, title, body }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
@@ -181,7 +181,7 @@ export default function JohtamisviestinnanIntensivePage() {
               Johtajille, jotka haluavat kehittyä nopeasti ja tavoitteellisesti.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Intensive on suunniteltu johtajille ja asiantuntijoille, jotka haluavat intensiivistä, fokusoitua kehitystä rajatulla aikavälillä — selkein tavoittein ja mitattavin tuloksin.
+              Intensive on suunniteltu johtajille ja asiantuntijoille, jotka haluavat intensiivistä, fokusoitua kehitystä rajatulla aikavälillä, selkein tavoittein ja mitattavin tuloksin.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>

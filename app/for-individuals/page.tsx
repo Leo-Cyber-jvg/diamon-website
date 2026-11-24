@@ -74,7 +74,7 @@ export default function ForIndividualsPage() {
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              The most effective leaders communicate with intention — not instinct. They have
+              The most effective leaders communicate with intention, not instinct. They have
               a clear sense of their identity as communicators, structure their messages with
               purpose, and perform with presence and conviction.
             </p>
@@ -82,7 +82,7 @@ export default function ForIndividualsPage() {
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Diamon coaching is built around the DIAMON ICA Framework™ — a structured methodology
+              Diamon coaching is built around the DIAMON ICA Framework™, a structured methodology
               that develops all three dimensions of communication performance.
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function ForIndividualsPage() {
               Start the conversation about your development.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Every engagement begins with a diagnostic conversation — not a sales process.
+              Every engagement begins with a diagnostic conversation, not a sales process.
             </p>
           </div>
           <Link

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does DIAMON do?',
-    a: 'DIAMON builds leadership communication capability — not training programmes. We work with leaders, executives and organisations to close the gap between their expertise and how it lands. Every engagement is structured around the DIAMON ICA Framework™.',
+    a: 'DIAMON builds leadership communication capability, not training programmes. We work with leaders, executives and organisations to close the gap between their expertise and how it lands. Every engagement is structured around the DIAMON ICA Framework™.',
   },
   {
     q: 'Who do you work with?',
-    a: 'We work with senior leaders, C-suite executives, board professionals and leadership teams in organisations that treat communication as strategic infrastructure — not a soft skill.',
+    a: 'We work with senior leaders, C-suite executives, board professionals and leadership teams in organisations that treat communication as strategic infrastructure, not a soft skill.',
   },
   {
     q: 'How do engagements work?',
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: 'Do you offer one-off sessions?',
-    a: 'Yes. The DIAMON Impact Session is a focused 3-hour individual coaching engagement for a specific high-stakes communication moment — a keynote, board presentation, media appearance or investor conversation.',
+    a: 'Yes. The DIAMON Impact Session is a focused 3-hour individual coaching engagement for a specific high-stakes communication moment, a keynote, board presentation, media appearance or investor conversation.',
   },
   {
     q: 'What is the ICA Framework™?',
-    a: 'The ICA Framework™ — Individual Communication Alignment — is DIAMON\'s proprietary method for aligning a leader\'s communication goal, personal style, role, impact and the organisation\'s strategic direction. It forms the foundation of all DIAMON engagements.',
+    a: 'The ICA Framework™, Individual Communication Alignment, is DIAMON\'s proprietary method for aligning a leader\'s communication goal, personal style, role, impact and the organisation\'s strategic direction. It forms the foundation of all DIAMON engagements.',
   },
   {
     q: 'How do I get started?',

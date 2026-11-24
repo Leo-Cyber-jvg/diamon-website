@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Ohjelmat — DIAMON Finland',
-  description: 'DIAMON lippulaivaohjelmia johtajille ja organisaatioille. DECP™, DLCP™, DCPL™ ja DICA™ — kehityspolkuja, ei koulutuspäiviä.',
+  description: 'DIAMON lippulaivaohjelmia johtajille ja organisaatioille. DECP™, DLCP™, DCPL™ ja DICA™, kehityspolkuja, ei koulutuspäiviä.',
 }
 
 const programmes = [
@@ -11,41 +11,41 @@ const programmes = [
     id: '01', code: 'DECP™',
     title: 'DIAMON Executive Communication Programme™',
     tagline: 'Kattavin yksilöllinen kehityspolku',
-    duration: '12 kuukautta — 6 syväistuntoa',
+    duration: '12 kuukautta, 6 syväistuntoa',
     audience: 'Toimitusjohtajat, johtajat, hallituksen jäsenet, ylimmän johdon edustajat',
-    desc: 'DIAMONin kattavin yksilöllinen johtamisviestinnän kehitysohjelma. 12 kuukauden rakenteellinen matka läpi koko DIAMON ICA-viitekehyksen™ — viestintäidentiteetin, viestirakenteiden ja suorituskyvyn rakentaminen perustasta lähtien.',
-    structure: ['ICA-lähtötason arviointi ja viestintäprofiili', 'ICA I — Identiteetti ja DCI™-kehitys', 'ICA II — Kompositio ja TNT™-arkkitehtuuri', 'ICA III — Toiminta ja K3™-suoritus', 'Vaativien tilanteiden integraatio', 'Loppuarviointi ja eteenpäin suunnitelma'],
-    outcomes: 'Täydellinen henkilökohtainen viestintäarkkitehtuuri — identiteetti, kompositio ja toiminta — yhdensuuntaistettuna roolisi, tavoitteidesi ja johtajuuden vaatimusten kanssa.',
+    desc: 'DIAMONin kattavin yksilöllinen johtamisviestinnän kehitysohjelma. 12 kuukauden rakenteellinen matka läpi koko DIAMON ICA-viitekehyksen™, viestintäidentiteetin, viestirakenteiden ja suorituskyvyn rakentaminen perustasta lähtien.',
+    structure: ['ICA-lähtötason arviointi ja viestintäprofiili', 'ICA I, Identiteetti ja DCI™-kehitys', 'ICA II, Kompositio ja TNT™-arkkitehtuuri', 'ICA III, Toiminta ja K3™-suoritus', 'Vaativien tilanteiden integraatio', 'Loppuarviointi ja eteenpäin suunnitelma'],
+    outcomes: 'Täydellinen henkilökohtainen viestintäarkkitehtuuri, identiteetti, kompositio ja toiminta, yhdensuuntaistettuna roolisi, tavoitteidesi ja johtajuuden vaatimusten kanssa.',
   },
   {
     id: '02', code: 'DLCP™',
     title: 'DIAMON Leadership Communication Programme™',
     tagline: 'Johtoryhmän yhteinen viestintäarkkitehtuuri',
-    duration: '6–12 kuukautta — tiimi- ja yksilömuoto',
+    duration: '6–12 kuukautta, tiimi- ja yksilömuoto',
     audience: 'Johtoryhmät, johtoryhmän jäsenet, ylimmän johdon tiimit',
-    desc: 'Rakenteellinen ohjelma, joka kehittää yhteistä viestintäkykyä johtoryhmässä. Yhdistää tiimitason arkkitehtuurin ja yksilöllisen ICA-kehityksen — rakentaen viestintäkykyisen johtamiskerroksen, joka toimii yhdensuuntaisesti, täsmällisesti ja yhteisellä kielellä.',
+    desc: 'Rakenteellinen ohjelma, joka kehittää yhteistä viestintäkykyä johtoryhmässä. Yhdistää tiimitason arkkitehtuurin ja yksilöllisen ICA-kehityksen, rakentaen viestintäkykyisen johtamiskerroksen, joka toimii yhdensuuntaisesti, täsmällisesti ja yhteisellä kielellä.',
     structure: ['Tiimin viestintäauditointi ja lähtötaso', 'Jaettu narratiivi ja viestintäarkkitehtuuri', 'Yksilöllinen ICA-kehitys kaikille osallistujille', 'Vuorovaikutus- ja yhdensuuntaisuustyöpajat', 'Vaativien tilanteiden valmistautuminen', 'Yhteinen loppuarviointi ja eteenpäin suunnitelma'],
-    outcomes: 'Johtoryhmä, joka viestii yhteisellä arkkitehtuurilla, johdonmukaisella läsnäololla ja strategisella yhdensuuntaisuudella — sisäisesti ja ulkoisesti.',
+    outcomes: 'Johtoryhmä, joka viestii yhteisellä arkkitehtuurilla, johdonmukaisella läsnäololla ja strategisella yhdensuuntaisuudella, sisäisesti ja ulkoisesti.',
   },
   {
     id: '03', code: 'DCPL™',
     title: 'DIAMON Communication Performance Lab™',
     tagline: 'Korkean paineen viestinnällinen suorituskyvyn treeni',
-    duration: '1–3 päivää — intensiivimuoto',
+    duration: '1–3 päivää, intensiivimuoto',
     audience: 'Johtajat ja edustajat, jotka valmistautuvat vaativiin tilanteisiin',
     desc: 'Intensiivinen, rakenteellinen viestinnällisen suorituskyvyn valmennus hetkiin, jolloin suorituksella on eniten merkitystä. Pääomamarkkinapäivät, sijoittajapäivät, mediakampanjat, hallitustason esitykset, kriisiviestintä. Lab yhdistää painesimulaation, oikeissa tilanteissa harjoittelun ja ICA-pohjaisen valmennuksen.',
-    structure: ['Esivalmistelu: viestintäauditointi ja tavoitteiden asettaminen', 'Viesti- ja narratiiviarkkitehtuurin työpaja', 'Painesimulaatio ja valmennus — live-muoto', 'Media- ja Q&A-vuorovaikutuksen suoritus', 'Yksilölliset ja yhteiset palautistunnot', 'Jälkiarviointi ja eteenpäin suositukset'],
+    structure: ['Esivalmistelu: viestintäauditointi ja tavoitteiden asettaminen', 'Viesti- ja narratiiviarkkitehtuurin työpaja', 'Painesimulaatio ja valmennus, live-muoto', 'Media- ja Q&A-vuorovaikutuksen suoritus', 'Yksilölliset ja yhteiset palautistunnot', 'Jälkiarviointi ja eteenpäin suositukset'],
     outcomes: 'Johtoryhmä tai edustaja, joka suoriutuu täsmällisesti, auktoriteetilla ja rauhallisesti silloin kun panokset ovat korkeimmillaan.',
   },
   {
     id: '04', code: 'DICA™',
     title: 'DIAMON ICA Academy™',
     tagline: 'Skaalautuva viestintäkyky koko organisaatiolle',
-    duration: 'Jatkuva — modulaarinen rakenne',
+    duration: 'Jatkuva, modulaarinen rakenne',
     audience: 'Organisaatiot, jotka rakentavat pitkäaikaista viestintäkykyä laajassa mittakaavassa',
-    desc: 'Skaalautuva, modulaarinen ohjelma, joka tuo DIAMON ICA-viitekehyksen™ organisaatioon systemaattisena kehitysjärjestelmänä. Suunniteltu organisaatioille, jotka haluavat viestintäkyvystä organisatorisen perusosaamisen — ei kertaluonteisen hankkeen.',
+    desc: 'Skaalautuva, modulaarinen ohjelma, joka tuo DIAMON ICA-viitekehyksen™ organisaatioon systemaattisena kehitysjärjestelmänä. Suunniteltu organisaatioille, jotka haluavat viestintäkyvystä organisatorisen perusosaamisen, ei kertaluonteisen hankkeen.',
     structure: ['ICA-viitekehyksen esittely ja organisaatiollinen arviointi', 'Modulaarinen kehitysohjelma johtamiskerroksissa', 'Sisäisten ICA-fasilitaattorien kehittäminen', 'Viestintäkyvyn seuranta ja mittaaminen', 'Jatkuva valmennus, tuki ja sisältöjärjestelmä', 'Vuosiarviointi ja ohjelman kehittäminen'],
-    outcomes: 'Viestintäkyky organisatorisena infrastruktuurina — mitattavana, skaalautuvana ja jatkuvasti kehittyvänä.',
+    outcomes: 'Viestintäkyky organisatorisena infrastruktuurina, mitattavana, skaalautuvana ja jatkuvasti kehittyvänä.',
   },
 ]
 
@@ -95,10 +95,10 @@ export default function OhjelmatPage() {
         <h2 className="text-2xl md:text-3xl font-light mb-10" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>Valitse tilanteesi mukaan.</h2>
         <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
           {[
-            { situation: 'Valmistaudun vaativaan viestintätilanteeseen — nopeasti', programme: 'DCPL™ — Communication Performance Lab', duration: '1–3 päivää', cta: 'Impact, nopea' },
-            { situation: 'Haluan systemaattisen muutoksen omaan viestintäkykyyni', programme: 'DECP™ — Executive Communication Programme', duration: '12 kuukautta', cta: 'Yksilö, syvä' },
-            { situation: 'Johtoryhmämme viestintä kaipaa yhteistä arkkitehtuuria', programme: 'DLCP™ — Leadership Communication Programme', duration: '6–12 kuukautta', cta: 'Tiimi' },
-            { situation: 'Haluamme rakentaa viestintäkyvyn koko organisaatioon', programme: 'DICA™ — ICA Academy', duration: 'Jatkuva', cta: 'Organisaatio' },
+            { situation: 'Valmistaudun vaativaan viestintätilanteeseen, nopeasti', programme: 'DCPL™, Communication Performance Lab', duration: '1–3 päivää', cta: 'Impact, nopea' },
+            { situation: 'Haluan systemaattisen muutoksen omaan viestintäkykyyni', programme: 'DECP™, Executive Communication Programme', duration: '12 kuukautta', cta: 'Yksilö, syvä' },
+            { situation: 'Johtoryhmämme viestintä kaipaa yhteistä arkkitehtuuria', programme: 'DLCP™, Leadership Communication Programme', duration: '6–12 kuukautta', cta: 'Tiimi' },
+            { situation: 'Haluamme rakentaa viestintäkyvyn koko organisaatioon', programme: 'DICA™, ICA Academy', duration: 'Jatkuva', cta: 'Organisaatio' },
           ].map((row) => (
             <div key={row.situation} className="grid md:grid-cols-3 gap-0" style={{ backgroundColor: 'var(--color-background)' }}>
               <div className="p-6 md:border-r" style={{ borderColor: 'var(--color-border)' }}>
