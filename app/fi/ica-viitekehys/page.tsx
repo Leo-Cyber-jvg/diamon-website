@@ -25,6 +25,16 @@ export default function IcaViitekehysPage() {
         </div>
       </section>
 
+      {/* Intro */}
+      <section className="px-6 pt-20 pb-4" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <h2 className="text-2xl md:text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+          Vaikuttavan johtamisviestinnän perusta.
+        </h2>
+        <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '640px' }}>
+          ICA Framework™ on Diamonin kehittämä systemaattinen malli viestinnällisen toimintakyvyn kehittämiseen. Se yhdistää henkilökohtaisen vaikuttavuuden, strategisen viestinnän ja kyvyn toimia erilaisissa vuorovaikutustilanteissa.
+        </p>
+      </section>
+
       {/* Visual diagram */}
       <ICAFrameworkDiagram lang="fi" />
 
