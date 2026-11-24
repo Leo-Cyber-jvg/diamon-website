@@ -38,22 +38,80 @@ export default function IcaViitekehysPage() {
       {/* Visual diagram */}
       <ICAFrameworkDiagram lang="fi" />
 
-      {/* Three levels */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { label: 'ICA I · DCI™', title: 'Identiteetti', q: 'Mistä käsin viestin?', desc: 'Johtajaidentiteetti, itsetuntemus ja viestinnällinen perusta.' },
-            { label: 'ICA II · TNT™', title: 'Kompositio', q: 'Miten rakennan viestini?', desc: 'Viestin arkkitehtuuri, narratiivi ja strateginen selkeys.' },
-            { label: 'ICA III · K3™', title: 'Toiminta', q: 'Miten viestin toteutuu?', desc: 'Kehollisuus, läsnäolo ja suoritus todellisissa tilanteissa.' },
-          ].map(({ label, title, q, desc }) => (
-            <div key={label} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 px-8 py-8"
-              style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-[0.25em] uppercase shrink-0" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '120px' }}>{label}</span>
-              <span className="text-2xl font-light shrink-0" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', minWidth: '160px' }}>{title}</span>
-              <span className="text-sm font-light shrink-0" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', minWidth: '200px', fontStyle: 'italic' }}>{q}</span>
-              <span className="text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>{desc}</span>
+      {/* ICA three-column diagram */}
+      <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {/* ICA I – Identity */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Identiteetti</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
             </div>
-          ))}
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Mistä käsin viestin?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Alku</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Luo kontakti, läsnäolo ja luottamus.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Läsnäolo</p>
+            </div>
+          </div>
+
+          {/* ICA II – Composition */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Kompositio</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Tactical model</p>
+            </div>
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Mitä rakennan, ja miten?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div className="flex flex-col gap-1">
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elementit</p>
+              {['Tila · Narratiivi · Toimintarakenne'].map(el => (
+                <p key={el} className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{el}</p>
+              ))}
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Keskikohta</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Rakenna viesti, rakenne ja yhteinen ymmärrys.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Selkeys</p>
+            </div>
+          </div>
+
+          {/* ICA III – Action */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Toiminta</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Practical model</p>
+            </div>
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Miten toteutan sen todellisessa tilanteessa?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div className="flex flex-col gap-1">
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elementit</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Keho · Keskittyminen · Kieli</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Loppu</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Vie kohti toimintaa, päätöstä ja vaikutusta.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Vaikuttavuus</p>
+            </div>
+          </div>
         </div>
       </section>
 

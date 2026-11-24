@@ -60,22 +60,78 @@ export default function FrameworkPage() {
       {/* ── Visual diagram ───────────────────────────────────── */}
       <ICAFrameworkDiagram />
 
-      {/* ── Three levels ─────────────────────────────────────── */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { label: 'ICA I · DCI™', title: 'Identity', q: 'Who am I as a communicator?', desc: 'Leadership identity, self-awareness and communicational foundation.' },
-            { label: 'ICA II · TNT™', title: 'Composition', q: 'How do I build my message?', desc: 'Message architecture, narrative and strategic clarity.' },
-            { label: 'ICA III · K3™', title: 'Action', q: 'How does the message land?', desc: 'Physicality, presence and performance in real leadership situations.' },
-          ].map(({ label, title, q, desc }) => (
-            <div key={label} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 px-8 py-8"
-              style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-[0.25em] uppercase shrink-0" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '120px' }}>{label}</span>
-              <span className="text-2xl font-light shrink-0" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', minWidth: '160px' }}>{title}</span>
-              <span className="text-sm font-light shrink-0" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', minWidth: '200px', fontStyle: 'italic' }}>{q}</span>
-              <span className="text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>{desc}</span>
+      {/* ── ICA three-column diagram ──────────────────────────── */}
+      <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {/* ICA I – Identity */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Identity</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
             </div>
-          ))}
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Who am I as a communicator?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Opening</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Create contact, presence and trust.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Presence</p>
+            </div>
+          </div>
+
+          {/* ICA II – Composition */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Composition</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Tactical model</p>
+            </div>
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>What do I build, and how?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>State · Narrative · Action structure</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Middle</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Build the message, structure and shared understanding.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Clarity</p>
+            </div>
+          </div>
+
+          {/* ICA III – Action */}
+          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
+              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Action</h3>
+              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Practical model</p>
+            </div>
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>How do I execute it in a real situation?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Body · Focus · Language</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Close</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Drive toward action, decision and impact.</p>
+            </div>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Impact</p>
+            </div>
+          </div>
         </div>
       </section>
 
