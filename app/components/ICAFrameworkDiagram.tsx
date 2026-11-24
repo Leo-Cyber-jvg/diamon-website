@@ -83,7 +83,7 @@ const levels = [
     act: 'Ending',
     actFi: 'Loppu',
     actDesc: 'Move towards action, decision and impact',
-    actDescFi: 'Liiku kohti toimintaa, päätöstä ja vaikutusta',
+    actDescFi: 'Vie kohti toimintaa, päätöstä ja vaikutusta',
     outcome: 'Impact',
     outcomeFi: 'Vaikutus',
     num: '03',
