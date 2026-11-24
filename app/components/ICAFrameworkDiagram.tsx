@@ -124,11 +124,7 @@ export default function ICAFrameworkDiagram({ lang = 'en' }: { lang?: 'en' | 'fi
               )}
             </h2>
           </div>
-          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-            {isFi
-              ? 'Kolme integroitua tasoa. Yksi johdonmukainen arkkitehtuuri. ICA Framework kehittää viestintäkyvykkyyttä henkilökohtaisesta läsnäolosta organisaatiovaikutukseen.'
-              : 'Three integrated levels. One coherent architecture. The ICA Framework develops communication capability from personal presence through to organisational impact.'}
-          </p>
+          <div />
         </motion.div>
 
         {/* Three cards */}
@@ -174,13 +170,10 @@ export default function ICAFrameworkDiagram({ lang = 'en' }: { lang?: 'en' | 'fi
                 </span>
               </div>
 
-              {/* Question + body */}
-              <div className="px-7 py-6 flex flex-col gap-4" style={{ borderBottom: '1px solid var(--color-border)', flex: 1 }}>
+              {/* Question */}
+              <div className="px-7 py-6 flex flex-col" style={{ borderBottom: '1px solid var(--color-border)', flex: 1 }}>
                 <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.8 }}>
                   {isFi ? `"${level.questionFi}"` : `"${level.question}"`}
-                </p>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-                  {isFi ? level.bodyFi : level.body}
                 </p>
               </div>
 
