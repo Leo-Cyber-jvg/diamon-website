@@ -55,7 +55,7 @@ export const services: Service[] = [
   {
     id: 'annual',
     name: 'Leadership Communication Annual Program',
-    nameFi: 'Johtajan viestinnän vuosiohjelma',
+    nameFi: 'Annual Leadership Program',
     tagline: 'A structured 12-month coaching engagement',
     duration: '12 months · 12 sessions',
     durationFi: '12 kuukautta · 12 sessiota',
@@ -119,7 +119,7 @@ export const services: Service[] = [
   {
     id: 'impact',
     name: 'Impact Session',
-    nameFi: 'Vaikuttavuussessio',
+    nameFi: 'Impact Session',
     tagline: 'Coaching for high-impact communication moments',
     duration: '3 hours · Single session',
     durationFi: '3 tuntia · Yksittäinen sessio',
