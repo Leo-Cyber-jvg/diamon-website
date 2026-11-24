@@ -60,40 +60,22 @@ export default function FrameworkPage() {
       {/* ── Visual diagram ───────────────────────────────────── */}
       <ICAFrameworkDiagram />
 
-      {/* ── How it works — single coherent text ─────────────── */}
+      {/* ── Three levels ─────────────────────────────────────── */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              How the framework works
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light"
-              style={{
-                fontFamily: 'var(--font-heading)',
-                color: 'var(--color-blue)',
-                lineHeight: 1.2,
-              }}
-            >
-              Three levels. Each builds on the one before. None sufficient alone.
-            </h2>
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10">
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership communication fails not at the moment of delivery, but long before it. It fails because the communicator has not resolved who they are, has not designed what they want to say, or does not know how to execute it under real pressure.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identity</strong> comes first. Through the DCI™ model, we build a stable communicational foundation, who you genuinely are as a leader, and how that translates into presence, credibility and trust.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Composition</strong> follows. Through TNT™, we design the architecture of the message: state, narrative, action structure. Not improvisation, intentional construction.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Action</strong> last. Through K3™, we develop the physicality, focus and language that make communication land in the room, under pressure, in real leadership situations.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The result is not better technique. It is a coherent, durable communication capability, one that holds under pressure, scales across situations, and strengthens with use.
-            </p>
-          </div>
+        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {[
+            { label: 'ICA I · DCI™', title: 'Identity', q: 'Who am I as a communicator?', desc: 'Leadership identity, self-awareness and communicational foundation.' },
+            { label: 'ICA II · TNT™', title: 'Composition', q: 'How do I build my message?', desc: 'Message architecture, narrative and strategic clarity.' },
+            { label: 'ICA III · K3™', title: 'Action', q: 'How does the message land?', desc: 'Physicality, presence and performance in real leadership situations.' },
+          ].map(({ label, title, q, desc }) => (
+            <div key={label} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 px-8 py-8"
+              style={{ backgroundColor: 'var(--color-background)' }}>
+              <span className="text-xs tracking-[0.25em] uppercase shrink-0" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '120px' }}>{label}</span>
+              <span className="text-2xl font-light shrink-0" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', minWidth: '160px' }}>{title}</span>
+              <span className="text-sm font-light shrink-0" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', minWidth: '200px', fontStyle: 'italic' }}>{q}</span>
+              <span className="text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>{desc}</span>
+            </div>
+          ))}
         </div>
       </section>
 

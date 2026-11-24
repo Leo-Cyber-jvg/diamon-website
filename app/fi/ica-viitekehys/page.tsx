@@ -28,28 +28,22 @@ export default function IcaViitekehysPage() {
       {/* Visual diagram */}
       <ICAFrameworkDiagram lang="fi" />
 
-      {/* How it works — single coherent text */}
+      {/* Three levels */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Miten viitekehys toimii</p>
-            <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.2 }}>
-              Kolme tasoa. Jokainen rakentaa edellisen päälle. Yksikään ei riitä yksinään.
-            </h2>
-          </div>
-          <div className="flex flex-col gap-5 md:pt-10">
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Johtamisviestintä ei epäonnistu toimitushetkellä, vaan kauan sitä ennen. Se epäonnistuu, koska viestijä ei ole ratkaissut, kuka hän on, ei ole suunnitellut mitä haluaa sanoa, tai ei osaa toteuttaa sitä todellisessa paineessa.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Identiteetti</strong> tulee ensin. DCI™-mallin kautta rakennetaan vakaa viestinnällinen perusta, kuka olet aidosti johtajana ja miten se muuntuu läsnäoloksi, uskottavuudeksi ja luottamukseksi.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Kompositio</strong> seuraa. TNT™-mallin kautta suunnitellaan viestin arkkitehtuuri: tila, narratiivi, toimintarakenne. Ei improvisaatiota, intentionaalista rakentamista.{' '}
-              <strong style={{ color: 'var(--color-text)', fontWeight: 500 }}>Toiminta</strong> viimeiseksi. K3™-mallin kautta kehitetään kehollisuus, fokus ja kieli, joilla viestintä todella laskeutuu tilaan, paineessa, oikeissa johtamistilanteissa.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Tuloksena ei ole parempi tekniikka. Se on johdonmukainen, kestävä viestintäkyky, joka kestää paineessa, skaalautuu eri tilanteisiin ja vahvistuu käytössä.
-            </p>
-          </div>
+        <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          {[
+            { label: 'ICA I · DCI™', title: 'Identiteetti', q: 'Mistä käsin viestin?', desc: 'Johtajaidentiteetti, itsetuntemus ja viestinnällinen perusta.' },
+            { label: 'ICA II · TNT™', title: 'Kompositio', q: 'Miten rakennan viestini?', desc: 'Viestin arkkitehtuuri, narratiivi ja strateginen selkeys.' },
+            { label: 'ICA III · K3™', title: 'Toiminta', q: 'Miten viestin toteutuu?', desc: 'Kehollisuus, läsnäolo ja suoritus todellisissa tilanteissa.' },
+          ].map(({ label, title, q, desc }) => (
+            <div key={label} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 px-8 py-8"
+              style={{ backgroundColor: 'var(--color-background)' }}>
+              <span className="text-xs tracking-[0.25em] uppercase shrink-0" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)', minWidth: '120px' }}>{label}</span>
+              <span className="text-2xl font-light shrink-0" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', minWidth: '160px' }}>{title}</span>
+              <span className="text-sm font-light shrink-0" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', minWidth: '200px', fontStyle: 'italic' }}>{q}</span>
+              <span className="text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>{desc}</span>
+            </div>
+          ))}
         </div>
       </section>
 
