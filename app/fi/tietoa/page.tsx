@@ -134,8 +134,11 @@ export default function TietoaPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>DIAMON syntyi yksinkertaisesta havainnosta: monet johtajat ovat huomattavasti osaavampia kuin heidän viestintänsä antaa ymmärtää.</p>
-            <p>Substanssiosaamisen ja strategisen ymmärryksen rinnalla on olennaista tunnistaa, millainen on viestijänä, miten rakentaa vaikuttavaa viestintää ja miten toimii vuorovaikutuksessa ratkaisevissa tilanteissa.</p>
-            <p>DIAMON auttaa johtajia kehittämään näitä valmiuksia tavoitteellisesti ja pitkäjänteisesti.</p>
+            <p>Toimintamme perustuu ajatukseen siitä, että johtaminen, vaikuttaminen ja muutos tapahtuvat yksilön kautta. Se, miten havainnoimme, ajattelemme, kuuntelemme ja toimimme suhteessa toisiin ihmisiin, määrittää kykymme rakentaa luottamusta, välittää merkityksiä ja saada aikaan muutosta.</p>
+            <p>Teknologian muuttaessa tapaamme tehdä työtä korostuu tarve kehittää tietoisesti myös inhimillisiä kyvykkyyksiämme.</p>
+            <p>Johtamisviestinnän kehittäminen tarkoittaa meille oman toimintatavan syvempää ymmärtämistä, kykyä rakentaa vaikuttavaa viestintää ja valmiutta toimia tarkoituksenmukaisesti myös vaativissa vuorovaikutustilanteissa.</p>
+            <p>DIAMON auttaa johtajia ja organisaatioita kehittämään näitä kyvykkyyksiä systemaattisesti ja pitkäjänteisesti.</p>
+            <p>Teknologia kehittyy nopeasti. Meidänkin kannattaa.</p>
           </div>
         </div>
       </section>
