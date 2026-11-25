@@ -117,7 +117,7 @@ export default function ThoughtLeaderStudioFiPage() {
             <p>Tekoälyn muuttaessa tapaamme tuottaa sisältöä nousee entistä kiinnostavammaksi kysymykseksi se, mikä on ihmisen oman ajattelun, kokemuksen ja näkemyksen arvo. Uskomme, että niiden merkitys kasvaa.</p>
             <p>Kasvot, ääni ja henkilökohtainen läsnäolo rakentavat yhteyttä ja luottamusta.</p>
             <p>Ajatusjohtajuuden kehittämisessä ei ole kyse siitä, että tuotetaan enemmän sisältöä sisällön vuoksi. Kyse on todellisesta asiantuntemuksesta, joka kirkastetun näkemyksen, valmennuksen ja laadukkaan tuotannon kautta tavoittaa oikeat ihmiset.</p>
-            <p>Kokemuksemme osoittaa, että näiden osa-alueiden pitkäjänteisellä yhdistämisellä voidaan saavuttaa erinomaisia tuloksia, vahvistaa yrityksen markkina-asemaa ja luoda mitattavaa liiketoiminnallista arvoa.</p>
+            <p>Kokemuksemme osoittaa, että vahvan asiantuntemuksen, henkilökohtaisen vaikuttavuuden ja korkeatasoisen tuotannon yhdistäminen voi muodostua yritykselle merkittäväksi kaupalliseksi kilpailueduksi.</p>
           </div>
         </div>
       </section>

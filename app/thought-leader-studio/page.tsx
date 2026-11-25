@@ -117,7 +117,7 @@ export default function ThoughtLeaderStudioPage() {
             <p>As AI changes how we produce content, an increasingly interesting question is what the value of a person&apos;s own thinking, experience and point of view actually is. We believe that value is growing.</p>
             <p>A face, a voice and personal presence build connection and trust.</p>
             <p>Developing thought leadership is not about producing more content for the sake of content. It is about genuine expertise that, through a sharpened perspective, coaching and high-quality production, reaches the right people.</p>
-            <p>Our experience shows that combining these elements consistently over time delivers outstanding results, strengthens a company&apos;s market position and creates measurable business value.</p>
+            <p>Our experience shows that combining strong expertise, personal impact and high-quality production can become a significant commercial competitive advantage for a company.</p>
           </div>
         </div>
       </section>
