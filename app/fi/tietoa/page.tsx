@@ -128,7 +128,8 @@ export default function TietoaPage() {
               className="text-3xl font-light"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
-              Johtamisviestintä on keskeinen osa organisaation suorituskykyä.
+              Johtamisviestintä on{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>keskeinen osa organisaation suorituskykyä.</span>
             </h2>
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
@@ -152,7 +153,8 @@ export default function TietoaPage() {
         >
           Mihin DIAMON perustuu
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div style={{ border: '1px solid var(--color-border)' }}>
+        <div className="grid md:grid-cols-2" style={{ gap: '1px', backgroundColor: 'var(--color-border)' }}>
           {[
             {
               number: '01',
@@ -178,7 +180,7 @@ export default function TietoaPage() {
             <div
               key={number}
               className="p-8 flex flex-col gap-4"
-              style={{ backgroundColor: 'var(--color-background)' }}
+              style={{ backgroundColor: 'var(--color-surface)' }}
             >
               <span
                 className="text-xs tracking-widest"
@@ -200,6 +202,7 @@ export default function TietoaPage() {
               </p>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
