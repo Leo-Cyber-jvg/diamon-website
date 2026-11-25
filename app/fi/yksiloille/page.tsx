@@ -114,159 +114,19 @@ export default function YksiloillePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Services */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="mb-14">
-          <p
-            className="text-xs tracking-[0.3em] uppercase mb-4"
-            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-          >
-            Ohjelmat
-          </p>
-          <h2
-            className="text-3xl md:text-4xl font-light"
-            style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}
-          >
-            Räätälöity kehitys johtajan tarpeen mukaan.
-          </h2>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          {services.map((s) => (
-            <div
-              key={s.id}
-              className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-              style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}
-            >
-              <div className="md:col-span-1">
-                <p
-                  className="text-xs tracking-[0.25em] uppercase mb-4"
-                  style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
-                >
-                  {s.durationFi}
-                </p>
-                <h3
-                  className="text-2xl md:text-3xl font-light mb-4"
-                  style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}
-                >
-                  {s.nameFi}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed mb-6"
-                  style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-                >
-                  {s.valueIndFi}
-                </p>
-                <Link href={s.hrefFi} className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
-                  Ohjelman tiedot &rarr;
-                </Link>
-              </div>
-
-              <div className="md:col-span-1 flex flex-col gap-6">
-                <div>
-                  <p
-                    className="text-xs tracking-[0.2em] uppercase mb-3"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                  >
-                    Sopii sinulle jos
-                  </p>
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-                    {s.forIndFi}
-                  </p>
-                </div>
-              </div>
-
-              <div className="md:col-span-1">
-                <p
-                  className="text-xs tracking-[0.2em] uppercase mb-4"
-                  style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                >
-                  Ohjelma sisältää
-                </p>
-                <div className="flex flex-col gap-2">
-                  {s.structureFi.map(item => (
-                    <div key={item} className="flex items-start gap-3">
-                      <span
-                        className="mt-1.5 shrink-0 block w-1 h-1 rounded-full"
-                        style={{ backgroundColor: 'var(--color-blue)' }}
-                        aria-hidden="true"
-                      />
-                      <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-                        {item}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* ICA Framework bullets */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="mb-10">
-          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-            Lähestymistapa · DIAMON ICA Framework™
-          </p>
-          <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', lineHeight: 1.1, color: 'var(--color-text)' }}>
-            Identity. Composition.{' '}
-            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Action.</span>
-          </h2>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1px', background: 'var(--color-border)' }}
-          className="[grid-template-columns:1fr] md:[grid-template-columns:repeat(3,1fr)]">
-          {[
-            {
-              label: 'ICA I · DCI™', name: 'Identity', question: 'Kuka olen viestijänä ja johtajana?',
-              bullets: ['Henkilökohtainen viestintäidentiteetti', 'Johtajaläsnäolo ja autenttisuus', 'Kommunikatiivinen itsetuntemus', 'Esiintymisjännityksen tunnistaminen ja hallinta', 'Luottamuksen rakentaminen'],
-            },
-            {
-              label: 'ICA II · TNT™', name: 'Composition', question: 'Mitä rakennan, ja miten?',
-              bullets: ['Viestinnällinen intentio ja tavoitteet', 'Strateginen tarinankerronta', 'Viestin rakenne ja dramaturgia', 'Yleisön huomioiminen ja kiinnostuksen rakentaminen'],
-            },
-            {
-              label: 'ICA III · K3™', name: 'Action', question: 'Miten toteutan sen todellisessa tilanteessa?',
-              bullets: ['Käytännön esiintymisharjoittelu', 'Kameraharjoitukset ja tallenteiden analysointi', 'Kehon intentio, sanaton viestintä ja läsnäolo', 'Viestinnällisten tilanteiden simulointi, palaute ja toisto'],
-            },
-          ].map(({ label, name, question, bullets }) => (
-            <div key={name} style={{ background: 'var(--color-background)', display: 'flex', flexDirection: 'column' }}>
-              <div className="px-6 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-                <p className="text-xs tracking-[0.22em] uppercase mb-1" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{label}</p>
-                <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 2vw, 1.8rem)', lineHeight: 1.0, color: 'var(--color-text)' }}>{name}</h3>
-                <p className="text-xs" style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', color: 'var(--color-muted)' }}>{question}</p>
-              </div>
-              <div className="px-6 py-4 flex-1">
-                {bullets.map((b, i) => (
-                  <div key={b} className="flex items-start gap-3 py-2" style={{ borderBottom: i < bullets.length - 1 ? '1px solid var(--color-border)' : 'none' }}>
-                    <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
-                    <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>{b}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-6">
-          <Link href="/fi/ica-viitekehys" className="link-blue text-xs tracking-[0.12em] uppercase" style={{ fontFamily: 'var(--font-body)' }}>
-            Tutustu ICA-viitekehykseen →
-          </Link>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Valmennussarja */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-14">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Valmennussarja
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}>
+            Johtajan vaikuttavuus ja toimintakyky
+          </h2>
+        </div>
         <div
           className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
+          style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}
         >
           <div className="md:col-span-1">
             <p
@@ -339,6 +199,134 @@ export default function YksiloillePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
+      {/* Impact Session */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-14">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Ohjelmat
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15, maxWidth: '560px' }}>
+            Räätälöity kehitys johtajan tarpeen mukaan.
+          </h2>
+        </div>
+        {(() => {
+          const s = services.find(x => x.id === 'impact')!
+          return (
+            <div
+              className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
+              style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}
+            >
+              <div className="md:col-span-1">
+                <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>
+                  {s.durationFi}
+                </p>
+                <h3 className="text-2xl md:text-3xl font-light mb-4" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.15 }}>
+                  {s.nameFi}
+                </h3>
+                <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                  {s.valueIndFi}
+                </p>
+                <Link href={s.hrefFi} className="link-blue text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+                  Ohjelman tiedot &rarr;
+                </Link>
+              </div>
+              <div className="md:col-span-1 flex flex-col gap-6">
+                <div>
+                  <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+                    Sopii sinulle jos
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+                    {s.forIndFi}
+                  </p>
+                </div>
+              </div>
+              <div className="md:col-span-1">
+                <p className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+                  Ohjelma sisältää
+                </p>
+                <div className="flex flex-col gap-2">
+                  {s.structureFi.map(item => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                      <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )
+        })()}
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* ICA Framework compact bars */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-10">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Lähestymistapa · DIAMON ICA Framework™
+          </p>
+          <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', lineHeight: 1.1, color: 'var(--color-text)' }}>
+            Identity. Composition.{' '}
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Action.</span>
+          </h2>
+        </div>
+        <div style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+          <div className="grid [grid-template-columns:1fr] md:[grid-template-columns:repeat(3,1fr)]" style={{ gap: '0' }}>
+            {[
+              {
+                label: 'ICA I · DCI™', name: 'Identity', question: 'Kuka olen viestijänä ja johtajana?',
+                bullets: ['Henkilökohtainen viestintäidentiteetti', 'Johtajaläsnäolo ja autenttisuus', 'Kommunikatiivinen itsetuntemus', 'Esiintymisjännityksen tunnistaminen', 'Luottamuksen rakentaminen'],
+              },
+              {
+                label: 'ICA II · TNT™', name: 'Composition', question: 'Mitä rakennan, ja miten?',
+                bullets: ['Viestinnällinen intentio ja tavoitteet', 'Strateginen tarinankerronta', 'Viestin rakenne ja dramaturgia', 'Yleisön huomioiminen ja kiinnostuksen rakentaminen'],
+              },
+              {
+                label: 'ICA III · K3™', name: 'Action', question: 'Miten toteutan sen todellisessa tilanteessa?',
+                bullets: ['Käytännön esiintymisharjoittelu', 'Kameraharjoitukset ja tallenteiden analysointi', 'Kehon intentio, sanaton viestintä ja läsnäolo', 'Viestinnällisten tilanteiden simulointi, palaute ja toisto'],
+              },
+            ].map(({ label, name, question, bullets }, i) => (
+              <div
+                key={name}
+                style={{
+                  backgroundColor: 'var(--color-background)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  borderRight: i < 2 ? '1px solid var(--color-border)' : 'none',
+                  borderBottom: '0',
+                }}
+              >
+                <div className="px-6 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+                  <p className="text-xs tracking-[0.22em] uppercase mb-1" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{label}</p>
+                  <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 2vw, 1.8rem)', lineHeight: 1.0, color: 'var(--color-text)' }}>{name}</h3>
+                  <p className="text-xs" style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', color: 'var(--color-muted)' }}>{question}</p>
+                </div>
+                <div className="px-6 py-4 flex-1">
+                  {bullets.map((b, bi) => (
+                    <div key={b} className="flex items-start gap-3 py-2" style={{ borderBottom: bi < bullets.length - 1 ? '1px solid var(--color-border)' : 'none' }}>
+                      <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                      <span className="text-xs" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>{b}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-6">
+          <Link href="/fi/ica-viitekehys" className="link-blue text-xs tracking-[0.12em] uppercase" style={{ fontFamily: 'var(--font-body)' }}>
+            Tutustu ICA-viitekehykseen →
+          </Link>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>
         <div
@@ -353,7 +341,7 @@ export default function YksiloillePage() {
               Aloitetaan keskustelu kehittymisestäsi.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Jokainen yhteistyö alkaa diagnostisella keskustelulla, ei myyntiprosessilla.
+              Rakennamme ja räätälöimme valmennukset yksilöille aina tarpeen ja tilanteen mukaan. Kerro tarpeistasi, niin rakennetaan sellainen valmennus, joka kohdistuu juuri sinulle.
             </p>
           </div>
           <Link
