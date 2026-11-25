@@ -134,7 +134,7 @@ export default function ThoughtLeaderStudioPage() {
               Thought leadership, visibility and communication coaching as one whole
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              At the heart of modern thought leadership is a company whose people are visible.
+              An organisation&apos;s thought leadership is built through its people.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               DIAMON Thought Leader Studio combines DIAMON Annual Leadership Program and

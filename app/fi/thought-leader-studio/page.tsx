@@ -134,7 +134,7 @@ export default function ThoughtLeaderStudioFiPage() {
               Ajatusjohtajuus, näkyvyys ja viestintävalmennus yhtenä kokonaisuutena
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Modernin ajatusjohtajuuden ytimessä on yritys, jonka ihmiset näkyvät.
+              Yrityksen ajatusjohtajuus rakentuu sen ihmisten kautta.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               DIAMON Thought Leader Studio yhdistää DIAMON Annual Leadership Programin ja
