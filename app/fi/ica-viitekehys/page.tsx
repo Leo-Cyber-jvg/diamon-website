@@ -155,7 +155,7 @@ export default function IcaViitekehysPage() {
         </div>
       </section>
 
-      <InfluenceCompass lang="fi" />
+      <InfluenceCompass lang="fi" showLink={false} />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>

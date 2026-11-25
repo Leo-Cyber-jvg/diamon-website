@@ -1,4 +1,4 @@
-export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }) {
+export default function InfluenceCompass({ lang = 'en', showLink = true }: { lang?: 'en' | 'fi'; showLink?: boolean }) {
   const isFi = lang === 'fi'
 
   const quadrants = [
@@ -135,6 +135,27 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
                 ? 'ICA-viitekehys kehittää yksilöä. Diamon Vaikuttavuuden Arkkitehtuuri näyttää, mihin kehitys kohdistuu.'
                 : 'The ICA Framework develops the individual. The DIAMON Architecture of Influence shows where that development lands.'}
             </p>
+            {showLink && (
+              <a
+                href={isFi ? '/fi/ica-viitekehys' : '/framework'}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontSize: '11px',
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: '#111010',
+                  fontFamily: 'var(--font-body)',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid rgba(17,16,16,0.3)',
+                  paddingBottom: '3px',
+                  width: 'fit-content',
+                }}
+              >
+                {isFi ? 'Tutustu viitekehykseen →' : 'Explore the framework →'}
+              </a>
+            )}
           </div>
 
         </div>
