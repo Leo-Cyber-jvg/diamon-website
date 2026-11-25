@@ -122,9 +122,9 @@ export default function VuosittainenJohtajuusohjelmePage() {
               </span>
             </div>
             {[
-              '12 kuukauden kehittymisohjelma',
-              '6 räätälöityä coachingtapaamista vuoden aikana',
-              '3 tuntia per tapaaminen',
+              '12 kuukauden kehitysohjelma',
+              '12 räätälöityä coachingtapaamista',
+              '2 tuntia per tapaaminen',
               'Oma coach koko vuoden ajan',
               'Jatkuva tuki ja seuranta sessioiden välillä',
               'Tulos: johtajan viestintäprofiili ja käytännön toimintamalli',

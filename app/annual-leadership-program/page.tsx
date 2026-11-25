@@ -120,9 +120,9 @@ export default function AnnualLeadershipProgramPage() {
               </span>
             </div>
             {[
-              '12-month development program',
-              '6 tailored coaching sessions during the year',
-              '3 hours per session',
+              '12-month development programme',
+              '12 tailored coaching sessions',
+              '2 hours per session',
               'Personal coach throughout the full year',
               'Continuous support and follow-up between sessions',
               "Outcome: leader's communication profile and personal operating model",
