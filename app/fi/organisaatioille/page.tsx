@@ -50,8 +50,7 @@ export default function OrganisaatioillePage() {
               fontSize: '1rem',
             }}
           >
-            Pitkäjänteisiä kehitysohjelmia johtoryhmille, ylimmälle johdolle ja organisaatioille.
-            Järjestelmällistä, mitattavaa ja pysyvää.
+            Valmennuksia ja kehitysohjelmia organisaation johdolle ja asiantuntijoille.
           </p>
         </div>
       </section>
