@@ -183,19 +183,21 @@ export default function ThoughtLeaderStudioFiPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Arvolupaus ja hyödyt
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti, kaikissa kanavissa.' },
-            { n: '02', title: 'Asiantuntijuus ja johtajuus näkyväksi', body: 'Yrityksen asiantuntijuus ja johtajuus tulevat näkyviksi tavalla, joka rakentaa uskottavuutta.' },
-            { n: '03', title: 'Näkyvyys muuttuu liiketoiminnaksi', body: 'Strateginen näkyvyys rakentaa luottamusta asiakkaisiin, sijoittajiin ja yhteistyökumppaneihin.' },
-            { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua, ei satunnaista.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti, kaikissa kanavissa.' },
+              { n: '02', title: 'Asiantuntijuus ja johtajuus näkyväksi', body: 'Yrityksen asiantuntijuus ja johtajuus tulevat näkyviksi tavalla, joka rakentaa uskottavuutta.' },
+              { n: '03', title: 'Näkyvyys muuttuu liiketoiminnaksi', body: 'Strateginen näkyvyys rakentaa luottamusta asiakkaisiin, sijoittajiin ja yhteistyökumppaneihin.' },
+              { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua, ei satunnaista.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

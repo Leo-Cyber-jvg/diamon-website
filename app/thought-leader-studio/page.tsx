@@ -183,19 +183,21 @@ export default function ThoughtLeaderStudioPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Value promise and benefits
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Compelling and consistent communication', body: 'Leadership and experts communicate compellingly and consistently, across all channels.' },
-            { n: '02', title: 'Expertise and leadership made visible', body: 'The organisation&apos;s expertise and leadership become visible in a way that builds credibility.' },
-            { n: '03', title: 'Visibility becomes business', body: 'Strategic visibility builds trust with clients, investors and partners.' },
-            { n: '04', title: 'Measurable and strategically guided', body: 'Visibility becomes measurable, continuous and strategically guided, not random.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }} dangerouslySetInnerHTML={{ __html: body }} />
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Compelling and consistent communication', body: 'Leadership and experts communicate compellingly and consistently, across all channels.' },
+              { n: '02', title: 'Expertise and leadership made visible', body: 'The organisation\'s expertise and leadership become visible in a way that builds credibility.' },
+              { n: '03', title: 'Visibility becomes business', body: 'Strategic visibility builds trust with clients, investors and partners.' },
+              { n: '04', title: 'Measurable and strategically guided', body: 'Visibility becomes measurable, continuous and strategically guided, not random.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
