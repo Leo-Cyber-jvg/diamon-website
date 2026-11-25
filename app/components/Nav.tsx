@@ -14,7 +14,7 @@ const enLinks = [
 const fiLinks = [
   { href: '/fi/organisaatioille', label: 'Organisaatioille' },
   { href: '/fi/yksiloille', label: 'Johtajille' },
-  { href: '/fi/tietoa', label: 'Tietoa' },
+  { href: '/fi/tietoa', label: 'Meistä' },
 ]
 
 function LangSwitcher() {
