@@ -59,80 +59,82 @@ export default function FrameworkPage() {
       {/* ── ICA three-column diagram ──────────────────────────── */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+
           {/* ICA I – Identity */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Identity</h3>
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#5656D6' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Identity</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Who am I as a communicator and leader?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"Who am I as a communicator and leader?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Communication identity · Authenticity</p>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Communication identity · Authenticity</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Opening</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Create contact, presence and trust.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Opening</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Create contact, presence and trust.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Presence</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Presence</span>
             </div>
           </div>
 
           {/* ICA II – Composition */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Composition</h3>
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#7B7BE8' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Composition</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Tactical model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>What do I build, and how?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"What do I build, and how?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>State · Narrative · Action structure</p>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>State · Narrative · Action structure</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Middle</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Build the message, structure and shared understanding.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Middle</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Build the message, structure and shared understanding.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Clarity</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Clarity</span>
             </div>
           </div>
 
           {/* ICA III – Action */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Action</h3>
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#A0A0F0' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Action</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Practical model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>How do I execute it in a real situation?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"How do I execute it in a real situation?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Body · Focus · Language</p>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Body · Focus · Language</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Close</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Drive toward action, decision and impact.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Close</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Drive toward action, decision and impact.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Result</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Impact</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Impact</span>
             </div>
           </div>
+
         </div>
       </section>
 

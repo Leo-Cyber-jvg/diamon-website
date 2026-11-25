@@ -37,82 +37,82 @@ export default function IcaViitekehysPage() {
       {/* ICA three-column diagram */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {/* ICA I – Identity */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Identiteetti</h3>
+
+          {/* ICA I – Identiteetti */}
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#5656D6' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Identiteetti</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Kuka olen viestijänä ja johtajana?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"Kuka olen viestijänä ja johtajana?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elementit</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Viestintäidentiteetti · Autenttisuus</p>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Viestintäidentiteetti · Autenttisuus</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Alku</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Luo kontakti, läsnäolo ja luottamus.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Alku</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Luo kontakti, läsnäolo ja luottamus.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Läsnäolo</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Läsnäolo</span>
             </div>
           </div>
 
-          {/* ICA II – Composition */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Kompositio</h3>
+          {/* ICA II – Kompositio */}
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#7B7BE8' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Kompositio</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Tactical model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Mitä rakennan, ja miten?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div className="flex flex-col gap-1">
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"Mitä rakennan, ja miten?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elementit</p>
-              {['Tila · Narratiivi · Toimintarakenne'].map(el => (
-                <p key={el} className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{el}</p>
-              ))}
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Tila · Narratiivi · Toimintarakenne</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Keskikohta</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Rakenna viesti, rakenne ja yhteinen ymmärrys.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Keskikohta</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Rakenna viesti, rakenne ja yhteinen ymmärrys.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Selkeys</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Selkeys</span>
             </div>
           </div>
 
-          {/* ICA III – Action */}
-          <div className="flex flex-col gap-6 p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div>
-              <p className="text-xs tracking-[0.25em] uppercase mb-3" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
-              <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Toiminta</h3>
+          {/* ICA III – Toiminta */}
+          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div style={{ height: '3px', backgroundColor: '#A0A0F0' }} />
+            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
+              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Toiminta</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Practical model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Miten toteutan sen todellisessa tilanteessa?</p>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div className="flex flex-col gap-1">
+            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"Miten toteutan sen todellisessa tilanteessa?"</p>
+            </div>
+            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
               <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elementit</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Keho · Keskittyminen · Kieli</p>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Keho · Keskittyminen · Kieli</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Loppu</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Vie kohti toimintaa, päätöstä ja vaikutusta.</p>
+            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
+              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Loppu</p>
+              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Vie kohti toimintaa, päätöstä ja vaikutusta.</p>
             </div>
-            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <div>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</p>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Vaikuttavuus</p>
+            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</span>
+              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Vaikuttavuus</span>
             </div>
           </div>
+
         </div>
       </section>
 
