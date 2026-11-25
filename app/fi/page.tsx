@@ -100,7 +100,7 @@ export default function FiHome() {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
-                className="text-xs tracking-[0.25em] uppercase"
+                className="text-xs tracking-[0.25em] uppercase font-semibold"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
                 Organisaatioille
@@ -140,7 +140,7 @@ export default function FiHome() {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,9,8,0.76) 0%, rgba(10,9,8,0.22) 50%, transparent 100%)' }} />
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
-                className="text-xs tracking-[0.25em] uppercase"
+                className="text-xs tracking-[0.25em] uppercase font-semibold"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
                 Johtajille
