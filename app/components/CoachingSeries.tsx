@@ -206,7 +206,7 @@ const content: Record<Lang, Content> = {
     postPath: '/fi/valmennussarja/',
     finalEyebrow: 'Seuraava askel',
     finalTitle: 'Keskustellaan lisää.',
-    finalText: 'Kerro tavoitteistasi tai haasteistasi. Kartoitetaan yhdessä, miten Diamon voisi vahvistaa johtamisviestinnän ja vuorovaikutuksen vaikuttavuutta.',
+    finalText: 'Kerro tavoitteistasi tai haasteistasi. Kartoitetaan yhdessä, miten Diamon voisi vahvistaa teidän johtamisviestinnän ja vuorovaikutuksen vaikuttavuutta.',
   },
 
   en: {
@@ -651,13 +651,6 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Process */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p className="text-xs tracking-[0.3em] uppercase mb-4" style={eyebrow}>{t.processEyebrow}</p>
-        <h2 className="text-2xl md:text-4xl font-light mb-12" style={{ ...serif, color: 'var(--color-text)', lineHeight: 1.2 }}>{t.processTitle}</h2>
-        <NumberedCells items={t.process} cols="sm:grid-cols-2 md:grid-cols-4" />
       </section>
 
       {/* Signup */}
