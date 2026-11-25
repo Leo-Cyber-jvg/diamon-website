@@ -145,8 +145,11 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>DIAMON was born from a simple observation: many leaders are considerably more capable than their communication suggests.</p>
-            <p>Alongside substantive expertise and strategic understanding, it is essential to recognise what kind of communicator you are, how to build impactful communication, and how to interact effectively in decisive situations.</p>
-            <p>DIAMON helps leaders develop these capabilities with purpose and over the long term.</p>
+            <p>Our work is grounded in the conviction that leadership, influence and change happen through the individual. How we observe, think, listen and act in relation to others determines our ability to build trust, convey meaning and create change.</p>
+            <p>As technology reshapes how we work, the need to consciously develop our human capabilities becomes ever more important.</p>
+            <p>Developing leadership communication means, to us, a deeper understanding of one's own way of operating, the ability to build impactful communication, and the readiness to act with purpose even in demanding interaction situations.</p>
+            <p>DIAMON helps leaders and organisations develop these capabilities systematically and over the long term.</p>
+            <p>Technology evolves fast. So should we.</p>
           </div>
         </div>
       </section>
