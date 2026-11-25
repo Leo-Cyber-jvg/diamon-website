@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { services } from '../../lib/services'
-import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Johtajille — DIAMON Finland',
@@ -208,7 +207,56 @@ export default function YksiloillePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      <ICAFrameworkSection lang="fi" />
+      {/* ICA Framework bullets */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="mb-10">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+            Lähestymistapa · DIAMON ICA Framework™
+          </p>
+          <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', lineHeight: 1.1, color: 'var(--color-text)' }}>
+            Identity. Composition.{' '}
+            <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Action.</span>
+          </h2>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1px', background: 'var(--color-border)' }}
+          className="[grid-template-columns:1fr] md:[grid-template-columns:repeat(3,1fr)]">
+          {[
+            {
+              label: 'ICA I · DCI™', name: 'Identity', question: 'Kuka olen viestijänä ja johtajana?',
+              bullets: ['Henkilökohtainen viestintäidentiteetti', 'Johtajaläsnäolo ja autenttisuus', 'Kommunikatiivinen itsetuntemus', 'Esiintymisjännityksen tunnistaminen ja hallinta', 'Luottamuksen rakentaminen'],
+            },
+            {
+              label: 'ICA II · TNT™', name: 'Composition', question: 'Mitä rakennan, ja miten?',
+              bullets: ['Viestinnällinen intentio ja tavoitteet', 'Strateginen tarinankerronta', 'Viestin rakenne ja dramaturgia', 'Yleisön huomioiminen ja kiinnostuksen rakentaminen'],
+            },
+            {
+              label: 'ICA III · K3™', name: 'Action', question: 'Miten toteutan sen todellisessa tilanteessa?',
+              bullets: ['Käytännön esiintymisharjoittelu', 'Kameraharjoitukset ja tallenteiden analysointi', 'Kehon intentio, sanaton viestintä ja läsnäolo', 'Viestinnällisten tilanteiden simulointi, palaute ja toisto'],
+            },
+          ].map(({ label, name, question, bullets }) => (
+            <div key={name} style={{ background: 'var(--color-background)', display: 'flex', flexDirection: 'column' }}>
+              <div className="px-6 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+                <p className="text-xs tracking-[0.22em] uppercase mb-1" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{label}</p>
+                <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.4rem, 2vw, 1.8rem)', lineHeight: 1.0, color: 'var(--color-text)' }}>{name}</h3>
+                <p className="text-xs" style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', color: 'var(--color-muted)' }}>{question}</p>
+              </div>
+              <div className="px-6 py-4 flex-1">
+                {bullets.map((b, i) => (
+                  <div key={b} className="flex items-start gap-3 py-2" style={{ borderBottom: i < bullets.length - 1 ? '1px solid var(--color-border)' : 'none' }}>
+                    <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                    <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>{b}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6">
+          <Link href="/fi/ica-viitekehys" className="link-blue text-xs tracking-[0.12em] uppercase" style={{ fontFamily: 'var(--font-body)' }}>
+            Tutustu ICA-viitekehykseen →
+          </Link>
+        </div>
+      </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
