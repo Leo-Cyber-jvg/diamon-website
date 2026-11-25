@@ -572,7 +572,7 @@ export default function Home() {
               {"Let's talk."}
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Tell us about your goals or challenges. Let us explore together how we could strengthen YOUR leadership communication and the impact of your interaction.
+              Tell us about your goals or challenges. Let us explore together how we could strengthen your leadership communication and the impact of your interaction.
             </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0">
