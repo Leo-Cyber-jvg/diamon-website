@@ -39,7 +39,7 @@ export default function VaikuttavuussessioPage() {
               fontStyle: 'italic',
             }}
           >
-            Coaching korkean panoksen viestintähetkiin
+            Valmistaudu tilanteisiin, joilla on merkitystä.
           </p>
           <p
             className="text-lg font-light mb-12"
@@ -50,7 +50,7 @@ export default function VaikuttavuussessioPage() {
               lineHeight: 1.8,
             }}
           >
-            Hetkiin, joissa viestillä on väliä, ja sillä, miten se toimitetaan, on yhtä paljon väliä.
+            Henkilökohtaista valmennusta sinulle, joka haluat kirkastaa ajatuksiasi, vahvistaa ilmaisuasi ja luottaa omaan toimintakykyysi tärkeässä viestintätilanteessa.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

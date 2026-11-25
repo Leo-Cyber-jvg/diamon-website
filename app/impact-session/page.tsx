@@ -46,7 +46,7 @@ export default function ImpactSessionPage() {
               fontStyle: 'italic',
             }}
           >
-            Coaching for high-impact communication moments
+            Prepare for the moments that matter.
           </p>
           <p
             className="text-lg font-light mb-12"
@@ -57,7 +57,7 @@ export default function ImpactSessionPage() {
               lineHeight: 1.8,
             }}
           >
-            For moments where the message matters, and how it is delivered matters just as much.
+            Personal coaching for those who want to clarify their thinking, strengthen their expression and trust their own performance in an important communication situation.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

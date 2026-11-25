@@ -101,19 +101,26 @@ export default function AnnualLeadershipProgramPage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              What it is
+              The coaching programme
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              12 months. Systematic. Measurable.
+              A year of developing your leadership and{' '}
+              <span style={{ fontStyle: 'italic' }}>your impact.</span>
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Leadership Communication Annual Program is a 12-month coaching programme designed to strengthen a leader&apos;s communication impact and the strategic role of communication. It is not a one-off course, it is a structural coaching engagement that builds a consistent, measurable and strategically aligned communication profile.
+              DIAMON Annual Leadership Program is a year-long personal coaching programme for leaders who want to deepen their understanding of how they communicate, lead and influence.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Long-term work with a personal coach enables the identification of strengths, examination of established ways of operating, and the practice of new capabilities as part of one&apos;s own work.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Coaching is built around the leader&apos;s individual development goals, real communication situations and the organisation&apos;s strategic needs. A personal coach walks alongside the leader throughout the full year.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The programme provides personal coach support throughout the full year, along with methods that make communication purposeful and business-driven.
+              The goal is to strengthen the leader&apos;s communication capability across different communication environments and interaction situations, and to develop the ability to lead more consciously, even when the pressure grows.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
             <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Program structure
@@ -145,20 +152,22 @@ export default function AnnualLeadershipProgramPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Program themes
         </p>
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives, and how your communication aligns with the organisation\'s direction.' },
-            { title: 'Standing out', body: 'Individual strengths and development areas, building a communication profile that is distinctive, credible and yours.' },
-            { title: 'Communication identity', body: 'The balance between personal and public profile, a consistent communication identity across all platforms and contexts.' },
-            { title: 'Strategic storytelling', body: 'Constructing narratives that move people, from data to decisions, from complexity to clarity.' },
-            { title: 'Preparation, performance, evaluation', body: 'A repeatable process: strategic preparation, performance and post-analysis for every significant communication moment.' },
-            { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria, communication that supports and drives the business.' },
-          ].map(({ title, body }) => (
-            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
-              <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives, and how your communication aligns with the organisation\'s direction.' },
+              { title: 'Standing out', body: 'Individual strengths and development areas, building a communication profile that is distinctive, credible and yours.' },
+              { title: 'Communication identity', body: 'The balance between personal and public profile, a consistent communication identity across all platforms and contexts.' },
+              { title: 'Strategic storytelling', body: 'Constructing narratives that move people, from data to decisions, from complexity to clarity.' },
+              { title: 'Preparation, performance, evaluation', body: 'A repeatable process: strategic preparation, performance and post-analysis for every significant communication moment.' },
+              { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria, communication that supports and drives the business.' },
+            ].map(({ title, body }) => (
+              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -171,19 +180,21 @@ export default function AnnualLeadershipProgramPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           What changes
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context, not just when you are prepared.' },
-            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable, not random. Every act connected to your leadership role and the organisation\'s direction.' },
-            { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business, not a presentational skill, but a strategic capability.' },
-            { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth, not a one-off effort.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }} dangerouslySetInnerHTML={{ __html: body }} />
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context, not just when you are prepared.' },
+              { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable, not random. Every act connected to your leadership role and the organisation\'s direction.' },
+              { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business, not a presentational skill, but a strategic capability.' },
+              { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth, not a one-off effort.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
