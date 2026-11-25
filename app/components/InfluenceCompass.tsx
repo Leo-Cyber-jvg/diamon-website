@@ -90,23 +90,20 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
                 ))}
               </div>
 
-              {/* Center logo */}
-              <img
-                src="/diamon-logo-02.png"
-                alt="Diamon"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  width: '64px',
-                  height: '64px',
-                  borderRadius: '50%',
-                  objectFit: 'contain',
-                  backgroundColor: '#F4F3F1',
-                  zIndex: 2,
-                }}
-              />
+              {/* Center: ICA concentric circles */}
+              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '130px', height: '130px', zIndex: 2 }}>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
+                  <circle cx="100" cy="100" r="96" fill="#F4F3F1" stroke="#D8D5D0" strokeWidth="1.2"/>
+                  <circle cx="100" cy="100" r="67" fill="#ECEAE7" stroke="#D8D5D0" strokeWidth="1.2"/>
+                  <circle cx="100" cy="100" r="48" fill="#5656D6" stroke="#5656D6" strokeWidth="1"/>
+                  <text x="100" y="16" textAnchor="middle" fill="#111010" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="400" letterSpacing="2.5">ACTION</text>
+                  <text x="100" y="187" textAnchor="middle" fill="#9E9890" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">K3™</text>
+                  <text x="100" y="50" textAnchor="middle" fill="#111010" fontFamily="Inter, sans-serif" fontSize="7.5" fontWeight="400" letterSpacing="2">COMPOSITION</text>
+                  <text x="100" y="156" textAnchor="middle" fill="#9E9890" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">SNS™</text>
+                  <text x="100" y="96" textAnchor="middle" fill="white" fontFamily="Inter, sans-serif" fontSize="8.5" fontWeight="400" letterSpacing="2.5">IDENTITY</text>
+                  <text x="100" y="111" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">DCI™</text>
+                </svg>
+              </div>
             </div>
 
             <p className="text-center mt-2" style={{ fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#5656D6', fontFamily: 'var(--font-body)' }}>
@@ -127,31 +124,17 @@ export default function InfluenceCompass({ lang = 'en' }: { lang?: 'en' | 'fi' }
               }}
             >
               {isFi ? (
-                <>Johtamisviestinnän vaikuttavuus näkyy{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisaation suorituskyvyssä.</span></>
+                <>Yksilön kehityksestä{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisaation vaikutukseen.</span></>
               ) : (
-                <>Where communication capability meets{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational performance.</span></>
+                <>From personal development to{' '}<span style={{ fontStyle: 'italic', color: '#5656D6' }}>organisational impact.</span></>
               )}
             </h2>
 
-            <a
-              href={isFi ? '/fi/ica-viitekehys' : '/framework'}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                fontSize: '11px',
-                letterSpacing: '0.18em',
-                textTransform: 'uppercase',
-                color: '#111010',
-                fontFamily: 'var(--font-body)',
-                textDecoration: 'none',
-                borderBottom: '1px solid rgba(17,16,16,0.3)',
-                paddingBottom: '3px',
-                width: 'fit-content',
-              }}
-            >
-              {isFi ? 'Tutustu viitekehykseen →' : 'Explore the framework →'}
-            </a>
+            <p style={{ fontSize: '13px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.75 }}>
+              {isFi
+                ? 'ICA-viitekehys kehittää yksilöä. Diamon Vaikuttavuuden Arkkitehtuuri näyttää, mihin kehitys kohdistuu.'
+                : 'The ICA Framework develops the individual. The DIAMON Architecture of Influence shows where that development lands.'}
+            </p>
           </div>
 
         </div>
