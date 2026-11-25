@@ -260,7 +260,7 @@ export default function ThoughtLeaderStudioFiPage() {
           <blockquote>
             <p
               className="text-2xl md:text-3xl font-light mb-8"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic' }}
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.4, fontStyle: 'italic' }}
             >
               &ldquo;Esiintymistaito on yleisavain johtamiseen ja vaikuttamiseen. Diamonilta löytyy ainutlaatuisen korkeatasoista osaamista esiintymisen kehittämiseen ja henkilökohtaisuuteen perustuva valmennuskonsepti todellakin toimii.&rdquo;
             </p>

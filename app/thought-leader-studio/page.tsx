@@ -259,7 +259,7 @@ export default function ThoughtLeaderStudioPage() {
           <blockquote>
             <p
               className="text-2xl md:text-3xl font-light mb-8"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic' }}
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.4, fontStyle: 'italic' }}
             >
               &ldquo;Presentation skill is a master key to leadership and influence. DIAMON has uniquely high-level expertise in developing performance, presence, and communication. Their personal coaching concept truly works.&rdquo;
             </p>
