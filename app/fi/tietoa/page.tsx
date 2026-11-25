@@ -268,28 +268,20 @@ export default function TietoaPage() {
             </h2>
             <div className="flex flex-col gap-5 text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               <p>
-                Leo Sjöman on DIAMONin perustaja ja DIAMON ICA Framework™ -mallin kehittäjä.
-                Hän työskentelee johtajien, johtoryhmien ja organisaatioiden kanssa.
+                Leo Sjöman on DIAMONin perustaja, johtamisviestinnän valmentaja ja DIAMON ICA Framework™ -mallin kehittäjä. Hän työskentelee johtajien ja organisaatioiden kanssa.
               </p>
               <p>
-                Leo on ammattiesiintyjä, jolla on yli 20 vuoden kokemus elokuvasta, televisiosta ja
-                teatterista. Näyttelijäntyö vaatii syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä,
-                läsnäolosta, tarinankerronnasta ja toimintakyvystä paineen alla. Juuri tämä ymmärrys,
-                sovellettuna johtamiseen ja organisaatioihin, tekee DIAMONin lähestymistavasta vaikuttavan.
+                Yli 20 vuoden kokemus näyttelijäntyöstä elokuvassa, televisiossa ja teatterissa on rakentanut syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä, vuorovaikutuksesta, tarinankerronnasta ja toimintakyvystä paineen alla.
               </p>
-            </div>
-            <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-              {[
-                { label: 'Rooli', value: 'Johtamisviestinnän valmentaja, DIAMON Finland' },
-                { label: 'Viitekehys', value: 'DIAMON ICA Framework™, Identity, Composition, Action' },
-                { label: 'Tausta', value: 'Ammattiesiintyjä, elokuva, televisio, teatteri (20+ v.)' },
-                { label: 'Asiakkaat', value: 'Johtajat, asiantuntijat, organisaatiot' },
-              ].map(({ label, value }) => (
-                <div key={label} className="flex flex-col gap-1 px-5 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                  <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{label}</span>
-                  <span className="text-sm" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>{value}</span>
-                </div>
-              ))}
+              <p>
+                Johtamisviestinnän valmennuksissa Leo yhdistää strategiseen työskentelyyn näyttelijäntyöstä tutun harjoittelun kulttuurin: tilanteita simuloidaan, omaa toimintaa havainnoidaan ja uusia toimintatapoja harjoitellaan käytännössä.
+              </p>
+              <p>
+                Eri toimialojen ja osaamisalueiden kohtaamisesta syntyy DIAMONin lähestymistapa johtamisviestinnän kehittämiseen.
+              </p>
+              <p>
+                Oivallus saa arvonsa siinä, miten se näkyy seuraavassa kohtaamisessa.
+              </p>
             </div>
           </div>
         </div>

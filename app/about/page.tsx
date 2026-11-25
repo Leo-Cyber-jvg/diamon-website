@@ -284,45 +284,20 @@ export default function AboutPage() {
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
               <p>
-                Leo Sjöman is the Founder of DIAMON Finland and the developer of the
-                DIAMON ICA Framework™. He works with executives, senior leaders,
-                leadership teams and organisations.
+                Leo Sjöman is the Founder of DIAMON Finland, a leadership communication coach, and the developer of the DIAMON ICA Framework™. He works with executives and organisations.
               </p>
               <p>
-                Leo is a professional actor with more than twenty years of experience
-                in film, television and theatre. The craft of acting demands a
-                deep, practical understanding of human behaviour, presence, storytelling
-                and performance under pressure. It is precisely this understanding,
-                applied to leadership and organisational contexts, that makes DIAMON&apos;s
-                approach distinctively effective.
+                Over twenty years of experience as a professional actor in film, television and theatre has built a deep, practical understanding of human behaviour, interaction, storytelling and performance under pressure.
               </p>
-            </div>
-            <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-              {[
-                { label: 'Role', value: 'Leadership Communication Coach, DIAMON Finland' },
-                { label: 'Framework', value: 'DIAMON ICA Framework™, Identity, Composition, Action' },
-                { label: 'Background', value: 'Professional actor, film, television, theatre (20+ years)' },
-                { label: 'Clients', value: 'Executives, leadership teams, organisations' },
-              ].map(({ label, value }) => (
-                <div
-                  key={label}
-                  className="flex flex-col gap-1 px-5 py-4"
-                  style={{ backgroundColor: 'var(--color-background)' }}
-                >
-                  <span
-                    className="text-xs tracking-widest uppercase"
-                    style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-                  >
-                    {label}
-                  </span>
-                  <span
-                    className="text-sm"
-                    style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}
-                  >
-                    {value}
-                  </span>
-                </div>
-              ))}
+              <p>
+                In leadership communication coaching, Leo combines strategic work with the practice culture familiar from acting: situations are simulated, one&apos;s own behaviour is observed, and new ways of operating are rehearsed in practice.
+              </p>
+              <p>
+                The meeting of different industries and areas of expertise gives rise to DIAMON&apos;s approach to developing leadership communication.
+              </p>
+              <p>
+                An insight earns its value in how it shows in the next encounter.
+              </p>
             </div>
           </div>
         </div>
