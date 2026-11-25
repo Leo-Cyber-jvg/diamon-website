@@ -162,11 +162,18 @@ export default function AboutPage() {
       {/* Four themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p
-          className="text-xs tracking-[0.3em] uppercase mb-12"
+          className="text-xs tracking-[0.3em] uppercase mb-5"
           style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
         >
-          What DIAMON is built on
+          Our starting points
         </p>
+        <h2
+          className="font-light mb-12"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', lineHeight: 1.1, color: 'var(--color-text)' }}
+        >
+          Human capability{' '}
+          <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>as competitive advantage.</span>
+        </h2>
         <div style={{ border: '1px solid var(--color-border)' }}>
         <div className="grid md:grid-cols-2" style={{ gap: '1px', backgroundColor: 'var(--color-border)' }}>
           {[
