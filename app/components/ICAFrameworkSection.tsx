@@ -61,9 +61,11 @@ export default function ICAFrameworkSection({ lang = 'fi' }: Props) {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              objectPosition: 'center top',
+              objectPosition: 'center 18%',
               display: 'block',
               filter: 'brightness(0.35) saturate(0.5)',
+              transform: 'scale(1.25)',
+              transformOrigin: 'center 30%',
               pointerEvents: 'none',
             }}
           />
