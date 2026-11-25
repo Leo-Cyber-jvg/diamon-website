@@ -101,7 +101,7 @@ export default function FiHome() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
+                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
                 Organisaatioille
               </p>
@@ -109,14 +109,13 @@ export default function FiHome() {
                 className="text-2xl md:text-4xl font-light"
                 style={{ fontFamily: 'var(--font-heading)', color: '#F4F3F1', lineHeight: 1.12, maxWidth: '20ch' }}
               >
-                Johtamisviestintä organisaation kyvykkyydeksi.
+                Johtamisviestintä organisaation kilpailuetuna.
               </h3>
               <p
                 className="text-sm leading-relaxed"
                 style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
               >
-                Pitkäjänteiset kehitysohjelmat johtoryhmille, johtajille ja koko organisaatioille.
-                Vuosiohjelma, räätälöidyt työpajat ja strateginen viestintäkonsultointi.
+                Valmennukset ja kehitysohjelmat johtajille ja organisaatioille.
               </p>
               <Link
                 href="/fi/organisaatioille"
@@ -142,7 +141,7 @@ export default function FiHome() {
             <div className="relative p-10 md:p-14 flex flex-col gap-5" style={{ zIndex: 1 }}>
               <p
                 className="text-xs tracking-[0.25em] uppercase"
-                style={{ color: 'rgba(244,243,241,0.55)', fontFamily: 'var(--font-body)' }}
+                style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
               >
                 Johtajille
               </p>
@@ -156,8 +155,7 @@ export default function FiHome() {
                 className="text-sm leading-relaxed"
                 style={{ color: 'rgba(244,243,241,0.68)', fontFamily: 'var(--font-body)', maxWidth: '36ch' }}
               >
-                Yksilövalmennus toimitusjohtajille, perustajille ja muutostilanteessa oleville johtajille.
-                Thought Leader Studio, Impact Session ja jatkuva johtamisvalmennus.
+                Yksilövalmennukset toimitusjohtajille, perustajille ja muutostilanteessa oleville johtajille ja asiantuntijoille.
               </p>
               <Link
                 href="/fi/yksiloille"
