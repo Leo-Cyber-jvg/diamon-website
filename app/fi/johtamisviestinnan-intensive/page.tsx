@@ -184,6 +184,20 @@ export default function JohtamisviestinnanIntensivePage() {
               Leadership Communication Intensive on kuuden kuukauden henkilökohtainen valmennuskokonaisuus johtajille ja asiantuntijoille. Kuusi räätälöityä valmennuskertaa rakentuvat asiakkaan yksilöllisten kehitystavoitteiden ja todellisten viestintätilanteiden ympärille.
             </p>
           </div>
+          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              'Johtajat ja johtoryhmän jäsenet',
+              'Johtajat, jotka ottavat laajempaa johtajuutta',
+              'Asiantuntijat, joilla on korkean panoksen viestintätilanne edessä',
+              'Johtajat, joilla on selkeä kehitystavoite ja aikataulu',
+              'Ne, jotka harkitsevat vuosiohjelmaa ja haluavat ensin kokeilla',
+            ].map(item => (
+              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
