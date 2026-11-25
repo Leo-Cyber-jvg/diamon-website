@@ -12,10 +12,27 @@ export default function ThoughtLeaderStudioFiPage() {
     <>
       {/* Hero */}
       <section
-        className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}
+        style={{ position: 'relative', overflow: 'hidden', minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', backgroundColor: '#0a0a1a', color: '#fff' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center center',
+            filter: 'brightness(0.35) saturate(0.6)',
+          }}
+        >
+          <source src="/sdm-lv-bg.mp4" type="video/mp4" />
+        </video>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.55) 0%, rgba(10,10,26,0.3) 100%)', pointerEvents: 'none' }} />
+        <div className="px-6 pb-20 pt-40" style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)' }}
