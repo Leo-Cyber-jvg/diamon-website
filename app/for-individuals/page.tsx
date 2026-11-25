@@ -92,7 +92,7 @@ export default function ForIndividualsPage() {
             {[
               { n: '01', text: 'Understanding your communication identity and personal potential.' },
               { n: '02', text: 'The ability to build clear, meaningful and strategically impactful communication.' },
-              { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations.' },
+              { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations — on camera, in the media and with key stakeholders.' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span

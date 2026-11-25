@@ -93,7 +93,7 @@ export default function YksiloillePage() {
             {[
               { n: '01', text: 'Oman viestijäidentiteetin ja henkilökohtaisen potentiaalin ymmärtäminen.' },
               { n: '02', text: 'Kyky rakentaa selkeää, merkityksellistä ja strategisesti vaikuttavaa viestintää.' },
-              { n: '03', text: 'Läsnäolo, vakuuttavuus ja toimintakyky myös vaativissa vuorovaikutustilanteissa.' },
+              { n: '03', text: 'Läsnäolo, vakuuttavuus ja toimintakyky vaativissa vuorovaikutustilanteissa — kameran edessä, mediassa ja sidosryhmien kanssa.' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span
