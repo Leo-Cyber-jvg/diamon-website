@@ -108,23 +108,25 @@ export default function VaikuttavuussessioPage() {
               Tavoitteena on, että voit kohdata tilanteen valmistautuneena, luottaa omaan osaamiseesi ja keskittyä olennaiseen.
             </p>
           </div>
-          <div className="flex flex-col" style={{ border: '1px solid var(--color-border)' }}>
-            <div className="px-6 py-3" style={{ borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}>
+          <div>
+            <div className="px-4 py-2 mb-5" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Session tiedot
               </span>
             </div>
-            {[
-              'Yksilö- tai pienryhmäcoaching (1–3 osallistujaa)',
-              'Kesto: 3 tuntia',
-              'Etä-, lähi- tai studioformaatti',
-              'Loppukoonti ja kehitysavaimet · valinnainen seuranta',
-            ].map((item, idx, arr) => (
-              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ borderBottom: idx < arr.length - 1 ? '1px solid var(--color-border)' : 'none', backgroundColor: 'var(--color-background)' }}>
-                <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
-              </div>
-            ))}
+            <div className="flex flex-col gap-3">
+              {[
+                'Yksilö- tai pienryhmäcoaching (1–3 osallistujaa)',
+                'Kesto: 3 tuntia',
+                'Etä-, lähi- tai studioformaatti',
+                'Loppukoonti ja kehitysavaimet · valinnainen seuranta',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-4">
+                  <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                  <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
