@@ -82,7 +82,7 @@ const content: Record<Lang, Content> = {
     heroEyebrow: 'Valmennussarja · Diamon Finland',
     heroTitle: ['Johtajan vaikuttavuus', ' ja toimintakyky.'],
     heroLead:
-      'Yhden päivän intensiivivalmennuksia johtajille. Jokaisessa päivässä Leo Sjöman valmentaa yhdessä eri alan huippuasiantuntijan kanssa. Yhdistämme johtamisviestinnän, psykofyysisen harjoittamisen ja asiantuntijan oman osaamisen.',
+      'Yhden päivän intensiivivalmennuksia johtajille. Jokaisessa päivässä Leo Sjöman valmentaa yhdessä eri alan huippuasiantuntijan kanssa. Päivä yhdistää johtamisviestinnän, psykofyysisen harjoittamisen ja asiantuntijan teeman yhdeksi kokonaisuudeksi.',
     heroPills: ['01 · Johtaminen paineessa', '02 · Uni ja palautuminen'],
     whyEyebrow: 'Mihin sarja vastaa',
     whyTitle: 'Kun johtamisen vaatimukset kasvavat, myös johtajan henkilökohtaisen toimintakyvyn on kehityttävä.',
