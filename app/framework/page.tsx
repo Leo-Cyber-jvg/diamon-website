@@ -149,54 +149,7 @@ export default function FrameworkPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* ── Architecture of Influence connector ──────────────── */}
-      <section className="px-6 pt-20 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p
-              className="text-xs tracking-[0.3em] uppercase mb-6"
-              style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-            >
-              The bigger picture
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-light mb-5"
-              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
-            >
-              From personal development to{' '}
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>organisational impact.</span>
-            </h2>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The ICA Framework develops the individual. The DIAMON Architecture of Influence shows where that development lands, in the four dimensions that together define an organisation's communication capability: Communication Identity, Executive Presence, Leadership Culture, and Business Performance.
-            </p>
-          </div>
-          {/* ICA concentric circle diagram */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '280px', aspectRatio: '1' }}>
-              {/* Outer ACTION ring */}
-              <circle cx="200" cy="200" r="192" fill="var(--color-background)" stroke="var(--color-border)" strokeWidth="1.5"/>
-              {/* COMPOSITION ring */}
-              <circle cx="200" cy="200" r="135" fill="var(--color-surface)" stroke="var(--color-border)" strokeWidth="1.5"/>
-              {/* IDENTITY inner circle – blue */}
-              <circle cx="200" cy="200" r="80" fill="var(--color-blue)" stroke="var(--color-blue)" strokeWidth="1"/>
-              {/* ACTION label */}
-              <text x="200" y="52" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">ACTION</text>
-              {/* K3™ */}
-              <text x="200" y="362" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">K3™</text>
-              {/* COMPOSITION label */}
-              <text x="200" y="110" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="9.5" fontWeight="400" letterSpacing="3.5">COMPOSITION</text>
-              {/* SNS™ */}
-              <text x="200" y="306" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">SNS™</text>
-              {/* IDENTITY label */}
-              <text x="200" y="193" textAnchor="middle" fill="white" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">IDENTITY</text>
-              {/* DCI™ */}
-              <text x="200" y="213" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">DCI™</text>
-            </svg>
-          </div>
-        </div>
-      </section>
-
-      <InfluenceCompass />
+      <InfluenceCompass showLink={false} />
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
