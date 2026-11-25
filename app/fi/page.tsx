@@ -37,14 +37,13 @@ export default function FiHome() {
             }}
           >
             Uudistamme<br />
-            johtamisviestintää.<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>Muutamme tapaa johtaa.</span>
+            johtamisviestintää.
           </h1>
           <p
             className="mb-12 font-light"
             style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', lineHeight: 1.75, maxWidth: '500px', fontSize: '1rem' }}
           >
-            Rakennamme viestinnällistä suorituskykyä johtajille, johtoryhmille ja organisaatioille, järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
+            Rakennamme viestinnällistä suorituskykyä johtajille ja organisaatioille. Tehokkaasti ja kohdennetusti sekä järjestelmällisesti, mitattavasti ja pitkäjänteisesti.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)', flexShrink: 0 }}>
