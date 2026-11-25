@@ -203,8 +203,7 @@ export default function FiHome() {
           className="text-sm leading-relaxed mb-16"
           style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '600px' }}
         >
-          ICA yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen käytännönläheiseksi johtamisviestinnän kehitysmenetelmäksi. Sen kolme osa-aluetta, identiteetti, viestin rakentaminen ja toiminta, muodostavat perustan tavoitteelliselle viestinnällisen toimintakyvyn kehittämiselle.
-          Kolme integroitua tasoa, sovellettuna systemaattisesti todellisiin johtamistilanteisiin.
+          ICA yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen käytännönläheiseksi johtamisviestinnän kehitysmenetelmäksi. Sen 3 osa-aluetta muodostavat perustan tavoitteellisen viestinnällisen toimintakyvyn kehittämiselle.
         </p>
 
         {/* ICA kolme ympyrää */}
