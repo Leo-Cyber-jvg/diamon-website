@@ -283,8 +283,11 @@ export default function ThoughtLeaderStudioFiPage() {
             <h2 className="text-2xl md:text-3xl font-light mb-5" style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>
               Aloitetaan keskustelu ajatusjohtajuudestanne.
             </h2>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75, marginBottom: '1rem' }}>
+              Onko yrityksessänne erityistä osaamista, kiinnostavia näkemyksiä ja ihmisiä, joiden ääni ansaitsee tulla kuulluksi?
+            </p>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Jokaisella yrityksellä on omaa erityistä osaamista, kiinnostavia näkemyksiä ja ihmisiä, joiden ääni ansaitsee tulla kuulluksi. Haluamme ymmärtää yrityksenne tavoitteita ja rakentaa niiden pohjalta kokonaisuuden, joka vahvistaa asiantuntijoidenne vaikuttavuutta ja yrityksenne näkyvyyttä pitkäjänteisesti.
+              Haluamme ymmärtää yrityksenne tavoitteet ja rakentaa niiden pohjalta kokonaisuuden, joka vahvistaa asiantuntijoidenne vaikuttavuutta ja yrityksenne näkyvyyttä pitkäjänteisesti.
             </p>
           </div>
           <Link
