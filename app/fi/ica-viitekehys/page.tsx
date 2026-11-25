@@ -24,14 +24,13 @@ export default function IcaViitekehysPage() {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="px-6 pt-20 pb-4" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 className="text-2xl md:text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-          Vaikuttavan johtamisviestinnän perusta.
+      {/* Framework header */}
+      <section className="px-6 pt-16 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-5" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Viitekehys</p>
+        <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.2rem, 5vw, 4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>
+          Identiteetti → Kompositio →{' '}
+          <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Toiminta.</span>
         </h2>
-        <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '640px' }}>
-          ICA Framework™ on Diamonin kehittämä systemaattinen malli viestinnällisen toimintakyvyn kehittämiseen. Se yhdistää henkilökohtaisen vaikuttavuuden, strategisen viestinnän ja kyvyn toimia erilaisissa vuorovaikutustilanteissa.
-        </p>
       </section>
 
       {/* ICA three-column diagram */}
@@ -55,9 +54,9 @@ export default function IcaViitekehysPage() {
           {/* Row 2 – Name + model text + question */}
           <div className="grid md:grid-cols-3" style={{ borderBottom: '1px solid var(--color-border)' }}>
             {[
-              { name: 'Identiteetti', modelText: 'Foundational model', question: 'Kuka olen viestijänä ja johtajana?' },
-              { name: 'Kompositio', modelText: 'Tactical model', question: 'Mitä rakennan, ja miten?' },
-              { name: 'Toiminta', modelText: 'Practical model', question: 'Miten toteutan sen todellisessa tilanteessa?' },
+              { name: 'Identity', modelText: 'Foundational model', question: 'Kuka olen viestijänä ja johtajana?' },
+              { name: 'Composition', modelText: 'Tactical model', question: 'Mitä rakennan, ja miten?' },
+              { name: 'Action', modelText: 'Practical model', question: 'Miten toteutan sen todellisessa tilanteessa?' },
             ].map(({ name, modelText, question }, i) => (
               <div key={name} className="px-6 pt-6 pb-7" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
                 <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 3.5vw, 3rem)', lineHeight: 1.0, color: 'var(--color-text)' }}>{name}</h3>
