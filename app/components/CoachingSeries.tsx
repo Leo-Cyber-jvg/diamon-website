@@ -213,7 +213,7 @@ const content: Record<Lang, Content> = {
     heroEyebrow: 'Coaching series · Diamon Finland',
     heroTitle: ['Leadership Impact', ' and Performance.'],
     heroLead:
-      "One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field. We combine leadership communication, psychophysical training and the expert's own discipline.",
+      "One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field. Each day brings together leadership communication, psychophysical training and the expert's theme into one integrated whole.",
     heroPills: ['01 · Leading under pressure', '02 · Sleep and recovery'],
     whyEyebrow: 'Why this series',
     whyTitle: "As the demands of leadership grow, a leader's personal capacity to perform has to grow with them.",
