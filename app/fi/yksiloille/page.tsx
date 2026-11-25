@@ -71,22 +71,25 @@ export default function YksiloillePage() {
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
               Viestintä on taito.<br />
-              <span style={{ fontStyle: 'italic' }}>Sen voi rakentaa.</span>
+              <span style={{ fontStyle: 'italic' }}>Vaikuttavuutta voi kehittää.</span>
             </h2>
             <p
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Tehokkaimmat johtajat viestivät tarkoituksellisesti, eivät vaistomaisesti. Heillä on
-              selkeä käsitys omasta viestijäidentiteetistään, he rakentavat viestinsä tarkoituksella
-              ja esiintyvät läsnäolevasti ja vakuuttavasti.
+              Johtajan osaaminen, ajattelu ja henkilökohtainen potentiaali eivät aina välity täysimääräisesti hänen viestinnässään. Kyse ei ole vain siitä, mitä tiedämme tai osaamme, vaan siitä, miten pystymme välittämään sen toisille ihmisille, rakentamaan yhteistä ymmärrystä ja ohjaamaan toimintaa.
+            </p>
+            <p
+              className="text-sm leading-relaxed mb-5"
+              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
+            >
+              Vaikuttava johtamisviestintä rakentuu oman toimintatavan ymmärtämisestä, tietoisesta viestinnän rakentamisesta ja kyvystä toimia erilaisissa vuorovaikutustilanteissa.
             </p>
             <p
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Diamon-coaching rakentuu DIAMON ICA Framework™ -mallille, rakenteiselle metodologialle,
-              joka kehittää viestintäsuorituksen kaikkia kolmea ulottuvuutta.
+              DIAMONin valmennukset perustuvat ICA Framework™ -malliin, joka yhdistää nämä kolme ulottuvuutta systemaattiseksi ja käytännönläheiseksi kehittämiskokonaisuudeksi.
             </p>
           </div>
           <div className="flex flex-col gap-8 md:pt-12">
