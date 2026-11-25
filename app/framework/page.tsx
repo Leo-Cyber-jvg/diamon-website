@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ICAFrameworkDiagram from '../components/ICAFrameworkDiagram'
 import InfluenceCompass from '../components/InfluenceCompass'
 
 export const metadata: Metadata = {
@@ -57,9 +56,6 @@ export default function FrameworkPage() {
         </div>
       </section>
 
-      {/* ── Visual diagram ───────────────────────────────────── */}
-      <ICAFrameworkDiagram />
-
       {/* ── ICA three-column diagram ──────────────────────────── */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -70,7 +66,12 @@ export default function FrameworkPage() {
               <h3 className="text-2xl font-light mb-1" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>Identity</h3>
               <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
             </div>
-            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Who am I as a communicator?</p>
+            <p className="text-sm font-light" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', fontStyle: 'italic' }}>Who am I as a communicator and leader?</p>
+            <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Communication identity · Authenticity</p>
+            </div>
             <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
             <div>
               <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Opening</p>
