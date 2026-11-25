@@ -101,16 +101,20 @@ export default function JohtamisviestinnanIntensivePage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              Mitä se on
+              Valmennuskokonaisuus
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              6 kuukautta. Tiiviisti. Mitattavasti.
+              Kuusi kuukautta tavoitteellista ja{' '}
+              <span style={{ fontStyle: 'italic' }}>henkilökohtaista kehittymistä.</span>
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership Communication Intensive on 6 kuukauden valmennusprosessi johtajille ja asiantuntijoille, jotka haluavat kehittää viestintäänsä nopeasti ja tavoitteellisesti, tiiviisti ja selkein tuloksin. Kuusi sessiota, kolme tuntia kukin, henkilökohtaisen valmentajan kanssa koko ohjelman ajan.
+              Leadership Communication Intensive on kuuden kuukauden valmennusprosessi johtajille ja asiantuntijoille, jotka haluavat syventää ymmärrystä omasta viestinnästään ja kehittää kykyään vaikuttaa erilaisissa ammatillisissa tilanteissa.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Kokonaisuus sisältää kuusi kolmen tunnin valmennuskertaa saman henkilökohtaisen valmentajan kanssa.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Ohjelma rakentuu asiakkaan todellisten viestintätilanteiden ja johtamisellisten tavoitteiden ympärille, ja tuottaa mitattavaa kehitystä rajatulla aikavälillä.
+              Valmennus rakentuu asiakkaan yksilöllisten kehitystavoitteiden ja todellisten viestintätilanteiden ympärille. Valmennuskertojen välillä opittua sovelletaan omaan työhön, ja työskentelyn edetessä kehitystä arvioidaan yhdessä.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
