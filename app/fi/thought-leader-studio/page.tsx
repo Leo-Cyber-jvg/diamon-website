@@ -278,10 +278,15 @@ export default function ThoughtLeaderStudioFiPage() {
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 className="text-2xl md:text-3xl font-light" style={{ fontFamily: 'var(--font-heading)', maxWidth: '480px', lineHeight: 1.3 }}>
-            Tee asiantuntijuudestasi näkyvää.
-          </h2>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '600px' }}>
+            <h2 className="text-2xl md:text-3xl font-light mb-5" style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>
+              Aloitetaan keskustelu ajatusjohtajuudestanne.
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
+              Jokaisella yrityksellä on omaa erityistä osaamista, kiinnostavia näkemyksiä ja ihmisiä, joiden ääni ansaitsee tulla kuulluksi. Haluamme ymmärtää yrityksenne tavoitteita ja rakentaa niiden pohjalta kokonaisuuden, joka vahvistaa asiantuntijoidenne vaikuttavuutta ja yrityksenne näkyvyyttä pitkäjänteisesti.
+            </p>
+          </div>
           <Link
             href="/fi/ota-yhteytta"
             style={{
@@ -297,7 +302,7 @@ export default function ThoughtLeaderStudioFiPage() {
               flexShrink: 0,
             }}
           >
-            Aloita keskustelu
+            Varaa keskustelu
           </Link>
         </div>
       </section>

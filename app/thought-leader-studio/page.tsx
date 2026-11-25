@@ -277,10 +277,15 @@ export default function ThoughtLeaderStudioPage() {
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 className="text-2xl md:text-3xl font-light" style={{ fontFamily: 'var(--font-heading)', maxWidth: '480px', lineHeight: 1.3 }}>
-            Make your expertise visible.
-          </h2>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '600px' }}>
+            <h2 className="text-2xl md:text-3xl font-light mb-5" style={{ fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>
+              {"Let's talk about your thought leadership."}
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
+              Every organisation has unique expertise, interesting perspectives and people whose voice deserves to be heard. We want to understand your goals and build something that strengthens your experts&apos; impact and your organisation&apos;s visibility over the long term.
+            </p>
+          </div>
           <Link
             href="/contact"
             style={{
@@ -296,7 +301,7 @@ export default function ThoughtLeaderStudioPage() {
               flexShrink: 0,
             }}
           >
-            Start a conversation
+            Book a conversation
           </Link>
         </div>
       </section>
