@@ -145,10 +145,11 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>DIAMON was born from a simple observation: many leaders are considerably more capable than their communication suggests.</p>
-            <p>Our work is grounded in the conviction that leadership, influence and change happen through the individual. How we observe, think, listen and act in relation to others determines our ability to build trust, convey meaning and create change.</p>
-            <p>As technology reshapes how we work, the need to consciously develop our human capabilities becomes ever more important.</p>
-            <p>Developing leadership communication means, to us, a deeper understanding of one's own way of operating, the ability to build impactful communication, and the readiness to act with purpose even in demanding interaction situations.</p>
-            <p>DIAMON helps leaders and organisations develop these capabilities systematically and over the long term.</p>
+            <p>When we talk about leading change, growth or organisational renewal, the conversation ultimately comes back to the individual. To the leader&apos;s ability to make things understandable, to create meaning and to build a shared direction in a way that generates trust.</p>
+            <p>The challenge for a leader is rarely a lack of competence. The more interesting question is how well they are able to draw on their own thinking, personality and capacity for interaction in different situations, including when the pressure is on.</p>
+            <p>We believe that impactful leadership communication does not come from performing perfectly, but from the ability to be present, think clearly and act from one&apos;s own character. The more demanding and public the leader&apos;s role, the more important it is that the person does not disappear behind it.</p>
+            <p>As technology changes how we process information, communicate and work, the importance of these human capabilities grows further.</p>
+            <p>At DIAMON, we develop the leader&apos;s ability to understand their own way of operating, to build impactful communication and to maintain their capacity to perform across different communication environments and interaction situations. The goal is for the leader&apos;s expertise, thinking and character to come through in a way that helps others understand, commit and act.</p>
             <p>Technology evolves fast. So should we.</p>
           </div>
         </div>
