@@ -115,7 +115,7 @@ export default function ThoughtLeaderStudioPage() {
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>Is there enough substance behind it? Is the perspective genuinely interesting? And can the person convey their thinking in a way that actually reaches another human being?</p>
             <p>As AI changes how we produce content, an increasingly interesting question is what the value of a person&apos;s own thinking, experience and point of view actually is. We believe that value is growing.</p>
-            <p>A face, a voice and personal presence build connection and trust. Through video, what becomes visible is not only expertise, but the person behind it.</p>
+            <p>A face, a voice and personal presence build connection and trust.</p>
             <p>Developing thought leadership is not about producing more content for the sake of content. It is about genuine expertise that, through a sharpened perspective, coaching and high-quality production, reaches the right people.</p>
             <p>Our experience shows that combining these elements consistently over time delivers outstanding results, strengthens a company&apos;s market position and creates measurable business value.</p>
           </div>

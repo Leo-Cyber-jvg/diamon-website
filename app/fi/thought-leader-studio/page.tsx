@@ -115,7 +115,7 @@ export default function ThoughtLeaderStudioFiPage() {
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>Onko taustalla riittävästi substanssia? Onko näkökulma kiinnostava? Ja osaako ihminen välittää ajatuksensa tavalla, joka tavoittaa toisen ihmisen?</p>
             <p>Tekoälyn muuttaessa tapaamme tuottaa sisältöä nousee entistä kiinnostavammaksi kysymykseksi se, mikä on ihmisen oman ajattelun, kokemuksen ja näkemyksen arvo. Uskomme, että niiden merkitys kasvaa.</p>
-            <p>Kasvot, ääni ja henkilökohtainen läsnäolo rakentavat yhteyttä ja luottamusta. Videon välityksellä näkyväksi tulee paitsi asiantuntemus, myös ihminen sen takana.</p>
+            <p>Kasvot, ääni ja henkilökohtainen läsnäolo rakentavat yhteyttä ja luottamusta.</p>
             <p>Ajatusjohtajuuden kehittämisessä ei ole kyse siitä, että tuotetaan enemmän sisältöä sisällön vuoksi. Kyse on todellisesta asiantuntemuksesta, joka kirkastetun näkemyksen, valmennuksen ja laadukkaan tuotannon kautta tavoittaa oikeat ihmiset.</p>
             <p>Kokemuksemme osoittaa, että näiden osa-alueiden pitkäjänteisellä yhdistämisellä voidaan saavuttaa erinomaisia tuloksia, vahvistaa yrityksen markkina-asemaa ja luoda mitattavaa liiketoiminnallista arvoa.</p>
           </div>
