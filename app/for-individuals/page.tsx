@@ -36,8 +36,8 @@ export default function ForIndividualsPage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Your communication<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>is your leadership.</span>
+            Your communication is<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>your leadership's most visible part.</span>
           </h1>
           <p
             className="font-light"

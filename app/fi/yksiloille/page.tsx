@@ -37,8 +37,8 @@ export default function YksiloillePage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Viestintäsi<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>on johtajuutesi.</span>
+            Viestintäsi on<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtajuutesi näkyvin osa.</span>
           </h1>
           <p
             className="font-light"
