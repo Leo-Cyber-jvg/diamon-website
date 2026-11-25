@@ -58,81 +58,78 @@ export default function FrameworkPage() {
 
       {/* ── ICA three-column diagram ──────────────────────────── */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}>
 
-          {/* ICA I – Identity */}
-          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div style={{ height: '3px', backgroundColor: '#5656D6' }} />
-            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA I · DCI™</p>
-              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Identity</h3>
-              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Foundational model</p>
-            </div>
-            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"Who am I as a communicator and leader?"</p>
-            </div>
-            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Communication identity · Authenticity</p>
-            </div>
-            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
-              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Opening</p>
-              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Create contact, presence and trust.</p>
-            </div>
-            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
-              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
-              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Presence</span>
-            </div>
+          {/* Row 1 – ICA label + model abbrev */}
+          <div className="grid md:grid-cols-3" style={{ borderBottom: '1px solid var(--color-border)' }}>
+            {[
+              { label: 'ICA I', model: 'DCI™' },
+              { label: 'ICA II', model: 'TNT™' },
+              { label: 'ICA III', model: 'K3™' },
+            ].map(({ label, model }, i) => (
+              <div key={label} className="px-6 py-3 flex justify-between items-center" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
+                <span className="text-xs tracking-[0.15em] uppercase" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{label}</span>
+                <span className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{model}</span>
+              </div>
+            ))}
           </div>
 
-          {/* ICA II – Composition */}
-          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div style={{ height: '3px', backgroundColor: '#7B7BE8' }} />
-            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA II · TNT™</p>
-              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Composition</h3>
-              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Tactical model</p>
-            </div>
-            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"What do I build, and how?"</p>
-            </div>
-            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>State · Narrative · Action structure</p>
-            </div>
-            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
-              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Middle</p>
-              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Build the message, structure and shared understanding.</p>
-            </div>
-            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
-              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
-              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Clarity</span>
-            </div>
+          {/* Row 2 – Name + model text + question */}
+          <div className="grid md:grid-cols-3" style={{ borderBottom: '1px solid var(--color-border)' }}>
+            {[
+              { name: 'Identity', modelText: 'Foundational model', question: 'Who am I as a communicator and leader?' },
+              { name: 'Composition', modelText: 'Tactical model', question: 'What do I build, and how?' },
+              { name: 'Action', modelText: 'Practical model', question: 'How do I execute it in a real situation?' },
+            ].map(({ name, modelText, question }, i) => (
+              <div key={name} className="px-6 pt-6 pb-7" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
+                <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 3.5vw, 3rem)', lineHeight: 1.0, color: 'var(--color-text)' }}>{name}</h3>
+                <p className="text-xs tracking-[0.15em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>{modelText}</p>
+                <p className="text-sm italic" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.45 }}>{question}</p>
+              </div>
+            ))}
           </div>
 
-          {/* ICA III – Action */}
-          <div className="flex flex-col" style={{ backgroundColor: 'var(--color-background)' }}>
-            <div style={{ height: '3px', backgroundColor: '#A0A0F0' }} />
-            <div className="px-7 pt-6 pb-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>ICA III · K3™</p>
-              <h3 className="font-light mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>Action</h3>
-              <p className="text-xs" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', letterSpacing: '0.05em' }}>Practical model</p>
-            </div>
-            <div className="px-7 py-5" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-sm italic" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-heading)', lineHeight: 1.4, opacity: 0.85 }}>"How do I execute it in a real situation?"</p>
-            </div>
-            <div className="px-7 py-5 flex-1" style={{ borderBottom: '1px solid var(--color-border)' }}>
-              <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Elements</p>
-              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>Body · Focus · Language</p>
-            </div>
-            <div className="px-7 py-5" style={{ backgroundColor: 'var(--color-blue)' }}>
-              <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>Close</p>
-              <p className="text-sm font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', lineHeight: 1.3 }}>Drive toward action, decision and impact.</p>
-            </div>
-            <div className="px-7 py-4 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
-              <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
-              <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1rem' }}>Impact</span>
-            </div>
+          {/* Row 3 – Element pills */}
+          <div className="grid md:grid-cols-3" style={{ borderBottom: '1px solid var(--color-border)' }}>
+            {[
+              ['Communication identity', 'Authenticity'],
+              ['State', 'Narrative', 'Action structure'],
+              ['Body', 'Focus', 'Language'],
+            ].map((pills, i) => (
+              <div key={i} className="px-6 py-5 flex flex-wrap gap-2" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
+                {pills.map(pill => (
+                  <span key={pill} className="text-xs px-3 py-1" style={{ border: '1px solid var(--color-border)', borderRadius: '999px', fontFamily: 'var(--font-body)', color: 'var(--color-text)' }}>{pill}</span>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          {/* Row 4 – Act (blue) */}
+          <div className="grid md:grid-cols-3" style={{ borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-blue)' }}>
+            {[
+              { act: 'Opening', text: 'Create contact, presence and trust.' },
+              { act: 'Middle', text: 'Build the message, structure and shared understanding.' },
+              { act: 'Close', text: 'Drive toward action, decision and impact.' },
+            ].map(({ act, text }, i) => (
+              <div key={act} className="px-6 py-5" style={{ borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
+                <p className="text-xs tracking-[0.2em] uppercase mb-1" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>{act}</p>
+                <p className="font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', fontSize: '1.1rem', lineHeight: 1.35 }}>{text}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Row 5 – Outcome */}
+          <div className="grid md:grid-cols-3">
+            {[
+              { outcome: 'Presence' },
+              { outcome: 'Clarity' },
+              { outcome: 'Impact' },
+            ].map(({ outcome }, i) => (
+              <div key={outcome} className="px-6 py-4 flex items-center gap-3" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
+                <span className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
+                <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1.2rem' }}>{outcome}</span>
+              </div>
+            ))}
           </div>
 
         </div>
