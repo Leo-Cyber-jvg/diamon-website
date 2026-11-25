@@ -277,9 +277,12 @@ export default function TietoaPage() {
                 Johtamisviestinnän valmennuksissa Leo yhdistää strategiseen työskentelyyn näyttelijäntyöstä tutun harjoittelun kulttuurin: tilanteita simuloidaan, omaa toimintaa havainnoidaan ja uusia toimintatapoja harjoitellaan käytännössä.
               </p>
               <p>
-                Eri toimialojen ja osaamisalueiden kohtaamisesta syntyy DIAMONin lähestymistapa johtamisviestinnän kehittämiseen.
+                Valmennuksissa tätä osaamista sovelletaan johtamisen arjen vuorovaikutustilanteisiin, kameran edessä työskentelyyn sekä vaativiin media- ja sidosryhmätilanteisiin.
               </p>
               <p>
+                Eri toimialojen ja osaamisalueiden kohtaamisesta syntyy DIAMONin lähestymistapa johtamisviestinnän kehittämiseen.
+              </p>
+              <p style={{ fontStyle: 'italic' }}>
                 Oivallus saa arvonsa siinä, miten se näkyy seuraavassa kohtaamisessa.
               </p>
             </div>
