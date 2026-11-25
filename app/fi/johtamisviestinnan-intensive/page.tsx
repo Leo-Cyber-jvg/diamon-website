@@ -117,7 +117,7 @@ export default function JohtamisviestinnanIntensivePage() {
               Valmennus rakentuu asiakkaan yksilöllisten kehitystavoitteiden ja todellisten viestintätilanteiden ympärille. Valmennuskertojen välillä opittua sovelletaan omaan työhön, ja työskentelyn edetessä kehitystä arvioidaan yhdessä.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
             <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Ohjelman rakenne
