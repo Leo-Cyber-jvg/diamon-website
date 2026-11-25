@@ -245,7 +245,7 @@ export default function FiHome() {
             {
               letter: 'A',
               label: 'Action',
-              desc: 'Konkreettinen vuorovaikutus, kehollisuus, läsnäolo, kuunteleminen ja toiminta todellisissa johtamistilanteissa.',
+              desc: 'Henkilökohtainen vuorovaikutus, kehollisuus, läsnäolo, kuunteleminen ja toiminta todellisissa johtamistilanteissa.',
               bg: 'var(--color-blue)',
               border: 'none',
               color: '#5656D6',
