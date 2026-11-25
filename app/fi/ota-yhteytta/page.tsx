@@ -115,7 +115,7 @@ export default function OtaYhteyttaPage() {
     <>
       <section className="px-6 pt-40 pb-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>Ota yhteyttä</p>
-        <h1 className="text-4xl md:text-6xl font-light mb-8" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.1, maxWidth: '700px' }}>Aloita tarkasta kysymyksestä.</h1>
+        <h1 className="text-4xl md:text-6xl font-light mb-8" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.1, maxWidth: '700px' }}>Aloitetaan keskustelusta.</h1>
         <p className="text-lg font-light" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '520px' }}>
           Haluaisitko kehittää omaa tai organisaatiosi viestintää ja vuorovaikutusta? Ota yhteyttä, niin kartoitetaan yhdessä tarpeitanne ja sitä, miten voimme auttaa.
         </p>

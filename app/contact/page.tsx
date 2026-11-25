@@ -184,7 +184,7 @@ export default function ContactPage() {
           className="text-4xl md:text-6xl font-light mb-8"
           style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.1, maxWidth: '700px' }}
         >
-          Start with a precise question.
+          Let's start with a conversation.
         </h1>
         <p
           className="text-lg font-light"
