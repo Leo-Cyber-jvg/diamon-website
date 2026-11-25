@@ -241,46 +241,6 @@ export default function KeynotesPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Testimonial */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ maxWidth: '720px' }}>
-          <p
-            className="text-xs tracking-[0.3em] uppercase mb-8"
-            style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-          >
-            Reference
-          </p>
-          <blockquote>
-            <p
-              className="text-2xl md:text-3xl font-light mb-8"
-              style={{
-                fontFamily: 'var(--font-heading)',
-                color: 'var(--color-text)',
-                lineHeight: 1.4,
-                fontStyle: 'italic',
-              }}
-            >
-              &ldquo;Presentation skill is a master key to leadership and influence.
-              DIAMON has uniquely high-level expertise in developing performance,
-              presence, and communication. Their personal coaching concept truly works.&rdquo;
-            </p>
-            <footer>
-              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>
-                Tuomas Liisanantti
-              </p>
-              <p className="text-xs mt-1" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-                Marketing Director, SDM
-              </p>
-            </footer>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* CTA */}
       <section className="px-6 py-24" style={{ backgroundColor: 'var(--color-blue)' }}>
         <div
@@ -295,8 +255,7 @@ export default function KeynotesPage() {
               Ask about a keynote for your event.
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.75 }}>
-              Every keynote is designed around the organisation, the audience and the occasion.
-              The conversation starts with understanding what matters to you.
+              Keynotes are designed around the audience and the occasion. The conversation starts with what matters to you.
             </p>
           </div>
           <Link
