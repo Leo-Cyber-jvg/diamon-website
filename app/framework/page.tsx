@@ -125,7 +125,7 @@ export default function FrameworkPage() {
               { outcome: 'Clarity' },
               { outcome: 'Impact' },
             ].map(({ outcome }, i) => (
-              <div key={outcome} className="px-6 py-4 flex items-center gap-3" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none' }}>
+              <div key={outcome} className="px-6 py-4 flex items-center gap-3" style={{ borderRight: i < 2 ? '1px solid var(--color-border)' : 'none', backgroundColor: 'var(--color-surface)' }}>
                 <span className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Outcome</span>
                 <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1.2rem' }}>{outcome}</span>
               </div>
