@@ -12,43 +12,25 @@ export default function FrameworkPage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section
-        className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)' }}
-      >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p
-            className="text-xs tracking-[0.3em] uppercase mb-10"
-            style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}
-          >
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', backgroundColor: '#0d0c0c' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-framework.png"
+          alt=""
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', filter: 'brightness(0.45) saturate(0.7)' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.3) 100%)', pointerEvents: 'none' }} />
+        <div className="px-6 pb-20 pt-40" style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)' }}>
             The DIAMON ICA Framework™
           </p>
-          <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-light mb-10"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              color: '#fff',
-              lineHeight: 1.05,
-              maxWidth: '820px',
-            }}
-          >
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-10" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '820px' }}>
             Identity. Composition. Action.
-            <span
-              className="block mt-3"
-              style={{ fontStyle: 'italic', opacity: 0.65, fontSize: '0.7em' }}
-            >
+            <span className="block mt-3" style={{ fontStyle: 'italic', opacity: 0.65, fontSize: '0.7em' }}>
               One system. Three integrated levels.
             </span>
           </h1>
-          <p
-            className="text-lg font-light"
-            style={{
-              color: 'rgba(255,255,255,0.7)',
-              fontFamily: 'var(--font-body)',
-              lineHeight: 1.8,
-              maxWidth: '620px',
-            }}
-          >
+          <p className="text-lg font-light" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '620px' }}>
             The DIAMON ICA Framework™ is not a collection of communication techniques.
             It is a coherent architecture, designed to build the communication
             capability that operates at the level of your actual leadership.

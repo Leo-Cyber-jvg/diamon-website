@@ -11,8 +11,15 @@ export default function IcaViitekehysPage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 pt-40 pb-24" style={{ backgroundColor: 'var(--color-blue)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', backgroundColor: '#0d0c0c' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-framework.png"
+          alt=""
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', filter: 'brightness(0.45) saturate(0.7)' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.3) 100%)', pointerEvents: 'none' }} />
+        <div className="px-6 pb-20 pt-40" style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
           <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)' }}>ICA-viitekehys™</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-10" style={{ fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.05, maxWidth: '820px' }}>
             Miten vaikuttavaa viestintää kehitetään?
@@ -116,44 +123,6 @@ export default function IcaViitekehysPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Architecture of Influence connector */}
-      <section className="px-6 pt-20 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Laajempi kokonaisuus</p>
-            <h2 className="text-3xl md:text-4xl font-light mb-5" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Yksilön kehityksestä{' '}
-              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>organisaatiovaikutukseen.</span>
-            </h2>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              ICA-viitekehys kehittää yksilöä. DIAMON Vaikuttavuuden Arkkitehtuuri näyttää, mihin se kehitys kohdistuu, neljään ulottuvuuteen, jotka yhdessä määrittävät organisaation viestintäkyvyn: viestintäidentiteetti, johtajaläsnäolo, johtamiskulttuuri ja liiketoimintasuoritus.
-            </p>
-          </div>
-          {/* ICA concentric circle diagram */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '280px', aspectRatio: '1' }}>
-              {/* Outer ACTION ring */}
-              <circle cx="200" cy="200" r="192" fill="var(--color-background)" stroke="var(--color-border)" strokeWidth="1.5"/>
-              {/* COMPOSITION ring */}
-              <circle cx="200" cy="200" r="135" fill="var(--color-surface)" stroke="var(--color-border)" strokeWidth="1.5"/>
-              {/* IDENTITY inner circle – blue */}
-              <circle cx="200" cy="200" r="80" fill="var(--color-blue)" stroke="var(--color-blue)" strokeWidth="1"/>
-              {/* ACTION label */}
-              <text x="200" y="52" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">ACTION</text>
-              {/* K3™ */}
-              <text x="200" y="362" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">K3™</text>
-              {/* COMPOSITION label */}
-              <text x="200" y="110" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="9.5" fontWeight="400" letterSpacing="3.5">COMPOSITION</text>
-              {/* SNS™ */}
-              <text x="200" y="306" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">SNS™</text>
-              {/* IDENTITY label */}
-              <text x="200" y="193" textAnchor="middle" fill="white" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">IDENTITY</text>
-              {/* DCI™ */}
-              <text x="200" y="213" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">DCI™</text>
-            </svg>
-          </div>
-        </div>
-      </section>
 
       <InfluenceCompass lang="fi" showLink={false} />
 
