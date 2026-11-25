@@ -100,6 +100,32 @@ export default function ThoughtLeaderStudioPage() {
         </div>
       </section>
 
+      {/* Our view on thought leadership */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+              Our view on thought leadership
+            </p>
+            <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+              Thought leadership ultimately comes down to{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>who has something worth saying.</span>
+            </h2>
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+            <p>Is there enough substance behind it? Is the perspective genuinely interesting? And can the person convey their thinking in a way that actually reaches another human being?</p>
+            <p>As AI changes how we produce content, an increasingly interesting question is what the value of a person&apos;s own thinking, experience and point of view actually is. We believe that value is growing.</p>
+            <p>A face, a voice and personal presence build connection and trust. Through video, what becomes visible is not only expertise, but the person behind it.</p>
+            <p>Developing thought leadership is not about producing more content for the sake of content. It is about genuine expertise that, through a sharpened perspective, coaching and high-quality production, reaches the right people.</p>
+            <p>Our experience shows that combining these elements consistently over time delivers outstanding results, strengthens a company&apos;s market position and creates measurable business value.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* What it is */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-start">

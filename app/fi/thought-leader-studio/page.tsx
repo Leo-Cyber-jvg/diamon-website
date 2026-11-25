@@ -100,6 +100,32 @@ export default function ThoughtLeaderStudioFiPage() {
         </div>
       </section>
 
+      {/* Näkemys ajatusjohtajuudesta */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+              Näkemyksemme ajatusjohtajuudesta
+            </p>
+            <h2 className="text-3xl md:text-4xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+              Ajatusjohtajuudessa on lopulta kyse siitä,{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>kenellä on jotain sanottavaa.</span>
+            </h2>
+          </div>
+          <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
+            <p>Onko taustalla riittävästi substanssia? Onko näkökulma kiinnostava? Ja osaako ihminen välittää ajatuksensa tavalla, joka tavoittaa toisen ihmisen?</p>
+            <p>Tekoälyn muuttaessa tapaamme tuottaa sisältöä nousee entistä kiinnostavammaksi kysymykseksi se, mikä on ihmisen oman ajattelun, kokemuksen ja näkemyksen arvo. Uskomme, että niiden merkitys kasvaa.</p>
+            <p>Kasvot, ääni ja henkilökohtainen läsnäolo rakentavat yhteyttä ja luottamusta. Videon välityksellä näkyväksi tulee paitsi asiantuntemus, myös ihminen sen takana.</p>
+            <p>Ajatusjohtajuuden kehittämisessä ei ole kyse siitä, että tuotetaan enemmän sisältöä sisällön vuoksi. Kyse on todellisesta asiantuntemuksesta, joka kirkastetun näkemyksen, valmennuksen ja laadukkaan tuotannon kautta tavoittaa oikeat ihmiset.</p>
+            <p>Kokemuksemme osoittaa, että näiden osa-alueiden pitkäjänteisellä yhdistämisellä voidaan saavuttaa erinomaisia tuloksia, vahvistaa yrityksen markkina-asemaa ja luoda mitattavaa liiketoiminnallista arvoa.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
       {/* Mitä se on */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16 items-start">
