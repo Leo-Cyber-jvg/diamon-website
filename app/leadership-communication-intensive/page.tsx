@@ -101,19 +101,23 @@ export default function LeadershipCommunicationIntensivePage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              What it is
+              The coaching programme
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              6 months. Focused. Measurable.
+              Six months of purposeful and{' '}
+              <span style={{ fontStyle: 'italic' }}>personal development.</span>
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The Leadership Communication Intensive is a 6-month coaching engagement designed for leaders and executives who want to build communication capability quickly and purposefully, with high focus and clear outcomes. Six sessions, three hours each, with a personal coach throughout the full programme.
+              Leadership Communication Intensive is a six-month coaching programme for leaders and experts who want to deepen their understanding of their own communication and develop their ability to influence across different professional situations.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              The programme includes six three-hour coaching sessions with the same personal coach throughout.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The programme is built around the client&apos;s real communication situations and leadership goals, delivering measurable progress within a defined timeframe.
+              Coaching is built around the client&apos;s individual development goals and real communication situations. Between sessions, what has been learned is applied to everyday work, and progress is reviewed together as the work develops.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
             <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Programme structure
@@ -179,6 +183,20 @@ export default function LeadershipCommunicationIntensivePage() {
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Leadership Communication Intensive is a six-month personal coaching programme for leaders and experts. Six tailored coaching sessions are built around the client&apos;s individual development goals and real communication situations.
             </p>
+          </div>
+          <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              'Executives and senior leaders',
+              'Leaders stepping into broader leadership roles',
+              'Experts preparing for high-visibility communication',
+              'Leaders with a specific development goal and timeframe',
+              'Those considering the Annual Program wanting a first commitment',
+            ].map(item => (
+              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
+                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
