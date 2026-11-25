@@ -108,7 +108,7 @@ export default function AboutPage() {
               marginBottom: '16px',
             }}
           >
-            Impact happens through the individual.
+            Human capability as competitive advantage.
           </p>
           <p
             style={{
@@ -167,13 +167,6 @@ export default function AboutPage() {
         >
           Our starting points
         </p>
-        <h2
-          className="font-light mb-12"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', lineHeight: 1.1, color: 'var(--color-text)' }}
-        >
-          Human capability{' '}
-          <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>as competitive advantage.</span>
-        </h2>
         <div style={{ border: '1px solid var(--color-border)' }}>
         <div className="grid md:grid-cols-2" style={{ gap: '1px', backgroundColor: 'var(--color-border)' }}>
           {[
