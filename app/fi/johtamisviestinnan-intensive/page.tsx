@@ -166,42 +166,28 @@ export default function JohtamisviestinnanIntensivePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      <ICAFrameworkSection lang="fi" />
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Kenelle */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
               Kenelle
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Johtajille, jotka haluavat kehittyä nopeasti ja tavoitteellisesti.
+              Johtajille, jotka haluavat kehittää viestinnällistä toimintakykyään.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Intensive on suunniteltu johtajille ja asiantuntijoille, jotka haluavat intensiivistä, fokusoitua kehitystä rajatulla aikavälillä, selkein tavoittein ja mitattavin tuloksin.
+              Leadership Communication Intensive on kuuden kuukauden henkilökohtainen valmennuskokonaisuus johtajille ja asiantuntijoille. Kuusi räätälöityä valmennuskertaa rakentuvat asiakkaan yksilöllisten kehitystavoitteiden ja todellisten viestintätilanteiden ympärille.
             </p>
-          </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              'Johtajat ja johtoryhmän jäsenet',
-              'Johtajat, jotka ottavat laajempaa johtajuutta',
-              'Asiantuntijat, joilla on korkean panoksen viestintätilanne edessä',
-              'Johtajat, joilla on selkeä kehitystavoite ja aikataulu',
-              'Ne, jotka harkitsevat vuosiohjelmaa ja haluavat ensin kokeilla',
-            ].map(item => (
-              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
-                <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      <ICAFrameworkSection lang="fi" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
