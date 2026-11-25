@@ -139,7 +139,8 @@ export default function AboutPage() {
               className="text-3xl font-light"
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
-              Leadership communication is a central part of organisational performance.
+              Leadership communication is{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>a central part of organisational performance.</span>
             </h2>
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
@@ -163,7 +164,8 @@ export default function AboutPage() {
         >
           What DIAMON is built on
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div style={{ border: '1px solid var(--color-border)' }}>
+        <div className="grid md:grid-cols-2" style={{ gap: '1px', backgroundColor: 'var(--color-border)' }}>
           {[
             {
               number: '01',
@@ -189,7 +191,7 @@ export default function AboutPage() {
             <div
               key={number}
               className="p-8 flex flex-col gap-4"
-              style={{ backgroundColor: 'var(--color-background)' }}
+              style={{ backgroundColor: 'var(--color-surface)' }}
             >
               <span
                 className="text-xs tracking-widest"
@@ -211,6 +213,7 @@ export default function AboutPage() {
               </p>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
