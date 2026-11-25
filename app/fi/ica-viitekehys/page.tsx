@@ -34,7 +34,7 @@ export default function IcaViitekehysPage() {
       <section className="px-6 pt-16 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-5" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Viitekehys</p>
         <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.2rem, 5vw, 4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>
-          Identiteetti → Kompositio →{' '}
+          Identiteetti → Rakenne →{' '}
           <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Toiminta.</span>
         </h2>
       </section>
@@ -46,7 +46,7 @@ export default function IcaViitekehysPage() {
             {[
               {
                 label: 'ICA I', model: 'DCI™',
-                name: 'Identity', question: 'Kuka olen viestijänä ja johtajana?',
+                name: 'Identiteetti', question: 'Kuka olen viestijänä ja johtajana?',
                 bullets: ['Henkilökohtainen viestintäidentiteetti', 'Johtajaläsnäolo ja autenttisuus', 'Kommunikatiivinen itsetuntemus', 'Esiintymisjännityksen tunnistaminen ja hallinta', 'Luottamuksen rakentaminen'],
                 pills: ['Viestintäidentiteetti', 'Autenttisuus'],
                 act: 'Alku', actText: 'Luo kontakti, läsnäolo ja luottamus.',
@@ -54,7 +54,7 @@ export default function IcaViitekehysPage() {
               },
               {
                 label: 'ICA II', model: 'TNT™',
-                name: 'Composition', question: 'Mitä rakennan, ja miten?',
+                name: 'Rakenne', question: 'Mitä rakennan, ja miten?',
                 bullets: ['Viestinnällinen intentio ja tavoitteet', 'Strateginen tarinankerronta', 'Viestin rakenne ja dramaturgia', 'Yleisön huomioiminen ja kiinnostuksen rakentaminen'],
                 pills: ['Tila', 'Narratiivi', 'Toimintarakenne'],
                 act: 'Keskikohta', actText: 'Rakenna viesti, rakenne ja yhteinen ymmärrys.',
@@ -62,7 +62,7 @@ export default function IcaViitekehysPage() {
               },
               {
                 label: 'ICA III', model: 'K3™',
-                name: 'Action', question: 'Miten toteutan sen todellisessa tilanteessa?',
+                name: 'Toiminta', question: 'Miten toteutan sen todellisessa tilanteessa?',
                 bullets: ['Käytännön esiintymisharjoittelu', 'Kameraharjoitukset ja tallenteiden analysointi', 'Kehon intentio, sanaton viestintä ja läsnäolo', 'Viestinnällisten tilanteiden simulointi, palaute ja toisto'],
                 pills: ['Keho', 'Keskittyminen', 'Kieli'],
                 act: 'Loppu', actText: 'Vie kohti toimintaa, päätöstä ja vaikutusta.',
