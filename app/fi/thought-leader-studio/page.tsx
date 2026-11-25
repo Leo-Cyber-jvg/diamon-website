@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'Thought Leader Studio — DIAMON Finland',
@@ -161,62 +160,6 @@ export default function ThoughtLeaderStudioFiPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      {/* Referenssi — vaaka 16:9 */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-          Referenssit
-        </p>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Vaakavideo 16:9 */}
-          <div
-            style={{
-              position: 'relative',
-              paddingBottom: '56.25%',
-              height: 0,
-              overflow: 'hidden',
-              backgroundColor: '#000',
-            }}
-          >
-            <iframe
-              src="https://www.youtube.com/embed/tuDKr0dif28"
-              title="Tuomas Liisanantti, Markkinointijohtaja SDM, DIAMON referenssi"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                border: 0,
-              }}
-            />
-          </div>
-          <div className="flex flex-col justify-center gap-6">
-            <blockquote
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(1.1rem, 2vw, 1.5rem)',
-                fontStyle: 'italic',
-                fontWeight: 300,
-                color: 'var(--color-text)',
-                lineHeight: 1.5,
-                margin: 0,
-              }}
-            >
-              &ldquo;Esiintymistaito on yleisavain johtamiseen ja vaikuttamiseen. Diamonilta löytyy ainutlaatuisen korkeatasoista osaamista esiintymisen kehittämiseen ja henkilökohtaisuuteen perustuva valmennuskonsepti todellakin toimii.&rdquo;
-            </blockquote>
-            <p style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
-             , Tuomas Liisanantti, Markkinointijohtaja, SDM
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Esimerkkivideot — pysty 9:16, 3 kpl rinnakkain */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
@@ -227,7 +170,6 @@ export default function ThoughtLeaderStudioFiPage() {
           ajatusjohtajuutta rakentavien lyhytvideoiden parissa LinkedInissä, YouTubessa
           ja TikTokissa.
         </p>
-        {/* 3 pystymuotovideota rinnakkain — paddingBottom 177.78% = 9:16 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             'tuDKr0dif28',
@@ -267,7 +209,23 @@ export default function ThoughtLeaderStudioFiPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      <ICAFrameworkSection lang="fi" />
+      {/* Lainaus */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '720px' }}>
+          <blockquote>
+            <p
+              className="text-2xl md:text-3xl font-light mb-8"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic' }}
+            >
+              &ldquo;Esiintymistaito on yleisavain johtamiseen ja vaikuttamiseen. Diamonilta löytyy ainutlaatuisen korkeatasoista osaamista esiintymisen kehittämiseen ja henkilökohtaisuuteen perustuva valmennuskonsepti todellakin toimii.&rdquo;
+            </p>
+            <footer>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Tuomas Liisanantti</p>
+              <p className="text-xs mt-1" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Markkinointijohtaja, SDM</p>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
   title: 'DIAMON Thought Leader Studio — Making Thought Leadership Visible',
@@ -314,7 +313,71 @@ export default function ThoughtLeaderStudioPage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      <ICAFrameworkSection lang="en" />
+      {/* Example videos */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+          Examples of produced videos
+        </p>
+        <p className="text-sm leading-relaxed mb-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '640px' }}>
+          We have collaborated with Suomen Digimarkkinointi on building thought leadership through short-form video content on LinkedIn, YouTube and TikTok.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            'tuDKr0dif28',
+            'Ri0zlk2M-Ds',
+            'zv3r1XjjGHk',
+          ].map(videoId => (
+            <div
+              key={videoId}
+              style={{
+                position: 'relative',
+                paddingBottom: '177.78%',
+                height: 0,
+                overflow: 'hidden',
+                backgroundColor: '#000',
+              }}
+            >
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title="DIAMON Thought Leader Studio, example"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  border: 0,
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      {/* Testimonial */}
+      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '720px' }}>
+          <blockquote>
+            <p
+              className="text-2xl md:text-3xl font-light mb-8"
+              style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic' }}
+            >
+              &ldquo;Presentation skill is a master key to leadership and influence. DIAMON has uniquely high-level expertise in developing performance, presence, and communication. Their personal coaching concept truly works.&rdquo;
+            </p>
+            <footer>
+              <p className="text-sm font-medium" style={{ color: 'var(--color-text)', fontFamily: 'var(--font-body)' }}>Tuomas Liisanantti</p>
+              <p className="text-xs mt-1" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Marketing Director, SDM</p>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
 
       {/* Divider */}
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
