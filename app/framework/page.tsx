@@ -56,8 +56,17 @@ export default function FrameworkPage() {
         </div>
       </section>
 
+      {/* Framework header */}
+      <section className="px-6 pt-16 pb-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <p className="text-xs tracking-[0.3em] uppercase mb-5" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Framework</p>
+        <h2 className="font-light" style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.2rem, 5vw, 4rem)', lineHeight: 1.05, color: 'var(--color-text)' }}>
+          Identity → Composition →{' '}
+          <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>Action.</span>
+        </h2>
+      </section>
+
       {/* ── ICA three-column diagram ──────────────────────────── */}
-      <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <section className="px-6 pb-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background)' }}>
 
           {/* Row 1 – ICA label + model abbrev */}
