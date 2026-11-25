@@ -144,19 +144,21 @@ export default function JohtamisviestinnanIntensivePage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Mitä muuttuu
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Nopea, mitattava kehitys', body: 'Kuusi intensiivistä sessiota, jotka tuottavat tuloksia, ei asteittaista ajelehtimista, vaan fokusoitu kehityskokonaisuus selkein tavoittein.' },
-            { n: '02', title: 'Strategisesti linjattu', body: 'Viestintäsi on tavoitteellista ja kytketty johtajarooliisi ja organisaatiosi suuntaan, ei esiintymistaitona, vaan strategisena toimintakykynä.' },
-            { n: '03', title: 'Johdonmukainen paineessa', body: 'Sama auktoriteetti ja selkeys joka tilanteessa, valmistautuneena tai ei. Toimintakyky, joka pitää ratkaisevissa hetkissä.' },
-            { n: '04', title: 'Määritelty profiili ja toimintamalli', body: 'Johtajan viestintäprofiili ja henkilökohtainen toimintamalli, jotka palvelevat ohjelman jälkeenkin.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Nopea, mitattava kehitys', body: 'Kuusi intensiivistä sessiota, jotka tuottavat tuloksia, ei asteittaista ajelehtimista, vaan fokusoitu kehityskokonaisuus selkein tavoittein.' },
+              { n: '02', title: 'Strategisesti linjattu', body: 'Viestintäsi on tavoitteellista ja kytketty johtajarooliisi ja organisaatiosi suuntaan, ei esiintymistaitona, vaan strategisena toimintakykynä.' },
+              { n: '03', title: 'Johdonmukainen paineessa', body: 'Sama auktoriteetti ja selkeys joka tilanteessa, valmistautuneena tai ei. Toimintakyky, joka pitää ratkaisevissa hetkissä.' },
+              { n: '04', title: 'Määritelty profiili ja toimintamalli', body: 'Johtajan viestintäprofiili ja henkilökohtainen toimintamalli, jotka palvelevat ohjelman jälkeenkin.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

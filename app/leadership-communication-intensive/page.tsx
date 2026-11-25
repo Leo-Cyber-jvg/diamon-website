@@ -144,19 +144,21 @@ export default function LeadershipCommunicationIntensivePage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           What changes
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Rapid, measurable progress', body: 'Six intensive sessions that move the needle, not a gradual drift, but a focused development sprint with clear outcomes.' },
-            { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and connected to your leadership role and organisation&apos;s direction, not a presentational skill, but a strategic capability.' },
-            { n: '03', title: 'Consistent under pressure', body: 'The same authority and clarity in every context, prepared or not. Performance that holds in the moments that matter.' },
-            { n: '04', title: 'A defined profile and model', body: 'A leadership communication profile and personal operating model that continues to serve you after the programme ends.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }} dangerouslySetInnerHTML={{ __html: body }} />
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Rapid, measurable progress', body: 'Six intensive sessions that move the needle, not a gradual drift, but a focused development sprint with clear outcomes.' },
+              { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and connected to your leadership role and organisation\'s direction, not a presentational skill, but a strategic capability.' },
+              { n: '03', title: 'Consistent under pressure', body: 'The same authority and clarity in every context, prepared or not. Performance that holds in the moments that matter.' },
+              { n: '04', title: 'A defined profile and model', body: 'A leadership communication profile and personal operating model that continues to serve you after the programme ends.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
