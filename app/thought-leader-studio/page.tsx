@@ -25,7 +25,7 @@ export default function ThoughtLeaderStudioPage() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 90%',
+            objectPosition: 'center 70%',
             filter: 'brightness(0.35) saturate(0.6)',
           }}
         >
