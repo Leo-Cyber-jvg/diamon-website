@@ -131,23 +131,25 @@ export default function IcaViitekehysPage() {
           </div>
           {/* ICA concentric circle diagram */}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '380px', aspectRatio: '1' }}>
-              <defs>
-                <radialGradient id="ica-bg" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#1C1B2E"/>
-                  <stop offset="100%" stopColor="#111010"/>
-                </radialGradient>
-              </defs>
-              <circle cx="200" cy="200" r="192" fill="url(#ica-bg)"/>
-              <circle cx="200" cy="200" r="192" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1.5"/>
-              <circle cx="200" cy="200" r="135" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5"/>
-              <circle cx="200" cy="200" r="80" fill="rgba(86,86,214,0.14)" stroke="rgba(255,255,255,0.32)" strokeWidth="1.5"/>
-              <text x="200" y="52" textAnchor="middle" fill="white" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">ACTION</text>
-              <text x="200" y="362" textAnchor="middle" fill="rgba(255,255,255,0.35)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">K3™</text>
-              <text x="200" y="110" textAnchor="middle" fill="white" fontFamily="Inter, system-ui, sans-serif" fontSize="9.5" fontWeight="400" letterSpacing="3.5">COMPOSITION</text>
-              <text x="200" y="306" textAnchor="middle" fill="rgba(255,255,255,0.35)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">SNS™</text>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '280px', aspectRatio: '1' }}>
+              {/* Outer ACTION ring */}
+              <circle cx="200" cy="200" r="192" fill="var(--color-background)" stroke="var(--color-border)" strokeWidth="1.5"/>
+              {/* COMPOSITION ring */}
+              <circle cx="200" cy="200" r="135" fill="var(--color-surface)" stroke="var(--color-border)" strokeWidth="1.5"/>
+              {/* IDENTITY inner circle – blue */}
+              <circle cx="200" cy="200" r="80" fill="var(--color-blue)" stroke="var(--color-blue)" strokeWidth="1"/>
+              {/* ACTION label */}
+              <text x="200" y="52" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">ACTION</text>
+              {/* K3™ */}
+              <text x="200" y="362" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">K3™</text>
+              {/* COMPOSITION label */}
+              <text x="200" y="110" textAnchor="middle" fill="var(--color-text)" fontFamily="Inter, system-ui, sans-serif" fontSize="9.5" fontWeight="400" letterSpacing="3.5">COMPOSITION</text>
+              {/* SNS™ */}
+              <text x="200" y="306" textAnchor="middle" fill="var(--color-subtle)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">SNS™</text>
+              {/* IDENTITY label */}
               <text x="200" y="193" textAnchor="middle" fill="white" fontFamily="Inter, system-ui, sans-serif" fontSize="10" fontWeight="400" letterSpacing="4">IDENTITY</text>
-              <text x="200" y="213" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">DCI™</text>
+              {/* DCI™ */}
+              <text x="200" y="213" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="Inter, system-ui, sans-serif" fontSize="8.5" letterSpacing="2">DCI™</text>
             </svg>
           </div>
         </div>
