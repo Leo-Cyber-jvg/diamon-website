@@ -134,10 +134,11 @@ export default function TietoaPage() {
           </div>
           <div className="flex flex-col gap-5 md:pt-10" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', lineHeight: 1.8 }}>
             <p>DIAMON syntyi yksinkertaisesta havainnosta: monet johtajat ovat huomattavasti osaavampia kuin heidän viestintänsä antaa ymmärtää.</p>
-            <p>Toimintamme perustuu ajatukseen siitä, että johtaminen, vaikuttaminen ja muutos tapahtuvat yksilön kautta. Se, miten havainnoimme, ajattelemme, kuuntelemme ja toimimme suhteessa toisiin ihmisiin, määrittää kykymme rakentaa luottamusta, välittää merkityksiä ja saada aikaan muutosta.</p>
-            <p>Teknologian muuttaessa tapaamme tehdä työtä korostuu tarve kehittää tietoisesti myös inhimillisiä kyvykkyyksiämme.</p>
-            <p>Johtamisviestinnän kehittäminen tarkoittaa meille oman toimintatavan syvempää ymmärtämistä, kykyä rakentaa vaikuttavaa viestintää ja valmiutta toimia tarkoituksenmukaisesti myös vaativissa vuorovaikutustilanteissa.</p>
-            <p>DIAMON auttaa johtajia ja organisaatioita kehittämään näitä kyvykkyyksiä systemaattisesti ja pitkäjänteisesti.</p>
+            <p>Kun puhutaan muutoksen johtamisesta, kasvusta tai organisaation uudistumisesta, keskustelu päätyy lopulta ihmiseen. Johtajan kykyyn tehdä asioita ymmärrettäväksi, luoda merkitystä ja rakentaa yhteistä suuntaa tavalla, joka synnyttää luottamusta.</p>
+            <p>Johtajan haaste ei useinkaan ole osaamisen puute. Kiinnostavampi kysymys on, kuinka hyvin hän pystyy hyödyntämään omaa ajatteluaan, persoonaansa ja vuorovaikutuskykyään erilaisissa tilanteissa, myös silloin, kun paine kasvaa.</p>
+            <p>Uskomme, että vaikuttava johtamisviestintä ei synny täydellisestä esiintymisestä, vaan kyvystä olla läsnä, ajatella selkeästi ja toimia omasta persoonasta käsin. Mitä vaativampi ja julkisempi johtajan rooli on, sitä tärkeämpää on, ettei ihminen katoa sen taakse.</p>
+            <p>Teknologian muuttaessa tapaamme käsitellä tietoa, viestiä ja tehdä työtä korostuu näiden inhimillisten kyvykkyyksien merkitys entisestään.</p>
+            <p>DIAMONissa kehitämme johtajan kykyä ymmärtää omaa toimintaansa, rakentaa vaikuttavaa viestintää ja harjoittaa toimintakykyään erilaisissa viestintäympäristöissä ja vuorovaikutustilanteissa. Tavoitteena on, että johtajan osaaminen, ajattelu ja persoona välittyvät tavalla, joka auttaa myös muita ymmärtämään, sitoutumaan ja toimimaan.</p>
             <p>Teknologia kehittyy nopeasti. Meidänkin kannattaa.</p>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function ThoughtLeaderStudioFiPage() {
             height: '100%',
             objectFit: 'cover',
             objectPosition: 'center 25%',
-            filter: 'brightness(0.35) saturate(0.6)',
+            filter: 'brightness(0.5) saturate(0.6)',
           }}
         >
           <source src="/sdm-lv-bg.mp4" type="video/mp4" />
