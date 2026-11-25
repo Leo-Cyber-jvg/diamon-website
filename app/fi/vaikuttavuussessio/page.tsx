@@ -108,7 +108,7 @@ export default function VaikuttavuussessioPage() {
               Tavoitteena on, että voit kohdata tilanteen valmistautuneena, luottaa omaan osaamiseesi ja keskittyä olennaiseen.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)', overflow: 'hidden' }}>
             <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Session tiedot
@@ -118,7 +118,7 @@ export default function VaikuttavuussessioPage() {
               'Yksilö- tai pienryhmäcoaching (1–3 osallistujaa)',
               'Kesto: 3 tuntia',
               'Etä-, lähi- tai studioformaatti',
-              'Valinnainen seuranta tai sisällön viimeistely',
+              'Loppukoonti ja kehitysavaimet · valinnainen seuranta',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
