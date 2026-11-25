@@ -96,13 +96,16 @@ export default function VaikuttavuussessioPage() {
               Mitä se on
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Yksi sessio. Yksi hetki. Täydellinen valmistautuminen.
+              Valmistaudu merkityksellisiin viestintätilanteisiin.
             </h2>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              DIAMON Impact Session on intensiivinen yksilövalmennus johtajille ja asiantuntijoille, jotka haluavat valmistautua mahdollisimman hyvin tärkeään viestintätilanteeseen.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Valmennus suunnitellaan asiakkaan yksilöllisten tarpeiden, tavoitteiden ja tulevan viestintätilanteen pohjalta. Työskentelyssä yhdistyvät viestin kirkastaminen, sisällön ja rakenteen kehittäminen sekä käytännön esiintymis- ja vuorovaikutusharjoittelu.
+            </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON Impact Session on intensiivinen, yksilöllinen coachingkokonaisuus, joka
-              valmistaa johtajan tai asiantuntijan onnistumaan tietyssä viestintätilanteessa,
-              jossa vaikutus ratkaisee eniten. Ei yleinen esiintymistaito, täsmällinen valmistautuminen
-              juuri sinun hetkellesi.
+              Tavoitteena on, että voit kohdata tilanteen valmistautuneena, luottaa omaan osaamiseesi ja keskittyä olennaiseen.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
@@ -116,7 +119,6 @@ export default function VaikuttavuussessioPage() {
               'Kesto: 3 tuntia',
               'Etä-, lähi- tai studioformaatti',
               'Valinnainen seuranta tai sisällön viimeistely',
-              'Rakennettu DIAMON ICA Framework™ -mallin pohjalle',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
