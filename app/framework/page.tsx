@@ -50,7 +50,7 @@ export default function FrameworkPage() {
       {/* ── ICA column-based diagram ──────────────────────────── */}
       <section className="px-6 pb-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
-          <div className="grid [grid-template-columns:1fr] md:[grid-template-columns:repeat(3,1fr)]">
+          <div className="grid [grid-template-columns:1fr] md:[grid-template-columns:repeat(3,1fr)] gap-y-4 md:gap-y-0">
             {[
               {
                 label: 'ICA I', model: 'DCI™',
@@ -79,7 +79,7 @@ export default function FrameworkPage() {
             ].map(({ label, model, name, question, bullets, pills, act, actText, outcome }, i) => (
               <div
                 key={name}
-                className={i > 0 ? '[border-top:3px_solid_var(--color-blue)] md:[border-top:none]' : ''}
+                className=""
                 style={{
                   backgroundColor: 'var(--color-background)',
                   display: 'flex',
