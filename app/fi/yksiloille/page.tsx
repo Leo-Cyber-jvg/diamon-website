@@ -85,14 +85,11 @@ export default function YksiloillePage() {
             >
               Vaikuttava johtamisviestintä rakentuu oman toimintatavan ymmärtämisestä, tietoisesta viestinnän rakentamisesta ja kyvystä toimia erilaisissa vuorovaikutustilanteissa.
             </p>
-            <p
-              className="text-sm leading-relaxed"
-              style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
-            >
-              DIAMONin valmennukset perustuvat ICA Framework™ -malliin, joka yhdistää nämä kolme ulottuvuutta systemaattiseksi ja käytännönläheiseksi kehittämiskokonaisuudeksi.
-            </p>
           </div>
           <div className="flex flex-col gap-8 md:pt-12">
+            <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+              Kolme keskeistä elementtiä
+            </p>
             {[
               { n: '01', text: 'Oman viestijäidentiteetin ja henkilökohtaisen potentiaalin ymmärtäminen.' },
               { n: '02', text: 'Kyky rakentaa selkeää, merkityksellistä ja strategisesti vaikuttavaa viestintää.' },
