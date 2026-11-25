@@ -71,6 +71,7 @@ export default function IcaViitekehysPage() {
             ].map(({ label, model, name, question, bullets, pills, act, actText, outcome }, i) => (
               <div
                 key={name}
+                className={i > 0 ? '[border-top:3px_solid_var(--color-blue)] md:[border-top:none]' : ''}
                 style={{
                   backgroundColor: 'var(--color-background)',
                   display: 'flex',
