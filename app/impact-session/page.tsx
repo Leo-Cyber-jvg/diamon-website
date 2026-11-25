@@ -118,8 +118,8 @@ export default function ImpactSessionPage() {
               The DIAMON Impact Session is an intensive, individual coaching engagement that prepares a leader or expert to succeed in a specific communication situation where impact matters most. Not a general presentation skills course, a precise preparation for your actual moment.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+          <div className="flex flex-col" style={{ border: '1px solid var(--color-border)' }}>
+            <div className="px-6 py-3" style={{ borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Session details
               </span>
@@ -128,10 +128,9 @@ export default function ImpactSessionPage() {
               'Individual or small group coaching (1–3 participants)',
               'Duration: 3 hours',
               'Remote, on-site or studio format',
-              'Optional follow-up sparring or final content refinement',
-              'Built on the DIAMON ICA Framework™',
-            ].map(item => (
-              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
+              'Summary and development keys · optional follow-up',
+            ].map((item, idx, arr) => (
+              <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ borderBottom: idx < arr.length - 1 ? '1px solid var(--color-border)' : 'none', backgroundColor: 'var(--color-background)' }}>
                 <span className="mt-1.5 shrink-0 block w-1 h-1 rounded-full" style={{ backgroundColor: 'var(--color-blue)' }} aria-hidden="true" />
                 <span className="text-sm" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{item}</span>
               </div>
