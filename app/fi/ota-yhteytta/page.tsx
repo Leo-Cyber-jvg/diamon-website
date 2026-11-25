@@ -117,7 +117,7 @@ export default function OtaYhteyttaPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>Ota yhteyttä</p>
         <h1 className="text-4xl md:text-6xl font-light mb-8" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.1, maxWidth: '700px' }}>Aloita tarkasta kysymyksestä.</h1>
         <p className="text-lg font-light" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '520px' }}>
-          Kuvaile viestintähaaste, jota kohtaat, tai tulos, johon pyrit. Mitä tarkempi kysymys, sitä parempi ensimmäinen keskustelu.
+          Haluaisitko kehittää omaa tai organisaatiosi viestintää ja vuorovaikutusta? Ota yhteyttä, niin kartoitetaan yhdessä tarpeitanne ja sitä, miten voimme auttaa.
         </p>
       </section>
 
@@ -128,7 +128,7 @@ export default function OtaYhteyttaPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
           <div style={{ width: '96px', height: '96px', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, border: '1px solid var(--color-border)' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 75%' }} />
+            <img src="/leo-sjoman.jpg" alt="Leo Sjöman" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }} />
           </div>
           <div className="flex flex-col gap-1">
             <span className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.4rem' }}>Leo Sjöman</span>

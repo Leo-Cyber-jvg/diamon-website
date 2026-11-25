@@ -190,9 +190,7 @@ export default function ContactPage() {
           className="text-lg font-light"
           style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.8, maxWidth: '520px' }}
         >
-          Describe the communication challenge you are facing or the outcome
-          you are trying to achieve. The clearer the question, the better the
-          first conversation.
+          Would you like to develop your own or your organisation's communication and interaction? Get in touch, and we'll map out your needs together and how we can help.
         </p>
       </section>
 
@@ -217,7 +215,7 @@ export default function ContactPage() {
             <img
               src="/leo-sjoman.jpg"
               alt="Leo Sjöman"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 75%' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
             />
           </div>
 
