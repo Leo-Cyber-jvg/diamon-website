@@ -99,23 +99,26 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-              Mitä se on
+              Valmennuskokonaisuus
             </p>
             <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              12 kuukautta. Järjestelmällistä. Mitattavaa.
+              Vuosi oman johtajuuden ja{' '}
+              <span style={{ fontStyle: 'italic' }}>vaikuttavuuden kehittämiseen.</span>
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Annual Leadership Program on 12 kuukauden kehitysohjelma, joka on suunniteltu
-              vahvistamaan johtajan viestinnällistä vaikuttavuutta ja esiintymisen strategista roolia.
-              Se on rakenteellinen valmennuskokonaisuus, ei yksittäinen kurssi, joka rakentaa
-              johdonmukaisen, mitattavan ja strategisesti linjatun viestintäprofiilin.
+              DIAMON Annual Leadership Program on vuoden mittainen henkilökohtainen valmennuskokonaisuus johtajille, jotka haluavat syventää ymmärrystä omasta tavastaan viestiä, johtaa ja vaikuttaa.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Pitkäjänteinen työskentely henkilökohtaisen valmentajan kanssa mahdollistaa omien vahvuuksien tunnistamisen, totuttujen toimintatapojen tarkastelun ja uusien valmiuksien harjoittamisen osana omaa työtä.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Valmennus rakentuu johtajan yksilöllisten kehitystavoitteiden, todellisten viestintätilanteiden ja organisaation strategisten tarpeiden ympärille. Henkilökohtainen valmentaja kulkee johtajan rinnalla koko vuoden ajan.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Ohjelma tarjoaa henkilökohtaisen valmentajan tuen koko vuoden ajalle sekä menetelmät,
-              joilla viestinnästä tulee tavoitteellista ja liiketoimintaa tukevaa.
+              Tavoitteena on vahvistaa johtajan viestinnällistä toimintakykyä erilaisissa viestintäympäristöissä ja vuorovaikutustilanteissa sekä kehittää kykyä johtaa tietoisemmin myös silloin, kun paine kasvaa.
             </p>
           </div>
-          <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
             <div className="px-6 py-3" style={{ backgroundColor: 'var(--color-surface)' }}>
               <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
                 Ohjelman rakenne
