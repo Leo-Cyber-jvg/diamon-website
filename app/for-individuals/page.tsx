@@ -76,7 +76,7 @@ export default function ForIndividualsPage() {
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              A leader's expertise, thinking and personal potential do not always come through fully in how they communicate. It is not only about what we know or can do — it is about how we are able to convey that to others, build shared understanding and direct action.
+              A leader's expertise, thinking and personal potential do not always come through fully in how they communicate. It is not only about what we know or can do. It is about how we are able to convey that to others, build shared understanding and direct action.
             </p>
             <p
               className="text-sm leading-relaxed"
@@ -92,7 +92,7 @@ export default function ForIndividualsPage() {
             {[
               { n: '01', text: 'Understanding your communication identity and personal potential.' },
               { n: '02', text: 'The ability to build clear, meaningful and strategically impactful communication.' },
-              { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations — on camera, in the media and with key stakeholders.' },
+              { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations (on camera, in the media, with key stakeholders).' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span

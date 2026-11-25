@@ -46,8 +46,7 @@ export default function Home() {
               fontSize: '1rem',
             }}
           >
-            We build communication capability for leaders and organisations —
-            systematically, measurably and for the long term.
+            We build communication capability for leaders and organisations, systematically, measurably and for the long term.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">

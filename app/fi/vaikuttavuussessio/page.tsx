@@ -102,7 +102,7 @@ export default function VaikuttavuussessioPage() {
               DIAMON Impact Session on intensiivinen yksilövalmennus johtajille ja asiantuntijoille, jotka haluavat valmistautua mahdollisimman hyvin tärkeään viestintätilanteeseen.
             </p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Valmennus suunnitellaan asiakkaan yksilöllisten tarpeiden, tavoitteiden ja tulevan viestintätilanteen pohjalta. Työskentelyssä yhdistyvät viestin kirkastaminen, sisällön ja rakenteen kehittäminen sekä käytännön esiintymis- ja vuorovaikutusharjoittelu — myös kameran edessä ja julkisissa viestintätilanteissa.
+              Valmennus suunnitellaan asiakkaan yksilöllisten tarpeiden, tavoitteiden ja tulevan viestintätilanteen pohjalta. Työskentelyssä yhdistyvät viestin kirkastaminen, sisällön ja rakenteen kehittäminen sekä käytännön esiintymis- ja vuorovaikutusharjoittelu, myös kameran edessä ja julkisissa viestintätilanteissa.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Tavoitteena on, että voit kohdata tilanteen valmistautuneena, luottaa omaan osaamiseesi ja keskittyä olennaiseen.
