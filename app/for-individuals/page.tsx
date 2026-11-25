@@ -70,29 +70,29 @@ export default function ForIndividualsPage() {
               style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}
             >
               Communication is a skill.<br />
-              <span style={{ fontStyle: 'italic' }}>It can be built.</span>
+              <span style={{ fontStyle: 'italic' }}>Impact can be developed.</span>
             </h2>
             <p
               className="text-sm leading-relaxed mb-5"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              The most effective leaders communicate with intention, not instinct. They have
-              a clear sense of their identity as communicators, structure their messages with
-              purpose, and perform with presence and conviction.
+              A leader's expertise, thinking and personal potential do not always come through fully in how they communicate. It is not only about what we know or can do — it is about how we are able to convey that to others, build shared understanding and direct action.
             </p>
             <p
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              Diamon coaching is built around the DIAMON ICA Framework™, a structured methodology
-              that develops all three dimensions of communication performance.
+              Impactful leadership communication is built on understanding one's own way of operating, the deliberate construction of communication, and the ability to act effectively in diverse interaction situations.
             </p>
           </div>
           <div className="flex flex-col gap-8 md:pt-12">
+            <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+              Three core elements
+            </p>
             {[
-              { n: '01', text: 'Build a clear, consistent leadership communication identity.' },
-              { n: '02', text: 'Develop strategic storytelling and high-stakes communication skills.' },
-              { n: '03', text: 'Perform with presence and conviction in the moments that matter.' },
+              { n: '01', text: 'Understanding your communication identity and personal potential.' },
+              { n: '02', text: 'The ability to build clear, meaningful and strategically impactful communication.' },
+              { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations.' },
             ].map(({ n, text }) => (
               <div key={n} className="flex gap-5 items-start">
                 <span
