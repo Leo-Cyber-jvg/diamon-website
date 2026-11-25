@@ -150,20 +150,22 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Ohjelman teemat
         </p>
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin, ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
-            { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet, viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
-            { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino, johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
-            { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä, datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
-            { title: 'Kokonaisprosessi: valmistautuminen, esiintyminen, jälkityö', body: 'Toistettava prosessi: strateginen valmistautuminen, suoritus ja jälkianalyysi jokaiseen merkittävään viestintähetkeen.' },
-            { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit, viestintä, joka tukee ja ajaa liiketoimintaa.' },
-          ].map(({ title, body }) => (
-            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
-              <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin, ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
+              { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet, viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
+              { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino, johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
+              { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä, datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
+              { title: 'Kokonaisprosessi: valmistautuminen, esiintyminen, jälkityö', body: 'Toistettava prosessi: strateginen valmistautuminen, suoritus ja jälkianalyysi jokaiseen merkittävään viestintähetkeen.' },
+              { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit, viestintä, joka tukee ja ajaa liiketoimintaa.' },
+            ].map(({ title, body }) => (
+              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -176,19 +178,21 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Mitä muuttuu
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä, ei vain silloin, kun olet valmistautunut.' },
-            { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista, ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
-            { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa, ei esiintymistaito, vaan strateginen kyvykkyys.' },
-            { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu, ei kertaluonteinen ponnistus.' },
-          ].map(({ n, title, body }) => (
-            <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
-              <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
-              <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä, ei vain silloin, kun olet valmistautunut.' },
+              { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista, ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
+              { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa, ei esiintymistaito, vaan strateginen kyvykkyys.' },
+              { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu, ei kertaluonteinen ponnistus.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
+                <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
