@@ -111,7 +111,7 @@ export default function IcaViitekehysPage() {
                   <p className="font-light" style={{ color: '#fff', fontFamily: 'var(--font-heading)', fontSize: '1rem', lineHeight: 1.35 }}>{actText}</p>
                 </div>
                 {/* Outcome */}
-                <div className="px-5 py-3 flex items-center gap-3" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <div className="px-5 py-3 flex items-center gap-3 [border-left:2px_solid_var(--color-blue)] [border-right:2px_solid_var(--color-blue)] [border-bottom:2px_solid_var(--color-blue)] md:[border-left:none] md:[border-right:none] md:[border-bottom:none]" style={{ backgroundColor: 'var(--color-surface)' }}>
                   <span className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tulos</span>
                   <span className="font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: '1.2rem' }}>{outcome}</span>
                 </div>
