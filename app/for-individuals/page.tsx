@@ -90,7 +90,7 @@ export default function ForIndividualsPage() {
               Three core elements
             </p>
             {[
-              { n: '01', text: 'Understanding your communication identity and personal potential.' },
+              { n: '01', text: 'Understanding your communication identity and personal interaction potential.' },
               { n: '02', text: 'The ability to build clear, meaningful and strategically impactful communication.' },
               { n: '03', text: 'Presence, conviction and the capacity to perform in demanding interaction situations (on camera, in the media, with key stakeholders).' },
             ].map(({ n, text }) => (

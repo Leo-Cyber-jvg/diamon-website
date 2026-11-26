@@ -91,7 +91,7 @@ export default function YksiloillePage() {
               Kolme keskeistä elementtiä
             </p>
             {[
-              { n: '01', text: 'Oman viestijäidentiteetin ja henkilökohtaisen potentiaalin ymmärtäminen.' },
+              { n: '01', text: 'Oman viestijäidentiteetin ja henkilökohtaisen vuorovaikutuspotentiaalin ymmärtäminen.' },
               { n: '02', text: 'Kyky rakentaa selkeää, merkityksellistä ja strategisesti vaikuttavaa viestintää.' },
               { n: '03', text: 'Läsnäolo, vakuuttavuus ja toimintakyky vaativissa vuorovaikutustilanteissa (kameran edessä, mediassa, eri sidosryhmätilanteissa).' },
             ].map(({ n, text }) => (
