@@ -36,8 +36,8 @@ export default function FiHome() {
               letterSpacing: '-0.01em',
             }}
           >
-            Muutamme<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtamisviestintää.</span>
+            Uudistamme<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtamisviestintää,<br />muutamme tapaa johtaa.</span>
           </h1>
           <p
             className="mb-12 font-light"

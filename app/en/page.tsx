@@ -36,8 +36,8 @@ export default function EnHome() {
               letterSpacing: '-0.01em',
             }}
           >
-            Rewiring<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>leadership communication.</span>
+            Transforming<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>leadership communication,<br />changing the way people lead.</span>
           </h1>
           <p
             className="mb-12 font-light"

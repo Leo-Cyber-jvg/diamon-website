@@ -3,8 +3,8 @@
 
 export const routeMap: Record<string, string> = {
   // EN → FI
-  '/en': '/fi',
   '/': '/fi',
+  '/en': '/fi',
   '/for-individuals': '/fi/yksiloille',
   '/for-organisations': '/fi/organisaatioille',
   '/executive-programmes': '/fi/ohjelmat',
