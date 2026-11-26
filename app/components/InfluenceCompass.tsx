@@ -43,7 +43,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
         <div className="grid md:grid-cols-2" style={{ alignItems: 'stretch' }}>
 
           {/* LEFT: Eyebrow + Compass */}
-          <div className="p-6 md:p-10" style={{ border: '1px solid #DDDBD6', minWidth: 0 }}>
+          <div className="p-6 md:p-10" style={{ border: '1px solid #DDDBD6', minWidth: 0, overflow: 'hidden' }}>
             <p
               style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 20px', textAlign: 'center' }}
             >
@@ -54,7 +54,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
               {isFi ? 'Yksilön kehitys' : 'Personal Development'}
             </p>
 
-            <div className="relative">
+            <div className="relative" style={{ width: '100%' }}>
               {/* Axis lines */}
               <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
                 <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', backgroundColor: '#DDDBD6', transform: 'translateX(-50%)' }} />
