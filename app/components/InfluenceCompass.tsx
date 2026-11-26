@@ -99,7 +99,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
                   <text x="100" y="16" textAnchor="middle" fill="#111010" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="400" letterSpacing="2.5">ACTION</text>
                   <text x="100" y="187" textAnchor="middle" fill="#9E9890" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">K3™</text>
                   <text x="100" y="50" textAnchor="middle" fill="#111010" fontFamily="Inter, sans-serif" fontSize="7.5" fontWeight="400" letterSpacing="2">COMPOSITION</text>
-                  <text x="100" y="156" textAnchor="middle" fill="#9E9890" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">SNS™</text>
+                  <text x="100" y="156" textAnchor="middle" fill="#9E9890" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">TNT™</text>
                   <text x="100" y="96" textAnchor="middle" fill="white" fontFamily="Inter, sans-serif" fontSize="8.5" fontWeight="400" letterSpacing="2.5">IDENTITY</text>
                   <text x="100" y="111" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="Inter, sans-serif" fontSize="6.5" letterSpacing="1.5">DCI™</text>
                 </svg>
