@@ -136,10 +136,10 @@ export default function JohtamisviestinnanIntensivePage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { n: '01', title: 'Nopea, mitattava kehitys', body: 'Kuusi intensiivistä sessiota, jotka tuottavat tuloksia, ei asteittaista ajelehtimista, vaan fokusoitu kehityskokonaisuus selkein tavoittein.' },
-              { n: '02', title: 'Strategisesti linjattu', body: 'Viestintäsi on tavoitteellista ja kytketty johtajarooliisi ja organisaatiosi suuntaan, ei esiintymistaitona, vaan strategisena toimintakykynä.' },
-              { n: '03', title: 'Johdonmukainen paineessa', body: 'Sama auktoriteetti ja selkeys joka tilanteessa, valmistautuneena tai ei. Toimintakyky, joka pitää ratkaisevissa hetkissä.' },
-              { n: '04', title: 'Määritelty profiili ja toimintamalli', body: 'Johtajan viestintäprofiili ja henkilökohtainen toimintamalli, jotka palvelevat ohjelman jälkeenkin.' },
+              { n: '01', title: 'Mitattava kehitys', body: 'Fokusoitu kehityskokonaisuus, jossa kuusi intensiivistä valmennuskertaa tuottavat tuloksia selkein tavoittein.' },
+              { n: '02', title: 'Strategisesti linjattu viestintä', body: 'Viestintäsi on tavoitteellista ja kytkeytyy johtaja- tai asiantuntijarooliisi sekä organisaatiosi suuntaan. Viestintä osana strategista toimintakykyä.' },
+              { n: '03', title: 'Johdonmukainen toimintakyky', body: 'Viestinnällinen toimintakyky ja selkeys säilyvät erilaisissa viestintäympäristöissä ja vuorovaikutustilanteissa. Toimintakyky, joka palvelee myös paineisissa tilanteissa.' },
+              { n: '04', title: 'Selkeä viestintäprofiili ja toimintamalli', body: 'Johtajan viestintäprofiili ja henkilökohtainen toimintamalli, jotka palvelevat ohjelman jälkeenkin.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>

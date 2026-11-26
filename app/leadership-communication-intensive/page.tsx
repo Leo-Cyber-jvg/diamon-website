@@ -136,10 +136,10 @@ export default function LeadershipCommunicationIntensivePage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { n: '01', title: 'Rapid, measurable progress', body: 'Six intensive sessions that move the needle, not a gradual drift, but a focused development sprint with clear outcomes.' },
-              { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and connected to your leadership role and organisation\'s direction, not a presentational skill, but a strategic capability.' },
-              { n: '03', title: 'Consistent under pressure', body: 'The same authority and clarity in every context, prepared or not. Performance that holds in the moments that matter.' },
-              { n: '04', title: 'A defined profile and model', body: 'A leadership communication profile and personal operating model that continues to serve you after the programme ends.' },
+              { n: '01', title: 'Measurable development', body: 'A focused development engagement where six intensive coaching sessions deliver results with clear outcomes.' },
+              { n: '02', title: 'Strategically aligned communication', body: 'Your communication is purposeful and connected to your leadership or expert role and your organisation\'s direction. Communication as part of strategic capability.' },
+              { n: '03', title: 'Consistent performance', body: 'Communication capability and clarity that holds across different environments and interaction contexts. Performance that serves you even under pressure.' },
+              { n: '04', title: 'A clear communication profile and operating model', body: 'A leadership communication profile and personal operating model that continues to serve you after the programme ends.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
