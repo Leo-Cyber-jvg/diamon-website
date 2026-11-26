@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type React from 'react'
 import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
@@ -135,15 +136,16 @@ export default function VuosittainenJohtajuusohjelmePage() {
         </p>
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { n: '01', title: 'Johtajan viestijäidentiteetti', body: 'Itsetuntemus, persoona ja henkilökohtaiset vahvuudet.' },
-              { n: '02', title: 'Strateginen viestintä ja tarinankerronta', body: 'Ajattelun jäsentäminen, narratiivi ja yhteinen suunta.' },
-              { n: '03', title: 'Esiintyminen eri viestintäympäristöissä', body: 'Yleisöt, kamera, media ja sidosryhmät.' },
-              { n: '04', title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuunteleminen, kohtaaminen ja luottamus.' },
-              { n: '05', title: 'Läsnäolo ja toimintakyky paineessa', body: 'Kehollisuus, keskittyminen ja itsesäätely.' },
-              { n: '06', title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Simulaatiot, harjoittelu, palaute ja kehityksen seuranta.' },
-            ].map(({ n, title, body }) => (
+            {([
+              { n: '01', title: 'Johtajan viestijäidentiteetti', body: 'Itsetuntemus, persoona ja henkilökohtaiset vahvuudet.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> },
+              { n: '02', title: 'Strateginen viestintä ja tarinankerronta', body: 'Ajattelun jäsentäminen, narratiivi ja yhteinen suunta.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="4" rx="1"/><rect x="3" y="11" width="12" height="4" rx="1"/><rect x="3" y="17" width="15" height="4" rx="1"/></svg> },
+              { n: '03', title: 'Esiintyminen eri viestintäympäristöissä', body: 'Yleisöt, kamera, media ja sidosryhmät.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg> },
+              { n: '04', title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuunteleminen, kohtaaminen ja luottamus.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 7h10a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H7l-4 3V9a2 2 0 0 1 2-2z"/></svg> },
+              { n: '05', title: 'Läsnäolo ja toimintakyky paineessa', body: 'Kehollisuus, keskittyminen ja itsesäätely.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg> },
+              { n: '06', title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Simulaatiot, harjoittelu, palaute ja kehityksen seuranta.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="3,18 9,11 13,15 21,6"/><circle cx="21" cy="6" r="2"/></svg> },
+            ] as { n: string; title: string; body: string; icon: React.ReactNode }[]).map(({ n, title, body, icon }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
                 <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
