@@ -8,9 +8,9 @@ const t = {
     title: 'DIAMON ICA Framework™',
     lead: 'Diamonin valmennukset perustuvat ICA-viitekehykseen, malliin, joka yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen johtamisviestinnän kehittämiseen.',
     items: [
-      { letter: 'I', label: 'Identity', desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
-      { letter: 'C', label: 'Composition', desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.' },
-      { letter: 'A', label: 'Action', desc: 'Toteutus, kehollisuus, läsnäolo ja toiminta todellisissa tilanteissa.' },
+      { letter: 'I', label: 'Kuka olen viestijänä ja johtajana', desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
+      { letter: 'C', label: 'Mitä rakennan ja miten', desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.' },
+      { letter: 'A', label: 'Miten toteutan sen todellisessa tilanteessa', desc: 'Toteutus, kehollisuus, läsnäolo ja toiminta todellisissa tilanteissa.' },
     ],
     link: '/fi/ica-viitekehys',
     linkLabel: 'Tutustu viitekehykseen →',
