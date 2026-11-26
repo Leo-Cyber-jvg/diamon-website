@@ -43,7 +43,7 @@ export default function KeynotesPage() {
         style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/keynote-hero.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', filter: 'brightness(0.3) saturate(0.4)' }} /> />
+        <img src="/keynote-hero.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', filter: 'brightness(0.3) saturate(0.4)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.6) 0%, rgba(17,16,16,0.4) 100%)' }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
