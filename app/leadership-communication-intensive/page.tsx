@@ -58,7 +58,7 @@ export default function LeadershipCommunicationIntensivePage() {
               lineHeight: 1.8,
             }}
           >
-            A focused, intensive coaching engagement that builds measurable leadership communication capability in six months, with direct, personal coaching throughout.
+            An intensive coaching engagement that builds measurable leadership communication capability in 6 months, with personal coaching throughout.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

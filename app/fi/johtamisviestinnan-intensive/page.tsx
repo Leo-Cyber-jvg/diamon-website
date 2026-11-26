@@ -58,7 +58,7 @@ export default function JohtamisviestinnanIntensivePage() {
               lineHeight: 1.8,
             }}
           >
-            Tiivis, intensiivinen valmennuskokonaisuus, joka rakentaa mitattavaa johtamisviestinnän toimintakykyä kuudessa kuukaudessa, henkilökohtaisella valmennuksella koko prosessin ajan.
+            Intensiivinen valmennuskokonaisuus, joka rakentaa mitattavaa johtamisviestinnän toimintakykyä 6 kuukaudessa henkilökohtaisella valmennuksella koko prosessin ajan.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
