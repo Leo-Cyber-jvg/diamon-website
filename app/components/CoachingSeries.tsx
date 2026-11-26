@@ -151,7 +151,7 @@ const content: Record<Lang, Content> = {
           'Löydät uusia keinoja vaikuttaa, viestiä ja johtaa vaativissa tilanteissa.',
           'Rakennat henkilökohtaisen suunnitelman opitun soveltamiseksi arjessa.',
         ],
-        audience: 'Toimitusjohtajat, liiketoimintajohtajat, markkinointijohtajat, yrittäjät ja muut johtavassa asemassa toimivat.',
+        audience: 'Johtajille ja yrittäjille, jotka haluavat kehittää henkilökohtaista vaikuttavuuttaan, johtamisviestintäänsä ja toimintakykyään työelämän vaativissa tilanteissa.',
       },
       {
         id: '02',
@@ -285,7 +285,7 @@ const content: Record<Lang, Content> = {
           'Find new ways to influence, communicate and lead in demanding situations.',
           'Build a personal plan for applying what you have learned in everyday work.',
         ],
-        audience: 'CEOs, business directors, marketing directors, entrepreneurs and others in leadership positions.',
+        audience: 'For leaders and entrepreneurs who want to develop their personal impact, leadership communication and capacity to perform in demanding professional situations.',
       },
       {
         id: '02',
