@@ -87,9 +87,10 @@ const content: Record<Lang, Content> = {
     whyEyebrow: 'Mihin sarja vastaa',
     whyTitle: 'Kun johtamisen vaatimukset kasvavat, myös johtajan henkilökohtaisen toimintakyvyn on kehityttävä.',
     whyText: [
-      'Johtaminen on jatkuvaa toimintaa muuttuvissa olosuhteissa. Epävarmuuden, kasvavan vastuun ja paineen keskellä johtajan on kyettävä ajattelemaan selkeästi, tekemään päätöksiä, kohtaamaan ihmisiä ja rakentamaan yhteistä suuntaa.',
-      'Se, miten johtaja tunnistaa ja säätelee omaa tilaansa, vaikuttaa hänen tapaansa havainnoida, kuunnella, viestiä ja toimia. Johtajan henkilökohtainen toimintakyky heijastuu myös ympärillä oleviin ihmisiin, työyhteisön ilmapiiriin ja yhteiseen suorituskykyyn.',
-      'Valmennussarjassa tarkastelemme johtajan toimintakykyä kokonaisvaltaisesti. Kehitämme ymmärrystä omasta toiminnasta sekä käytännön valmiuksia johtaa itseä, vuorovaikutusta ja muita ihmisiä myös silloin, kun paine kasvaa.',
+      'Muuttuva työelämä asettaa johtajille yhä moninaisempia vaatimuksia. Kyky johtaa omaa toimintaa, ajatella selkeästi, viestiä vaikuttavasti ja rakentaa yhteyttä toisiin ihmisiin korostuu erityisesti epävarmuuden ja paineen keskellä.',
+      'Johtajan vaikuttavuus rakentuu useiden inhimillisten kyvykkyyksien yhteisvaikutuksesta. Oma vireystila, itsetuntemus, läsnäolo ja kyky toimia paineen alla vaikuttavat siihen, miten johtaja kohtaa ihmisiä, johtaa vuorovaikutusta ja ohjaa yhteistä toimintaa.',
+      'DIAMONin valmennussarja tuo yhteen eri alojen asiantuntijoita kehittämään johtajan vaikuttavuutta, johtamisviestintää ja henkilökohtaista toimintakykyä kokonaisvaltaisesti.',
+      'Tavoitteena on syventää johtajan ymmärrystä omasta toiminnastaan ja kehittää käytännön valmiuksia vastata tämän päivän työelämän vaatimuksiin sekä johtaa itseään ja muita tietoisemmin ja tuloksellisemmin myös silloin, kun paine kasvaa.',
     ],
     format: [
       ['Asiantuntijuusvierailu', 'Vieraileva huippuasiantuntija tuo päivään oman alansa osaamisen.'],
@@ -220,9 +221,10 @@ const content: Record<Lang, Content> = {
     whyEyebrow: 'Why this series',
     whyTitle: "As the demands of leadership grow, a leader's personal capacity to perform has to grow with them.",
     whyText: [
-      'Leadership is continuous work in changing conditions. In the middle of uncertainty, growing responsibility and pressure, a leader must be able to think clearly, make decisions, meet people and build a shared direction.',
-      "How a leader recognises and regulates their own state affects the way they observe, listen, communicate and act. A leader's personal capacity to perform is also reflected in the people around them, in the team's atmosphere and in collective performance.",
-      'In this series, we examine a leader\'s capacity to perform holistically. We develop understanding of one\'s own actions and the practical readiness to lead oneself, interaction and others — even when the pressure rises.',
+      'The changing world of work places ever more varied demands on leaders. The ability to lead your own actions, think clearly, communicate with impact and build connection with others becomes especially important in the middle of uncertainty and pressure.',
+      "A leader's effectiveness is built from the combined force of several human capacities. Your own energy level, self-knowledge, presence and the ability to perform under pressure all affect how you meet people, lead interaction and guide collective action.",
+      "DIAMON's coaching series brings together experts from different fields to develop a leader's impact, leadership communication and personal capacity to perform in a holistic way.",
+      'The aim is to deepen a leader\'s understanding of their own actions and develop the practical readiness to meet the demands of today\'s working life — and to lead themselves and others more consciously and effectively, even when the pressure rises.',
     ],
     format: [
       ["Expert visit", 'A guest expert brings the knowledge of their field into the day.'],
