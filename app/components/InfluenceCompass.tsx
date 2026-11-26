@@ -44,6 +44,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
           .compass-q1 { padding-left: 18px !important; padding-bottom: 18px !important; }
           .compass-q2 { padding-right: 18px !important; padding-top: 18px !important; }
           .compass-q3 { padding-left: 18px !important; padding-top: 18px !important; }
+          .compass-center { width: 90px !important; height: 90px !important; }
         }
       `}</style>
       <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px', width: '100%' }}>
@@ -99,7 +100,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
               </div>
 
               {/* Center: ICA concentric circles */}
-              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '130px', height: '130px', zIndex: 2 }}>
+              <div className="compass-center" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '130px', height: '130px', zIndex: 2 }}>
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
                   <circle cx="100" cy="100" r="96" fill="#F4F3F1" stroke="#D8D5D0" strokeWidth="1.2"/>
                   <circle cx="100" cy="100" r="67" fill="#ECEAE7" stroke="#D8D5D0" strokeWidth="1.2"/>
