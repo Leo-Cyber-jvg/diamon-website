@@ -487,20 +487,21 @@ export default function FiHome() {
             </p>
           </div>
 
-          {/* ── ASIAKKAAT / LOGO ROW ── */}
-          <div style={{ borderTop: '1px solid var(--color-border)', padding: '32px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px', backgroundColor: 'var(--color-background)' }}>
-            <p style={{ fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Asiakkaita
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '48px', flexWrap: 'wrap' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/referenssit/jaaekiekkoliitto-leijona.png" alt="Suomen Jääkiekkoliitto" style={{ height: '48px', width: 'auto', opacity: 0.5 }} />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/referenssit/sdm.svg" alt="SDM" style={{ height: '28px', width: 'auto', opacity: 0.5 }} />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/referenssit/westport.png" alt="Westport Finland" style={{ height: '20px', width: 'auto', opacity: 0.5 }} />
-            </div>
-          </div>
+        </div>
+      </section>
+
+      {/* ── ASIAKKAAT / LOGO ROW ── */}
+      <section style={{ backgroundColor: '#F4F3F1', padding: '56px 48px' }}>
+        <p style={{ textAlign: 'center', fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', marginBottom: '40px', fontFamily: 'var(--font-body)' }}>
+          Asiakkaita
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '72px', flexWrap: 'wrap' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/jaaekiekkoliitto-leijona.png" alt="Suomen Jääkiekkoliitto" style={{ height: '72px', width: 'auto' }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/sdm.svg" alt="SDM" style={{ height: '44px', width: 'auto' }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/westport.png" alt="Westport Finland" style={{ height: '32px', width: 'auto' }} />
         </div>
       </section>
 
