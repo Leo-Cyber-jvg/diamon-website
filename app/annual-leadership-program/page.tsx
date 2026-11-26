@@ -100,10 +100,13 @@ export default function AnnualLeadershipProgramPage() {
               Long-term work with a personal coach enables the identification of strengths, examination of established ways of operating, and the practice of new capabilities as part of one&apos;s own work.
             </p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Coaching is built around the leader&apos;s individual development goals, real communication situations and the organisation&apos;s strategic needs. A personal coach walks alongside the leader throughout the full year.
+              The programme develops the leader&apos;s communication identity, strategic communication, storytelling and leading dialogue. Practical coaching extends from embodied presence and everyday interaction to demanding presentation, on-camera and media situations.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Coaching is built around the leader&apos;s individual development goals, real communication situations and the organisation&apos;s strategic needs.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The goal is to strengthen the leader&apos;s communication capability across different communication environments and interaction situations, and to develop the ability to lead more consciously, even when the pressure grows.
+              The goal is to strengthen the leader&apos;s communication capability and develop the ability to lead more consciously, even when the pressure grows.
             </p>
           </div>
           <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>

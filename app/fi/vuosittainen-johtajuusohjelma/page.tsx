@@ -96,10 +96,13 @@ export default function VuosittainenJohtajuusohjelmePage() {
               Pitkäjänteinen työskentely henkilökohtaisen valmentajan kanssa mahdollistaa omien vahvuuksien tunnistamisen, totuttujen toimintatapojen tarkastelun ja uusien valmiuksien harjoittamisen osana omaa työtä.
             </p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Valmennus rakentuu johtajan yksilöllisten kehitystavoitteiden, todellisten viestintätilanteiden ja organisaation strategisten tarpeiden ympärille. Henkilökohtainen valmentaja kulkee johtajan rinnalla koko vuoden ajan.
+              Valmennuksessa kehitetään johtajan viestijäidentiteettiä, strategista viestintää, tarinankerrontaa ja dialogin johtamista. Käytännön harjoittelu ulottuu kehollisesta läsnäolosta ja arjen vuorovaikutustilanteista vaativiin esiintymis-, kamera- ja mediatilanteisiin.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Valmennus rakentuu johtajan yksilöllisten kehitystavoitteiden, todellisten viestintätilanteiden ja organisaation strategisten tarpeiden ympärille.
             </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Tavoitteena on vahvistaa johtajan viestinnällistä toimintakykyä erilaisissa viestintäympäristöissä ja vuorovaikutustilanteissa sekä kehittää kykyä johtaa tietoisemmin myös silloin, kun paine kasvaa.
+              Tavoitteena on vahvistaa johtajan viestinnällistä toimintakykyä sekä kehittää kykyä johtaa tietoisemmin myös silloin, kun paine kasvaa.
             </p>
           </div>
           <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>
