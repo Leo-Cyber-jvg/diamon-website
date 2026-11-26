@@ -10,8 +10,8 @@ const fiServices = [
   { href: '/fi/johtamisviestinnan-intensive', label: 'Leadership Communication Intensive' },
   { href: '/fi/thought-leader-studio', label: 'Thought Leader Studio' },
   { href: '/fi/vaikuttavuussessio', label: 'Impact Session' },
-  { href: '/fi/keynote', label: 'Keynote-puheenvuorot' },
-  { href: '/fi/johtajavaikuttavuus', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
+  { href: '/fi/keynotes', label: 'Keynote-puheenvuorot' },
+  { href: '/fi/valmennussarja', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
 ]
 
 const enServices = [
@@ -25,7 +25,7 @@ const enServices = [
 
 const fiIndividuals = [
   { href: '/fi/vaikuttavuussessio', label: 'Impact Session' },
-  { href: '/fi/johtajavaikuttavuus', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
+  { href: '/fi/valmennussarja', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
 ]
 
 const enIndividuals = [
