@@ -138,22 +138,26 @@ export default function AnnualLeadershipProgramPage() {
           Program themes
         </p>
         <div style={{ border: '1px solid var(--color-border)' }}>
-          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { title: 'Leadership communication identity', body: 'Identifying your own communication identity, personal strengths and ways of operating. Developing the ability to draw on your personality and expertise effectively across different professional roles.' },
-              { title: 'Strategic communication and storytelling', body: 'Structuring your thinking, clarifying your message and building compelling narratives. Developing the ability to make complex things understandable, create shared direction and communicate in line with the organisation\'s strategic goals.' },
-              { title: 'Presence across communication environments', body: 'Personal coaching for different audiences, contexts and channels. Speeches, presentations, on-camera performance, media interviews and public stakeholder situations.' },
-              { title: 'Interaction and leading dialogue', body: 'Developing listening, situational awareness and interpersonal communication. Practising the ability to meet people, lead conversation, build trust and act constructively even in challenging interactions.' },
-              { title: 'Presence and performance under pressure', body: 'Psychophysical practice developing physical presence, focus and self-regulation. The goal is to strengthen the ability to think, communicate and act purposefully even as pressure increases.' },
-              { title: 'Preparation and developing your own practice', body: 'Building personal preparation and practice methods into the leader\'s everyday work. Simulating real communication situations, observing your own performance, feedback and systematic tracking of development.' },
-            ].map(({ title, body }) => (
-              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+              { n: '01', title: 'Leadership communication identity', body: 'Self-knowledge, personal strengths and ways of operating.' },
+              { n: '02', title: 'Strategic communication and storytelling', body: 'Structuring thinking, narrative and shared direction.' },
+              { n: '03', title: 'Presence across communication environments', body: 'Audiences, camera, media and stakeholders.' },
+              { n: '04', title: 'Interaction and leading dialogue', body: 'Listening, meeting people and building trust.' },
+              { n: '05', title: 'Presence and capability under pressure', body: 'Embodied presence, focus and self-regulation.' },
+              { n: '06', title: 'Preparation and developing your own practice', body: 'Simulations, practice, feedback and tracking development.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
                 <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
               </div>
             ))}
           </div>
         </div>
+        <p className="text-sm mt-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', fontStyle: 'italic', lineHeight: 1.65 }}>
+          The emphasis of the programme themes is built around each leader&apos;s individual development goals, professional context and the organisation&apos;s needs.
+        </p>
       </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -168,10 +172,10 @@ export default function AnnualLeadershipProgramPage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { n: '01', title: 'Consistent and convincing', body: 'Your communication carries the same authority and clarity in every context, not just when you are prepared.' },
-              { n: '02', title: 'Strategically aligned', body: 'Your communication is purposeful and repeatable, not random. Every act connected to your leadership role and the organisation\'s direction.' },
-              { n: '03', title: 'Purposeful and business-driven', body: 'Communication that supports and drives the business, not a presentational skill, but a strategic capability.' },
-              { n: '04', title: 'Developing and measurable', body: 'A defined communication profile and operating model. Continuous growth, not a one-off effort.' },
+              { n: '01', title: 'Consistent and convincing communication', body: 'Your communication capability, clarity and personal impact strengthen across different communication environments and interaction situations.' },
+              { n: '02', title: 'Strategically aligned communication', body: 'Your communication is purposeful and connected to your leadership role and your organisation\'s strategic direction. You develop your ability to build shared understanding and guide action through communication.' },
+              { n: '03', title: 'Stronger capability', body: 'Your ability to present, meet people and lead interaction grows stronger. You can draw on your own expertise, thinking and personality effectively even in demanding and high-pressure situations.' },
+              { n: '04', title: 'Long-term and measurable development', body: 'A clear communication identity, a personal operating model and methods for developing your own communication. Development is assessed systematically throughout the year and the ways of working you learn continue to serve you after the programme.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>

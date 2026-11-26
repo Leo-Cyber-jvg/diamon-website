@@ -134,22 +134,26 @@ export default function VuosittainenJohtajuusohjelmePage() {
           Ohjelman teemat
         </p>
         <div style={{ border: '1px solid var(--color-border)' }}>
-          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { title: 'Johtajan viestijäidentiteetti', body: 'Oman viestijäidentiteetin, henkilökohtaisten vahvuuksien ja toimintatapojen tunnistaminen. Kehitetään kykyä hyödyntää omaa persoonaa ja asiantuntemusta vaikuttavasti erilaisissa ammatillisissa rooleissa.' },
-              { title: 'Strateginen viestintä ja tarinankerronta', body: 'Oman ajattelun jäsentäminen, viestin kirkastaminen ja vaikuttavien narratiivien rakentaminen. Kehitetään kykyä tehdä monimutkaisista asioista ymmärrettäviä, luoda yhteistä suuntaa ja viestiä organisaation strategisten tavoitteiden mukaisesti.' },
-              { title: 'Esiintyminen eri viestintäympäristöissä', body: 'Henkilökohtaista esiintymisvalmennusta erilaisiin yleisöihin, tilanteisiin ja viestintäkanaviin. Puheenvuorot, esitykset, kameraesiintyminen, mediahaastattelut ja julkiset sidosryhmätilanteet.' },
-              { title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuuntelemisen, tilannetajun ja henkilökohtaisen vuorovaikutuskyvyn kehittäminen. Harjoitellaan kykyä kohdata ihmisiä, johtaa keskustelua, rakentaa luottamusta ja toimia rakentavasti myös haastavissa vuorovaikutustilanteissa.' },
-              { title: 'Läsnäolo ja toimintakyky paineessa', body: 'Psykofyysistä harjoittelua, jossa kehitetään kehollista läsnäoloa, keskittymistä ja oman toiminnan säätelyä. Tavoitteena on vahvistaa kykyä ajatella, viestiä ja toimia tarkoituksenmukaisesti myös paineen kasvaessa.' },
-              { title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Henkilökohtaisten valmistautumis- ja harjoittelumenetelmien rakentaminen osaksi johtajan työtä. Todellisten viestintätilanteiden simulointi, oman toiminnan havainnointi, palaute ja kehityksen järjestelmällinen seuranta.' },
-            ].map(({ title, body }) => (
-              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+              { n: '01', title: 'Johtajan viestijäidentiteetti', body: 'Itsetuntemus, persoona ja henkilökohtaiset vahvuudet.' },
+              { n: '02', title: 'Strateginen viestintä ja tarinankerronta', body: 'Ajattelun jäsentäminen, narratiivi ja yhteinen suunta.' },
+              { n: '03', title: 'Esiintyminen eri viestintäympäristöissä', body: 'Yleisöt, kamera, media ja sidosryhmät.' },
+              { n: '04', title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuunteleminen, kohtaaminen ja luottamus.' },
+              { n: '05', title: 'Läsnäolo ja toimintakyky paineessa', body: 'Kehollisuus, keskittyminen ja itsesäätely.' },
+              { n: '06', title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Simulaatiot, harjoittelu, palaute ja kehityksen seuranta.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
                 <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
               </div>
             ))}
           </div>
         </div>
+        <p className="text-sm mt-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', fontStyle: 'italic', lineHeight: 1.65 }}>
+          Valmennuksen teemojen painotukset rakentuvat johtajan yksilöllisten kehitystavoitteiden, ammatillisen toimintaympäristön ja organisaation tarpeiden pohjalta.
+        </p>
       </section>
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -164,10 +168,10 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { n: '01', title: 'Johdonmukaista ja vakuuttavaa', body: 'Viestintäsi kantaa saman auktoriteetin ja selkeyden jokaisessa ympäristössä, ei vain silloin, kun olet valmistautunut.' },
-              { n: '02', title: 'Strategisesti linjattua ja toistettavaa', body: 'Viestintä on tavoitteellista, ei sattumanvaraista. Jokainen teko kytkeytyy johtajuusrooliisi ja organisaation suuntaan.' },
-              { n: '03', title: 'Tavoitteellista ja toimintakykyistä', body: 'Viestintä tukee liiketoimintaa, ei esiintymistaito, vaan strateginen kyvykkyys.' },
-              { n: '04', title: 'Kehittyvää ja mitattavaa', body: 'Määritelty viestintäprofiili ja toimintamalli. Jatkuva kasvu, ei kertaluonteinen ponnistus.' },
+              { n: '01', title: 'Johdonmukainen ja vakuuttava viestintä', body: 'Viestinnällinen toimintakykysi, selkeytesi ja henkilökohtainen vaikuttavuutesi vahvistuvat erilaisissa viestintäympäristöissä ja vuorovaikutustilanteissa.' },
+              { n: '02', title: 'Strategisesti linjattu viestintä', body: 'Viestintäsi on tavoitteellista ja kytkeytyy johtajarooliisi sekä organisaatiosi strategiseen suuntaan. Kehität kykyäsi rakentaa yhteistä ymmärrystä ja ohjata toimintaa viestinnän keinoin.' },
+              { n: '03', title: 'Vahvempi toimintakyky', body: 'Kykysi esiintyä, kohdata ihmisiä ja johtaa vuorovaikutusta vahvistuu. Pystyt hyödyntämään omaa osaamistasi, ajatteluasi ja persoonaasi vaikuttavasti myös vaativissa ja paineisissa tilanteissa.' },
+              { n: '04', title: 'Pitkäjänteinen ja mitattava kehitys', body: 'Selkeä viestijäidentiteetti, henkilökohtainen toimintamalli ja menetelmät oman viestinnän kehittämiseen. Kehitystä arvioidaan järjestelmällisesti koko vuoden ajan ja opitut toimintatavat palvelevat myös valmennusohjelman jälkeen.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
