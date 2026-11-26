@@ -136,12 +136,12 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { title: 'Strategia esiintymiseen', body: 'Viestinnän rooli suhteessa liiketoiminnan tavoitteisiin, ja miten viestintäsi on linjassa organisaation suunnan kanssa.' },
-              { title: 'Erottuminen markkinassa', body: 'Yksilölliset vahvuudet ja kehityskohteet, viestintäprofiilin rakentaminen, joka on tunnistettava, uskottava ja omaääninen.' },
-              { title: 'Esiintymisprofiili ja viestintäidentiteetti', body: 'Henkilökohtaisen ja julkisen profiilin tasapaino, johdonmukainen viestijäidentiteetti kaikilla alustoilla ja tilanteissa.' },
-              { title: 'Strateginen tarinankerronta', body: 'Narratiivien rakentaminen, jotka liikuttavat ihmisiä, datasta päätöksiin, monimutkaisuudesta selkeyteen.' },
-              { title: 'Kokonaisprosessi: valmistautuminen, esiintyminen, jälkityö', body: 'Toistettava prosessi: strateginen valmistautuminen, suoritus ja jälkianalyysi jokaiseen merkittävään viestintähetkeen.' },
-              { title: 'Strategiset tavoitteet', body: 'Laadulliset ja viestinnälliset tavoitteet, arviointikriteerit, viestintä, joka tukee ja ajaa liiketoimintaa.' },
+              { title: 'Johtajan viestijäidentiteetti', body: 'Oman viestijäidentiteetin, henkilökohtaisten vahvuuksien ja toimintatapojen tunnistaminen. Kehitetään kykyä hyödyntää omaa persoonaa ja asiantuntemusta vaikuttavasti erilaisissa ammatillisissa rooleissa.' },
+              { title: 'Strateginen viestintä ja tarinankerronta', body: 'Oman ajattelun jäsentäminen, viestin kirkastaminen ja vaikuttavien narratiivien rakentaminen. Kehitetään kykyä tehdä monimutkaisista asioista ymmärrettäviä, luoda yhteistä suuntaa ja viestiä organisaation strategisten tavoitteiden mukaisesti.' },
+              { title: 'Esiintyminen eri viestintäympäristöissä', body: 'Henkilökohtaista esiintymisvalmennusta erilaisiin yleisöihin, tilanteisiin ja viestintäkanaviin. Puheenvuorot, esitykset, kameraesiintyminen, mediahaastattelut ja julkiset sidosryhmätilanteet.' },
+              { title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuuntelemisen, tilannetajun ja henkilökohtaisen vuorovaikutuskyvyn kehittäminen. Harjoitellaan kykyä kohdata ihmisiä, johtaa keskustelua, rakentaa luottamusta ja toimia rakentavasti myös haastavissa vuorovaikutustilanteissa.' },
+              { title: 'Läsnäolo ja toimintakyky paineessa', body: 'Psykofyysistä harjoittelua, jossa kehitetään kehollista läsnäoloa, keskittymistä ja oman toiminnan säätelyä. Tavoitteena on vahvistaa kykyä ajatella, viestiä ja toimia tarkoituksenmukaisesti myös paineen kasvaessa.' },
+              { title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Henkilökohtaisten valmistautumis- ja harjoittelumenetelmien rakentaminen osaksi johtajan työtä. Todellisten viestintätilanteiden simulointi, oman toiminnan havainnointi, palaute ja kehityksen järjestelmällinen seuranta.' },
             ].map(({ title, body }) => (
               <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>

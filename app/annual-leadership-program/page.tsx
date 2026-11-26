@@ -140,12 +140,12 @@ export default function AnnualLeadershipProgramPage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { title: 'Strategy into communication', body: 'The role of communication in relation to business objectives, and how your communication aligns with the organisation\'s direction.' },
-              { title: 'Standing out', body: 'Individual strengths and development areas, building a communication profile that is distinctive, credible and yours.' },
-              { title: 'Communication identity', body: 'The balance between personal and public profile, a consistent communication identity across all platforms and contexts.' },
-              { title: 'Strategic storytelling', body: 'Constructing narratives that move people, from data to decisions, from complexity to clarity.' },
-              { title: 'Preparation, performance, evaluation', body: 'A repeatable process: strategic preparation, performance and post-analysis for every significant communication moment.' },
-              { title: 'Communication aligned with business', body: 'Qualitative and communicative goals, evaluation criteria, communication that supports and drives the business.' },
+              { title: 'Leadership communication identity', body: 'Identifying your own communication identity, personal strengths and ways of operating. Developing the ability to draw on your personality and expertise effectively across different professional roles.' },
+              { title: 'Strategic communication and storytelling', body: 'Structuring your thinking, clarifying your message and building compelling narratives. Developing the ability to make complex things understandable, create shared direction and communicate in line with the organisation\'s strategic goals.' },
+              { title: 'Presence across communication environments', body: 'Personal coaching for different audiences, contexts and channels. Speeches, presentations, on-camera performance, media interviews and public stakeholder situations.' },
+              { title: 'Interaction and leading dialogue', body: 'Developing listening, situational awareness and interpersonal communication. Practising the ability to meet people, lead conversation, build trust and act constructively even in challenging interactions.' },
+              { title: 'Presence and performance under pressure', body: 'Psychophysical practice developing physical presence, focus and self-regulation. The goal is to strengthen the ability to think, communicate and act purposefully even as pressure increases.' },
+              { title: 'Preparation and developing your own practice', body: 'Building personal preparation and practice methods into the leader\'s everyday work. Simulating real communication situations, observing your own performance, feedback and systematic tracking of development.' },
             ].map(({ title, body }) => (
               <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
                 <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
