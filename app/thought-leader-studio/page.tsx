@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type React from 'react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -171,12 +172,13 @@ export default function ThoughtLeaderStudioPage() {
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {[
-              { n: '01', title: 'Compelling and consistent communication', body: 'Leadership and experts communicate compellingly and consistently, across all channels.' },
-              { n: '02', title: 'Expertise and leadership made visible', body: 'The organisation\'s expertise and leadership become visible in a way that builds credibility.' },
-              { n: '03', title: 'Visibility becomes business', body: 'Strategic visibility builds trust with clients, investors and partners.' },
-              { n: '04', title: 'Measurable and strategically guided', body: 'Visibility becomes measurable, continuous and strategically guided, not random.' },
-            ].map(({ n, title, body }) => (
+              { n: '01', title: 'Compelling and consistent communication', body: 'Leadership and experts communicate compellingly and consistently, across all channels.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="10" width="3" height="8" rx="1" fill="currentColor"/><rect x="8" y="6" width="3" height="16" rx="1" fill="currentColor"/><rect x="13" y="3" width="3" height="22" rx="1" fill="currentColor"/><rect x="18" y="6" width="3" height="16" rx="1" fill="currentColor"/><rect x="23" y="10" width="3" height="8" rx="1" fill="currentColor"/></svg> },
+              { n: '02', title: 'Expertise and leadership made visible', body: 'The organisation\'s expertise and leadership become visible in a way that builds credibility.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="10" r="5" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M6 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M20 6c1.5 0.5 2.5 2 2.5 3.5S21.5 13 20 13.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M22 18c2 1 3.5 3 3.5 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg> },
+              { n: '03', title: 'Visibility becomes business', body: 'Strategic visibility builds trust with clients, investors and partners.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="4,20 10,13 15,16 22,8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/><polyline points="18,8 22,8 22,12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg> },
+              { n: '04', title: 'Measurable and strategically guided', body: 'Visibility becomes measurable, continuous and strategically guided, not random.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="16" width="4" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="10" y="11" width="4" height="13" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="16" y="6" width="4" height="18" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><polyline points="22,10 25,7 25,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/><line x1="22" y1="4" x2="25" y2="7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="25" y1="7" x2="22" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> },
+            ].map(({ n, title, body, icon }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
                 <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>

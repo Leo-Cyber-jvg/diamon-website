@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type React from 'react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -170,13 +171,14 @@ export default function ThoughtLeaderStudioFiPage() {
         </p>
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti, kaikissa kanavissa.' },
-              { n: '02', title: 'Asiantuntijuus ja johtajuus näkyväksi', body: 'Yrityksen asiantuntijuus ja johtajuus tulevat näkyviksi tavalla, joka rakentaa uskottavuutta.' },
-              { n: '03', title: 'Näkyvyys muuttuu liiketoiminnaksi', body: 'Strateginen näkyvyys rakentaa luottamusta asiakkaisiin, sijoittajiin ja yhteistyökumppaneihin.' },
-              { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua, ei satunnaista.' },
-            ].map(({ n, title, body }) => (
+            {([
+              { n: '01', title: 'Vakuuttava ja johdonmukainen viestintä', body: 'Johto ja asiantuntijat viestivät vakuuttavasti ja johdonmukaisesti, kaikissa kanavissa.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="12" x2="4" y2="12"/><line x1="7" y1="8" x2="7" y2="16"/><line x1="10" y1="5" x2="10" y2="19"/><line x1="13" y1="8" x2="13" y2="16"/><line x1="16" y1="11" x2="16" y2="13"/><line x1="19" y1="10" x2="19" y2="14"/></svg> },
+              { n: '02', title: 'Asiantuntijuus ja johtajuus näkyväksi', body: 'Yrityksen asiantuntijuus ja johtajuus tulevat näkyviksi tavalla, joka rakentaa uskottavuutta.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 7h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H5V7z"/><path d="M17 7h-2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h2V7z"/><path d="M5 12v3"/><path d="M19 12v3"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/><path d="M9 15a3 3 0 0 0 6 0"/></svg> },
+              { n: '03', title: 'Näkyvyys muuttuu liiketoiminnaksi', body: 'Strateginen näkyvyys rakentaa luottamusta asiakkaisiin, sijoittajiin ja yhteistyökumppaneihin.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="3,17 9,10 13,14 21,5"/><polyline points="17,5 21,5 21,9"/></svg> },
+              { n: '04', title: 'Mitattavaa ja strategisesti ohjattua', body: 'Näkyvyydestä tulee mitattavaa, jatkuvaa ja strategisesti ohjattua, ei satunnaista.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="12" width="4" height="9"/><rect x="10" y="7" width="4" height="14"/><rect x="17" y="3" width="4" height="18"/><polyline points="5,9 12,4 19,1"/><polyline points="16,1 19,1 19,4"/></svg> },
+            ] as { n: string; title: string; body: string; icon: React.ReactNode }[]).map(({ n, title, body, icon }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
+                <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
                 <h3 className="text-xl font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
