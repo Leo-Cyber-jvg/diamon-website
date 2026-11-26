@@ -141,8 +141,8 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
 
             <p style={{ fontSize: '13px', color: '#5A5450', fontFamily: 'var(--font-body)', lineHeight: 1.75 }}>
               {isFi
-                ? 'Autamme ihmisiä kehittämään omaa viestintäänsä ja vaikuttavuuttaan tavalla, joka vahvistaa koko organisaation toimintakykyä.'
-                : 'We help people develop their communication and impact in a way that strengthens the performance of the entire organisation.'}
+                ? 'Autamme yksilöitä kehittämään omaa viestintäänsä ja vaikuttavuuttaan tavalla, joka vahvistaa koko organisaation toimintakykyä.'
+                : 'We help individuals develop their communication and impact in a way that strengthens the performance of the entire organisation.'}
             </p>
             {showLink && (
               <a
