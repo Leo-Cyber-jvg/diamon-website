@@ -14,9 +14,12 @@ export default function VaikuttavuussessioPage() {
       {/* Hero */}
       <section
         className="px-6 pt-40 pb-24"
-        style={{ backgroundColor: 'var(--color-blue)', color: '#fff' }}
+        style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/impact-session-hero.png" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', filter: 'brightness(0.35) saturate(0.5)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.4) 100%)' }} />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
             className="text-xs tracking-[0.3em] uppercase mb-10"
             style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)' }}
