@@ -628,7 +628,7 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
         <div className="grid md:grid-cols-2 gap-12 md:gap-20">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-4" style={eyebrow}>{t.whyEyebrow}</p>
-            <h2 className="text-2xl md:text-4xl font-light" style={{ ...serif, color: 'var(--color-text)', lineHeight: 1.2 }}>{t.whyTitle}</h2>
+            <h2 className="text-2xl md:text-4xl font-light" style={{ ...serif, color: '#5656D6', lineHeight: 1.2 }}>{t.whyTitle}</h2>
           </div>
           <div className="flex flex-col gap-5 md:pt-10">
             {t.whyText.map((p) => (

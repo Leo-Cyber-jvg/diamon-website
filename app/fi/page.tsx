@@ -47,7 +47,7 @@ export default function FiHome() {
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)', flexShrink: 0 }}>
-              Varaa kartoituskeskustelu
+              Ota yhteyttä
             </Link>
 
             {/* Ajankohtaista box */}
@@ -569,7 +569,7 @@ export default function FiHome() {
           </div>
           <div className="flex flex-col gap-3 shrink-0">
             <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)' }}>
-              Varaa kartoituskeskustelu
+              Ota yhteyttä
             </Link>
             <Link href="/fi/organisaatioille" className="btn-outline-white">
               Tutustu palveluihin
