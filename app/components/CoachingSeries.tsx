@@ -660,10 +660,10 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
       </section>
 
       {/* Coaching days */}
-      <section className="px-6 pb-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <section className="px-6 pt-24 pb-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="mb-10">
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={eyebrow}>{t.conceptsEyebrow}</p>
-          <h2 className="text-2xl md:text-4xl font-light" style={{ ...serif, color: 'var(--color-text)', lineHeight: 1.2 }}>{t.conceptsTitle}</h2>
+          <h2 className="text-2xl md:text-4xl font-light" style={{ ...serif, color: 'var(--color-blue)', lineHeight: 1.2 }}>{t.conceptsTitle}</h2>
         </div>
 
         <FeaturedDay c={first} t={t} />
