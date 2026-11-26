@@ -138,6 +138,26 @@ export default function AnnualLeadershipProgramPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Program themes
         </p>
+        {/* Detailed 3-column */}
+        <div style={{ border: '1px solid var(--color-border)', marginBottom: '32px' }}>
+          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { title: 'Leadership communication identity', body: 'Identifying your own communication identity, personal strengths and ways of operating. Developing the ability to draw on your personality and expertise effectively across different professional roles.' },
+              { title: 'Strategic communication and storytelling', body: 'Structuring your thinking, clarifying your message and building compelling narratives. Developing the ability to make complex things understandable, create shared direction and communicate in line with the organisation\'s strategic goals.' },
+              { title: 'Presence across communication environments', body: 'Personal coaching for different audiences, contexts and channels. Speeches, presentations, on-camera performance, media interviews and public stakeholder situations.' },
+              { title: 'Interaction and leading dialogue', body: 'Developing listening, situational awareness and interpersonal communication. Practising the ability to meet people, lead conversation, build trust and act constructively even in challenging interactions.' },
+              { title: 'Presence and capability under pressure', body: 'Psychophysical practice developing physical presence, focus and self-regulation. The goal is to strengthen the ability to think, communicate and act purposefully even as pressure increases.' },
+              { title: 'Preparation and developing your own practice', body: 'Building personal preparation and practice methods into the leader\'s everyday work. Simulating real communication situations, observing your own performance, feedback and systematic tracking of development.' },
+            ].map(({ title, body }) => (
+              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Compact 2-column with icons */}
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
             {([
