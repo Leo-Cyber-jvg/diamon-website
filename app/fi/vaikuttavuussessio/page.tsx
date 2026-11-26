@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import type React from 'react'
 import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
@@ -8,6 +7,13 @@ export const metadata: Metadata = {
   description:
     'Intensiivinen yksilöcoachingsessio, joka valmistaa johtajan tai asiantuntijan onnistumaan tietyssä korkean panoksen viestintätilanteessa. 3 tuntia. Etä-, lähi- tai studioformaatti.',
 }
+
+const mitaLahteItems = [
+  { n: '01', title: 'Selkeä ja vakuuttava rakenne', body: 'Viestiarkkitehtuuri, joka on looginen, mieleenpainuva ja tavoitteesi mukainen.', icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="18" width="20" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="4" y="12" width="14" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="4" y="6" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>) },
+  { n: '02', title: 'Vahvempi varmuus ja hallittu läsnäolo', body: 'Tekniikat ja harjoittelu, jotka muuntavat valmistautumisen suoritukseksi.', icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="9" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M6 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M20 7l1.5 1.5L24 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>) },
+  { n: '03', title: 'Liiketoimintalähtöinen viesti', body: 'Viestintä asemoidaan ammatillisen roolisi ja organisaation strategisen suunnan mukaan.', icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="9" stroke="currentColor" strokeWidth="1.5" fill="none"/><circle cx="14" cy="14" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="14" y1="5" x2="14" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="14" y1="18" x2="14" y2="23" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="5" y1="14" x2="10" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="18" y1="14" x2="23" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>) },
+  { n: '04', title: 'Konkreettinen suunnitelma juuri sinun tilanteellesi', body: 'Täsmällinen, toimintakelpoinen kehys juuri siihen hetkeen, johon olet valmistautumassa.', icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="4" width="18" height="20" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="9" y1="10" x2="19" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="9" y1="14" x2="19" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="9" y1="18" x2="14" y2="18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>) },
+]
 
 export default function VaikuttavuussessioPage() {
   return (
@@ -156,12 +162,7 @@ export default function VaikuttavuussessioPage() {
           Mitä mukaan lähtee
         </p>
         <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {([
-            { n: '01', title: 'Selkeä ja vakuuttava rakenne', body: 'Viestiarkkitehtuuri, joka on looginen, mieleenpainuva ja tavoitteesi mukainen.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="18" width="20" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="4" y="12" width="14" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="4" y="6" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg> },
-            { n: '02', title: 'Vahvempi varmuus ja hallittu läsnäolo', body: 'Tekniikat ja harjoittelu, jotka muuntavat valmistautumisen suoritukseksi.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="9" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M6 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M20 7l1.5 1.5L24 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-            { n: '03', title: 'Liiketoimintalähtöinen viesti', body: 'Viestintä asemoidaan ammatillisen roolisi ja organisaation strategisen suunnan mukaan.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="9" stroke="currentColor" strokeWidth="1.5" fill="none"/><circle cx="14" cy="14" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="14" y1="5" x2="14" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="14" y1="18" x2="14" y2="23" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="5" y1="14" x2="10" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="18" y1="14" x2="23" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> },
-            { n: '04', title: 'Konkreettinen suunnitelma juuri sinun tilanteellesi', body: 'Täsmällinen, toimintakelpoinen kehys juuri siihen hetkeen, johon olet valmistautumassa.', icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="4" width="18" height="20" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="9" y1="10" x2="19" y2="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="9" y1="14" x2="19" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="9" y1="18" x2="14" y2="18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> },
-          ] as { n: string; title: string; body: string; icon: React.ReactNode }[]).map(({ n, title, body, icon }) => (
+          {mitaLahteItems.map(({ n, title, body, icon }) => (
             <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
               <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
               <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>

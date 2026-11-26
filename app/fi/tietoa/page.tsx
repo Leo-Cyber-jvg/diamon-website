@@ -8,6 +8,33 @@ export const metadata: Metadata = {
     'DIAMON kehittää johtamisviestinnän toimintakykyä, auttaa johtajia ja organisaatioita muuttamaan osaamisen ja ajattelun näkyväksi, vaikuttavaksi viestinnäksi.',
 }
 
+const lahtokohdatItems = [
+  {
+    number: '01',
+    title: 'Johtamisviestintä strategisena kilpailuetuna',
+    body: 'Johtajan kyky viestiä, vaikuttaa ja rakentaa luottamusta on keskeinen osa organisaation toimintakykyä. Asiantuntemus ja strateginen ajattelu luovat arvoa, kun ne välittyvät ymmärrettävästi, synnyttävät yhteistä näkemystä ja ohjaavat toimintaa.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="10" stroke="currentColor" strokeWidth="1.5" fill="none"/><circle cx="14" cy="14" r="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="14" y1="4" x2="14" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="14" y1="20" x2="14" y2="24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="4" y1="14" x2="8" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="20" y1="14" x2="24" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="16" y1="12" x2="19" y2="9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+  {
+    number: '02',
+    title: 'Inhimillinen etulyöntiasema tekoälyn aikakaudella',
+    body: 'Tekoäly ja digitaalinen murros muuttavat tapaamme tuottaa tietoa, viestiä ja tehdä työtä. Samalla henkilökohtainen vuorovaikutus, läsnäolo ja kyky kohdata ihmisiä säilyvät johtamisen keskeisinä taitoina. Vaikuttava viestintä edellyttää selkeyttä, tilannetajua ja kykyä rakentaa yhteys vastaanottajaan, kasvokkain, digitaalisilla alustoilla ja erilaisten yleisöjen edessä.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 4C9.03 4 5 8.03 5 13c0 2.5 1.02 4.77 2.66 6.41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M14 4c4.97 0 9 4.03 9 9 0 2.5-1.02 4.77-2.66 6.41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M9 13c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.38-.56 2.63-1.46 3.54" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M11.5 13c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .69-.28 1.31-.73 1.77" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M14 15.5v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M7 20.5c1.5 1.5 3.5 2.5 7 2.5s5.5-1 7-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg>),
+  },
+  {
+    number: '03',
+    title: 'Osaamisesta vaikuttavuuteen',
+    body: 'DIAMONin lähtökohtana on havainto, että yksilön osaaminen ja henkilökohtainen potentiaali eivät aina välity täysimääräisesti hänen viestinnässään. Kehitämme johtajien ja asiantuntijoiden viestinnällistä toimintakykyä, jotta heidän ajattelunsa, osaamisensa ja ammatillinen identiteettinsä näkyvät vaikuttavammin arjen johtamis- ja vuorovaikutustilanteissa.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="14" x2="5" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="5" y1="14" x2="8" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><line x1="8" y1="8" x2="11" y2="20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><line x1="11" y1="20" x2="14" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><line x1="14" y1="11" x2="17" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><line x1="17" y1="17" x2="20" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><line x1="20" y1="14" x2="26" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+  {
+    number: '04',
+    title: 'Tavoitteellista ja käytännönläheistä kehittämistä',
+    body: 'DIAMONin valmennukset rakentuvat asiakkaan todellisten viestintätilanteiden ja liiketoiminnallisten tavoitteiden ympärille. ICA Framework™ yhdistää viestijän identiteetin, viestin rakentamisen ja käytännön toiminnan järjestelmälliseksi kehittämiskokonaisuudeksi. Tavoitteena on vahvistaa viestinnällistä toimintakykyä, joka tukee yksilön vaikuttavuutta ja organisaation yhteistä onnistumista.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="14,3 24,10 24,18 14,25 4,18 4,10" stroke="currentColor" strokeWidth="1.5" fill="none"/><polygon points="14,8 20,12 20,16 14,20 8,16 8,12" stroke="currentColor" strokeWidth="1.5" fill="none"/><polygon points="14,13 17,15 14,17 11,15" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>),
+  },
+]
+
 export default function TietoaPage() {
   return (
     <>
@@ -166,33 +193,13 @@ export default function TietoaPage() {
         </h2>
         <div style={{ border: '1px solid var(--color-border)' }}>
         <div className="grid md:grid-cols-2" style={{ gap: '1px', backgroundColor: 'var(--color-border)' }}>
-          {[
-            {
-              number: '01',
-              title: 'Johtamisviestintä strategisena kilpailuetuna',
-              body: 'Johtajan kyky viestiä, vaikuttaa ja rakentaa luottamusta on keskeinen osa organisaation toimintakykyä. Asiantuntemus ja strateginen ajattelu luovat arvoa, kun ne välittyvät ymmärrettävästi, synnyttävät yhteistä näkemystä ja ohjaavat toimintaa.',
-            },
-            {
-              number: '02',
-              title: 'Inhimillinen etulyöntiasema tekoälyn aikakaudella',
-              body: 'Tekoäly ja digitaalinen murros muuttavat tapaamme tuottaa tietoa, viestiä ja tehdä työtä. Samalla henkilökohtainen vuorovaikutus, läsnäolo ja kyky kohdata ihmisiä säilyvät johtamisen keskeisinä taitoina. Vaikuttava viestintä edellyttää selkeyttä, tilannetajua ja kykyä rakentaa yhteys vastaanottajaan, kasvokkain, digitaalisilla alustoilla ja erilaisten yleisöjen edessä.',
-            },
-            {
-              number: '03',
-              title: 'Osaamisesta vaikuttavuuteen',
-              body: 'DIAMONin lähtökohtana on havainto, että yksilön osaaminen ja henkilökohtainen potentiaali eivät aina välity täysimääräisesti hänen viestinnässään. Kehitämme johtajien ja asiantuntijoiden viestinnällistä toimintakykyä, jotta heidän ajattelunsa, osaamisensa ja ammatillinen identiteettinsä näkyvät vaikuttavammin arjen johtamis- ja vuorovaikutustilanteissa.',
-            },
-            {
-              number: '04',
-              title: 'Tavoitteellista ja käytännönläheistä kehittämistä',
-              body: 'DIAMONin valmennukset rakentuvat asiakkaan todellisten viestintätilanteiden ja liiketoiminnallisten tavoitteiden ympärille. ICA Framework™ yhdistää viestijän identiteetin, viestin rakentamisen ja käytännön toiminnan järjestelmälliseksi kehittämiskokonaisuudeksi. Tavoitteena on vahvistaa viestinnällistä toimintakykyä, joka tukee yksilön vaikuttavuutta ja organisaation yhteistä onnistumista.',
-            },
-          ].map(({ number, title, body }) => (
+          {lahtokohdatItems.map(({ number, title, body, icon }) => (
             <div
               key={number}
               className="p-8 flex flex-col gap-4"
               style={{ backgroundColor: 'var(--color-surface)' }}
             >
+              <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
               <span
                 className="text-xs tracking-widest"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}

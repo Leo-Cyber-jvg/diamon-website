@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import type React from 'react'
 import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
@@ -18,7 +17,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
         style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/aristoteles-hero.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(0.3) saturate(0.4)' }} />
+        <img src="/alp-hero.png" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', filter: 'brightness(0.35) saturate(0.5)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.4) 100%)' }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
@@ -147,7 +146,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               { n: '04', title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuunteleminen, kohtaaminen ja luottamus.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 7h10a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H7l-4 3V9a2 2 0 0 1 2-2z"/></svg> },
               { n: '05', title: 'Läsnäolo ja toimintakyky paineessa', body: 'Kehollisuus, keskittyminen ja itsesäätely.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg> },
               { n: '06', title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Simulaatiot, harjoittelu, palaute ja kehityksen seuranta.', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="3,18 9,11 13,15 21,6"/><circle cx="21" cy="6" r="2"/></svg> },
-            ] as { n: string; title: string; body: string; icon: React.ReactNode }[]).map(({ n, title, body, icon }) => (
+            ]).map(({ n, title, body, icon }) => (
               <div key={n} className="p-8 flex flex-col gap-3" style={{ backgroundColor: 'var(--color-background)' }}>
                 <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
                 <span className="text-xs tracking-widest" style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}>{n}</span>
