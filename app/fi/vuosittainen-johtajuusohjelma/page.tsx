@@ -134,25 +134,6 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Ohjelman teemat
         </p>
-        {/* Yksityiskohtainen 3-sarake */}
-        <div style={{ border: '1px solid var(--color-border)', marginBottom: '32px' }}>
-          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-            {[
-              { title: 'Johtajan viestijäidentiteetti', body: 'Oman viestijäidentiteetin, henkilökohtaisten vahvuuksien ja toimintatapojen tunnistaminen. Kehitetään kykyä hyödyntää omaa persoonaa ja asiantuntemusta vaikuttavasti erilaisissa ammatillisissa rooleissa.' },
-              { title: 'Strateginen viestintä ja tarinankerronta', body: 'Oman ajattelun jäsentäminen, viestin kirkastaminen ja vaikuttavien narratiivien rakentaminen. Kehitetään kykyä tehdä monimutkaisista asioista ymmärrettäviä, luoda yhteistä suuntaa ja viestiä organisaation strategisten tavoitteiden mukaisesti.' },
-              { title: 'Esiintyminen eri viestintäympäristöissä', body: 'Henkilökohtaista esiintymisvalmennusta erilaisiin yleisöihin, tilanteisiin ja viestintäkanaviin. Puheenvuorot, esitykset, kameraesiintyminen, mediahaastattelut ja julkiset sidosryhmätilanteet.' },
-              { title: 'Vuorovaikutus ja dialogin johtaminen', body: 'Kuuntelemisen, tilannetajun ja henkilökohtaisen vuorovaikutuskyvyn kehittäminen. Harjoitellaan kykyä kohdata ihmisiä, johtaa keskustelua, rakentaa luottamusta ja toimia rakentavasti myös haastavissa vuorovaikutustilanteissa.' },
-              { title: 'Läsnäolo ja toimintakyky paineessa', body: 'Psykofyysistä harjoittelua, jossa kehitetään kehollista läsnäoloa, keskittymistä ja oman toiminnan säätelyä. Tavoitteena on vahvistaa kykyä ajatella, viestiä ja toimia tarkoituksenmukaisesti myös paineen kasvaessa.' },
-              { title: 'Valmistautuminen ja oman toiminnan kehittäminen', body: 'Henkilökohtaisten valmistautumis- ja harjoittelumenetelmien rakentaminen osaksi johtajan työtä. Todellisten viestintätilanteiden simulointi, oman toiminnan havainnointi, palaute ja kehityksen järjestelmällinen seuranta.' },
-            ].map(({ title, body }) => (
-              <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
-                <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Tiivistetty 2-sarake ikoneilla */}
         <div style={{ border: '1px solid var(--color-border)' }}>
           <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
