@@ -108,7 +108,7 @@ export default function AboutPage() {
               marginBottom: '16px',
             }}
           >
-            Human capability as competitive advantage.
+            The human dimension of impact.
           </p>
           <p
             style={{

@@ -124,7 +124,7 @@ export default function TietoaPage() {
               marginBottom: '16px',
             }}
           >
-            Vaikutus syntyy yksilön kautta.
+            Vaikuttavuuden inhimillinen ulottuvuus.
           </p>
           <p
             style={{
