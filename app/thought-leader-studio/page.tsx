@@ -146,7 +146,7 @@ export default function ThoughtLeaderStudioPage() {
               'Preparatory phase: content planning and scripting in collaboration with communication leadership',
               'Presentation coaching and a dedicated personal coach',
               'Support and follow-up between sessions',
-              '1 filming day per month',
+              '1 filming day per month, production included',
               '10 finished videos per studio day',
               'Result: 100 high-quality LinkedIn videos per year',
               'Publication plan and tracking, visibility measurable and long-term',

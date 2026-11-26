@@ -146,7 +146,7 @@ export default function ThoughtLeaderStudioFiPage() {
               'Valmisteleva vaihe: sisältöjen suunnittelu ja käsikirjoitus yhteistyössä viestintäjohdon kanssa',
               'Esiintymisvalmennus ja henkilökohtainen valmentaja',
               'Tuki & seuranta sessioiden välillä',
-              '1 kuvauspäivä per kuukausi',
+              '1 kuvauspäivä per kuukausi, tuotanto mukana',
               '10 valmista videota per studiopäivä',
               'Tuloksena 100 korkeatasoista LinkedIn-videota vuodessa',
               'Julkaisusuunnitelma ja seuranta, näkyvyydestä mitattavaa ja pitkäjänteistä',
