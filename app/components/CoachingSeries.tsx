@@ -44,7 +44,7 @@ type Content = {
   heroPills: [string, string]
   whyEyebrow: string
   whyTitle: string
-  whyText: [string, string]
+  whyText: string[]
   format: [string, string][]
   conceptsEyebrow: string
   conceptsTitle: string
@@ -87,8 +87,9 @@ const content: Record<Lang, Content> = {
     whyEyebrow: 'Mihin sarja vastaa',
     whyTitle: 'Kun johtamisen vaatimukset kasvavat, myös johtajan henkilökohtaisen toimintakyvyn on kehityttävä.',
     whyText: [
-      'Kasvava vastuu, jatkuva muutos, epävarmuus ja paine edellyttävät kykyä johtaa omaa toimintaa, ihmisten ajattelua, vuorovaikutusta ja ilmapiiriä.',
-      'Vaikuttavuus ei rakennu pelkästä substanssiosaamisesta. Yhä keskeisempää on kyky tunnistaa ja säädellä omaa tilaa, olla läsnä ja vaikuttaa toisiin ihmisiin henkilökohtaisesti.',
+      'Johtaminen on jatkuvaa toimintaa muuttuvissa olosuhteissa. Epävarmuuden, kasvavan vastuun ja paineen keskellä johtajan on kyettävä ajattelemaan selkeästi, tekemään päätöksiä, kohtaamaan ihmisiä ja rakentamaan yhteistä suuntaa.',
+      'Se, miten johtaja tunnistaa ja säätelee omaa tilaansa, vaikuttaa hänen tapaansa havainnoida, kuunnella, viestiä ja toimia. Johtajan henkilökohtainen toimintakyky heijastuu myös ympärillä oleviin ihmisiin, työyhteisön ilmapiiriin ja yhteiseen suorituskykyyn.',
+      'Valmennussarjassa tarkastelemme johtajan toimintakykyä kokonaisvaltaisesti. Kehitämme ymmärrystä omasta toiminnasta sekä käytännön valmiuksia johtaa itseä, vuorovaikutusta ja muita ihmisiä myös silloin, kun paine kasvaa.',
     ],
     format: [
       ['Asiantuntijuusvierailu', 'Vieraileva huippuasiantuntija tuo päivään oman alansa osaamisen.'],
@@ -219,8 +220,9 @@ const content: Record<Lang, Content> = {
     whyEyebrow: 'Why this series',
     whyTitle: "As the demands of leadership grow, a leader's personal capacity to perform has to grow with them.",
     whyText: [
-      "Growing responsibility, constant change, uncertainty and pressure call for the ability to lead your own actions, people's thinking, interaction and the atmosphere around you.",
-      'Impact is not built on subject expertise alone. Increasingly, what matters is the ability to recognise and regulate your own state, to be present and to influence other people personally.',
+      'Leadership is continuous work in changing conditions. In the middle of uncertainty, growing responsibility and pressure, a leader must be able to think clearly, make decisions, meet people and build a shared direction.',
+      "How a leader recognises and regulates their own state affects the way they observe, listen, communicate and act. A leader's personal capacity to perform is also reflected in the people around them, in the team's atmosphere and in collective performance.",
+      'In this series, we examine a leader\'s capacity to perform holistically. We develop understanding of one\'s own actions and the practical readiness to lead oneself, interaction and others — even when the pressure rises.',
     ],
     format: [
       ["Expert visit", 'A guest expert brings the knowledge of their field into the day.'],
