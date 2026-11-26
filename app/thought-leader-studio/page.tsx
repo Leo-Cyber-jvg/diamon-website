@@ -79,22 +79,7 @@ export default function ThoughtLeaderStudioPage() {
                 letterSpacing: '0.05em',
               }}
             >
-              Book a consultation
-            </Link>
-            <Link
-              href="/contact"
-              style={{
-                display: 'inline-block',
-                border: '1px solid rgba(255,255,255,0.4)',
-                color: '#fff',
-                fontFamily: 'var(--font-body)',
-                fontSize: '0.875rem',
-                padding: '14px 28px',
-                textDecoration: 'none',
-                letterSpacing: '0.05em',
-              }}
-            >
-              Ask about your visibility strategy
+              Ask a question
             </Link>
           </div>
         </div>
