@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'Tietoa DIAMONista — Johtamisviestintä AI-aikakaudella',
   description:
-    'DIAMON kehittää johtamisviestinnän toimintakykyä, auttaa johtajia ja organisaatioita muuttamaan osaamisen ja ajattelun näkyväksi, vaikuttavaksi viestinnäksi.',
+    'DIAMON kehittää johtajien viestinnän ja esiintymisen toimintakykyä ja auttaa muuttamaan osaamisen ja ajattelun näkyväksi, vaikuttavaksi viestinnäksi.',
 }
 
 const lahtokohdatItems = [
@@ -256,7 +256,7 @@ export default function TietoaPage() {
                 Leo Sjöman
               </span>
               <span className="text-xs tracking-wide" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-                Johtamisviestinnän valmentaja, DIAMON Finland
+                Johtamisviestinnän ja esiintymisen valmentaja, DIAMON Finland
               </span>
             </div>
           </div>
@@ -269,7 +269,7 @@ export default function TietoaPage() {
             </h2>
             <div className="flex flex-col gap-5 text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               <p>
-                Leo Sjöman on DIAMONin perustaja, johtamisviestinnän valmentaja ja DIAMON ICA Framework™ -mallin kehittäjä. Hän työskentelee johtajien ja organisaatioiden kanssa.
+                Leo Sjöman on DIAMONin perustaja, johtamisviestinnän ja esiintymisen valmentaja sekä DIAMON ICA Framework™ -mallin kehittäjä. Hän työskentelee johtajien ja organisaatioiden kanssa.
               </p>
               <p>
                 Yli 20 vuoden kokemus näyttelijäntyöstä elokuvassa, televisiossa ja teatterissa on rakentanut syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä, vuorovaikutuksesta, tarinankerronnasta ja toimintakyvystä paineen alla.

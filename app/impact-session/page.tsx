@@ -3,9 +3,9 @@ import Link from 'next/link'
 import ICAFrameworkSection from '../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
-  title: 'DIAMON Impact Session — Coaching for High-Impact Communication Moments',
+  title: 'Presentation Coaching for Leaders and Experts, DIAMON Impact Session',
   description:
-    'An intensive individual coaching session that prepares a leader or expert to succeed in a specific high-stakes communication situation. 3 hours. Remote, on-site or studio.',
+    'Intensive presentation coaching for leaders and experts preparing for a high-stakes communication moment. 3 hours of personal coaching. Remote, on-site or studio format.',
 }
 
 const whatYouLeaveWithItems = [
@@ -64,7 +64,7 @@ export default function ImpactSessionPage() {
               lineHeight: 1.8,
             }}
           >
-            Personal coaching for those who want to clarify their thinking, strengthen their expression and trust their own performance in an important communication situation.
+            Personal presentation coaching for leaders and experts who want to clarify their thinking, strengthen their expression and trust their own performance in an important communication situation.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -107,7 +107,7 @@ export default function ImpactSessionPage() {
               className="text-sm leading-relaxed"
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
-              The DIAMON Impact Session is an intensive, individual coaching engagement that prepares a leader or expert to succeed in a specific communication situation where impact matters most. Not a general presentation skills course, a precise preparation for your actual moment, including on camera, in media and in front of key stakeholders.
+              The DIAMON Impact Session is an intensive presentation coaching engagement that prepares a leader or expert to succeed in a specific communication situation where impact matters most. Not a general presentation skills course, a precise preparation for your actual moment, including on camera, in media and in front of key stakeholders.
             </p>
           </div>
           <div>

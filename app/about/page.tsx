@@ -5,7 +5,7 @@ import ICAFrameworkSection from '../components/ICAFrameworkSection'
 export const metadata: Metadata = {
   title: 'About DIAMON — Leadership Communication for the AI Era',
   description:
-    'DIAMON Finland develops leadership communication capability, helping leaders and organisations turn expertise and thinking into visible, effective influence.',
+    'DIAMON develops the communication and presentation capability of leaders and helps turn expertise and thinking into visible, impactful communication.',
 }
 
 export default function AboutPage() {
@@ -260,7 +260,7 @@ export default function AboutPage() {
                 className="text-xs tracking-wide"
                 style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
               >
-                Leadership Communication Coach, DIAMON Finland
+                Leadership Communication and Presentation Coach, DIAMON Finland
               </span>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default function AboutPage() {
               style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}
             >
               <p>
-                Leo Sjöman is the Founder of DIAMON Finland, a leadership communication coach, and the developer of the DIAMON ICA Framework™. He works with executives and organisations.
+                Leo Sjöman is the Founder of DIAMON Finland, a leadership communication and presentation coach, and the developer of the DIAMON ICA Framework™. He works with executives and organisations.
               </p>
               <p>
                 Over twenty years of experience as a professional actor in film, television and theatre has built a deep, practical understanding of human behaviour, interaction, storytelling and performance under pressure.

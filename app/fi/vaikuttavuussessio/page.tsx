@@ -3,9 +3,9 @@ import Link from 'next/link'
 import ICAFrameworkSection from '../../components/ICAFrameworkSection'
 
 export const metadata: Metadata = {
-  title: 'Impact Session — DIAMON Finland',
+  title: 'Esiintymisvalmennus johtajille ja asiantuntijoille, DIAMON Impact Session',
   description:
-    'Intensiivinen yksilöcoachingsessio, joka valmistaa johtajan tai asiantuntijan onnistumaan tietyssä korkean panoksen viestintätilanteessa. 3 tuntia. Etä-, lähi- tai studioformaatti.',
+    'Intensiivinen esiintymisvalmennus johtajille ja asiantuntijoille — valmistautuminen tärkeään viestintätilanteeseen. 3 tuntia henkilökohtaista valmennusta. Etä-, lähi- tai studioformaatti.',
 }
 
 const mitaLahteItems = [
@@ -60,7 +60,7 @@ export default function VaikuttavuussessioPage() {
               lineHeight: 1.8,
             }}
           >
-            Henkilökohtaista valmennusta sinulle, joka haluat kirkastaa ajatuksiasi, vahvistaa ilmaisuasi ja luottaa omaan toimintakykyysi tärkeässä viestintätilanteessa.
+            Henkilökohtaista esiintymisvalmennusta johtajille ja asiantuntijoille, jotka haluavat kirkastaa ajatuksiaan, vahvistaa ilmaisuaan ja luottaa omaan toimintakykyynsä tärkeässä viestintätilanteessa.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -94,7 +94,7 @@ export default function VaikuttavuussessioPage() {
               Valmistaudu merkityksellisiin viestintätilanteisiin.
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              DIAMON Impact Session on intensiivinen yksilövalmennus johtajille ja asiantuntijoille, jotka haluavat valmistautua mahdollisimman hyvin tärkeään viestintätilanteeseen.
+              DIAMON Impact Session on intensiivinen esiintymisvalmennus johtajille ja asiantuntijoille, jotka haluavat valmistautua mahdollisimman hyvin tärkeään viestintätilanteeseen.
             </p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Valmennus suunnitellaan asiakkaan yksilöllisten tarpeiden, tavoitteiden ja tulevan viestintätilanteen pohjalta. Työskentelyssä yhdistyvät viestin kirkastaminen, sisällön ja rakenteen kehittäminen sekä käytännön esiintymis- ja vuorovaikutusharjoittelu, myös kameran edessä ja julkisissa viestintätilanteissa.
