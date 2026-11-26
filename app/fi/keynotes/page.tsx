@@ -7,6 +7,33 @@ export const metadata: Metadata = {
     'Leo Sjöman pitää keynote-puheenvuoroja viestinnästä, läsnäolosta, henkilökohtaisesta vaikuttavuudesta ja johtajuudesta paineen alla. Räätälöity organisaationne tavoitteisiin.',
 }
 
+const keskeisiaTeemojaItems = [
+  {
+    n: '01',
+    title: 'Henkilökohtainen vaikuttavuus ja läsnäolo',
+    body: 'Mikä tekee ihmisestä kiinnostavan kuunnella, ja miten tätä voidaan kehittää tietoisesti. Läsnäolon, huomion ja luottamuksen suhde ammatillisessa viestinnässä.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="10" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M7 24c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M3 3h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 3v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 3h-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 3v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 25h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 25v-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 25h-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 25v-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+  {
+    n: '02',
+    title: 'Vuorovaikutus, luottamus ja johtamisviestintä',
+    body: 'Miten johtajuus rakentuu ja ilmenee vuorovaikutuksessa. Kuuntelun, selkeyden ja intention rooli olosuhteiden luomisessa, joissa ihmiset voivat toimia parhaimmillaan.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/><path d="M20 9h4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3-3h-5a2 2 0 0 1-2-2" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/></svg>),
+  },
+  {
+    n: '03',
+    title: 'Esiintyminen, jännitys ja toimintakyky paineen alla',
+    body: 'Mitä viestinnälle tapahtuu paineen alla, ja miten säilyttää toimintakyky, selkeys ja vaikuttavuus korkean panoksen tilanteissa. Käytännön välineitä suorituspsykologiasta ja ammattilavan kokemuksesta.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,14 6,14 9,7 12,21 15,11 18,17 21,14 26,14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>),
+  },
+  {
+    n: '04',
+    title: 'Ammatillinen identiteetti, rohkeus ja oman äänen löytäminen',
+    body: 'Itsetuntemuksen, aitouden ja uskottavuuden suhde. Miten johtajat ja asiantuntijat voivat viestiä aidosta auktoriteetistaan, ei suorituksena, vaan läsnäolona.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="10" stroke="currentColor" strokeWidth="1.5" fill="none"/><circle cx="14" cy="14" r="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="14" y1="4" x2="14" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="14" y1="20" x2="14" y2="24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="4" y1="14" x2="8" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="20" y1="14" x2="24" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="16" y1="12" x2="19" y2="9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+]
+
 export default function KeynotesFiPage() {
   return (
     <>
@@ -129,34 +156,14 @@ export default function KeynotesFiPage() {
         >
           Keskeisiä teemoja
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            {
-              n: '01',
-              title: 'Henkilökohtainen vaikuttavuus ja läsnäolo',
-              body: 'Mikä tekee ihmisestä kiinnostavan kuunnella, ja miten tätä voidaan kehittää tietoisesti. Läsnäolon, huomion ja luottamuksen suhde ammatillisessa viestinnässä.',
-            },
-            {
-              n: '02',
-              title: 'Vuorovaikutus, luottamus ja johtamisviestintä',
-              body: 'Miten johtajuus rakentuu ja ilmenee vuorovaikutuksessa. Kuuntelun, selkeyden ja intention rooli olosuhteiden luomisessa, joissa ihmiset voivat toimia parhaimmillaan.',
-            },
-            {
-              n: '03',
-              title: 'Esiintyminen, jännitys ja toimintakyky paineen alla',
-              body: 'Mitä viestinnälle tapahtuu paineen alla, ja miten säilyttää toimintakyky, selkeys ja vaikuttavuus korkean panoksen tilanteissa. Käytännön välineitä suorituspsykologiasta ja ammattilavan kokemuksesta.',
-            },
-            {
-              n: '04',
-              title: 'Ammatillinen identiteetti, rohkeus ja oman äänen löytäminen',
-              body: 'Itsetuntemuksen, aitouden ja uskottavuuden suhde. Miten johtajat ja asiantuntijat voivat viestiä aidosta auktoriteetistaan, ei suorituksena, vaan läsnäolona.',
-            },
-          ].map(({ n, title, body }) => (
+        <div className="grid md:grid-cols-2 gap-4">
+          {keskeisiaTeemojaItems.map(({ n, title, body, icon }) => (
             <div
               key={n}
-              className="p-8 flex flex-col gap-4"
-              style={{ backgroundColor: 'var(--color-background)' }}
+              className="p-8 flex flex-col gap-3"
+              style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}
             >
+              <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
               <span
                 className="text-xs tracking-widest"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}

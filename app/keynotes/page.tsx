@@ -7,6 +7,33 @@ export const metadata: Metadata = {
     'Leo Sjöman delivers keynote speeches on communication, presence, personal impact and leadership under pressure. Tailored for organisations and their events.',
 }
 
+const keyThemesItems = [
+  {
+    n: '01',
+    title: 'Personal impact and presence',
+    body: 'What makes a person compelling to listen to, and how that quality can be developed deliberately. The relationship between presence, attention and trust in professional communication.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="10" r="4" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M7 24c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/><path d="M3 3h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 3v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 3h-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 3v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 25h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M3 25v-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 25h-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 25v-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+  {
+    n: '02',
+    title: 'Communication, interaction and leadership',
+    body: 'How leadership is built and expressed through interaction. The role of listening, clarity and intention in creating the conditions for people to perform at their best.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/><path d="M20 9h4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3-3h-5a2 2 0 0 1-2-2" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/></svg>),
+  },
+  {
+    n: '03',
+    title: 'Performance, pressure and composure',
+    body: 'What happens to communication under pressure, and how to maintain composure, clarity and effectiveness in high-stakes situations. Practical tools from performance psychology and professional stage experience.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,14 6,14 9,7 12,21 15,11 18,17 21,14 26,14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>),
+  },
+  {
+    n: '04',
+    title: 'Professional identity, courage and finding your voice',
+    body: 'The relationship between self-knowledge, authenticity and credibility. How leaders and experts can communicate from a place of genuine authority, not performance, but presence.',
+    icon: (<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="10" stroke="currentColor" strokeWidth="1.5" fill="none"/><circle cx="14" cy="14" r="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="14" y1="4" x2="14" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="14" y1="20" x2="14" y2="24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="4" y1="14" x2="8" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="20" y1="14" x2="24" y2="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><line x1="16" y1="12" x2="19" y2="9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>),
+  },
+]
+
 export default function KeynotesPage() {
   return (
     <>
@@ -129,34 +156,14 @@ export default function KeynotesPage() {
         >
           Key themes
         </p>
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            {
-              n: '01',
-              title: 'Personal impact and presence',
-              body: 'What makes a person compelling to listen to, and how that quality can be developed deliberately. The relationship between presence, attention and trust in professional communication.',
-            },
-            {
-              n: '02',
-              title: 'Communication, interaction and leadership',
-              body: 'How leadership is built and expressed through interaction. The role of listening, clarity and intention in creating the conditions for people to perform at their best.',
-            },
-            {
-              n: '03',
-              title: 'Performance, pressure and composure',
-              body: 'What happens to communication under pressure, and how to maintain composure, clarity and effectiveness in high-stakes situations. Practical tools from performance psychology and professional stage experience.',
-            },
-            {
-              n: '04',
-              title: 'Professional identity, courage and finding your voice',
-              body: 'The relationship between self-knowledge, authenticity and credibility. How leaders and experts can communicate from a place of genuine authority, not performance, but presence.',
-            },
-          ].map(({ n, title, body }) => (
+        <div className="grid md:grid-cols-2 gap-4">
+          {keyThemesItems.map(({ n, title, body, icon }) => (
             <div
               key={n}
-              className="p-8 flex flex-col gap-4"
-              style={{ backgroundColor: 'var(--color-background)' }}
+              className="p-8 flex flex-col gap-3"
+              style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}
             >
+              <span style={{ color: 'var(--color-blue)', display: 'block', marginBottom: '2px' }}>{icon}</span>
               <span
                 className="text-xs tracking-widest"
                 style={{ color: 'var(--color-blue)', fontFamily: 'var(--font-body)' }}
