@@ -166,40 +166,115 @@ export default function EnHome() {
           A structured development methodology grounded in performance psychology and two decades of
           professional performance practice. Three integrated levels, applied systematically to real leadership situations.
         </p>
-        {/* ICA: 3 side-by-side DIAMON balls, letter badge on the right side */}
-        <div className="flex flex-col gap-16">
-          {/* Balls */}
-          <div className="flex flex-row gap-10 md:gap-16 items-center flex-wrap">
-            {[
-              { letter: 'I', badgeBg: 'var(--color-blue)', badgeBorder: 'none', letterColor: '#fff' },
-              { letter: 'C', badgeBg: 'var(--color-background)', badgeBorder: '1px solid var(--color-blue)', letterColor: 'var(--color-blue)' },
-              { letter: 'A', badgeBg: 'var(--color-surface)', badgeBorder: '1px solid var(--color-border)', letterColor: 'var(--color-text)' },
-            ].map((item) => (
-              <div key={item.letter} style={{ position: 'relative', width: '196px', height: '160px', flexShrink: 0 }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <div style={{ position: 'absolute', left: 0, top: 0, width: '160px', height: '160px', borderRadius: '50%', border: '1px solid var(--color-blue)', overflow: 'hidden' }}>
-                  <img src="/diamon-logo-02.png" alt="DIAMON" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                </div>
-                <div style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', width: '52px', height: '52px', borderRadius: '50%', backgroundColor: item.badgeBg, border: item.badgeBorder, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.4rem', fontWeight: 500, color: item.letterColor, lineHeight: 1 }}>{item.letter}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* ICA three balls */}
+        <div
+          className="grid grid-cols-1 md:grid-cols-3"
+          style={{ gap: '0', position: 'relative', rowGap: '48px' }}
+        >
+          <div
+            className="hidden md:block"
+            style={{
+              position: 'absolute',
+              left: '16.6%',
+              right: '16.6%',
+              top: '75px',
+              height: '1px',
+              backgroundColor: 'var(--color-border)',
+            }}
+          />
 
-          {/* Descriptions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-            {[
-              { letter: 'I', label: 'Identity', desc: 'Leadership identity, self-awareness, personal presence and individual impact in communication.' },
-              { letter: 'C', label: 'Composition', desc: 'Building the message: purpose, focus, clarity and consideration of the recipient.' },
-              { letter: 'A', label: 'Action', desc: 'Concrete interaction, physicality, presence, listening and performance in real leadership situations.' },
-            ].map((item) => (
-              <div key={item.letter}>
-                <p className="text-xs tracking-[0.28em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-blue)' }}>{item.letter} — {item.label}</p>
-                <p className="text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>{item.desc}</p>
+          {[
+            {
+              letter: 'I',
+              label: 'Identity',
+              desc: 'Leadership identity, self-awareness, personal presence and individual impact in communication.',
+              bg: 'var(--color-background)',
+              border: '1px solid var(--color-blue)',
+              color: '#F4F3F1',
+              logoFilter: 'none',
+            },
+            {
+              letter: 'C',
+              label: 'Composition',
+              desc: 'Building the message: purpose, focus, clarity and consideration of the recipient.',
+              bg: 'var(--color-surface)',
+              border: '1px solid var(--color-border)',
+              color: '#F4F3F1',
+              logoFilter: 'saturate(0.25) opacity(0.55)',
+            },
+            {
+              letter: 'A',
+              label: 'Action',
+              desc: 'Concrete interaction, physicality, presence, listening and performance in real leadership situations.',
+              bg: 'var(--color-blue)',
+              border: 'none',
+              color: '#5656D6',
+              logoFilter: 'brightness(0) invert(1)',
+            },
+          ].map((item) => (
+            <div
+              key={item.letter}
+              className="flex flex-col items-center text-center px-6"
+              style={{ position: 'relative' }}
+            >
+              <div
+                style={{
+                  width: '150px',
+                  height: '150px',
+                  borderRadius: '50%',
+                  border: item.border,
+                  backgroundColor: item.bg,
+                  flexShrink: 0,
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/diamon-logo-02.png"
+                  alt=""
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    filter: item.logoFilter,
+                  }}
+                />
+                <span
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '4.5rem',
+                    fontWeight: 500,
+                    color: item.color,
+                    lineHeight: 1,
+                    zIndex: 1,
+                  }}
+                >
+                  {item.letter}
+                </span>
               </div>
-            ))}
-          </div>
+              <p
+                className="mt-5 text-sm font-medium tracking-[0.3em] uppercase"
+                style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text)', letterSpacing: '0.3em' }}
+              >
+                {item.label}
+              </p>
+              <p
+                className="mt-3 text-sm leading-relaxed"
+                style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)', maxWidth: '240px' }}
+              >
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
