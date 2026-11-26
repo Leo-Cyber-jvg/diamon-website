@@ -6,7 +6,7 @@ const t = {
   fi: {
     eyebrow: 'Metodologia',
     title: 'DIAMON ICA Framework™',
-    lead: 'Diamonin valmennukset perustuvat ICA-viitekehykseen, malliin, joka yhdistää suorituspsykologian ja yli 20 vuoden ammattiesiintymiskokemuksen johtamisviestinnän kehittämiseen.',
+    lead: 'DIAMON ICA Framework™ yhdistää kolme toisiaan täydentävää ulottuvuutta, jotka luovat perustan sille, miten johtaja rakentaa viestinsä, kohtaa ihmiset ja ohjaa toimintaa strategisesti. Viitekehyksen avulla kehitämme yksilön viestinnällistä toimintakykyä ja sitä kautta organisaation suorituskykyä.',
     items: [
       { letter: 'I', label: 'Identity', desc: 'Johtajaidentiteetti, itsetuntemus ja henkilökohtainen läsnäolo.' },
       { letter: 'C', label: 'Composition', desc: 'Viestin rakentaminen, tarkoitus, fokus ja strateginen selkeys.' },
@@ -18,7 +18,7 @@ const t = {
   en: {
     eyebrow: 'Methodology',
     title: 'DIAMON ICA Framework™',
-    lead: 'All coaching is built on the DIAMON ICA Framework™, a structured development methodology grounded in performance psychology and two decades of professional performance practice.',
+    lead: 'The DIAMON ICA Framework™ brings together three complementary dimensions that form the foundation for how a leader builds their message, meets people and directs action strategically. Through the framework, we develop the individual\'s capacity for leadership communication — and through that, the organisation\'s performance.',
     items: [
       { letter: 'I', label: 'Identity', desc: 'Leadership identity, self-awareness and personal presence.' },
       { letter: 'C', label: 'Composition', desc: 'Message structure, purpose, focus and strategic clarity.' },
