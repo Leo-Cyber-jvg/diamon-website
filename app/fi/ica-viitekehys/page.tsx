@@ -46,7 +46,7 @@ export default function IcaViitekehysPage() {
             {[
               {
                 label: 'ICA I', model: 'DCI™',
-                name: 'Identiteetti', question: 'Kuka olen viestijänä ja johtajana?',
+                name: 'Identity', question: 'Kuka olen viestijänä ja johtajana?',
                 bullets: ['Henkilökohtainen viestintäidentiteetti', 'Johtajaläsnäolo ja autenttisuus', 'Kommunikatiivinen itsetuntemus', 'Esiintymisjännityksen tunnistaminen ja hallinta', 'Luottamuksen rakentaminen'],
                 pills: ['Viestintäidentiteetti', 'Autenttisuus'],
                 act: 'Alku', actText: 'Luo kontakti, läsnäolo ja luottamus.',
@@ -54,7 +54,7 @@ export default function IcaViitekehysPage() {
               },
               {
                 label: 'ICA II', model: 'TNT™',
-                name: 'Rakenne', question: 'Mitä rakennan, ja miten?',
+                name: 'Composition', question: 'Mitä rakennan, ja miten?',
                 bullets: ['Viestinnällinen intentio ja tavoitteet', 'Strateginen tarinankerronta', 'Viestin rakenne ja dramaturgia', 'Yleisön huomioiminen ja kiinnostuksen rakentaminen'],
                 pills: ['Tila', 'Narratiivi', 'Toimintarakenne'],
                 act: 'Keskikohta', actText: 'Rakenna viesti, rakenne ja yhteinen ymmärrys.',
@@ -62,7 +62,7 @@ export default function IcaViitekehysPage() {
               },
               {
                 label: 'ICA III', model: 'K3™',
-                name: 'Toiminta', question: 'Miten toteutan sen todellisessa tilanteessa?',
+                name: 'Action', question: 'Miten toteutan sen todellisessa tilanteessa?',
                 bullets: ['Käytännön esiintymisharjoittelu', 'Kameraharjoitukset ja tallenteiden analysointi', 'Kehon intentio, sanaton viestintä ja läsnäolo', 'Viestinnällisten tilanteiden simulointi, palaute ja toisto'],
                 pills: ['Keho', 'Keskittyminen', 'Kieli'],
                 act: 'Loppu', actText: 'Vie kohti toimintaa, päätöstä ja vaikutusta.',
