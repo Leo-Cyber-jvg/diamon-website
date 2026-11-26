@@ -91,8 +91,8 @@ const content: Record<Lang, Content> = {
       'Vaikuttavuus ei rakennu pelkästä substanssiosaamisesta. Yhä keskeisempää on kyky tunnistaa ja säädellä omaa tilaa, olla läsnä ja vaikuttaa toisiin ihmisiin henkilökohtaisesti.',
     ],
     format: [
-      ['Asiantuntijan osuus', 'Vieraileva huippuasiantuntija tuo päivään oman alansa osaamisen.'],
-      ['Leon osuus', 'Johtamisviestintä ja henkilökohtainen vaikuttavuus. Harjoittelua, ei luentoa.'],
+      ['Asiantuntijuusvierailu', 'Vieraileva huippuasiantuntija tuo päivään oman alansa osaamisen.'],
+      ['Leo · Diamon Finland', 'Johtamisviestintä ja henkilökohtainen vaikuttavuus.'],
       ['Yhteinen osuus', 'Valmennetaan yhdessä. Jokainen lähtee päivästä oman suunnitelman kanssa.'],
     ],
     conceptsEyebrow: 'Sarjan valmennuspäivät',
@@ -107,6 +107,7 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'Kenelle',
     facts: [
       ['Kesto', '1 lähipäivä'],
+      ['Aika', '8:30–16:30'],
       ['Paikka', 'VALO Hotel & Work, Helsinki'],
       ['Ryhmä', '10 johtajaa'],
       ['Hinta', '1 795 € / hlö', 'alv 0 %'],
@@ -222,8 +223,8 @@ const content: Record<Lang, Content> = {
       'Impact is not built on subject expertise alone. Increasingly, what matters is the ability to recognise and regulate your own state, to be present and to influence other people personally.',
     ],
     format: [
-      ["The expert's part", 'A guest expert brings the knowledge of their own field into the day.'],
-      ["Leo's part", 'Leadership communication and personal impact. Practice, not lectures.'],
+      ["Expert visit", 'A guest expert brings the knowledge of their field into the day.'],
+      ["Leo · Diamon Finland", 'Leadership communication and personal impact.'],
       ['The shared part', 'We coach together. Everyone leaves with a plan of their own.'],
     ],
     conceptsEyebrow: 'Coaching days',
@@ -238,6 +239,7 @@ const content: Record<Lang, Content> = {
     audienceLabel: 'For',
     facts: [
       ['Duration', '1 day, in person'],
+      ['Time', '8:30–16:30'],
       ['Location', 'VALO Hotel & Work, Helsinki'],
       ['Group', '10 leaders'],
       ['Price', '€1,795 / person', 'excl. VAT'],
@@ -379,7 +381,7 @@ function DateBlock({ c, t, large = false }: { c: Concept; t: Content; large?: bo
   )
 }
 
-function Facts({ t, cols = 'grid-cols-3' }: { t: Content; cols?: string }) {
+function Facts({ t, cols = 'grid-cols-2 sm:grid-cols-3' }: { t: Content; cols?: string }) {
   return (
     <dl className={`grid ${cols} gap-4`}>
       {t.facts.map(([k, v, note]) => (
@@ -607,9 +609,6 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
               <p key={p} className="text-base leading-relaxed" style={{ color: 'var(--color-muted)', ...body }}>{p}</p>
             ))}
           </div>
-        </div>
-        <div className="mt-16">
-          <NumberedCells items={t.format} cols="md:grid-cols-3" />
         </div>
       </section>
 
