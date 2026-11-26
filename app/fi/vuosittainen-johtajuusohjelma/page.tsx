@@ -85,7 +85,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
               Valmennuskokonaisuus
             </p>
-            <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+            <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.2 }}>
               Vuosi oman johtajuuden ja{' '}
               <span style={{ fontStyle: 'italic' }}>vaikuttavuuden kehittämiseen.</span>
             </h2>
@@ -200,7 +200,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
             <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
               Kenelle
             </p>
-            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
+            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', lineHeight: 1.2 }}>
               Johtajille, jotka haluavat kehittää viestintää tavoitteellisesti.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
