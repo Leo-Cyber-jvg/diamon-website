@@ -222,7 +222,7 @@ export default function OrganisaatioillePage() {
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div
           className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
+          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-background)' }}
         >
           <div className="md:col-span-1">
             <p
@@ -301,7 +301,7 @@ export default function OrganisaatioillePage() {
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div
           className="p-10 md:p-12 grid md:grid-cols-3 gap-8 md:gap-12"
-          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-surface)' }}
+          style={{ border: '1px solid var(--color-border)', borderRadius: '4px', backgroundColor: 'var(--color-background)' }}
         >
           <div className="md:col-span-1">
             <p

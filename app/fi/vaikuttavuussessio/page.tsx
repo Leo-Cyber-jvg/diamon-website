@@ -67,21 +67,6 @@ export default function VaikuttavuussessioPage() {
                 letterSpacing: '0.05em',
               }}
             >
-              Varaa Impact Session
-            </Link>
-            <Link
-              href="/fi/ota-yhteytta"
-              style={{
-                display: 'inline-block',
-                border: '1px solid rgba(255,255,255,0.4)',
-                color: '#fff',
-                fontFamily: 'var(--font-body)',
-                fontSize: '0.875rem',
-                padding: '14px 28px',
-                textDecoration: 'none',
-                letterSpacing: '0.05em',
-              }}
-            >
               Kysy lisää
             </Link>
           </div>
