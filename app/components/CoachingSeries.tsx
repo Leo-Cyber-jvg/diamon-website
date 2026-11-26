@@ -614,7 +614,6 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
             {t.heroTitle[0]}
             <span style={{ fontStyle: 'italic', opacity: 0.8 }}>{t.heroTitle[1]}</span>
           </h1>
-          <p className="text-lg font-light mb-6" style={{ ...serif, color: '#8585e8', lineHeight: 1.4, maxWidth: '680px', fontStyle: 'italic' }}>{t.heroSubtitle}</p>
           <p className="text-lg font-light mb-12" style={{ color: 'rgba(255,255,255,0.78)', ...body, lineHeight: 1.8, maxWidth: '620px' }}>{t.heroLead}</p>
           <div className="flex flex-wrap gap-4">
             {t.concepts.map((c, i) => (
