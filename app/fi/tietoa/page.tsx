@@ -272,7 +272,7 @@ export default function TietoaPage() {
                 Leo Sjöman on DIAMONin perustaja, johtamisviestinnän ja esiintymisen valmentaja sekä DIAMON ICA Framework™ -mallin kehittäjä. Hän työskentelee johtajien ja organisaatioiden kanssa.
               </p>
               <p>
-                Yli 20 vuoden kokemus näyttelijäntyöstä elokuvassa, televisiossa ja teatterissa on rakentanut syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä, vuorovaikutuksesta, tarinankerronnasta ja toimintakyvystä paineen alla.
+                Yli 20 vuotta ammattinäyttelijänä teatterissa, elokuvassa ja televisiossa on rakentanut poikkeuksellisen käytännönläheisen ymmärryksen siitä, miten ihminen toimii paineen alla, kameran edessä ja yleisön edessä. Tämä kokemus on avannut syvällisen näkymän ihmisen käyttäytymiseen, vuorovaikutukseen ja kykyyn toimia vaativissa tilanteissa — myös silloin, kun panos on korkea ja virheille ei ole varaa.
               </p>
               <p>
                 Johtamisviestinnän valmennuksissa Leo yhdistää strategiseen työskentelyyn näyttelijäntyöstä tutun harjoittelun kulttuurin: tilanteita simuloidaan, omaa toimintaa havainnoidaan ja uusia toimintatapoja harjoitellaan käytännössä.
