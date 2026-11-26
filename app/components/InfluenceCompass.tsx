@@ -38,12 +38,20 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
 
   return (
     <section style={{ backgroundColor: '#F4F3F1' }}>
+      <style>{`
+        @media (max-width: 639px) {
+          .compass-q0 { padding-right: 18px !important; padding-bottom: 18px !important; }
+          .compass-q1 { padding-left: 18px !important; padding-bottom: 18px !important; }
+          .compass-q2 { padding-right: 18px !important; padding-top: 18px !important; }
+          .compass-q3 { padding-left: 18px !important; padding-top: 18px !important; }
+        }
+      `}</style>
       <div className="px-6 py-20 mx-auto" style={{ maxWidth: '1200px', width: '100%' }}>
 
         <div className="grid md:grid-cols-2" style={{ alignItems: 'stretch' }}>
 
           {/* LEFT: Eyebrow + Compass */}
-          <div className="p-6 md:p-10" style={{ border: '1px solid #DDDBD6', minWidth: 0, overflow: 'hidden' }}>
+          <div className="p-6 md:p-10" style={{ border: '1px solid #DDDBD6', minWidth: 0 }}>
             <p
               style={{ fontSize: '10px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#111010', fontFamily: 'var(--font-body)', margin: '0 0 20px', textAlign: 'center' }}
             >
@@ -66,7 +74,7 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
                 {quadrants.map((q, i) => (
                   <div
                     key={i}
-                    className="flex flex-col gap-1"
+                    className={`flex flex-col gap-1 compass-q${i}`}
                     style={{
                       padding: '20px 16px',
                       alignItems: q.align === 'right' ? 'flex-end' : 'flex-start',
