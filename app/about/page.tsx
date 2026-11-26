@@ -108,7 +108,7 @@ export default function AboutPage() {
               marginBottom: '16px',
             }}
           >
-            The human dimension of impact.
+            The human capacity for impact.
           </p>
           <p
             style={{

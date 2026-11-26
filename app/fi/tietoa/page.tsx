@@ -124,7 +124,7 @@ export default function TietoaPage() {
               marginBottom: '16px',
             }}
           >
-            Vaikuttavuuden inhimillinen ulottuvuus.
+            Ihmisen kyky vaikuttaa.
           </p>
           <p
             style={{
