@@ -120,16 +120,19 @@ export default function KeynotesFiPage() {
               Puhuja
             </p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 300, lineHeight: 1.15, color: 'var(--color-text)', margin: 0 }}>
-              Leo Sjöman, näyttelijä, yrittäjä ja johtamisviestinnän valmentaja.
+              Näyttelijä, yrittäjä ja johtamisviestinnän valmentaja.
             </h2>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Yli 20 vuotta ammattiesiintyjänä teatterissa, televisiossa ja elokuvissa —
-              ja yhtä pitkä kokemus johtajien, asiantuntijoiden ja tiimien valmentamisesta
-              viestinnässä, esiintymisessä ja läsnäolossa.
+              Yli 20 vuoden ura ammattinäyttelijänä teatterissa, televisiossa ja elokuvissa on antanut Leolle syvällistä käytännön ymmärrystä ihmisen käyttäytymisestä, läsnäolosta, vuorovaikutuksesta ja toimintakyvystä paineen alla.
             </p>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
-              Teatteritaiteen maisteri, Taideyliopiston Teatterikorkeakoulu. Hoka Films -tuotantoyhtiön perustajayrittäjä.
-              Asiakkaina perheyrityksistä pörssiyhtiöihin ja kansainvälisiin organisaatioihin.
+              Nykyisin hän soveltaa tätä osaamista myös johtajien ja asiantuntijoiden valmentamiseen. Häntä kiinnostaa erityisesti ihmisen henkilökohtainen vaikuttavuus, oman potentiaalin hyödyntäminen ja kyky rakentaa yhteyttä toisiin ihmisiin.
+            </p>
+            <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Puheenvuoroissaan Leo yhdistää näyttelijäntyön kokemuksen, johtamisviestinnän ja ihmisen toimintakykyyn liittyvät näkökulmat käytännönläheisellä ja osallistavalla tavalla.
+            </p>
+            <p style={{ fontSize: '0.875rem', lineHeight: 1.75, color: 'var(--color-muted)', fontFamily: 'var(--font-body)', margin: 0 }}>
+              Leo on koulutukseltaan teatteritaiteen maisteri, Diamon Finlandin ja Hoka Filmsin perustajayrittäjä sekä DIAMON ICA Framework™ -viitekehyksen kehittäjä.
             </p>
             <div>
               <Link
