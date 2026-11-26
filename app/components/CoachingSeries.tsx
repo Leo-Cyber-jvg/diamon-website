@@ -46,6 +46,9 @@ type Content = {
   whyTitle: string
   whyText: string[]
   format: [string, string][]
+  forEyebrow: string
+  forTitle: string
+  forItems: [string, string][]
   conceptsEyebrow: string
   conceptsTitle: string
   conceptsNote: string
@@ -96,6 +99,14 @@ const content: Record<Lang, Content> = {
       ['Asiantuntijuusvierailu', 'Vieraileva huippuasiantuntija tuo päivään oman alansa osaamisen.'],
       ['Leo · Diamon Finland', 'Johtamisviestintä ja henkilökohtainen vaikuttavuus.'],
       ['Yhteinen osuus', 'Valmennetaan yhdessä. Jokainen lähtee päivästä oman suunnitelman kanssa.'],
+    ],
+    forEyebrow: 'Kenelle',
+    forTitle: 'Johtajille ja yrittäjille, jotka haluavat kehittää henkilökohtaista vaikuttavuuttaan, johtamisviestintäänsä ja toimintakykyään työelämän vaativissa tilanteissa.',
+    forItems: [
+      ['10 osallistujaa', 'Rajattu pienryhmä'],
+      ['Korkeatasoinen asiantuntijuus', 'Eri osaamisalueiden yhdistäminen'],
+      ['Henkilökohtainen työskentely', 'Oman johtajuuden kehittäminen'],
+      ['Tavoitteellinen harjoittelu', 'Sovellettavuus omaan työhön'],
     ],
     conceptsEyebrow: 'Sarjan valmennuspäivät',
     conceptsTitle: 'Kaksi ensimmäistä päivää.',
@@ -230,6 +241,14 @@ const content: Record<Lang, Content> = {
       ["Expert visit", 'A guest expert brings the knowledge of their field into the day.'],
       ["Leo · Diamon Finland", 'Leadership communication and personal impact.'],
       ['The shared part', 'We coach together. Everyone leaves with a plan of their own.'],
+    ],
+    forEyebrow: 'Who it is for',
+    forTitle: 'For leaders and entrepreneurs who want to develop their personal impact, leadership communication and capacity to perform in demanding professional situations.',
+    forItems: [
+      ['10 participants', 'A limited small group'],
+      ['High-level expertise', 'Combining expertise from different fields'],
+      ['Personal work', 'Developing your own leadership'],
+      ['Goal-oriented practice', 'Applicable to your own work'],
     ],
     conceptsEyebrow: 'Coaching days',
     conceptsTitle: 'The first two days.',
@@ -612,6 +631,30 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
             {t.whyText.map((p) => (
               <p key={p} className="text-base leading-relaxed" style={{ color: 'var(--color-muted)', ...body }}>{p}</p>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Kenelle */}
+      <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-surface)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <p className="text-xs tracking-[0.3em] uppercase mb-6" style={eyebrow}>{t.forEyebrow}</p>
+          <h2 className="text-2xl md:text-4xl font-light mb-12" style={{ ...serif, color: 'var(--color-text)', lineHeight: 1.25, maxWidth: '820px' }}>{t.forTitle}</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {([
+              <svg key="1" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="10" cy="10" r="3.5"/><path d="M3 24c0-3.866 3.134-7 7-7s7 3.134 7 7"/><circle cx="21" cy="10" r="3.5"/><path d="M17 24c0-3.866 2.686-7 6-7"/></svg>,
+              <svg key="2" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="14" cy="10" r="5"/><path d="M9 14.5l-4 9 4.5-1.5L11 25l3-5.5 3 5.5 1.5-2.5L23 23.5l-4-9"/></svg>,
+              <svg key="3" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14 4c0 0-8 3-8 10 0 4.418 3.582 8 8 8s8-3.582 8-8c0-7-8-10-8-10z"/><path d="M14 10c0 0-3 1.5-3 4 0 1.657 1.343 3 3 3s3-1.343 3-3c0-2.5-3-4-3-4z"/></svg>,
+              <svg key="4" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="14" cy="14" r="11"/><circle cx="14" cy="14" r="7"/><circle cx="14" cy="14" r="3"/></svg>,
+            ].map((icon, i) => (
+              <div key={i} className="flex gap-5 p-6" style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}>
+                <div className="shrink-0 pt-0.5" style={{ color: 'var(--color-blue)' }}>{icon}</div>
+                <div>
+                  <p className="text-lg font-light mb-1" style={{ ...serif, color: 'var(--color-text)', lineHeight: 1.25 }}>{t.forItems[i][0]}</p>
+                  <p className="text-sm" style={{ color: 'var(--color-muted)', ...body }}>{t.forItems[i][1]}</p>
+                </div>
+              </div>
+            )))}
           </div>
         </div>
       </section>
