@@ -1,34 +1,18 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
-  display: 'swap',
-})
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-inter',
-  display: 'swap',
-})
-
 export const metadata: Metadata = {
-  title: 'Diamon Finland — Leadership Communication Architecture',
+  title: 'Diamon Finland — Johtamisviestintä',
   description:
-    'Human-Centered Communication Architecture for the AI Era. Diamon Finland builds the communication capability that determines whether leadership, expertise, and strategy actually land.',
+    'Tavoitteellista esiintymis- ja vuorovaikutusvalmennusta johtajille ja organisaatioille. Kehitämme viestinnällistä toimintakykyä kohdennetusti, tavoitteellisesti ja pitkäjänteisesti.',
   openGraph: {
     title: 'Diamon Finland',
-    description: 'Human-Centered Communication Architecture for the AI Era.',
-    url: 'https://diamonfinland.com',
+    description: 'Tavoitteellista esiintymis- ja vuorovaikutusvalmennusta johtajille ja organisaatioille.',
+    url: 'https://diamon.fi',
     siteName: 'Diamon Finland',
-    locale: 'en_US',
+    locale: 'fi_FI',
     type: 'website',
   },
 }
@@ -39,7 +23,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="fi">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>
