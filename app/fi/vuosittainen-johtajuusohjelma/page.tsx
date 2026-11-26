@@ -204,7 +204,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
               Johtajille, esihenkilöille ja asiantuntijoille, jotka haluavat kehittää esiintymistään
-              ja viestintäänsä tavoitteellisesti osana organisaation strategista johtamista ja kulttuuria.
+              ja viestintäänsä pitkäjänteisesti osana organisaation strategista johtamista ja kulttuuria.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>

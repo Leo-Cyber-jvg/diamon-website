@@ -207,7 +207,7 @@ export default function AnnualLeadershipProgramPage() {
               Leaders who treat communication as a strategic capability.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              The programme is designed for leaders, executives and senior experts who want to develop their communication purposefully, not as a presentational skill, but as a core part of strategic leadership and organisational culture.
+              For leaders, managers and senior experts who want to develop their communication and presence over time — as a long-term investment, not a one-off fix — as part of the organisation's strategic leadership and culture.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
