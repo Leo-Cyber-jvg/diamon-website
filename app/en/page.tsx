@@ -36,15 +36,14 @@ export default function EnHome() {
               letterSpacing: '-0.01em',
             }}
           >
-            Purposeful communication<br />
-            and presence coaching<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>for leaders and organisations.</span>
+            Rewiring<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>leadership communication.</span>
           </h1>
           <p
             className="mb-12 font-light"
             style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', lineHeight: 1.75, maxWidth: '500px', fontSize: '1rem' }}
           >
-            We build communication capability — focused, purposeful and for the long term.
+            Purposeful communication and presence coaching for leaders and organisations.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <Link href="/contact" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)', flexShrink: 0 }}>

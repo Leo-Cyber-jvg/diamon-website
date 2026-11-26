@@ -36,15 +36,14 @@ export default function FiHome() {
               letterSpacing: '-0.01em',
             }}
           >
-            Tavoitteellista esiintymis-<br />
-            ja vuorovaikutusvalmennusta<br />
-            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtajille ja organisaatioille.</span>
+            Muutamme<br />
+            <span style={{ fontStyle: 'italic', opacity: 0.8 }}>johtamisviestintää.</span>
           </h1>
           <p
             className="mb-12 font-light"
             style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', lineHeight: 1.75, maxWidth: '500px', fontSize: '1rem' }}
           >
-            Kehitämme viestinnällistä toimintakykyä kohdennetusti, tavoitteellisesti ja pitkäjänteisesti.
+            Tavoitteellista esiintymis- ja vuorovaikutusvalmennusta johtajille ja organisaatioille.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <Link href="/fi/ota-yhteytta" className="btn-primary" style={{ backgroundColor: '#fff', color: 'var(--color-blue)', flexShrink: 0 }}>
