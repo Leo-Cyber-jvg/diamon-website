@@ -145,7 +145,7 @@ export default function ImpactSessionPage() {
         >
           Suitable for
         </p>
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div className="grid md:grid-cols-3 gap-4">
           {[
             { title: 'Keynote speech', body: 'A major address where presence, clarity and structure determine how the message lands.' },
             { title: 'Capital markets day', body: 'Investor-facing communication where credibility, confidence and precision are non-negotiable.' },
@@ -154,7 +154,7 @@ export default function ImpactSessionPage() {
             { title: 'Internal communication moment', body: 'High-stakes internal announcements, town halls or change communication that shapes culture.' },
             { title: 'Strategic social media appearance', body: 'LinkedIn or public-facing video content where personal brand and business message must align.' },
           ].map(({ title, body }) => (
-            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
             </div>

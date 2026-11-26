@@ -135,7 +135,7 @@ export default function VaikuttavuussessioPage() {
         <p className="text-xs tracking-[0.3em] uppercase mb-10" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
           Sopii tilanteisiin kuten
         </p>
-        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+        <div className="grid md:grid-cols-3 gap-4">
           {[
             { title: 'Keynote-puhe', body: 'Merkittävä puheenvuoro, jossa läsnäolo, selkeys ja rakenne määrittävät, miten viesti laskeutuu.' },
             { title: 'Capital markets day', body: 'Sijoittajaviestintä, jossa uskottavuus, varmuus ja täsmällisyys ovat ehdottomia.' },
@@ -144,7 +144,7 @@ export default function VaikuttavuussessioPage() {
             { title: 'Sisäinen viestintähetki', body: 'Korkean panoksen sisäiset tiedotteet, town hallit tai muutosviestintä, joka muokkaa kulttuuria.' },
             { title: 'Strateginen someesiintyminen', body: 'LinkedIn- tai julkinen videosiältö, jossa henkilöbrändin ja liiketoimintaviestin on kohdattava.' },
           ].map(({ title, body }) => (
-            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}>
               <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
             </div>
