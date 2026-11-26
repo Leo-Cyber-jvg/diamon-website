@@ -41,9 +41,9 @@ export default function InfluenceCompass({ lang = 'en', showLink = true }: { lan
       <style>{`
         @media (max-width: 639px) {
           .compass-q0 { padding-right: 18px !important; padding-bottom: 18px !important; }
-          .compass-q1 { padding-left: 18px !important; padding-bottom: 18px !important; }
+          .compass-q1 { padding-left: 18px !important; padding-right: 4px !important; padding-bottom: 18px !important; word-break: break-word; }
           .compass-q2 { padding-right: 18px !important; padding-top: 18px !important; }
-          .compass-q3 { padding-left: 18px !important; padding-top: 18px !important; }
+          .compass-q3 { padding-left: 18px !important; padding-right: 4px !important; padding-top: 18px !important; word-break: break-word; }
           .compass-center { width: 90px !important; height: 90px !important; }
         }
       `}</style>
