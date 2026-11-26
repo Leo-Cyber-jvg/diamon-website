@@ -163,10 +163,13 @@ export default function LeadershipCommunicationIntensivePage() {
               Who it is for
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Leaders who want to develop their communication capability.
+              For leaders and experts who want to strengthen their personal impact.
             </h2>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              The programme is for you if you want to bring your expertise and thinking across more powerfully, develop your communication and interaction skills, and strengthen your performance in demanding professional situations.
+            </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership Communication Intensive is a six-month personal coaching programme for leaders and experts. Six tailored coaching sessions are built around the client&apos;s individual development goals and real communication situations.
+              You may be moving into a new leadership role, building a more visible professional presence, or simply wanting to develop your own way of communicating, connecting and leading.
             </p>
           </div>
           <div className="flex flex-col gap-px self-start" style={{ backgroundColor: 'var(--color-border)' }}>

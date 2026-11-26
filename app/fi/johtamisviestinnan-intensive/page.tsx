@@ -163,10 +163,13 @@ export default function JohtamisviestinnanIntensivePage() {
               Kenelle
             </p>
             <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.2 }}>
-              Johtajille, jotka haluavat kehittää viestinnällistä toimintakykyään.
+              Johtajille ja asiantuntijoille, jotka haluavat vahvistaa henkilökohtaista vaikuttavuuttaan.
             </h2>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
+              Valmennus sopii sinulle, joka haluat tuoda omaa osaamistasi ja ajatteluasi vaikuttavammin esiin, kehittää esiintymis- ja vuorovaikutustaitojasi sekä vahvistaa toimintakykyäsi työelämän vaativissa tilanteissa.
+            </p>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>
-              Leadership Communication Intensive on kuuden kuukauden henkilökohtainen valmennuskokonaisuus johtajille ja asiantuntijoille. Kuusi räätälöityä valmennuskertaa rakentuvat asiakkaan yksilöllisten kehitystavoitteiden ja todellisten viestintätilanteiden ympärille.
+              Olet kenties siirtymässä uuteen johtajarooliin, kasvattamassa julkista näkyvyyttäsi tai haluat tietoisemmin kehittää omaa tapaasi viestiä, kohdata ihmisiä ja johtaa.
             </p>
           </div>
           <div className="flex flex-col gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
