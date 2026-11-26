@@ -53,6 +53,19 @@ export default function ForOrganisationsPage() {
             Long-term development programmes for executive teams, senior leaders and organisations.
             Systematic, measurable and built to last.
           </p>
+          <div className="mt-10">
+            <Link
+              href="/coaching-series"
+              style={{ textDecoration: 'none', display: 'inline-flex', flexDirection: 'column', gap: '4px', border: '1px solid rgba(255,255,255,0.25)', padding: '12px 20px', backgroundColor: 'rgba(255,255,255,0.07)' }}
+            >
+              <p style={{ margin: 0, fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)' }}>
+                What&apos;s on · Coaching Series
+              </p>
+              <p style={{ margin: 0, fontSize: '13px', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', lineHeight: 1.3 }}>
+                Leadership Impact and Performance →
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
 
