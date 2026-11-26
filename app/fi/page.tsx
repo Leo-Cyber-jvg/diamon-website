@@ -489,6 +489,21 @@ export default function FiHome() {
         </div>
       </section>
 
+      {/* ── ASIAKKAAT / LOGO ROW ── */}
+      <section style={{ backgroundColor: '#111010', padding: '48px 24px' }}>
+        <p style={{ textAlign: 'center', fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#666', marginBottom: '32px', fontFamily: 'var(--font-body)' }}>
+          Asiakkaita
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', maxWidth: '700px', margin: '0 auto' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/jaaekiekkoliitto-leijona.png" alt="Suomen Jääkiekkoliitto" style={{ height: '52px', width: 'auto', filter: 'grayscale(1)', opacity: 0.4 }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/sdm.svg" alt="SDM" style={{ height: '32px', width: 'auto', filter: 'grayscale(1) invert(1)', opacity: 0.4 }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/referenssit/westport.png" alt="Westport Finland" style={{ height: '22px', width: 'auto', filter: 'grayscale(1) invert(1)', opacity: 0.4 }} />
+        </div>
+      </section>
+
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
