@@ -193,12 +193,6 @@ export default function VuosittainenJohtajuusohjelmePage() {
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
       </div>
 
-      <ICAFrameworkSection lang="fi" />
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
       {/* Kenelle */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="grid md:grid-cols-2 gap-16">
@@ -230,6 +224,12 @@ export default function VuosittainenJohtajuusohjelmePage() {
           </div>
         </div>
       </section>
+
+      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
+      </div>
+
+      <ICAFrameworkSection lang="fi" />
 
       <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
