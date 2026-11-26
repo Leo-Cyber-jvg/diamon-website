@@ -287,17 +287,17 @@ export default function EnHome() {
       </section>
 
       {/* ── CLIENTS / LOGO ROW ── */}
-      <section style={{ backgroundColor: '#F4F3F1', padding: '56px 48px' }}>
-        <p style={{ textAlign: 'center', fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', marginBottom: '40px', fontFamily: 'var(--font-body)' }}>
+      <section style={{ backgroundColor: '#F4F3F1', padding: '64px 48px' }}>
+        <p style={{ textAlign: 'center', fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', marginBottom: '48px', fontFamily: 'var(--font-body)' }}>
           Clients
         </p>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '72px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', flexWrap: 'nowrap', gap: '40px', maxWidth: '860px', margin: '0 auto', width: '100%' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/referenssit/jaaekiekkoliitto-leijona.png" alt="Finnish Ice Hockey Association" style={{ height: '72px', width: 'auto' }} />
+          <img src="/referenssit/jaaekiekkoliitto-transparent.png" alt="Finnish Ice Hockey Association" style={{ height: '80px', width: 'auto', flexShrink: 0 }} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/referenssit/sdm.svg" alt="SDM" style={{ height: '44px', width: 'auto' }} />
+          <img src="/referenssit/sdm.svg" alt="SDM" style={{ height: '44px', width: 'auto', flexShrink: 0 }} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/referenssit/westport.png" alt="Westport Finland" style={{ height: '32px', width: 'auto' }} />
+          <img src="/referenssit/westport.png" alt="Westport Finland" style={{ height: '30px', width: 'auto', flexShrink: 0, mixBlendMode: 'multiply' }} />
         </div>
       </section>
 
