@@ -40,6 +40,7 @@ type Coach = { name: string; role: string; img: string; pos: string; text: strin
 type Content = {
   heroEyebrow: string
   heroTitle: [string, string]
+  heroSubtitle: string
   heroLead: string
   heroPills: [string, string]
   whyEyebrow: string
@@ -84,6 +85,7 @@ const content: Record<Lang, Content> = {
   fi: {
     heroEyebrow: 'Valmennussarja · Diamon Finland',
     heroTitle: ['Johtajan vaikuttavuus', ' ja toimintakyky.'],
+    heroSubtitle: 'Kun johtamisen vaatimukset kasvavat, myös johtajan henkilökohtaisen toimintakyvyn on kehityttävä.',
     heroLead:
       'Yhden päivän intensiivivalmennuksia johtajille. Jokaisessa päivässä Leo Sjöman valmentaa yhdessä eri alan huippuasiantuntijan kanssa. Päivä yhdistää johtamisviestinnän, psykofyysisen harjoittamisen ja asiantuntijan teeman yhdeksi kokonaisuudeksi.',
     heroPills: ['01 · Johtaminen paineessa', '02 · Uni ja palautuminen'],
@@ -226,6 +228,7 @@ const content: Record<Lang, Content> = {
   en: {
     heroEyebrow: 'Coaching series · Diamon Finland',
     heroTitle: ['Leadership Impact', ' and Performance.'],
+    heroSubtitle: "As the demands of leadership grow, a leader's personal capacity to perform has to grow with them.",
     heroLead:
       "One-day intensive coaching days for leaders. On each day, Leo Sjöman coaches together with a leading expert from another field. Each day brings together leadership communication, psychophysical training and the expert's theme into one integrated whole.",
     heroPills: ['01 · Leading under pressure', '02 · Sleep and recovery'],
@@ -611,6 +614,7 @@ export default function CoachingSeries({ lang }: { lang: Lang }) {
             {t.heroTitle[0]}
             <span style={{ fontStyle: 'italic', opacity: 0.8 }}>{t.heroTitle[1]}</span>
           </h1>
+          <p className="text-lg font-light mb-6" style={{ ...serif, color: '#8585e8', lineHeight: 1.4, maxWidth: '680px', fontStyle: 'italic' }}>{t.heroSubtitle}</p>
           <p className="text-lg font-light mb-12" style={{ color: 'rgba(255,255,255,0.78)', ...body, lineHeight: 1.8, maxWidth: '620px' }}>{t.heroLead}</p>
           <div className="flex flex-wrap gap-4">
             {t.concepts.map((c, i) => (
