@@ -215,22 +215,13 @@ export default function ExecutiveProgrammesPage() {
             </div>
           </section>
           {idx < programmes.length - 1 && (
-            <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-              <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            </div>
           )}
         </div>
       ))}
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       <ICAFrameworkSection lang="en" />
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>

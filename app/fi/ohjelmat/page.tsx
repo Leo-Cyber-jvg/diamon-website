@@ -164,9 +164,6 @@ export default function OhjelmatPage() {
             </div>
           </section>
           {idx < programmes.length - 1 && (
-            <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-              <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            </div>
           )}
         </div>
       ))}

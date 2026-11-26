@@ -111,9 +111,6 @@ export default function YksiloillePage() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Valmennussarja */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -122,7 +119,6 @@ export default function YksiloillePage() {
             Valmennussarja
           </p>
         </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
 
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
           {/* Left: photo panel */}
@@ -234,9 +230,6 @@ export default function YksiloillePage() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Impact Session */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -297,15 +290,9 @@ export default function YksiloillePage() {
         })()}
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       <ICAFrameworkSection lang="fi" />
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-blue)' }}>

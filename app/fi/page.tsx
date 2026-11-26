@@ -170,9 +170,6 @@ export default function FiHome() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* ── ICA FRAMEWORK ── */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -293,7 +290,7 @@ export default function FiHome() {
                     color: item.color,
                     lineHeight: 1,
                     zIndex: 1,
-                    transform: 'translateX(5%)',
+                    transform: 'translateX(20%)',
                   }}
                 >
                   {item.letter}
@@ -508,7 +505,6 @@ export default function FiHome() {
             Perustaja
           </p>
         </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
           {/* Left: photo */}
           <div className="h-64 md:h-auto md:min-h-[460px]" style={{ position: 'relative', overflow: 'hidden' }}>

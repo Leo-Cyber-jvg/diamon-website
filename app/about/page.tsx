@@ -156,9 +156,6 @@ export default function AboutPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Four themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -222,9 +219,6 @@ export default function AboutPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Founder */}
       <section className="px-6 py-24" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -297,17 +291,11 @@ export default function AboutPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* ICA Framework */}
       <ICAFrameworkSection lang="en" />
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section

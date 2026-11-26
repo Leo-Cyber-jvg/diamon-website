@@ -122,17 +122,11 @@ export default function IcaViitekehysPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
 
       <InfluenceCompass lang="fi" showLink={false} />
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>

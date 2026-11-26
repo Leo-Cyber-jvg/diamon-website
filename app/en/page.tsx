@@ -256,7 +256,7 @@ export default function EnHome() {
                     color: item.color,
                     lineHeight: 1,
                     zIndex: 1,
-                    transform: 'translateX(5%)',
+                    transform: 'translateX(20%)',
                   }}
                 >
                   {item.letter}
@@ -392,7 +392,6 @@ export default function EnHome() {
         <div className="flex items-baseline justify-between gap-6 mb-10">
           <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Founder</p>
         </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)', marginBottom: '48px' }} />
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
           <div className="h-64 md:h-auto md:min-h-[460px]" style={{ position: 'relative', overflow: 'hidden' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}

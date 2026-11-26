@@ -144,9 +144,6 @@ export default function KeynotesPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Themes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -188,9 +185,6 @@ export default function KeynotesPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Formats */}
       <section className="px-6 py-20" style={{ backgroundColor: 'var(--color-surface)' }}>
@@ -247,9 +241,6 @@ export default function KeynotesPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section className="px-6 py-24" style={{ backgroundColor: 'var(--color-blue)' }}>

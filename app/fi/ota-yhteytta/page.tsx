@@ -93,7 +93,6 @@ function ContactForm() {
             Vastaamme kaikkiin tiedusteluihin henkilökohtaisesti. Haluamme ymmärtää tarpeesi ja sen, mitä haluat saavuttaa, ennen kuin ehdotamme ratkaisua.
           </p>
         </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
         <div>
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Tyypilliset yhteydenotot</p>
           <ul className="flex flex-col gap-3">

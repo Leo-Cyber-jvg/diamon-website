@@ -131,9 +131,6 @@ export default function LeadershipCommunicationIntensivePage() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* What changes */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -154,9 +151,6 @@ export default function LeadershipCommunicationIntensivePage() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Who it is for */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -192,15 +186,9 @@ export default function LeadershipCommunicationIntensivePage() {
         </div>
       </section>
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       <ICAFrameworkSection lang="en" />
 
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section

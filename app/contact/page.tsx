@@ -146,7 +146,6 @@ function ContactForm() {
             We respond to all enquiries personally. We want to understand your needs and what you want to achieve before we propose a solution.
           </p>
         </div>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
         <div>
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>Typical enquiries</p>
           <ul className="flex flex-col gap-3">
@@ -193,9 +192,6 @@ export default function ContactPage() {
       </section>
 
       {/* ── Divider ── */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* ── Leo profile card ── */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -271,9 +267,6 @@ export default function ContactPage() {
       </section>
 
       {/* ── Divider ── */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* ── Calendar booking ── */}
       <section className="px-6 py-16" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -317,9 +310,6 @@ export default function ContactPage() {
       </section>
 
       {/* ── Divider ── */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* ── Contact form ── */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>

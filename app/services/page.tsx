@@ -154,9 +154,6 @@ export default function ServicesPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* Services */}
       {services.map((service, idx) => (
@@ -245,17 +242,11 @@ export default function ServicesPage() {
             </div>
           </section>
           {idx < services.length - 1 && (
-            <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-              <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-            </div>
           )}
         </div>
       ))}
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* How we work */}
       <section
@@ -315,9 +306,6 @@ export default function ServicesPage() {
       </section>
 
       {/* Divider */}
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
 
       {/* CTA */}
       <section
