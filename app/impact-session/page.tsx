@@ -24,7 +24,7 @@ export default function ImpactSessionPage() {
         style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#111010', color: '#fff' }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/impact-session-hero.png" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', filter: 'brightness(0.35) saturate(0.5)' }} />
+        <img src="/impact-session-hero.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(0.35) saturate(0.5)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(86,86,214,0.5) 0%, rgba(17,16,16,0.4) 100%)' }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p
