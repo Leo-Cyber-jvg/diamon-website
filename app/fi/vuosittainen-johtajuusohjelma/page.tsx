@@ -54,9 +54,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               lineHeight: 1.8,
             }}
           >
-            Tämä ei ole yksittäinen esiintymiskurssi, vaan rakenteellinen valmennuskokonaisuus,
-            joka rakentaa johtajalle johdonmukaisen, mitattavan ja strategisesti linjatun
-            viestintäprofiilin. Henkilökohtainen valmentaja koko vuoden ajan.
+            Valmennusohjelma, jossa johtamisviestintää kehitetään johdonmukaisesti, mitattavasti ja organisaation strategisten tavoitteiden mukaisesti. Henkilökohtainen valmentaja koko vuoden ajan.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

@@ -58,7 +58,7 @@ export default function AnnualLeadershipProgramPage() {
               lineHeight: 1.8,
             }}
           >
-            Not a one-off course. A structured coaching programme that builds a consistent, measurable and strategically aligned communication profile, with a personal coach throughout the full year.
+            A coaching programme where leadership communication is developed consistently, measurably and in line with the organisation's strategic goals. A personal coach throughout the full year.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
