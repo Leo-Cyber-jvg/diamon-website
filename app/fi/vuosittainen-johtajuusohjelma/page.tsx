@@ -116,7 +116,7 @@ export default function VuosittainenJohtajuusohjelmePage() {
               '12 räätälöityä coachingtapaamista',
               '2 tuntia per tapaaminen',
               'Oma coach koko vuoden ajan',
-              'Jatkuva tuki ja seuranta sessioiden välillä',
+              'Tuki ja seuranta sessioiden välillä',
               'Johtajan viestintäprofiili ja käytännön toimintamalli',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>

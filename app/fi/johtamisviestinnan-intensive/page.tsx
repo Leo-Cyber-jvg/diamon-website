@@ -112,7 +112,7 @@ export default function JohtamisviestinnanIntensivePage() {
               '6 räätälöityä valmennussessiota 6 kuukauden aikana',
               '3 tuntia per sessio',
               'Henkilökohtainen valmentaja koko ohjelman ajan',
-              'Jatkuva tuki sessioiden välillä',
+              'Tuki sessioiden välillä',
               'Johtajan viestintäprofiili ja käytännön toimintamalli',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>

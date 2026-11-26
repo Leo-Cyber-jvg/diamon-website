@@ -120,7 +120,7 @@ export default function AnnualLeadershipProgramPage() {
               '12 tailored coaching sessions',
               '2 hours per session',
               'Personal coach throughout the full year',
-              'Continuous support and follow-up between sessions',
+              'Support and follow-up between sessions',
               "Leadership communication profile and personal operating model",
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>

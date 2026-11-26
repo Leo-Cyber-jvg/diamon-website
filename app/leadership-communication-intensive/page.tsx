@@ -112,7 +112,7 @@ export default function LeadershipCommunicationIntensivePage() {
               '6 tailored coaching sessions over 6 months',
               '3 hours per session',
               'Personal coach throughout the full programme',
-              'Continuous support between sessions',
+              'Support between sessions',
               'Leadership communication profile and personal operating model',
             ].map(item => (
               <div key={item} className="flex items-start gap-4 px-6 py-4" style={{ backgroundColor: 'var(--color-background)' }}>
