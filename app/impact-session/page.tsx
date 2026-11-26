@@ -149,7 +149,7 @@ export default function ImpactSessionPage() {
               { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M8 21h8M12 17v4"/><path d="M7 10l3 3 5-5"/></svg>, title: 'A major address or presentation', body: 'A keynote, executive presentation, investor event or other high-stakes public address.' },
               { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10a7 7 0 0 1-14 0"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>, title: 'A media appearance or interview', body: 'Television, podcast or press — where every word is on record.' },
               { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="15" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>, title: 'A strategic social media appearance', body: 'LinkedIn video or public content where personal brand and business message must align.' },
-              { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>, title: 'An internal communication moment', body: 'A town hall, change announcement or other internal occasion that carries significant weight.' },
+              { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>, title: 'An internal communication situation', body: 'Change communication or another internal occasion that carries significant weight.' },
             ] as { icon: React.ReactNode; title: string; body: string }[]).map(({ icon, title, body }) => (
               <div key={title} className="flex gap-5 p-7" style={{ backgroundColor: 'var(--color-background)' }}>
                 <div className="shrink-0 pt-0.5" style={{ color: 'var(--color-blue)' }}>{icon}</div>
@@ -163,35 +163,6 @@ export default function ImpactSessionPage() {
           <p className="text-sm mt-5" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', fontStyle: 'italic', lineHeight: 1.65 }}>
             Also for those whose communication responsibility has grown and who want to prepare carefully for a first major moment.
           </p>
-        </div>
-      </section>
-
-      <div className="px-6" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ height: '1px', backgroundColor: 'var(--color-border)' }} />
-      </div>
-
-      {/* Suitable for */}
-      <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <p
-          className="text-xs tracking-[0.3em] uppercase mb-10"
-          style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}
-        >
-          Suitable for
-        </p>
-        <div className="grid md:grid-cols-3 gap-4">
-          {[
-            { title: 'Keynote speech', body: 'A major address where presence, clarity and structure determine how the message lands.' },
-            { title: 'Capital markets day', body: 'Investor-facing communication where credibility, confidence and precision are non-negotiable.' },
-            { title: 'Media interview', body: 'Preparation for print, broadcast or podcast appearances where every word is on record.' },
-            { title: 'Executive presentation', body: 'Board, leadership team or external stakeholder presentations that carry strategic weight.' },
-            { title: 'Internal communication moment', body: 'High-stakes internal announcements, town halls or change communication that shapes culture.' },
-            { title: 'Strategic social media appearance', body: 'LinkedIn or public-facing video content where personal brand and business message must align.' },
-          ].map(({ title, body }) => (
-            <div key={title} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)', border: '1px solid var(--color-border)' }}>
-              <h3 className="text-lg font-light" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)' }}>{title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{body}</p>
-            </div>
-          ))}
         </div>
       </section>
 
