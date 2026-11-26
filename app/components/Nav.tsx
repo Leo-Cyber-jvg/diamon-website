@@ -10,7 +10,7 @@ const fiServices = [
   { href: '/fi/johtamisviestinnan-intensive', label: 'Leadership Communication Intensive' },
   { href: '/fi/thought-leader-studio', label: 'Thought Leader Studio' },
   { href: '/fi/vaikuttavuussessio', label: 'Impact Session' },
-  { href: '/fi/valmennussarja', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
+  { href: '/fi/valmennussarja', label: 'Valmennussarja' },
   { href: '/fi/keynotes', label: 'Keynote-puheenvuorot' },
 ]
 
@@ -19,18 +19,18 @@ const enServices = [
   { href: '/leadership-communication-intensive', label: 'Leadership Communication Intensive' },
   { href: '/thought-leader-studio', label: 'Thought Leader Studio' },
   { href: '/impact-session', label: 'Impact Session' },
-  { href: '/coaching-series', label: 'Leadership Impact & Capability Series' },
+  { href: '/coaching-series', label: 'Coaching Series' },
   { href: '/keynotes', label: 'Keynote Speaking' },
 ]
 
 const fiIndividuals = [
   { href: '/fi/vaikuttavuussessio', label: 'Impact Session' },
-  { href: '/fi/valmennussarja', label: 'Johtajavaikuttavuus- ja toimintakykyvalmennussarja' },
+  { href: '/fi/valmennussarja', label: 'Valmennussarja' },
 ]
 
 const enIndividuals = [
   { href: '/impact-session', label: 'Impact Session' },
-  { href: '/coaching-series', label: 'Leadership Impact & Capability Series' },
+  { href: '/coaching-series', label: 'Coaching Series' },
 ]
 
 function LangSwitcher() {
