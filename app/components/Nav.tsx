@@ -60,7 +60,7 @@ export default function Nav() {
         style={{ maxWidth: '1200px' }}
       >
         {/* Logo */}
-        <Link href={isFi ? '/fi' : '/'} aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+        <Link href={isFi ? '/fi' : '/en'} aria-label="Diamon Finland — Home" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/diamon-logo.png" alt="Diamon Finland" style={{ height: '36px', width: 'auto', display: 'block' }} />
         </Link>
