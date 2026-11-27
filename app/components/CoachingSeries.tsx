@@ -176,7 +176,7 @@ const content: Record<Lang, Content> = {
         date: '19.2.2027',
         signupValue: '02 · Leo Sjöman × Henri Tuomilehto · Uni, palautuminen ja vaikuttavuus · pe 19.2.2027',
         headline: 'Millaisia päätöksiä sinä teet, kun olet väsynyt?',
-        promise: 'Rakenna unesta perusta omalle ajattelullesi, tunnesäätelyllesi ja vuorovaikutuksellesi, ja kehitä kykyäsi vaikuttaa myös silloin, kun paine on kova.',
+        promise: 'Rakenna unesta perusta toimintakyvyllesi ja kehitä kykyäsi viestiä, vaikuttaa ja johtaa.',
         story: [
           'Väsyneitä aivoja ei kiinnosta sinun tavoitteesi. Puutteellinen uni iskee ensimmäisenä harkintaan, itsesäätelyyn ja vuorovaikutukseen, juuri niihin kykyihin, joita johtaminen eniten vaatii.',
           'Johtajan toimintakyky rakentuu kahdella aikajänteellä: pitkällä aikajänteellä unesta ja palautumisesta, hetkessä omasta tilasta ja läsnäolosta. Molempia voidaan harjoittaa.',
@@ -318,7 +318,7 @@ const content: Record<Lang, Content> = {
         date: '19 February 2027',
         signupValue: '02 · Leo Sjöman × Henri Tuomilehto · Sleep, Recovery and Impact · Fri 19 Feb 2027',
         headline: "What kind of decisions do you make when you are tired?",
-        promise: "Build sleep as the foundation for your thinking, emotional regulation and interaction, and develop your ability to make an impact even under pressure.",
+        promise: "Build sleep as the foundation for your capacity to perform and develop your ability to communicate, influence and lead.",
         story: [
           "A tired brain doesn't care about your goals. Poor sleep hits judgement, self-regulation and interaction first, precisely the capacities that leadership demands most.",
           "A leader's capacity to perform runs on two timescales: over the long term through sleep and recovery, and in the moment through your own state and presence. Both can be trained.",
