@@ -317,7 +317,7 @@ export default function FiHome() {
 
       {/* ── AJANKOHTAISTA ── */}
       <section className="px-6 py-20" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div className="flex items-baseline justify-between gap-6 mb-10">
+        <div className="flex items-baseline justify-between gap-6 mb-2">
           <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
             Ajankohtaista
           </p>
@@ -426,7 +426,7 @@ export default function FiHome() {
           </div>
         </div>
 
-        <div style={{ marginTop: '20px', borderTop: '1px solid var(--color-border)', paddingTop: '20px', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+        <div style={{ marginTop: '20px', paddingTop: '20px', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-subtle)', fontFamily: 'var(--font-body)', whiteSpace: 'nowrap' }}>Tulossa sarjassa</span>
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             <span style={{ fontSize: '11px', color: 'var(--color-muted)', fontFamily: 'var(--font-body)', border: '1px solid var(--color-border)', padding: '5px 12px' }}>02 · Uni ja palautuminen · pe 19.2.2027</span>
