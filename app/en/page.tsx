@@ -348,40 +348,43 @@ export default function EnHome() {
             <span style={{ fontStyle: 'italic', color: 'var(--color-blue)' }}>leadership communication.</span>
           </h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-px mb-16" style={{ backgroundColor: 'var(--color-border)' }}>
-          {[
-            { stat: '100%', label: 'reported an improvement in their leadership communication.' },
-            { stat: '100%', label: 'gained a deeper understanding of their own behaviour in communication and performance situations.' },
-            { stat: '100%', label: 'reported stronger capacity to perform under pressure in demanding communication situations.' },
-          ].map((s) => (
-            <div key={s.label} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
-              <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 400, lineHeight: 1, letterSpacing: '-0.02em' }}>{s.stat}</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{s.label}</p>
-            </div>
-          ))}
-        </div>
-        <div className="p-10 md:p-14" style={{ backgroundColor: 'var(--color-surface)', borderLeft: '3px solid var(--color-blue)' }}>
-          <blockquote className="text-xl md:text-2xl font-normal mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic', maxWidth: '820px' }}>
-            &ldquo;Presentation skill is a master key to leadership and influence. DIAMON has uniquely high-level expertise in developing performance, presence and communication. Their personal coaching concept truly works.&rdquo;
-          </blockquote>
-          <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
-            Tuomas Liisanantti &mdash; Marketing Director, SDM
-          </p>
-        </div>
+        <div style={{ border: '1px solid var(--color-border)' }}>
+          <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: 'var(--color-border)' }}>
+            {[
+              { stat: '100%', label: 'reported an improvement in their leadership communication.' },
+              { stat: '100%', label: 'gained a deeper understanding of their own behaviour in communication and performance situations.' },
+              { stat: '100%', label: 'reported stronger capacity to perform under pressure in demanding communication situations.' },
+            ].map((s) => (
+              <div key={s.label} className="p-8 flex flex-col gap-4" style={{ backgroundColor: 'var(--color-background)' }}>
+                <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-blue)', fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 400, lineHeight: 1, letterSpacing: '-0.02em' }}>{s.stat}</p>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)' }}>{s.label}</p>
+              </div>
+            ))}
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)', borderTop: '1px solid var(--color-border)' }}>
-          {[
-            'The coaching has advanced all the key goals I set for it, significantly.',
-            'I can perform in presentation situations in a relaxed way and adapt my style to different moments and formats.',
-            'I step into every interaction situation in business life with confidence.',
-            'I can see and feel clear overall development. I also receive feedback on it.',
-          ].map((q) => (
-            <div key={q} className="p-8" style={{ backgroundColor: 'var(--color-background)' }}>
-              <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.05rem', fontStyle: 'italic', lineHeight: 1.5, margin: 0 }}>
-                &ldquo;{q}&rdquo;
-              </p>
-            </div>
-          ))}
+          <div className="p-10 md:p-14" style={{ backgroundColor: 'var(--color-surface)', borderTop: '1px solid var(--color-border)', borderLeft: '3px solid var(--color-blue)' }}>
+            <blockquote className="text-xl md:text-2xl font-normal mb-6" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', lineHeight: 1.4, fontStyle: 'italic', maxWidth: '820px' }}>
+              &ldquo;Presentation skill is a master key to leadership and influence. DIAMON has uniquely high-level expertise in developing performance, presence and communication. Their personal coaching concept truly works.&rdquo;
+            </blockquote>
+            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>
+              Tuomas Liisanantti &mdash; Marketing Director, SDM
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)', borderTop: '1px solid var(--color-border)' }}>
+            {[
+              'The coaching has advanced all the key goals I set for it, significantly.',
+              'I can perform in presentation situations in a relaxed way and adapt my style to different moments and formats.',
+              'I step into every interaction situation in business life with confidence.',
+              'I can see and feel clear overall development. I also receive feedback on it.',
+            ].map((q) => (
+              <div key={q} className="p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+                <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.05rem', fontStyle: 'italic', lineHeight: 1.5, margin: 0 }}>
+                  &ldquo;{q}&rdquo;
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </section>
