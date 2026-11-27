@@ -252,9 +252,9 @@ export default function Nav() {
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
         >
-          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(45deg) translate(4px, 4px)' : 'none' }} />
-          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', opacity: open ? 0 : 1 }} />
-          <span className="block w-5 h-px transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(-45deg) translate(4px, -4px)' : 'none' }} />
+          <span className="block w-6 h-0.5 transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(45deg) translate(4px, 5px)' : 'none' }} />
+          <span className="block w-6 h-0.5 transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', opacity: open ? 0 : 1 }} />
+          <span className="block w-6 h-0.5 transition-all duration-200" style={{ backgroundColor: 'var(--color-text)', transform: open ? 'rotate(-45deg) translate(4px, -5px)' : 'none' }} />
         </button>
       </div>
 
