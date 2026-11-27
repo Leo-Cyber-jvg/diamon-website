@@ -241,8 +241,6 @@ export default function ServicesPage() {
               </div>
             </div>
           </section>
-          {idx < services.length - 1 && (
-          )}
         </div>
       ))}
 

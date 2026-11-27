@@ -163,8 +163,6 @@ export default function OhjelmatPage() {
               </div>
             </div>
           </section>
-          {idx < programmes.length - 1 && (
-          )}
         </div>
       ))}
 

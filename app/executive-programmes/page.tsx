@@ -214,8 +214,6 @@ export default function ExecutiveProgrammesPage() {
               </div>
             </div>
           </section>
-          {idx < programmes.length - 1 && (
-          )}
         </div>
       ))}
 
