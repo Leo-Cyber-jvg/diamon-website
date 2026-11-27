@@ -290,7 +290,7 @@ export default function FiHome() {
                     color: item.color,
                     lineHeight: 1,
                     zIndex: 1,
-                    transform: 'translateX(25%)',
+                    transform: 'translateX(22.5%)',
                   }}
                 >
                   {item.letter}
