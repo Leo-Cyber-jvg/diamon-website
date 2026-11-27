@@ -488,7 +488,7 @@ export default function FiHome() {
         <p style={{ textAlign: 'center', fontSize: '9px', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#9E9890', marginBottom: '48px', fontFamily: 'var(--font-body)' }}>
           Asiakkaita
         </p>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', flexWrap: 'nowrap', gap: '40px', maxWidth: '860px', margin: '0 auto', width: '100%' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '40px', maxWidth: '860px', margin: '0 auto', width: '100%' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/referenssit/jaaekiekkoliitto-transparent.png" alt="Suomen Jääkiekkoliitto" style={{ height: '80px', width: 'auto', flexShrink: 0 }} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
