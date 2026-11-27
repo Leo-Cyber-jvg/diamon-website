@@ -285,7 +285,7 @@ export default function EnHome() {
         <div className="flex items-baseline justify-between gap-6 mb-2">
           <p className="text-xs tracking-[0.28em] uppercase" style={{ color: 'var(--color-subtle)', fontFamily: 'var(--font-body)' }}>What&apos;s on</p>
         </div>
-        <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 400, lineHeight: 1.15, color: 'var(--color-text)', margin: '0 0 48px' }}>Leadership Programme</h2>
+        <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 400, lineHeight: 1.15, color: 'var(--color-text)', margin: '0 0 48px' }}>Coaching Series</h2>
         <div className="grid md:grid-cols-2" style={{ border: '1px solid var(--color-border)', overflow: 'hidden' }}>
           <div className="flex flex-col justify-between" style={{ position: 'relative', padding: '36px 40px', minHeight: '340px', overflow: 'hidden', backgroundColor: '#111010' }}>
             <img src="/speaker-blue.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', filter: 'brightness(0.45) saturate(0.6)' }} />
