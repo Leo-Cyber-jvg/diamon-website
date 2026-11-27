@@ -370,6 +370,21 @@ export default function EnHome() {
           </p>
         </div>
 
+        <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)', borderTop: '1px solid var(--color-border)' }}>
+          {[
+            'The coaching has advanced all the key goals I set for it, significantly.',
+            'I can perform in presentation situations in a relaxed way and adapt my style to different moments and formats.',
+            'I step into every interaction situation in business life with confidence.',
+            'I can see and feel clear overall development. I also receive feedback on it.',
+          ].map((q) => (
+            <div key={q} className="p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+              <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.05rem', fontStyle: 'italic', lineHeight: 1.5, margin: 0 }}>
+                &ldquo;{q}&rdquo;
+              </p>
+            </div>
+          ))}
+        </div>
+
       </section>
 
       {/* ── CLIENTS / LOGO ROW ── */}

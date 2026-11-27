@@ -480,6 +480,21 @@ export default function FiHome() {
             </p>
           </div>
 
+          <div className="grid md:grid-cols-2 gap-px" style={{ backgroundColor: 'var(--color-border)', borderTop: '1px solid var(--color-border)' }}>
+            {[
+              'Valmennus on edistänyt huomattavasti kaikkia tärkeitä päämääriä, joita sillä on tavoiteltu.',
+              'Pystyn toimimaan esiintymistilanteissa rentoutuneesti sekä sopeuttamaan esiintymistapaani erilaisiin hetkiin ja formaatteihin.',
+              'Astun luottavaisin mielin kaikkiin vuorovaikutustilanteisiin, joita liike-elämässä kohtaan.',
+              'Näen ja tunnen selvää yleistä kehitystä. Saan siitä myös palautetta.',
+            ].map((q) => (
+              <div key={q} className="p-8" style={{ backgroundColor: 'var(--color-background)' }}>
+                <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: '1.05rem', fontStyle: 'italic', lineHeight: 1.5, margin: 0 }}>
+                  &ldquo;{q}&rdquo;
+                </p>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
