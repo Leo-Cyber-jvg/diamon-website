@@ -180,7 +180,7 @@ const content: Record<Lang, Content> = {
         story: [
           'Väsyneitä aivoja ei kiinnosta sinun tavoitteesi. Puutteellinen uni iskee ensimmäisenä harkintaan, itsesäätelyyn ja vuorovaikutukseen, juuri niihin kykyihin, joita johtaminen eniten vaatii.',
           'Johtajan toimintakyky rakentuu kahdella aikajänteellä: pitkällä aikajänteellä unesta ja palautumisesta, hetkessä omasta tilasta ja läsnäolosta. Molempia voidaan harjoittaa.',
-          'Leo Sjöman ja unilääkäri Henri Tuomilehto yhdistävät kaksi alaa, johtamisviestintä ja unilääketiede, yhden päivän intensiivivalmennuksessa, jossa rakennetaan johtajan henkilökohtainen toimintakyvyn suunnitelma.',
+          'Leo Sjöman ja unilääkäri Henri Tuomilehto yhdistävät kaksi alaa, johtamisviestintä ja unilääketiede yhden päivän intensiivivalmennuksessa, jossa valmennetaan johtajan henkilökohtaista toimintakykyä.',
         ],
         smallGroup: 'Pieni, kymmenen johtajan ryhmä mahdollistaa henkilökohtaisen harjoittelun ja oman uniprofiilityöskentelyn.',
         core: 'Johtajan toimintakyvyllä on kaksi aikajännettä.',
@@ -322,7 +322,7 @@ const content: Record<Lang, Content> = {
         story: [
           "A tired brain doesn't care about your goals. Poor sleep hits judgement, self-regulation and interaction first, precisely the capacities that leadership demands most.",
           "A leader's capacity to perform runs on two timescales: over the long term through sleep and recovery, and in the moment through your own state and presence. Both can be trained.",
-          "Leo Sjöman and sleep physician Henri Tuomilehto bring together two fields, leadership communication and sleep medicine, in a one-day intensive where each participant builds a personal performance plan.",
+          "Leo Sjöman and sleep physician Henri Tuomilehto bring together two fields, leadership communication and sleep medicine in a one-day intensive that develops a leader's personal capacity to perform.",
         ],
         smallGroup: "A small group of ten leaders makes personal practice and individual sleep-profile work possible.",
         core: "A leader's capacity to perform runs on two timescales.",
