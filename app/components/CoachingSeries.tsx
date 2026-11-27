@@ -195,8 +195,8 @@ const content: Record<Lang, Content> = {
         outcomes: [
           'Ymmärrät oman henkilökohtaisen vuorovaikutuksesi merkityksen johtamisessa.',
           'Ymmärrät, mikä vaikutus unella on omalle ajattelulle, tunnesäätelylle ja vuorovaikutukselle.',
-          'Tunnistat, miten väsymys heikentää päätöksentekoasi ja läsnäoloasi — ja saat keinoja säädellä toimintakykyäsi sekä pitkällä aikajänteellä että hetkessä.',
-          'Löydät uusia keinoja vaikuttaa, viestiä ja johtaa — ja rakennat henkilökohtaisen suunnitelman opitun soveltamiseksi arjessa.',
+          'Tunnistat, miten väsymys heikentää päätöksentekoasi ja läsnäoloasi, ja saat keinoja säädellä toimintakykyäsi sekä pitkällä aikajänteellä että hetkessä.',
+          'Löydät uusia keinoja vaikuttaa, viestiä ja johtaa, ja rakennat henkilökohtaisen suunnitelman opitun soveltamiseksi arjessa.',
         ],
         audience: 'Johtajille, yrittäjille ja muissa vastuullisissa asiantuntijatehtävissä toimiville, jotka haluavat kehittää ymmärrystään unen, palautumisen ja vireystilan merkityksestä henkilökohtaiselle toimintakyvylle ja vaikuttavuudelle.',
       },
@@ -337,8 +337,8 @@ const content: Record<Lang, Content> = {
         outcomes: [
           'You understand what your own personal way of interacting means for your leadership.',
           'You understand what impact sleep has on your thinking, emotional regulation and interaction.',
-          'You recognise how tiredness affects your decision-making and presence — and gain ways to regulate your capacity to perform, both over the long term and in the moment.',
-          'You find new ways to influence, communicate and lead — and build a personal plan for applying what you have learned in everyday work.',
+          'You recognise how tiredness affects your decision-making and presence, and gain ways to regulate your capacity to perform, both over the long term and in the moment.',
+          'You find new ways to influence, communicate and lead, and build a personal plan for applying what you have learned in everyday work.',
         ],
         audience: 'For leaders, entrepreneurs and senior experts who want to deepen their understanding of how sleep, recovery and energy levels shape personal capacity to perform and to make an impact.',
       },
