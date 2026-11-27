@@ -256,7 +256,7 @@ export default function EnHome() {
                     color: item.color,
                     lineHeight: 1,
                     zIndex: 1,
-                    transform: 'translateX(10%)',
+                    transform: 'translateX(5%)',
                   }}
                 >
                   {item.letter}
