@@ -163,8 +163,7 @@ export default function EnHome() {
           </Link>
         </div>
         <p className="text-sm leading-relaxed mb-16" style={{ color: 'var(--color-muted)', fontFamily: 'var(--font-body)', maxWidth: '600px' }}>
-          A structured development methodology grounded in performance psychology and two decades of
-          professional performance practice. Three integrated levels, applied systematically to real leadership situations.
+          A leadership communication development methodology grounded in over 20 years of professional performance experience and practical coaching work. Its three areas form the foundation for developing purposeful communicative capacity.
         </p>
         {/* ICA three balls */}
         <div
